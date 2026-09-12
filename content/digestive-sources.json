@@ -1,0 +1,11 @@
+{
+  "reviewed": "2026-09-12",
+  "sources": {
+    "dyspepsia": "https://www.niddk.nih.gov/health-information/digestive-diseases/indigestion-dyspepsia/symptoms-causes",
+    "gerd": "https://www.niddk.nih.gov/health-information/digestive-diseases/acid-reflux-ger-gerd-adults/symptoms-causes",
+    "ibs": "https://www.niddk.nih.gov/health-information/digestive-diseases/irritable-bowel-syndrome/diagnosis",
+    "ibs-symptoms": "https://www.niddk.nih.gov/health-information/digestive-diseases/irritable-bowel-syndrome/symptoms-causes",
+    "korean": "https://nikom.or.kr/nckm/module/practiceGuide/download.do?file_type=pdf&guide_idx=192"
+  },
+  "note": "New patient-facing editorial content. Pattern assessment is a clinical perspective, not a substitute for differential diagnosis. No efficacy percentages or fabricated charts."
+}

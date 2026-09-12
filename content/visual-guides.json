@@ -1,0 +1,1045 @@
+{
+  "internal-respiratory.html": {
+    "headline": "코·목·기침을 하나의 흐름으로 살핍니다.",
+    "points": [
+      "증상의 위치",
+      "검사와 진찰",
+      "생활 속 반복 양상"
+    ],
+    "image": {
+      "type": "image",
+      "source": "https://cdn.imweb.me/thumbnail/20190222/5c6ec15548938.jpg",
+      "path": "assets/images/internal/b09cf1cd6dc9.jpg",
+      "alt": "호흡기내과 안내 안내 사진·도해",
+      "width": 1280,
+      "height": 1280
+    },
+    "diagram": "steps"
+  },
+  "internal-cotton-care.html": {
+    "headline": "코와 목의 관리, 과정을 먼저 알아보세요.",
+    "points": [
+      "관리하는 부위",
+      "진행 방법",
+      "적용 여부 상담"
+    ],
+    "image": {
+      "type": "image",
+      "source": "https://cdn.imweb.me/thumbnail/20200308/9f0cc31ca0956.jpg",
+      "path": "assets/images/internal/4fd2d6a93c07.jpg",
+      "alt": "코·목 5분 약솜관리 안내 사진·도해",
+      "width": 690,
+      "height": 470
+    },
+    "diagram": "steps"
+  },
+  "internal-rhinitis.html": {
+    "headline": "코막힘과 콧물, 반복되는 이유를 함께 찾습니다.",
+    "points": [
+      "언제 불편한지",
+      "코 안의 상태",
+      "치료와 생활관리"
+    ],
+    "image": {
+      "type": "image",
+      "source": "https://cdn.imweb.me/thumbnail/20200324/5c541b094922d.jpg",
+      "path": "assets/images/internal/4a2a05609589.jpg",
+      "alt": "코·목 5분 약솜관리 안내 사진·도해",
+      "width": 432,
+      "height": 521
+    },
+    "diagram": "steps"
+  },
+  "internal-nose-function.html": {
+    "headline": "숨 쉬는 코의 역할을 그림으로 이해합니다.",
+    "points": [
+      "공기의 통로",
+      "점막의 역할",
+      "불편함의 변화"
+    ],
+    "image": {
+      "type": "image",
+      "source": "https://cdn.imweb.me/thumbnail/20200308/4427961ec9d96.png",
+      "path": "assets/images/internal/76441bbf5d0c.png",
+      "alt": "코가 하는 일 안내 사진·도해",
+      "width": 800,
+      "height": 349
+    },
+    "diagram": "steps"
+  },
+  "internal-diagnosis.html": {
+    "headline": "검사 소견에 한의학적 패턴을 더해 봅니다.",
+    "points": [
+      "코 안의 소견",
+      "증상과 생활",
+      "변증진단·패턴진단"
+    ],
+    "image": null,
+    "diagram": "steps"
+  },
+  "internal-rhinitis-treatment.html": {
+    "headline": "코의 불편과 일상의 회복을 함께 이야기합니다.",
+    "points": [
+      "치료 목표",
+      "경과 확인",
+      "생활관리"
+    ],
+    "image": {
+      "source": "https://cdn.imweb.me/thumbnail/20200402/b00426f1b61a4.jpg",
+      "source_page": "haeoni.com/content/family-source/151.html",
+      "path": "assets/images/renewal/82e93d6af4a3c9.jpg",
+      "sha256": "7ba47bd0d498726e50ced02797c1f77ead28d5dfd9a0df1adbd17533d944e56f",
+      "index": 38,
+      "alt": "회의하며 의견을 나누는 의료진",
+      "width": 1920,
+      "height": 1080
+    },
+    "diagram": "steps"
+  },
+  "internal-cough.html": {
+    "headline": "기침이 시작된 때와 반복되는 상황이 단서입니다.",
+    "points": [
+      "시작된 시점",
+      "동반 증상",
+      "반복되는 상황"
+    ],
+    "image": {
+      "type": "image",
+      "source": "https://cdn.imweb.me/thumbnail/20200403/032d169fcd4dd.jpg",
+      "path": "assets/images/internal/b8791bc5895f.jpg",
+      "alt": "기침의 유형별 치료 사진·자료",
+      "original_link": "/141/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=3618753&t=board",
+      "width": 700,
+      "height": 467
+    },
+    "diagram": "steps"
+  },
+  "internal-cough-treatment.html": {
+    "headline": "현재의 기침과 이후의 관리 계획을 함께 봅니다.",
+    "points": [
+      "지금의 불편",
+      "치료 중 변화",
+      "일상의 관리"
+    ],
+    "image": {
+      "type": "image",
+      "source": "https://cdn.imweb.me/thumbnail/20200329/2561ff6697360.jpg",
+      "path": "assets/images/internal/1e6941ec3fb4.jpg",
+      "alt": "기침의 유형별 치료 안내 사진·도해",
+      "width": 1125,
+      "height": 1125
+    },
+    "diagram": "steps"
+  },
+  "internal-cold.html": {
+    "headline": "증상의 시작부터 달라지는 양상까지 살핍니다.",
+    "points": [
+      "증상 시작",
+      "발열·기침·콧물",
+      "치료와 휴식"
+    ],
+    "image": {
+      "type": "image",
+      "source": "https://cdn.imweb.me/thumbnail/20200308/ce2dae6fab0fe.jpg",
+      "path": "assets/images/internal/dbfab3d0a156.jpg",
+      "alt": "감기·독감 안내 안내 사진·도해",
+      "width": 1279,
+      "height": 854
+    },
+    "diagram": "steps"
+  },
+  "internal-otitis.html": {
+    "headline": "귀의 구조와 불편을 함께 이해합니다.",
+    "points": [
+      "귀의 불편",
+      "진찰 소견",
+      "치료와 경과"
+    ],
+    "image": {
+      "type": "image",
+      "source": "https://cdn.imweb.me/thumbnail/20181207/5c09cae9867b1.jpg",
+      "path": "assets/images/internal/a893b48c178f.jpg",
+      "alt": "중이염 안내 안내 사진·도해",
+      "width": 640,
+      "height": 427
+    },
+    "diagram": "steps"
+  },
+  "child-overview.html": {
+    "headline": "아이의 오늘과 자라는 과정을 함께 봅니다.",
+    "points": [
+      "지금의 불편",
+      "성장과 생활",
+      "보호자의 관찰"
+    ],
+    "image": {
+      "type": "image",
+      "source": "https://cdn.imweb.me/thumbnail/20200104/79a57569fc132.jpg",
+      "path": "assets/images/family/6191b62d625e.jpg",
+      "alt": "한방소아과 안내 안내 사진·도해",
+      "width": 1194,
+      "height": 1592
+    },
+    "diagram": "steps"
+  },
+  "child-integrated.html": {
+    "headline": "검사와 진찰, 아이의 생활을 연결합니다.",
+    "points": [
+      "객관적 확인",
+      "한의학적 진찰",
+      "생활의 변화"
+    ],
+    "image": {
+      "type": "image",
+      "source": "https://cdn.imweb.me/thumbnail/20200104/110ca2af8b4e1.jpg",
+      "path": "assets/images/family/373c7693f874.jpg",
+      "alt": "소아진료, 통합적 관점으로 안내 사진·도해",
+      "width": 1200,
+      "height": 1800
+    },
+    "diagram": "steps"
+  },
+  "child-treatments.html": {
+    "headline": "아이에게 필요한 치료를 차근차근 설명합니다.",
+    "points": [
+      "치료의 종류",
+      "진료실에서의 과정",
+      "아이의 반응"
+    ],
+    "image": {
+      "source": "https://cdn.imweb.me/thumbnail/20200401/9332604883737.jpg",
+      "source_page": "haeoni.com/content/family-source/120.html",
+      "path": "assets/images/renewal/eb9562e8e05686.jpg",
+      "sha256": "93549535f21010b727b1f20bdd58cce71a23b71668bc89949247db63f31e20b5",
+      "index": 29,
+      "alt": "아이를 진찰하는 의료진",
+      "width": 1688,
+      "height": 1125
+    },
+    "diagram": "steps"
+  },
+  "child-herbal-prescription.html": {
+    "headline": "우리 아이의 상태에 맞는 처방을 이야기합니다.",
+    "points": [
+      "현재의 증상",
+      "진찰과 패턴",
+      "복용 계획"
+    ],
+    "image": {
+      "type": "image",
+      "source": "https://cdn.imweb.me/thumbnail/20200308/cac50db1c8b1c.jpg",
+      "path": "assets/images/family/a87278d4f11d.jpg",
+      "alt": "한약 처방의 특징 안내 사진·도해",
+      "width": 1123,
+      "height": 1691
+    },
+    "diagram": "steps"
+  },
+  "child-herbal-guide.html": {
+    "headline": "한약을 먹는 시간도, 아이에게 편안하게.",
+    "points": [
+      "복용 방법",
+      "먹기 어려울 때",
+      "변화와 문의"
+    ],
+    "image": {
+      "type": "image",
+      "source": "https://cdn.imweb.me/thumbnail/20200311/0753c48f14f7d.jpg",
+      "path": "assets/images/family/2f1213209c2b.jpg",
+      "alt": "한약 복용방법, 주의사항 안내 사진·도해",
+      "width": 1279,
+      "height": 854
+    },
+    "diagram": "steps"
+  },
+  "child-constitution.html": {
+    "headline": "허약하다는 말 속의 구체적인 불편을 찾습니다.",
+    "points": [
+      "식사와 소화",
+      "잠과 활동",
+      "반복되는 불편"
+    ],
+    "image": {
+      "type": "image",
+      "source": "https://cdn.imweb.me/thumbnail/20200402/88ecc88ea1df6.jpeg",
+      "path": "assets/images/family/e3323f4467de.jpeg",
+      "alt": "허약체질 클리닉 안내 사진·도해",
+      "width": 620,
+      "height": 356
+    },
+    "diagram": "steps"
+  },
+  "child-antler.html": {
+    "headline": "녹용과 보약, 우리 아이에게 필요한지부터.",
+    "points": [
+      "기대하는 변화",
+      "아이의 상태",
+      "처방 상담"
+    ],
+    "image": {
+      "type": "image",
+      "source": "https://cdn.imweb.me/thumbnail/20200329/5902d58b0cc02.jpg",
+      "path": "assets/images/family/960da7835c1c.jpg",
+      "alt": "녹용의 역할 안내 사진·도해",
+      "width": 1173,
+      "height": 1173
+    },
+    "diagram": "steps"
+  },
+  "child-respiratory.html": {
+    "headline": "아이의 코와 목, 반복되는 불편을 살핍니다.",
+    "points": [
+      "코·목·기침",
+      "발열과 경과",
+      "집에서의 관찰"
+    ],
+    "image": {
+      "source": "https://cdn.imweb.me/thumbnail/20200403/dacacfa30f4f6.jpg",
+      "source_page": "haeoni.com/content/family-source/113.html",
+      "path": "assets/images/renewal/84fda36efc76e5.jpg",
+      "sha256": "fc1a1a4a123333ab99d59a7e20d3faf9d23300e0d40500c7fe7ddcf03dce4558",
+      "index": 47,
+      "alt": "부모와 함께 쉬는 아이",
+      "width": 1688,
+      "height": 1125
+    },
+    "diagram": "steps"
+  },
+  "child-cold-prevention.html": {
+    "headline": "아이의 일상에서 챙길 부분을 알아봅니다.",
+    "points": [
+      "식사와 수분",
+      "수면과 휴식",
+      "생활환경"
+    ],
+    "image": {
+      "source": "https://cdn.imweb.me/thumbnail/20200403/ea9b9f0ef55e5.jpg",
+      "source_page": "haeoni.com/content/internal-source/rhini14.html",
+      "path": "assets/images/renewal/5c3cc7c0521af2.jpg",
+      "sha256": "ce4d6e39976d968877b20ec7c9c5b3c02509a72a84b9ac1695a4fba08a6e4cea",
+      "index": 62,
+      "alt": "식탁에서 식사하는 아이",
+      "width": 1688,
+      "height": 1125
+    },
+    "diagram": "steps"
+  },
+  "child-cold-care.html": {
+    "headline": "아픈 아이의 변화, 보호자와 함께 살핍니다.",
+    "points": [
+      "증상의 시작",
+      "열과 컨디션",
+      "진료와 가정관리"
+    ],
+    "image": {
+      "type": "image",
+      "source": "https://cdn.imweb.me/thumbnail/20200308/6f569be9705d6.jpg",
+      "path": "assets/images/family/4c32a6a3d311.jpg",
+      "alt": "감기의 치료관리 안내 사진·도해",
+      "width": 1280,
+      "height": 853
+    },
+    "diagram": "steps"
+  },
+  "child-infections.html": {
+    "headline": "반복되는 감염, 경과를 먼저 정리합니다.",
+    "points": [
+      "언제 아팠는지",
+      "함께 나타난 증상",
+      "검사와 치료 기록"
+    ],
+    "image": null,
+    "diagram": "steps"
+  },
+  "child-pfapa.html": {
+    "headline": "되풀이되는 열, 주기와 동반 증상을 기록하세요.",
+    "points": [
+      "열이 나는 주기",
+      "목·입안의 불편",
+      "열이 없는 기간"
+    ],
+    "image": null,
+    "diagram": "steps"
+  },
+  "child-pfapa-care.html": {
+    "headline": "발열 기록과 기존 진료를 함께 검토합니다.",
+    "points": [
+      "기존 진단",
+      "발열의 경과",
+      "치료 상담"
+    ],
+    "image": {
+      "source": "https://cdn.imweb.me/thumbnail/20200401/ece80211c5fa5.jpeg",
+      "source_page": "haeoni.com/content/family-source/146.html",
+      "path": "assets/images/renewal/72dfa352ffbf1d.jpeg",
+      "sha256": "16df116e5b3fcf0bdfe048c9db9ae34cd26efe7e31fc8eec5a886dc5d9170344",
+      "index": 41,
+      "alt": "강의하는 해온한의원 한의사",
+      "width": 1920,
+      "height": 1280
+    },
+    "diagram": "steps"
+  },
+  "child-growth.html": {
+    "headline": "한 번의 키보다, 자라온 흐름을 봅니다.",
+    "points": [
+      "키와 체중 기록",
+      "성장 속도",
+      "생활과 진찰"
+    ],
+    "image": {
+      "type": "image",
+      "source": "https://cdn.imweb.me/thumbnail/20200402/422ba9c48b37c.jpg",
+      "path": "assets/images/family/5f2323058b72.jpg",
+      "alt": "키성장 클리닉 사진·자료",
+      "width": 1280,
+      "height": 853
+    },
+    "diagram": "steps"
+  },
+  "child-growth-causes.html": {
+    "headline": "성장이 걱정될 때, 여러 단서를 함께 봅니다.",
+    "points": [
+      "성장 기록",
+      "식사와 수면",
+      "동반되는 불편"
+    ],
+    "image": {
+      "source": "https://cdn.imweb.me/thumbnail/20190222/5c6ec2abd97af.jpg",
+      "source_page": "haeoni.com/content/family-source/kids10.html",
+      "path": "assets/images/renewal/4ef49f71be8323.jpg",
+      "sha256": "ea85a01b39917d8c1f9102bc01f07c49943c8dbb16bed7b4e8afa7e03fd764d6",
+      "index": 45,
+      "alt": "책상에서 활동하는 아이",
+      "width": 1691,
+      "height": 1123
+    },
+    "diagram": "steps"
+  },
+  "child-growth-diagnosis.html": {
+    "headline": "성장 기록을 바탕으로 필요한 평가를 정합니다.",
+    "points": [
+      "기록 확인",
+      "필요한 검사",
+      "경과 비교"
+    ],
+    "image": null,
+    "diagram": "steps"
+  },
+  "child-growth-care.html": {
+    "headline": "진료실의 계획을 아이의 일상으로 연결합니다.",
+    "points": [
+      "진료 목표",
+      "치료와 관리",
+      "성장 경과"
+    ],
+    "image": {
+      "type": "image",
+      "source": "https://cdn.imweb.me/thumbnail/20200402/eb6a81be60ed2.jpg",
+      "path": "assets/images/family/c3aa09c7e5d2.jpg",
+      "alt": "키성장 치료 안내 사진·도해",
+      "width": 600,
+      "height": 600
+    },
+    "diagram": "steps"
+  },
+  "women-overview.html": {
+    "headline": "변화하는 몸과 마음에 귀 기울입니다.",
+    "points": [
+      "생애주기",
+      "지금의 불편",
+      "진료와 일상"
+    ],
+    "image": {
+      "source": "https://cdn.imweb.me/thumbnail/20201119/51b48217c9070.jpg",
+      "source_page": "haeoni.com/content/family-source/62.html",
+      "path": "assets/images/renewal/85c992df21acc6.jpg",
+      "sha256": "2470170a1ed702a9e358ae25f0762a05417ac9cfd78f312019c7d3e7ef7977bf",
+      "index": 18,
+      "alt": "밝은 실내에서 몸을 이완하는 여성",
+      "width": 1592,
+      "height": 1194
+    },
+    "diagram": "steps"
+  },
+  "women-life-stages.html": {
+    "headline": "지금의 시기에 맞는 건강 이야기를 나눕니다.",
+    "points": [
+      "월경과 일상",
+      "임신·출산",
+      "이후의 변화"
+    ],
+    "image": {
+      "source": "https://cdn.imweb.me/thumbnail/20200402/044188f0f0ee2.jpg",
+      "source_page": "haeoni.com/content/family-source/147.html",
+      "path": "assets/images/renewal/2b4e1167057f7f.jpg",
+      "sha256": "3204337e1b48fd076a757fbf7099e74f6a9475e31a5e14e1d73997b720bf7c77",
+      "index": 34,
+      "alt": "함께 운동하는 두 여성",
+      "width": 849,
+      "height": 606
+    },
+    "diagram": "steps"
+  },
+  "women-pregnancy-planning.html": {
+    "headline": "임신 준비, 두 사람의 건강부터 살핍니다.",
+    "points": [
+      "준비 과정",
+      "검사와 진료 이력",
+      "함께 세우는 계획"
+    ],
+    "image": {
+      "source": "https://cdn.imweb.me/thumbnail/20190221/5c6e4bcea26c1.jpg",
+      "source_page": "haeoni.com/content/family-source/woman1.html",
+      "path": "assets/images/renewal/1dc744030955a3.jpg",
+      "sha256": "ef6fa376c835c130c8c1861f160272948219e8d50f6cb4f5b3706444384e76f9",
+      "index": 31,
+      "alt": "의료진과 상담하는 부부",
+      "width": 1688,
+      "height": 1125
+    },
+    "diagram": "steps"
+  },
+  "women-infertility.html": {
+    "headline": "지금까지의 과정을 이해하는 데서 시작합니다.",
+    "points": [
+      "시도한 기간",
+      "두 사람의 검사",
+      "다음 진료 단계"
+    ],
+    "image": {
+      "source": "https://cdn.imweb.me/thumbnail/20200401/2882278af325f.jpg",
+      "source_page": "haeoni.com/content/family-source/kids5.html",
+      "path": "assets/images/renewal/cb05bbfecd8a48.jpg",
+      "sha256": "1cca44b14a2e302a2e41bdcadf2c703b60be1378c1afabc8ad885e9bd6798522",
+      "index": 36,
+      "alt": "함께 서 있는 세 가족",
+      "width": 1688,
+      "height": 1125
+    },
+    "diagram": "steps"
+  },
+  "women-infertility-care.html": {
+    "headline": "기존 진료와 한의학적 관리를 함께 상담합니다.",
+    "points": [
+      "현재 치료 과정",
+      "몸의 상태",
+      "병행 여부 확인"
+    ],
+    "image": {
+      "source": "https://cdn.imweb.me/thumbnail/20191221/12c60e04b1a95.jpg",
+      "source_page": "haeoni.com/content/family-source/woman1.html",
+      "path": "assets/images/renewal/4c2f5c5d80aaf1.jpg",
+      "sha256": "f2f01d466c4c84cf0cdc2d1aae81f4b6d9b4a33b9661372ace5382ed58c32992",
+      "index": 33,
+      "alt": "창가에서 휴식하는 여성",
+      "width": 1690,
+      "height": 1125
+    },
+    "diagram": "steps"
+  },
+  "women-female-infertility.html": {
+    "headline": "여성의 건강과 임신 준비 과정을 함께 봅니다.",
+    "points": [
+      "월경의 양상",
+      "검사와 병력",
+      "치료 계획"
+    ],
+    "image": null,
+    "diagram": "steps"
+  },
+  "women-male-infertility.html": {
+    "headline": "남성의 건강도 함께 살펴야 할 부분입니다.",
+    "points": [
+      "검사 결과",
+      "생활과 건강",
+      "부부의 준비"
+    ],
+    "image": {
+      "type": "image",
+      "source": "https://cdn.imweb.me/thumbnail/20200315/d93c1e7ffea19.jpg",
+      "path": "assets/images/family/6e495913a797.jpg",
+      "alt": "남성의 난임 안내 사진·도해",
+      "width": 1280,
+      "height": 853
+    },
+    "diagram": "steps"
+  },
+  "women-assisted-reproduction.html": {
+    "headline": "난임시술 일정과 현재 치료를 함께 확인합니다.",
+    "points": [
+      "시술의 단계",
+      "복용 중인 약",
+      "병행 치료 상담"
+    ],
+    "image": {
+      "source": "https://cdn.imweb.me/thumbnail/20201119/d9010c33e8bea.jpg",
+      "source_page": "haeoni.com/content/family-source/98.html",
+      "path": "assets/images/renewal/6a5e79943b40c4.jpg",
+      "sha256": "e15081f046c020f2dc9c5f52f02d890944ab264e4c7acec168d31e7c69bc52ec",
+      "index": 51,
+      "alt": "상담 중 고민을 이야기하는 여성",
+      "width": 1688,
+      "height": 1125
+    },
+    "diagram": "steps"
+  },
+  "women-pregnancy.html": {
+    "headline": "임신 중 달라지는 몸, 시기에 맞게 살핍니다.",
+    "points": [
+      "임신 주수",
+      "현재의 불편",
+      "산전 진료와 상담"
+    ],
+    "image": {
+      "type": "image",
+      "source": "https://cdn.imweb.me/thumbnail/20201122/3dadca8b88da9.jpg",
+      "path": "assets/images/family/cb0c557c18e8.jpg",
+      "alt": "임신중 출산 과정까지 안내 사진·도해",
+      "width": 1280,
+      "height": 853
+    },
+    "diagram": "steps"
+  },
+  "women-postpartum.html": {
+    "headline": "출산 후 회복에도 나에게 맞는 시간이 필요합니다.",
+    "points": [
+      "출산 이후 경과",
+      "몸의 불편",
+      "수유와 일상"
+    ],
+    "image": {
+      "type": "image",
+      "source": "https://cdn.imweb.me/thumbnail/20191226/667aebf8d39bf.jpg",
+      "path": "assets/images/family/88711dbe3b13.jpg",
+      "alt": "산후 클리닉 안내 사진·도해",
+      "width": 1160,
+      "height": 600
+    },
+    "diagram": "steps"
+  },
+  "women-body-changes.html": {
+    "headline": "출산 뒤의 변화를 차근차근 이해합니다.",
+    "points": [
+      "몸의 변화",
+      "일상의 부담",
+      "회복 과정"
+    ],
+    "image": {
+      "type": "image",
+      "source": "https://cdn.imweb.me/thumbnail/20191226/8299c0457e1a0.jpg",
+      "path": "assets/images/family/47a3a9197669.jpg",
+      "alt": "산후에 변화하는 몸 안내 사진·도해",
+      "width": 1125,
+      "height": 1688
+    },
+    "diagram": "steps"
+  },
+  "women-postpartum-care.html": {
+    "headline": "회복을 위해 지금 필요한 것을 함께 정합니다.",
+    "points": [
+      "현재의 불편",
+      "진료와 치료",
+      "경과 확인"
+    ],
+    "image": {
+      "source": "https://cdn.imweb.me/thumbnail/20201119/327f6826abdbe.jpg",
+      "source_page": "haeoni.com/content/family-source/99.html",
+      "path": "assets/images/renewal/79c7fd3900bb45.jpg",
+      "sha256": "7a9eb22797ad6f1fb6c15ba60e3d1e71acc0a6535bd85f0d716eb51074e9d63d",
+      "index": 50,
+      "alt": "집에서 편안하게 쉬는 여성",
+      "width": 1688,
+      "height": 1125
+    },
+    "diagram": "steps"
+  },
+  "women-postpartum-lifestyle.html": {
+    "headline": "돌봄의 시간 속에서 나의 회복도 챙깁니다.",
+    "points": [
+      "휴식과 수면",
+      "식사와 활동",
+      "도움 요청하기"
+    ],
+    "image": {
+      "type": "image",
+      "source": "https://cdn.imweb.me/thumbnail/20191226/79adb28d69d35.jpg",
+      "path": "assets/images/family/72c731e071db.jpg",
+      "alt": "산후 조리 방법 안내 사진·도해",
+      "width": 1280,
+      "height": 852
+    },
+    "diagram": "steps"
+  },
+  "women-parenting.html": {
+    "headline": "아이를 돌보는 일상, 보호자의 건강도 함께.",
+    "points": [
+      "아이의 변화",
+      "돌보는 생활",
+      "보호자의 휴식"
+    ],
+    "image": {
+      "source": "https://cdn.imweb.me/thumbnail/20191222/88279a31b3ff4.jpg",
+      "source_page": "haeoni.com/content/internal-source/rhini1.html",
+      "path": "assets/images/renewal/e616ebed4b6677.jpg",
+      "sha256": "2353a671e015017c08a87c314358fdd93e0469b54cb01140bbd6b441eadfd449",
+      "index": 60,
+      "alt": "계곡에서 쉬는 여성",
+      "width": 1687,
+      "height": 1126
+    },
+    "diagram": "steps"
+  },
+  "women-miscarriage.html": {
+    "headline": "몸과 마음의 회복을 서두르지 않습니다.",
+    "points": [
+      "현재의 상태",
+      "진료 후 경과",
+      "일상의 회복"
+    ],
+    "image": {
+      "type": "image",
+      "source": "https://cdn.imweb.me/thumbnail/20191226/23dc872e92a00.jpg",
+      "path": "assets/images/family/23a7ba132c36.jpg",
+      "alt": "유산회복 클리닉 안내 사진·도해",
+      "width": 1280,
+      "height": 853
+    },
+    "diagram": "steps"
+  },
+  "women-miscarriage-lifestyle.html": {
+    "headline": "회복하는 동안, 일상에서 챙길 부분을 봅니다.",
+    "points": [
+      "휴식과 생활",
+      "달라지는 증상",
+      "진료 일정"
+    ],
+    "image": {
+      "type": "image",
+      "source": "https://cdn.imweb.me/thumbnail/20191226/13d47b9dc5fd6.jpg",
+      "path": "assets/images/family/0117191d100f.jpg",
+      "alt": "유산후 생활관리 안내 사진·도해",
+      "width": 1280,
+      "height": 853
+    },
+    "diagram": "steps"
+  },
+  "women-miscarriage-surgery.html": {
+    "headline": "처치 이후의 경과와 회복을 함께 확인합니다.",
+    "points": [
+      "처치와 진료 기록",
+      "현재의 증상",
+      "회복 상담"
+    ],
+    "image": null,
+    "diagram": "steps"
+  },
+  "women-recurrent-loss.html": {
+    "headline": "반복된 경험을 세심하게 듣고 검토합니다.",
+    "points": [
+      "기존 검사",
+      "임신과 유산 이력",
+      "다음 진료 계획"
+    ],
+    "image": null,
+    "diagram": "steps"
+  },
+  "women-uterus-ovaries.html": {
+    "headline": "월경과 몸의 변화, 주기 속에서 살펴봅니다.",
+    "points": [
+      "월경 주기",
+      "동반되는 불편",
+      "검사와 진찰"
+    ],
+    "image": {
+      "type": "image",
+      "source": "https://cdn.imweb.me/thumbnail/20190221/5c6e541d6f126.jpg",
+      "path": "assets/images/family/f544666d1340.jpg",
+      "alt": "한방부인과 안내 안내 사진·도해",
+      "width": 1280,
+      "height": 993
+    },
+    "diagram": "steps"
+  },
+  "women-pms-stress.html": {
+    "headline": "월경 전후의 몸과 마음을 함께 살핍니다.",
+    "points": [
+      "주기와의 관계",
+      "몸의 불편",
+      "기분과 수면"
+    ],
+    "image": {
+      "type": "image",
+      "source": "https://cdn.imweb.me/thumbnail/20191224/33f94d66cd248.jpg",
+      "path": "assets/images/family/bcb6afda737b.jpg",
+      "alt": "PMS 스트레스와 마음의 병 안내 사진·도해",
+      "width": 1280,
+      "height": 853
+    },
+    "diagram": "steps"
+  },
+  "women-cold-sensitivity.html": {
+    "headline": "차갑게 느껴지는 부위와 일상의 불편을 듣습니다.",
+    "points": [
+      "불편한 부위",
+      "나타나는 상황",
+      "동반되는 증상"
+    ],
+    "image": {
+      "type": "image",
+      "source": "https://cdn.imweb.me/thumbnail/20191224/244513497e5cf.jpg",
+      "path": "assets/images/family/3a452622a8c5.jpg",
+      "alt": "수족냉증, 찬 체질 안내 사진·도해",
+      "width": 1280,
+      "height": 853
+    },
+    "diagram": "steps"
+  },
+  "internal-digestive.html": {
+    "headline": "속의 불편함에도, 살펴볼 순서가 있습니다.",
+    "points": [
+      "기능성 위장질환",
+      "상부소화기",
+      "하부소화기"
+    ],
+    "image": {
+      "source": "https://cdn.imweb.me/thumbnail/20200414/3b7b26550d2c3.jpg",
+      "source_page": "haeoni.com/content/internal-source/rhini9.html",
+      "path": "assets/images/renewal/52c07d5c58168b.jpg",
+      "sha256": "2a6b5720e0a3d4bcee31ff23e421c2264cfc0c3f2c3dfbefde3d7ff8e602563c",
+      "index": 56,
+      "alt": "진료실에서 의견을 나누는 의료진",
+      "width": 1690,
+      "height": 1125
+    },
+    "diagram": "digestive"
+  },
+  "internal-functional-digestive.html": {
+    "headline": "식후 더부룩함, 검사와 생활의 패턴으로 봅니다.",
+    "points": [
+      "식후 불편",
+      "다른 원인 확인",
+      "한의학적 패턴진단"
+    ],
+    "image": {
+      "source": "https://cdn.imweb.me/thumbnail/20200402/c673e29ccb109.jpg",
+      "source_page": "haeoni.com/content/family-source/108.html",
+      "path": "assets/images/renewal/1ca5a62c86fdd3.jpg",
+      "sha256": "c7cb80c5cfe6eed8f1afa3ddc1d6e2cc6b96d546b374f78455cb74c8c6e5175c",
+      "index": 42,
+      "alt": "복부에 손을 얹고 불편함을 느끼는 여성",
+      "width": 1688,
+      "height": 1125
+    },
+    "diagram": "functional-digestive"
+  },
+  "internal-upper-digestive.html": {
+    "headline": "속쓰림·신물·명치 불편을 구분해 살핍니다.",
+    "points": [
+      "식도·위 주변",
+      "식사와의 관계",
+      "검사 결과 확인"
+    ],
+    "image": null,
+    "diagram": "upper-digestive"
+  },
+  "internal-lower-digestive.html": {
+    "headline": "복통과 배변의 변화를 연결해 봅니다.",
+    "points": [
+      "복통의 위치",
+      "설사·변비 양상",
+      "배변 전후 변화"
+    ],
+    "image": null,
+    "diagram": "lower-digestive"
+  },
+  "clinic-internal.html": {
+    "headline": "검사와 패턴진단으로,<br>몸을 함께 이해합니다.",
+    "description": "정확한 판단을 위한 검사에 변증진단(패턴진단)을 더합니다. 호흡기와 소화기의 불편을 객관적 소견과 일상의 변화 속에서 함께 살핍니다.",
+    "image": {
+      "source": "https://cdn.imweb.me/thumbnail/20200407/8753351841c1b.jpg",
+      "source_page": "haeoni.com/content/source/86.html",
+      "path": "assets/images/renewal/b375aaaa3336aa.jpg",
+      "sha256": "75c4394b2575c0a762285acd60c52edade8ebac3ad87e0b368ea54c22a1a840c",
+      "index": 10,
+      "alt": "차트를 살피는 해온한의원 한의사",
+      "width": 1920,
+      "height": 1280
+    },
+    "points": [
+      "검사·진찰",
+      "변증진단·패턴진단",
+      "나에게 맞는 진료"
+    ],
+    "features": [
+      {
+        "image": {
+          "source": "https://cdn.imweb.me/thumbnail/20220905/1308c77adf879.jpg",
+          "source_page": "haeoni.com/content/source/86.html",
+          "path": "assets/images/renewal/eb753b27d10c44.jpg",
+          "sha256": "d95cca625a5058387f4f90842983a742678aed33d0f1ccd971c06a9b46df4de0",
+          "index": 11,
+          "alt": "환자와 마주 앉아 상담하는 해온한의원 한의사",
+          "width": 1279,
+          "height": 853
+        },
+        "title": "코·목·기침, 호흡기 진료",
+        "url": "internal-respiratory.html"
+      },
+      {
+        "image": {
+          "source": "https://cdn.imweb.me/thumbnail/20200402/694ddcef8bc97.jpg",
+          "source_page": "haeoni.com/content/family-source/66.html",
+          "path": "assets/images/renewal/0386e264cdd89d.jpg",
+          "sha256": "2593f06a7eb19cfd1354f994a2fb445e75663f81f471d534d29324954c79bdde",
+          "index": 46,
+          "alt": "복부 불편을 표현하는 여성",
+          "width": 1688,
+          "height": 1125
+        },
+        "title": "더부룩함·속쓰림·배변의 변화",
+        "url": "internal-digestive.html"
+      },
+      {
+        "image": {
+          "source": "https://cdn.imweb.me/thumbnail/20200326/ab892d68ba0f9.jpg",
+          "source_page": "haeoni.com/content/family-source/106.html",
+          "path": "assets/images/renewal/0c73cd9677177e.jpg",
+          "sha256": "148469d201179d433e96ef6ce584a255e8ec53c90ae0ad60c02f526370941614",
+          "index": 37,
+          "alt": "진료 기록과 의료 도구",
+          "width": 1400,
+          "height": 1000
+        },
+        "title": "검사와 변증진단을 함께",
+        "url": "internal-diagnosis.html"
+      }
+    ]
+  },
+  "clinic-child.html": {
+    "headline": "아이의 오늘에 귀 기울이고,<br>건강한 성장을 함께합니다.",
+    "description": "반복되는 감기부터 식사와 소화, 성장의 고민까지. 아이의 표정과 보호자의 이야기를 함께 살피며 진료합니다.",
+    "image": {
+      "source": "https://cdn.imweb.me/thumbnail/20190222/5c6ec25c611a4.jpg",
+      "source_page": "haeoni.com/content/family-source/kids10.html",
+      "path": "assets/images/renewal/ff52fb037a88f0.jpg",
+      "sha256": "bc8965b28d03b28943356ad3338175a9f7c8c23bb1caba7c005e6951399ab877",
+      "index": 43,
+      "alt": "함께 웃는 아이와 부모",
+      "width": 1673,
+      "height": 1136
+    },
+    "points": [
+      "아이의 증상",
+      "성장과 생활",
+      "보호자의 이야기"
+    ],
+    "features": [
+      {
+        "image": {
+          "source": "https://cdn.imweb.me/thumbnail/20200401/29c5db5c752a2.jpg",
+          "source_page": "haeoni.com/content/family-source/kids3.html",
+          "path": "assets/images/renewal/0814baedff2d8f.jpg",
+          "sha256": "f255db743ee6d7deb16bf2c5794742e3788c2d27f00cc3b314c30234d2b04f0e",
+          "index": 20,
+          "alt": "아이의 식사를 돕는 보호자",
+          "width": 1688,
+          "height": 1125
+        },
+        "title": "식사와 한약, 아이에게 편안하게",
+        "url": "child-herbal-guide.html"
+      },
+      {
+        "image": {
+          "source": "https://cdn.imweb.me/thumbnail/20200402/3af1c70f9f2cd.jpg",
+          "source_page": "haeoni.com/content/family-source/150.html",
+          "path": "assets/images/renewal/bd115d9673917d.jpg",
+          "sha256": "46cc1ea94c205e6428979961b133e4cecdebef63d43134020ae89bc975a2cd84",
+          "index": 39,
+          "alt": "교실에서 손을 든 아이",
+          "width": 1688,
+          "height": 1125
+        },
+        "title": "키와 성장, 자라는 흐름을 함께",
+        "url": "child-growth.html"
+      },
+      {
+        "image": {
+          "source": "https://cdn.imweb.me/thumbnail/20190222/5c6ebedd3a0e4.jpg",
+          "source_page": "haeoni.com/content/internal-source/rhini1.html",
+          "path": "assets/images/renewal/fb0448cac9445e.jpg",
+          "sha256": "36befcf784f4b6e1215ec7f1fd4937a50880439a1b0802a83cf0eecf669ac530",
+          "index": 59,
+          "alt": "야외에서 아이를 바라보는 보호자",
+          "width": 1688,
+          "height": 1125
+        },
+        "title": "반복되는 감기와 생활관리",
+        "url": "child-respiratory.html"
+      }
+    ]
+  },
+  "clinic-women.html": {
+    "headline": "여성의 시간에 맞춰,<br>몸과 마음을 돌봅니다.",
+    "description": "임신을 준비하는 시간, 출산 뒤 회복하는 시간, 일상에서 느끼는 변화까지. 지금의 나에게 필요한 진료를 함께 찾습니다.",
+    "image": {
+      "source": "https://cdn.imweb.me/thumbnail/20200315/f5addace936f0.jpg",
+      "source_page": "haeoni.com/content/family-source/138.html",
+      "path": "assets/images/renewal/69d52be894fa1e.jpg",
+      "sha256": "af512c252ad1ba5ead5ec9d22bfa486af8018e2fe44d9ed67e4d80f879cf88fc",
+      "index": 49,
+      "alt": "나무 곁에서 미소 짓는 여성",
+      "width": 1688,
+      "height": 1125
+    },
+    "points": [
+      "지금의 생애주기",
+      "몸과 마음의 변화",
+      "진료와 일상관리"
+    ],
+    "features": [
+      {
+        "image": {
+          "source": "https://cdn.imweb.me/thumbnail/20201120/ab23ed5d00a9d.jpg",
+          "source_page": "haeoni.com/content/family-source/100.html",
+          "path": "assets/images/renewal/22a86908cfc599.jpg",
+          "sha256": "5dfe2f04b9586f33c9ad6f1a7451b8acd356b877b863f4b940f6d95367a5f7e6",
+          "index": 28,
+          "alt": "임신 중 배에 손을 얹은 여성",
+          "width": 1688,
+          "height": 1125
+        },
+        "title": "임신을 준비하는 몸과 마음",
+        "url": "women-pregnancy-planning.html"
+      },
+      {
+        "image": {
+          "source": "https://cdn.imweb.me/thumbnail/20200401/c2d984c16a47d.jpg",
+          "source_page": "haeoni.com/content/family-source/kids4.html",
+          "path": "assets/images/renewal/9a23af771c5eba.jpg",
+          "sha256": "bca945d850593f31097b944d34c6fcb6e61bf2e97cb76c5592a946c8f3e0a6b2",
+          "index": 40,
+          "alt": "아이를 안고 앉아 있는 보호자",
+          "width": 1688,
+          "height": 1125
+        },
+        "title": "출산 뒤, 나를 위한 회복",
+        "url": "women-postpartum.html"
+      },
+      {
+        "image": {
+          "source": "https://cdn.imweb.me/thumbnail/20190221/5c6e4b7fbd3dc.jpg",
+          "source_page": "haeoni.com/content/family-source/woman1.html",
+          "path": "assets/images/renewal/b09beaa2c75986.jpg",
+          "sha256": "f2a7bdca9414f29a862b7f04c0a2dd2a0fcf8ee86b95124b9f110d4c858ad3c6",
+          "index": 32,
+          "alt": "야외에서 몸을 움직이는 여성",
+          "width": 1688,
+          "height": 1125
+        },
+        "title": "생애주기에 맞춘 일상 관리",
+        "url": "women-life-stages.html"
+      }
+    ]
+  }
+}

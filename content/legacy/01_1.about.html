@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>해온의 철학 | 해온한의원</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { 
+                        sans: ['Pretendard', 'sans-serif'],
+                        serif: ['Pretendard', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            navy: '#0F172A',
+                            lemon: '#FFCC00',
+                            lemonHover: '#E6B800',
+                            blue: '#2563eb',
+                            sky: '#0ea5e9',
+                            light: '#F8FAFC',
+                            gray: '#64748b',
+                            border: '#E2E8F0',
+                        },
+                        kakao: { bg: '#FEE500', text: '#191919' },
+                        naver: { bg: '#03C75A' }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Pretendard', sans-serif;
+            background-color: #f1f5f9;
+            color: #0f172a;
+            -webkit-font-smoothing: antialiased;
+            word-break: keep-all;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .mobile-container {
+            max-width: 480px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            min-height: 100vh;
+            box-shadow: 0 0 40px rgba(0,0,0,0.05);
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        ::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .reveal-up {
+            opacity: 0; transform: translateY(20px);
+            transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal-up.active { opacity: 1; transform: translateY(0); }
+        .delay-100 { transition-delay: 0.1s; }
+        .delay-200 { transition-delay: 0.2s; }
+        
+        .touch-action { transition: transform 0.1s ease; }
+        .touch-action:active { transform: scale(0.97); }
+    </style>
+</head>
+<body class="pb-[80px]">
+
+<div class="mobile-container relative pb-10">
+    
+    <!-- Header (서브페이지용) -->
+    <div class="fixed top-0 left-0 right-0 mx-auto w-full max-w-[480px] z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-brand-border flex items-center justify-between px-5 py-3.5">
+        <button onclick="history.back()" class="text-brand-navy p-1 touch-action">
+            <i class="fa-solid fa-arrow-left text-[18px]"></i>
+        </button>
+        <span class="font-extrabold text-[16px] tracking-tight text-brand-navy">해온의 철학</span>
+        <button aria-label="메뉴 열기" class="text-brand-navy p-1 touch-action" onclick="openMenu()">
+            <i class="fa-solid fa-bars text-[20px]"></i>
+        </button>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="pt-24 pb-12 px-5 bg-brand-navy text-white text-center relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full bg-[url('https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=1000&auto=format&fit=crop')] bg-cover bg-center opacity-20 mix-blend-overlay"></div>
+        <div class="relative z-10 reveal-up">
+            <span class="text-brand-lemon font-bold tracking-widest uppercase text-[10px] mb-3 block">About Us</span>
+            <h1 class="text-[26px] font-serif font-bold tracking-tight mb-4 leading-snug">
+                본질을 지키며<br>미래로 향합니다
+            </h1>
+            <p class="text-[14px] text-slate-300 font-medium leading-relaxed break-keep">
+                종로 '령생당한의원' 조부님의 뜻을 이어,<br>신도림에서 3대째 바른 진료를 실천하고 있습니다.
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="py-12 px-5 bg-white">
+        
+        <!-- Story 1 -->
+        <div class="mb-14 reveal-up">
+            <div class="flex items-center gap-3 mb-4">
+                <div class="w-8 h-8 rounded-full bg-brand-light flex items-center justify-center text-brand-navy border border-brand-border">
+                    <i class="fa-solid fa-tree text-[14px]"></i>
+                </div>
+                <h2 class="text-[18px] font-extrabold text-brand-navy tracking-tight">뿌리가 깊은 진료</h2>
+            </div>
+            <p class="text-[14px] text-brand-gray leading-[1.7] break-keep font-medium mb-4">
+                대대로 내려오는 침법과 전통 한약 처방은 해온 진료의 단단한 뿌리입니다. 2008년 개원 이래, 뜻을 같이하는 한방내과 겸임교수, 한방병원 수련의 출신의 원장님들과 함께 한의학의 가치를 가꾸어 왔습니다.
+            </p>
+            <p class="text-[14px] text-brand-gray leading-[1.7] break-keep font-medium">
+                2025년 12월, 개원 17주년을 맞아 테크노마트 2층에서 더 쾌적한 환경으로 여러분을 맞이합니다.
+            </p>
+        </div>
+
+        <!-- Story 2 -->
+        <div class="mb-14 reveal-up delay-100">
+            <div class="flex items-center gap-3 mb-4">
+                <div class="w-8 h-8 rounded-full bg-brand-light flex items-center justify-center text-brand-navy border border-brand-border">
+                    <i class="fa-solid fa-microscope text-[14px]"></i>
+                </div>
+                <h2 class="text-[18px] font-extrabold text-brand-navy tracking-tight">끊임없이 진화하는 한의학</h2>
+            </div>
+            <div class="bg-brand-light p-5 rounded-[6px] border border-brand-border mb-4">
+                <p class="text-[14px] text-brand-navy font-bold leading-[1.6] break-keep">
+                    "전통을 지키는 것은 머물러 있는 것이 아닙니다."
+                </p>
+            </div>
+            <p class="text-[14px] text-brand-gray leading-[1.7] break-keep font-medium mb-4">
+                우리는 해외의 최신 의학 지견을 꾸준히 연구하고 업데이트합니다. 초음파, 체성분 분석기(BWA) 등 각종 객관적 진단 기기는 법이 허용하는 테두리 안에서 수준 높고 재현성 있는 치료를 완성하는 든든한 근거가 됩니다.
+            </p>
+            <p class="text-[14px] text-brand-gray leading-[1.7] break-keep font-medium">
+                또한, 2017년부터 대학과 연구 모임에서 후배 한의사들을 양성하며 지식을 나누는 일에도 앞장서고 있습니다.
+            </p>
+        </div>
+
+        <!-- Story 3 -->
+        <div class="mb-14 reveal-up delay-200">
+            <div class="flex items-center gap-3 mb-4">
+                <div class="w-8 h-8 rounded-full bg-brand-light flex items-center justify-center text-brand-navy border border-brand-border">
+                    <i class="fa-solid fa-heart-pulse text-[14px]"></i>
+                </div>
+                <h2 class="text-[18px] font-extrabold text-brand-navy tracking-tight">따뜻한 소통, 나누는 삶</h2>
+            </div>
+            <p class="text-[14px] text-brand-gray leading-[1.7] break-keep font-medium mb-4">
+                환자의 질병을 치료하기 전, 아픈 마음을 먼저 어루만지고 공감하는 것이 치유의 시작이라 믿습니다. 대화와 웃음이 가득한 진료실은 해온의 가장 오랜 상징입니다.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="text-[11px] font-bold text-slate-500 bg-slate-100 px-2 py-1 rounded-[4px]">유니세프</span>
+                <span class="text-[11px] font-bold text-slate-500 bg-slate-100 px-2 py-1 rounded-[4px]">월드비전</span>
+                <span class="text-[11px] font-bold text-slate-500 bg-slate-100 px-2 py-1 rounded-[4px]">적십자사</span>
+                <span class="text-[11px] font-bold text-slate-500 bg-slate-100 px-2 py-1 rounded-[4px]">서울시 디딤돌</span>
+            </div>
+            <p class="text-[14px] text-brand-gray leading-[1.7] break-keep font-medium">
+                설립 초기부터 유니세프, 월드비전 등 사회공헌 프로그램에 참여하며 의료의 진정한 나눔에 대해 성찰하고 실천하고 있습니다. 언제든 도움이 필요한 분들께 따뜻한 손을 내밀겠습니다.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer Area Message -->
+    <section class="py-12 bg-brand-light border-t border-b border-brand-border px-5 text-center">
+        <i class="fa-solid fa-quote-left text-2xl text-brand-lemon mb-4 opacity-50"></i>
+        <h3 class="text-[18px] font-serif font-bold text-brand-navy mb-3">
+            함께 만들어가는 공간입니다.
+        </h3>
+        <p class="text-[13px] text-brand-gray leading-relaxed font-medium break-keep mb-6">
+            이 홈페이지는 화려한 디자인 회사에 맡기지 않고, 환자분들이 진정으로 궁금해하시는 부분에 답을 드리기 위해 원장이 직접 부족한 시간을 쪼개어 만들고 다듬어 가고 있습니다. 조금 투박하더라도 진심이 닿기를 바랍니다.
+        </p>
+        <p class="font-bold text-[14px] text-brand-navy">대표원장 이 정 욱 올림</p>
+    </section>
+
+    <!-- Sidebar Menu Wrapper -->
+    <div id="side-menu-wrapper" class="fixed inset-0 z-[100] pointer-events-none mx-auto w-full max-w-[480px] overflow-hidden">
+        <!-- Backdrop -->
+        <div id="menu-backdrop" class="absolute inset-0 bg-brand-navy/70 backdrop-blur-sm opacity-0 transition-opacity duration-300 pointer-events-none" onclick="closeMenu()"></div>
+        
+        <!-- Menu Panel -->
+        <div id="side-menu" class="absolute top-0 right-0 h-full w-[260px] bg-white transform translate-x-full transition-transform duration-300 ease-out shadow-2xl flex flex-col pointer-events-auto">
+            <div class="flex items-center justify-between p-5 border-b border-brand-border bg-white">
+                <span class="font-extrabold text-[16px] tracking-tight text-brand-navy">전체 메뉴</span>
+                <button onclick="closeMenu()" class="text-brand-gray p-1 touch-action text-xl hover:text-brand-navy transition-colors">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            
+            <div class="flex-1 overflow-y-auto px-5 py-6 no-scrollbar flex flex-col gap-8 bg-white">
+                <!-- About -->
+                <div>
+                    <h3 class="text-[11px] font-bold text-brand-gray tracking-widest uppercase mb-3 border-l-2 border-brand-lemon pl-2">About</h3>
+                    <ul class="space-y-4">
+                        <li><a href="about.html" class="text-[15px] font-bold text-brand-sky block touch-action flex justify-between items-center group">해온의 철학 <i class="fa-solid fa-chevron-right text-[10px] text-brand-sky"></i></a></li>
+                        <li><a href="medical_team.html" class="text-[15px] font-bold text-brand-navy block touch-action flex justify-between items-center group">의료진 소개 <i class="fa-solid fa-chevron-right text-[10px] text-brand-gray group-hover:text-brand-sky transition-colors"></i></a></li>
+                    </ul>
+                </div>
+                <!-- Clinics -->
+                <div>
+                    <h3 class="text-[11px] font-bold text-brand-gray tracking-widest uppercase mb-3 border-l-2 border-brand-lemon pl-2">Clinics</h3>
+                    <ul class="space-y-4">
+                        <li><a href="clinic_internal.html" class="text-[15px] font-bold text-brand-navy block touch-action flex justify-between items-center group">내과 / 체질개선 <i class="fa-solid fa-chevron-right text-[10px] text-brand-gray group-hover:text-brand-sky transition-colors"></i></a></li>
+                        <li><a href="clinic_woman.html" class="text-[15px] font-bold text-brand-navy block touch-action flex justify-between items-center group">여성 / 소아 <i class="fa-solid fa-chevron-right text-[10px] text-brand-gray group-hover:text-brand-sky transition-colors"></i></a></li>
+                        <li><a href="clinic_pain.html" class="text-[15px] font-bold text-brand-navy block touch-action flex justify-between items-center group">통증재활 / 교통사고 <i class="fa-solid fa-chevron-right text-[10px] text-brand-gray group-hover:text-brand-sky transition-colors"></i></a></li>
+                        <li><a href="clinic_sports.html" class="text-[14px] font-bold text-brand-lemon block touch-action p-3 bg-brand-navy rounded-[6px] text-center mt-3 shadow-soft flex items-center justify-center gap-2"><i class="fa-solid fa-stopwatch text-[14px]"></i> 유소년 스포츠 특화</a></li>
+                    </ul>
+                </div>
+                <!-- Support -->
+                <div>
+                    <h3 class="text-[11px] font-bold text-brand-gray tracking-widest uppercase mb-3 border-l-2 border-brand-lemon pl-2">Support</h3>
+                    <ul class="space-y-4">
+                        <li><a href="location.html" class="text-[15px] font-bold text-brand-navy block touch-action flex justify-between items-center group">오시는 길 및 진료시간 <i class="fa-solid fa-chevron-right text-[10px] text-brand-gray group-hover:text-brand-sky transition-colors"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Sticky Bottom Nav (예약) -->
+<div class="fixed bottom-0 left-0 right-0 mx-auto w-full max-w-[480px] z-50 bg-white/95 backdrop-blur-md border-t border-gray-100 shadow-[0_-5px_15px_rgba(0,0,0,0.03)] pb-safe">
+    <div class="px-4 pt-3 pb-5 flex gap-3">
+        <a href="https://pf.kakao.com/_sYeKE" target="_blank" class="flex-1 bg-kakao-bg text-kakao-text py-3 rounded-[6px] font-bold text-center flex items-center justify-center gap-2 touch-action text-[14px]">
+            <i class="fas fa-comment text-[16px]"></i> 상담 예약
+        </a>
+        <a href="tel:02-2111-7575" class="flex-1 bg-brand-navy text-white py-3 rounded-[6px] font-bold text-center flex items-center justify-center gap-2 touch-action text-[14px]">
+            <i class="fa-solid fa-phone text-[16px]"></i> 전화 문의
+        </a>
+    </div>
+</div>
+
+<script>
+    function openMenu() {
+        const wrapper = document.getElementById('side-menu-wrapper');
+        const backdrop = document.getElementById('menu-backdrop');
+        const menu = document.getElementById('side-menu');
+        
+        wrapper.classList.remove('pointer-events-none');
+        
+        requestAnimationFrame(() => {
+            backdrop.classList.remove('opacity-0', 'pointer-events-none');
+            backdrop.classList.add('opacity-100', 'pointer-events-auto');
+            menu.classList.remove('translate-x-full');
+            menu.classList.add('translate-x-0');
+        });
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
+        const wrapper = document.getElementById('side-menu-wrapper');
+        const backdrop = document.getElementById('menu-backdrop');
+        const menu = document.getElementById('side-menu');
+        
+        backdrop.classList.remove('opacity-100', 'pointer-events-auto');
+        backdrop.classList.add('opacity-0', 'pointer-events-none');
+        menu.classList.remove('translate-x-0');
+        menu.classList.add('translate-x-full');
+        
+        document.body.style.overflow = '';
+        setTimeout(() => { wrapper.classList.add('pointer-events-none'); }, 300);
+    }
+
+    window.addEventListener('load', () => {
+        const obs = new IntersectionObserver(es => { 
+            es.forEach(e => { 
+                if(e.isIntersecting) { 
+                    e.target.classList.add('active'); 
+                    obs.unobserve(e.target); 
+                }
+            }); 
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal-up').forEach(e => obs.observe(e));
+    });
+</script>
+</body>
+</html>

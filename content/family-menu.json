@@ -1,0 +1,370 @@
+[
+  {
+    "title": "한방소아과 안내",
+    "url": "/kids10",
+    "depth": "depth-02",
+    "status": "원본 연결 / 상세 이관 대기",
+    "target": "",
+    "department": "child"
+  },
+  {
+    "title": "소아진료, 통합적 관점으로",
+    "url": "/120",
+    "depth": "depth-02",
+    "status": "원본 연결 / 상세 이관 대기",
+    "target": "",
+    "department": "child"
+  },
+  {
+    "title": "소아침, 뜸, 한약",
+    "url": "/144",
+    "depth": "depth-02",
+    "status": "원본 연결 / 상세 이관 대기",
+    "target": "",
+    "department": "child"
+  },
+  {
+    "title": "소아치료의 종류",
+    "url": "/kids3",
+    "depth": "depth-03",
+    "status": "원본 연결 / 상세 이관 대기",
+    "target": "",
+    "department": "child"
+  },
+  {
+    "title": "한약 처방의 특징",
+    "url": "/146",
+    "depth": "depth-03",
+    "status": "원본 연결 / 상세 이관 대기",
+    "target": "",
+    "department": "child"
+  },
+  {
+    "title": "한약 복용방법, 주의사항",
+    "url": "/kids5",
+    "depth": "depth-03",
+    "status": "원본 연결 / 상세 이관 대기",
+    "target": "",
+    "department": "child"
+  },
+  {
+    "title": "허약체질 클리닉",
+    "url": "/152",
+    "depth": "depth-02",
+    "status": "원본 연결 / 상세 이관 대기",
+    "target": "",
+    "department": "child"
+  },
+  {
+    "title": "허약아 유형과 보약",
+    "url": "/147",
+    "depth": "depth-03",
+    "status": "원본 연결 / 상세 이관 대기",
+    "target": "",
+    "department": "child"
+  },
+  {
+    "title": "녹용의 역할",
+    "url": "/kids4",
+    "depth": "depth-03",
+    "status": "원본 연결 / 상세 이관 대기",
+    "target": "",
+    "department": "child"
+  },
+  {
+    "title": "호흡기질환 클리닉",
+    "url": "/155",
+    "depth": "depth-02",
+    "status": "원본 연결 / 상세 이관 대기",
+    "target": "",
+    "department": "child"
+  },
+  {
+    "title": "계절별 감기와 가정관리",
+    "url": "/154",
+    "depth": "depth-03",
+    "status": "원본 연결 / 상세 이관 대기",
+    "target": "",
+    "department": "child"
+  },
+  {
+    "title": "감기 예방 방법들",
+    "url": "/156",
+    "depth": "depth-03",
+    "status": "원본 연결 / 상세 이관 대기",
+    "target": "",
+    "department": "child"
+  },
+  {
+    "title": "감기의 치료관리",
+    "url": "/rhini4",
+    "depth": "depth-03",
+    "status": "원본 연결 / 상세 이관 대기",
+    "target": "",
+    "department": "child"
+  },
+  {
+    "title": "호흡기감염병 치료관리",
+    "url": "/157",
+    "depth": "depth-03",
+    "status": "원본 연결 / 상세 이관 대기",
+    "target": "",
+    "department": "child"
+  },
+  {
+    "title": "파파증후군",
+    "url": "/169",
+    "depth": "depth-03",
+    "status": "원본 연결 / 상세 이관 대기",
+    "target": "",
+    "department": "child"
+  },
+  {
+    "title": "파파증후군 한의학적접근",
+    "url": "/170",
+    "depth": "depth-03",
+    "status": "원본 연결 / 상세 이관 대기",
+    "target": "",
+    "department": "child"
+  },
+  {
+    "title": "키성장 클리닉",
+    "url": "/kids7",
+    "depth": "depth-02",
+    "status": "원본 연결 / 상세 이관 대기",
+    "target": "",
+    "department": "child"
+  },
+  {
+    "title": "키성장 부진?",
+    "url": "/148",
+    "depth": "depth-03",
+    "status": "원본 연결 / 상세 이관 대기",
+    "target": "",
+    "department": "child"
+  },
+  {
+    "title": "키성장부진 유형",
+    "url": "/149",
+    "depth": "depth-03",
+    "status": "원본 연결 / 상세 이관 대기",
+    "target": "",
+    "department": "child"
+  },
+  {
+    "title": "키성장 진단",
+    "url": "/151",
+    "depth": "depth-03",
+    "status": "원본 연결 / 상세 이관 대기",
+    "target": "",
+    "department": "child"
+  },
+  {
+    "title": "키성장 치료",
+    "url": "/150",
+    "depth": "depth-03",
+    "status": "원본 연결 / 상세 이관 대기",
+    "target": "",
+    "department": "child"
+  },
+  {
+    "title": "한방부인과 안내",
+    "url": "/woman1",
+    "depth": "depth-02",
+    "status": "원본 연결 / 상세 이관 대기",
+    "target": "",
+    "department": "women"
+  },
+  {
+    "title": "생애주기별 건강관리",
+    "url": "/61",
+    "depth": "depth-02",
+    "status": "원본 연결 / 상세 이관 대기",
+    "target": "",
+    "department": "women"
+  },
+  {
+    "title": "난임 및 임신준비",
+    "url": "/64",
+    "depth": "depth-02",
+    "status": "원본 연결 / 상세 이관 대기",
+    "target": "",
+    "department": "women"
+  },
+  {
+    "title": "임신준비",
+    "url": "/100",
+    "depth": "depth-03",
+    "status": "원본 연결 / 상세 이관 대기",
+    "target": "",
+    "department": "women"
+  },
+  {
+    "title": "난임은 불임과 다릅니다.",
+    "url": "/101",
+    "depth": "depth-03",
+    "status": "원본 연결 / 상세 이관 대기",
+    "target": "",
+    "department": "women"
+  },
+  {
+    "title": "난임을 치료하는 방법",
+    "url": "/104",
+    "depth": "depth-03",
+    "status": "원본 연결 / 상세 이관 대기",
+    "target": "",
+    "department": "women"
+  },
+  {
+    "title": "여성의 난임",
+    "url": "/102",
+    "depth": "depth-03",
+    "status": "원본 연결 / 상세 이관 대기",
+    "target": "",
+    "department": "women"
+  },
+  {
+    "title": "남성의 난임",
+    "url": "/139",
+    "depth": "depth-03",
+    "status": "원본 연결 / 상세 이관 대기",
+    "target": "",
+    "department": "women"
+  },
+  {
+    "title": "난임시술과 한의약치료병행",
+    "url": "/138",
+    "depth": "depth-03",
+    "status": "원본 연결 / 상세 이관 대기",
+    "target": "",
+    "department": "women"
+  },
+  {
+    "title": "임신중 출산 과정까지",
+    "url": "/106",
+    "depth": "depth-03",
+    "status": "원본 연결 / 상세 이관 대기",
+    "target": "",
+    "department": "women"
+  },
+  {
+    "title": "산후 클리닉",
+    "url": "/65",
+    "depth": "depth-02",
+    "status": "원본 연결 / 상세 이관 대기",
+    "target": "",
+    "department": "women"
+  },
+  {
+    "title": "산후조리는 잘 해야합니다",
+    "url": "/107",
+    "depth": "depth-03",
+    "status": "원본 연결 / 상세 이관 대기",
+    "target": "",
+    "department": "women"
+  },
+  {
+    "title": "산후에 변화하는 몸",
+    "url": "/108",
+    "depth": "depth-03",
+    "status": "원본 연결 / 상세 이관 대기",
+    "target": "",
+    "department": "women"
+  },
+  {
+    "title": "산후, 예방과 치료",
+    "url": "/109",
+    "depth": "depth-03",
+    "status": "원본 연결 / 상세 이관 대기",
+    "target": "",
+    "department": "women"
+  },
+  {
+    "title": "산후 조리 방법",
+    "url": "/110",
+    "depth": "depth-03",
+    "status": "원본 연결 / 상세 이관 대기",
+    "target": "",
+    "department": "women"
+  },
+  {
+    "title": "자연친화적 육아안내",
+    "url": "/113",
+    "depth": "depth-03",
+    "status": "원본 연결 / 상세 이관 대기",
+    "target": "",
+    "department": "women"
+  },
+  {
+    "title": "유산회복 클리닉",
+    "url": "/66",
+    "depth": "depth-02",
+    "status": "원본 연결 / 상세 이관 대기",
+    "target": "",
+    "department": "women"
+  },
+  {
+    "title": "유산 원인과 몸의 변화",
+    "url": "/114",
+    "depth": "depth-03",
+    "status": "원본 연결 / 상세 이관 대기",
+    "target": "",
+    "department": "women"
+  },
+  {
+    "title": "유산후 생활관리",
+    "url": "/115",
+    "depth": "depth-03",
+    "status": "원본 연결 / 상세 이관 대기",
+    "target": "",
+    "department": "women"
+  },
+  {
+    "title": "계류유산과 중절수술 후 치료",
+    "url": "/116",
+    "depth": "depth-03",
+    "status": "원본 연결 / 상세 이관 대기",
+    "target": "",
+    "department": "women"
+  },
+  {
+    "title": "반복유산 치료와 착상탕",
+    "url": "/117",
+    "depth": "depth-03",
+    "status": "원본 연결 / 상세 이관 대기",
+    "target": "",
+    "department": "women"
+  },
+  {
+    "title": "여성질환 클리닉",
+    "url": "/62",
+    "depth": "depth-02",
+    "status": "원본 연결 / 상세 이관 대기",
+    "target": "",
+    "department": "women"
+  },
+  {
+    "title": "자궁과 난소의 질병",
+    "url": "/96",
+    "depth": "depth-03",
+    "status": "원본 연결 / 상세 이관 대기",
+    "target": "",
+    "department": "women"
+  },
+  {
+    "title": "PMS 스트레스와 마음의 병",
+    "url": "/98",
+    "depth": "depth-03",
+    "status": "원본 연결 / 상세 이관 대기",
+    "target": "",
+    "department": "women"
+  },
+  {
+    "title": "수족냉증, 찬 체질",
+    "url": "/99",
+    "depth": "depth-03",
+    "status": "원본 연결 / 상세 이관 대기",
+    "target": "",
+    "department": "women"
+  }
+]

@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>소아 감기 · 면역 · 호흡기 클리닉 | 해온한의원</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { 
+                        sans: ['Pretendard', 'sans-serif'],
+                        serif: ['Pretendard', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            navy: '#0F172A',
+                            lemon: '#FFCC00',
+                            blue: '#2563eb',
+                            sky: '#0ea5e9',
+                            light: '#F8FAFC',
+                            gray: '#64748b',
+                            border: '#E2E8F0',
+                            emerald: '#10b981',
+                            rose: '#f43f5e',
+                            amber: '#f59e0b'
+                        },
+                        kakao: { bg: '#FEE500', text: '#191919' },
+                        naver: { bg: '#03C75A' }
+                    },
+                    boxShadow: {
+                        'soft': '0 10px 25px -5px rgba(15, 23, 42, 0.05)',
+                        'card': '0 4px 12px -2px rgba(15, 23, 42, 0.06)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Pretendard', sans-serif;
+            background-color: #f1f5f9;
+            color: #0f172a;
+            -webkit-font-smoothing: antialiased;
+            word-break: keep-all;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        /* 하단 Sticky 버튼 영역 공간 확보 */
+        body { padding-bottom: 70px; }
+
+        .mobile-container {
+            max-width: 480px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            min-height: 100vh;
+            box-shadow: 0 0 40px rgba(0,0,0,0.05);
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        ::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .reveal-up {
+            opacity: 0; transform: translateY(20px);
+            transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal-up.active { opacity: 1; transform: translateY(0); }
+        .delay-100 { transition-delay: 0.1s; }
+        .delay-200 { transition-delay: 0.2s; }
+        
+        .touch-action { transition: transform 0.1s ease; }
+        .touch-action:active { transform: scale(0.97); }
+
+        .card-modern {
+            background: #FFFFFF; border-radius: 8px;
+            border: 1px solid #E2E8F0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+        }
+
+        .hero-overlay {
+            background: linear-gradient(180deg, rgba(15,23,42,0.3) 0%, rgba(15,23,42,0.7) 50%, rgba(15,23,42,0.95) 100%);
+        }
+
+        .img-brand-filter {
+            filter: grayscale(40%) contrast(1.1) brightness(0.9);
+            mix-blend-mode: multiply;
+        }
+        
+        .tab-scroll-area::-webkit-scrollbar { display: none; }
+        .tab-scroll-area { -ms-overflow-style: none; scrollbar-width: none; }
+
+        .page-content { display: none; opacity: 0; transition: opacity 0.4s ease-in-out; }
+        .page-content.active { display: block; opacity: 1; animation: fadeIn 0.5s ease-out forwards; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        
+        .tab-btn { position: relative; color: #64748b; font-weight: 700; transition: color 0.3s; white-space: nowrap; }
+        .tab-btn::after { content: ''; position: absolute; bottom: -12px; left: 0; width: 100%; height: 3px; background-color: transparent; border-radius: 3px 3px 0 0; transition: background-color 0.3s; }
+        .tab-btn.active { color: #0F172A; font-weight: 800; }
+        .tab-btn.active::after { background-color: #FFCC00; }
+
+        /* Accordion transition */
+        .accordion-content {
+            transition: max-height 0.3s ease-out, opacity 0.3s ease-out, padding 0.3s ease-out;
+            max-height: 0; opacity: 0; overflow: hidden; padding-top: 0; padding-bottom: 0;
+        }
+        .accordion-content.active {
+            max-height: 1000px; opacity: 1; padding-top: 0.75rem; padding-bottom: 0.5rem;
+        }
+        .accordion-icon { transition: transform 0.3s ease; }
+        .accordion-icon.active { transform: rotate(180deg); }
+    </style>
+</head>
+<body>
+
+<div class="mobile-container relative">
+    
+    <!-- Top Header -->
+    <div class="fixed top-0 left-0 right-0 mx-auto w-full max-w-[480px] z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-brand-border flex items-center justify-between px-5 py-3.5">
+        <div class="flex items-center gap-2">
+            <button onclick="history.back()" class="text-brand-navy p-1 touch-action -ml-1">
+                <i class="fa-solid fa-arrow-left text-[18px]"></i>
+            </button>
+            <span class="font-extrabold text-[15px] tracking-tight text-brand-navy">감기·면역·호흡기</span>
+        </div>
+        <button aria-label="메뉴 열기" class="text-brand-navy p-1 touch-action" onclick="openMenu()">
+            <i class="fa-solid fa-bars text-[20px]"></i>
+        </button>
+    </div>
+
+    <!-- Sticky Tab Navigation -->
+    <div class="fixed top-[52px] left-0 right-0 mx-auto w-full max-w-[480px] z-40 bg-white/95 backdrop-blur-md border-b border-brand-border shadow-sm">
+        <div class="flex overflow-x-auto tab-scroll-area px-5 py-3 gap-6">
+            <button class="tab-btn text-[14px] touch-action active" onclick="switchPage('page1', this)">가정관리 (성장)</button>
+            <button class="tab-btn text-[14px] touch-action" onclick="switchPage('page2', this)">증상별 치료</button>
+            <button class="tab-btn text-[14px] touch-action" onclick="switchPage('page3', this)">독감 및 면역연구</button>
+        </div>
+    </div>
+
+    <!-- ==============================================
+         PAGE 1 : 가정관리와 성장
+         ============================================== -->
+    <div id="page1" class="page-content active pt-[100px]">
+        <header class="relative pb-14 px-5 min-h-[460px] flex flex-col justify-end overflow-hidden bg-brand-navy">
+            <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?q=80&w=1000&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover z-0 opacity-60 img-brand-filter" alt="아픈 아이">
+            <div class="absolute inset-0 hero-overlay z-10"></div>
+            
+            <div class="relative z-20 reveal-up w-full">
+                <span class="inline-block px-2.5 py-1 bg-white/10 text-brand-lemon text-[10px] font-bold tracking-widest uppercase mb-4 rounded-[4px] border border-white/20 backdrop-blur-sm">
+                    Home Care & Growth
+                </span>
+                <h1 class="text-[30px] font-extrabold text-white tracking-tight mb-4 leading-[1.3] break-keep">
+                    감기는 흔하지만<br>회복은 결코<br>가볍지 않습니다
+                </h1>
+                <p class="text-[14px] text-slate-300 font-medium leading-relaxed mb-4 break-keep">
+                    아이들의 호흡기 질환은 면역과 회복, 성장 리듬 전체와 연결되어 있습니다.
+                </p>
+                <div class="p-3 bg-brand-navy/60 backdrop-blur-md border-l-2 border-brand-lemon rounded-r-[6px]">
+                    <p class="text-[13px] text-white font-bold leading-relaxed break-keep">
+                        단순히 열을 떨어뜨리는 것을 넘어, 아이의 회복 흐름을 함께 관리하는 진료를 지향합니다.
+                    </p>
+                </div>
+            </div>
+        </header>
+
+        <section class="py-14 bg-white border-b border-brand-border px-5">
+            <div class="mb-8 reveal-up text-center">
+                <div class="w-12 h-12 rounded-full bg-brand-light flex items-center justify-center text-brand-sky mx-auto mb-4 border border-brand-border shadow-sm">
+                    <i class="fa-solid fa-viruses text-lg"></i>
+                </div>
+                <h2 class="text-[20px] font-serif font-bold text-brand-navy mb-3 leading-snug tracking-tight">
+                    왜 아이들은<br>감기에 자주 걸릴까요?
+                </h2>
+                <p class="text-[14px] text-brand-gray leading-relaxed break-keep font-medium">감기는 상기도의 바이러스 감염입니다. 성장기 아이들은 성인보다 취약할 수밖에 없습니다.</p>
+            </div>
+
+            <div class="grid grid-cols-2 gap-3 mb-6 reveal-up delay-100">
+                <div class="p-4 bg-[#F8FAFC] rounded-[8px] border border-brand-border">
+                    <i class="fa-solid fa-shield-virus text-brand-sky text-xl mb-2"></i>
+                    <h3 class="text-[13px] font-extrabold text-brand-navy mb-1">면역의 미성숙</h3>
+                    <p class="text-[11px] text-brand-gray break-keep">면역체계가 아직 성장 중입니다.</p>
+                </div>
+                <div class="p-4 bg-[#F8FAFC] rounded-[8px] border border-brand-border">
+                    <i class="fa-solid fa-users text-brand-sky text-xl mb-2"></i>
+                    <h3 class="text-[13px] font-extrabold text-brand-navy mb-1">단체 생활</h3>
+                    <p class="text-[11px] text-brand-gray break-keep">어린이집, 학교 등 노출이 많습니다.</p>
+                </div>
+            </div>
+
+            <div class="p-5 border border-brand-border rounded-[8px] shadow-soft reveal-up delay-200">
+                <h3 class="text-[14px] font-bold text-brand-rose mb-2 flex items-center gap-2">
+                    <i class="fa-solid fa-triangle-exclamation"></i> 회복을 늦추는 숨은 원인들
+                </h3>
+                <p class="text-[13px] text-brand-gray font-medium leading-relaxed break-keep">
+                    단순 감염뿐 아니라 <strong class="text-brand-navy">수면 부족, 과로, 학업 및 운동 스트레스, 불규칙한 생활</strong> 등이 반복되면 아이의 회복 속도가 현저히 느려지게 됩니다.
+                </p>
+            </div>
+        </section>
+
+        <section class="py-14 bg-brand-navy px-5 text-white relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-[250px] h-[250px] bg-brand-sky/20 rounded-full blur-3xl opacity-50 transform translate-x-1/3 -translate-y-1/3"></div>
+            
+            <div class="relative z-10 reveal-up">
+                <span class="text-brand-sky font-bold tracking-widest uppercase text-[10px] mb-2 block">Growth & Recovery</span>
+                <h2 class="text-[22px] font-serif font-bold tracking-tight mb-4 leading-snug">
+                    중요한 것은 "몇 번 걸렸는가"보다<br>"얼마나 잘 회복하는가"입니다
+                </h2>
+                <p class="text-[14px] text-slate-300 leading-relaxed font-medium break-keep mb-6">
+                    감기는 성장기 아이들에게 흔하지만, 중이염, 부비동염, 기관지염 등으로 반복 이행되거나 회복이 늦어지면 <strong class="text-brand-lemon">식욕, 수면, 체력, 성장 리듬 전체가 흔들리게 됩니다.</strong>
+                </p>
+            </div>
+        </section>
+
+        <section class="py-14 bg-[#F8FAFC] border-b border-brand-border px-5">
+            <div class="mb-8 reveal-up text-center">
+                <span class="text-brand-navy font-bold tracking-widest uppercase text-[10px] mb-2 block border-b-2 border-brand-navy inline-block pb-1">Seasonal Virus</span>
+                <h2 class="text-[20px] font-extrabold text-brand-navy tracking-tight mb-2">계절별 감기와 바이러스</h2>
+                <p class="text-[13px] font-medium text-brand-gray break-keep">감기는 계절마다 조금씩 다른 모습으로 나타납니다.</p>
+            </div>
+
+            <div class="space-y-3 reveal-up delay-100">
+                <div class="flex items-center p-4 bg-white rounded-[8px] border border-gray-200 shadow-sm">
+                    <div class="w-10 h-10 rounded-full bg-emerald-50 text-brand-emerald flex items-center justify-center font-black text-sm mr-4 shrink-0">봄</div>
+                    <div>
+                        <p class="text-[13px] font-bold text-brand-navy mb-0.5">알레르기 비염 / 미세먼지 자극</p>
+                        <p class="text-[11px] text-brand-gray font-medium">인후염 등 호흡기 점막 자극이 심한 계절</p>
+                    </div>
+                </div>
+                <div class="flex items-center p-4 bg-white rounded-[8px] border border-gray-200 shadow-sm">
+                    <div class="w-10 h-10 rounded-full bg-sky-50 text-brand-sky flex items-center justify-center font-black text-sm mr-4 shrink-0">여름</div>
+                    <div>
+                        <p class="text-[13px] font-bold text-brand-navy mb-0.5">아데노바이러스 / 수족구 / 장염</p>
+                        <p class="text-[11px] text-brand-gray font-medium">헤르판지나 등 고열과 소화기 증상 동반</p>
+                    </div>
+                </div>
+                <div class="flex items-center p-4 bg-white rounded-[8px] border border-gray-200 shadow-sm">
+                    <div class="w-10 h-10 rounded-full bg-amber-50 text-brand-amber flex items-center justify-center font-black text-sm mr-4 shrink-0">가을</div>
+                    <div>
+                        <p class="text-[13px] font-bold text-brand-navy mb-0.5">마이코플라즈마 / 환절기 감기</p>
+                        <p class="text-[11px] text-brand-gray font-medium">급격한 일교차로 인한 기관지염 위험</p>
+                    </div>
+                </div>
+                <div class="flex items-center p-4 bg-white rounded-[8px] border border-gray-200 shadow-sm">
+                    <div class="w-10 h-10 rounded-full bg-blue-50 text-brand-blue flex items-center justify-center font-black text-sm mr-4 shrink-0">겨울</div>
+                    <div>
+                        <p class="text-[13px] font-bold text-brand-navy mb-0.5">독감 / RS바이러스 / 중이염 / 폐렴</p>
+                        <p class="text-[11px] text-brand-gray font-medium">건조하고 찬 공기로 인한 깊은 감염 우려</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-14 bg-white px-5 border-b border-brand-border">
+            <div class="mb-8 reveal-up">
+                <span class="text-brand-emerald font-bold tracking-widest uppercase text-[10px] mb-2 block border-l-2 border-brand-emerald pl-2">Home Care Guide</span>
+                <h2 class="text-[22px] font-extrabold text-brand-navy tracking-tight mb-2">아이가 아플 때 가장 중요한 것은<br>안정적인 회복 환경입니다</h2>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4 reveal-up delay-100 mb-8">
+                <div>
+                    <h3 class="text-[14px] font-bold text-brand-navy mb-2 flex items-center gap-1.5"><i class="fa-solid fa-bed text-brand-emerald"></i> 충분한 휴식</h3>
+                    <ul class="text-[12px] text-brand-gray font-medium space-y-1 pl-1">
+                        <li>· 단체생활 줄이기</li>
+                        <li>· 수면시간 확보</li>
+                        <li>· 학원·운동 일정 조절</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-[14px] font-bold text-brand-navy mb-2 flex items-center gap-1.5"><i class="fa-solid fa-glass-water text-brand-blue"></i> 수분과 영양</h3>
+                    <ul class="text-[12px] text-brand-gray font-medium space-y-1 pl-1">
+                        <li>· 미지근한 물 자주</li>
+                        <li>· 자극 적은 음식</li>
+                        <li>· 소화가 잘되는 식사</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-[14px] font-bold text-brand-navy mb-2 flex items-center gap-1.5"><i class="fa-solid fa-house-chimney text-brand-amber"></i> 실내 환경</h3>
+                    <ul class="text-[12px] text-brand-gray font-medium space-y-1 pl-1">
+                        <li>· 실내 온도 20~22도</li>
+                        <li>· 습도 50% 전후 유지</li>
+                        <li>· 잦은 환기</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-[14px] font-bold text-brand-navy mb-2 flex items-center gap-1.5"><i class="fa-solid fa-heart text-brand-rose"></i> 보호자의 안정감</h3>
+                    <p class="text-[11px] text-brand-gray font-medium leading-relaxed break-keep">
+                        보호자의 긴장과 화는 아이의 스트레스 반응을 악화시켜 회복을 늦출 수 있습니다.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-red-50 border border-red-100 p-5 rounded-[8px] reveal-up delay-200">
+                <h4 class="text-[14px] font-bold text-brand-rose mb-3 flex items-center gap-2"><i class="fa-solid fa-hospital"></i> 병원 진료가 꼭 필요한 경우</h4>
+                <div class="flex flex-wrap gap-2">
+                    <span class="text-[11px] bg-white text-red-600 px-2 py-1 rounded-[4px] border border-red-100 font-bold">고열 지속</span>
+                    <span class="text-[11px] bg-white text-red-600 px-2 py-1 rounded-[4px] border border-red-100 font-bold">호흡 곤란</span>
+                    <span class="text-[11px] bg-white text-red-600 px-2 py-1 rounded-[4px] border border-red-100 font-bold">심한 처짐</span>
+                    <span class="text-[11px] bg-white text-red-600 px-2 py-1 rounded-[4px] border border-red-100 font-bold">반복 구토/탈수</span>
+                </div>
+                <p class="text-[11px] text-red-500 mt-3 font-medium">증상 발생 후 1-2일 후에도 가정용 상비약으로 개선되지 않는다면 의료기관 방문을 권장합니다.</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- ==============================================
+         PAGE 2 : 증상별 치료와 관리
+         ============================================== -->
+    <div id="page2" class="page-content pt-[100px]">
+        <header class="relative pb-14 px-5 min-h-[380px] flex flex-col justify-end overflow-hidden bg-brand-emerald">
+            <img src="https://images.unsplash.com/photo-1584515933487-779824d29309?q=80&w=1000&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover z-0 opacity-40 mix-blend-luminosity" alt="치료 관리">
+            <div class="absolute inset-0 bg-gradient-to-t from-brand-navy via-brand-navy/70 to-transparent z-10"></div>
+            
+            <div class="relative z-20 reveal-up w-full">
+                <span class="inline-block px-2.5 py-1 bg-white/10 text-brand-emerald text-[10px] font-bold tracking-widest uppercase mb-4 rounded-[4px] border border-brand-emerald/30 backdrop-blur-sm">
+                    Symptom Treatment
+                </span>
+                <h1 class="text-[28px] font-extrabold text-white tracking-tight mb-4 leading-[1.3] break-keep">
+                    증상에 대한 적합한 치료로<br>빠른 대응을 합니다
+                </h1>
+                <p class="text-[14px] text-slate-300 font-medium leading-relaxed break-keep">
+                    해온한의원은 전통적인 탕약 외에도 시럽, 과립(가루약), 외치제(연고/가글)를 활용하여 서양의학과 현대 한의학의 바른 선택 과정을 돕습니다.
+                </p>
+            </div>
+        </header>
+
+        <section class="py-14 bg-white border-b border-brand-border px-5">
+            <div class="mb-8 reveal-up text-center">
+                <h2 class="text-[22px] font-extrabold text-brand-navy tracking-tight mb-2">증상별 접근 및 한의학적 처치</h2>
+                <p class="text-[13px] text-brand-gray font-medium">아이의 체력, 식욕, 의식을 충분히 관찰하며 대응합니다.</p>
+            </div>
+
+            <div class="space-y-4 reveal-up delay-100">
+                
+                <!-- 1. 발열 -->
+                <div class="card-modern border border-gray-200 overflow-hidden">
+                    <button class="w-full flex items-center justify-between p-4 bg-[#F8FAFC] touch-action" onclick="toggleAccordion('acc-fever', this)">
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-full bg-rose-50 text-brand-rose flex items-center justify-center shrink-0"><i class="fa-solid fa-temperature-arrow-up"></i></div>
+                            <h3 class="text-[15px] font-bold text-brand-navy text-left">발열 (Fever)</h3>
+                        </div>
+                        <i class="fa-solid fa-chevron-down text-brand-gray text-[14px] accordion-icon"></i>
+                    </button>
+                    <div id="acc-fever" class="accordion-content px-4 bg-white">
+                        <p class="text-[13px] text-brand-gray leading-relaxed font-medium mb-3">
+                            소아과 진료는 "발열로 시작해 발열로 끝난다"고 할 수 있습니다. 발열은 바이러스와 싸우기 위한 <strong>정상 면역 반응</strong>입니다.
+                        </p>
+                        <div class="bg-slate-50 p-3 rounded-[6px] mb-3">
+                            <h4 class="text-[12px] font-bold text-brand-navy mb-1 text-brand-rose">주요 처방 (발한 요법)</h4>
+                            <p class="text-[12px] text-brand-gray leading-relaxed">
+                                고열(38도 이상), 오한, 근육통 동반 시 <strong class="text-brand-navy">마황탕, 패독산, 갈근탕</strong> 등을 활용해 몸이 스스로 열을 올려 병원체에 대항하도록 돕습니다.<br>
+                                <span class="text-[11px] text-brand-sky mt-1 block">* 땀이 나거나 해열되면 복용을 중지합니다.</span>
+                            </p>
+                        </div>
+                        <div class="bg-slate-50 p-3 rounded-[6px]">
+                            <h4 class="text-[12px] font-bold text-brand-navy mb-1 text-brand-rose">오르락내리락 하는 열 (한열왕래)</h4>
+                            <p class="text-[12px] text-brand-gray leading-relaxed">
+                                해열되었지만 37~38도를 오갈 경우 <strong class="text-brand-navy">소시호탕, 시호계지탕</strong> 등 시호제 계열을 처방합니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. 기침/가래 -->
+                <div class="card-modern border border-gray-200 overflow-hidden">
+                    <button class="w-full flex items-center justify-between p-4 bg-[#F8FAFC] touch-action" onclick="toggleAccordion('acc-cough', this)">
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-full bg-blue-50 text-brand-blue flex items-center justify-center shrink-0"><i class="fa-solid fa-lungs"></i></div>
+                            <h3 class="text-[15px] font-bold text-brand-navy text-left">기침 · 가래</h3>
+                        </div>
+                        <i class="fa-solid fa-chevron-down text-brand-gray text-[14px] accordion-icon"></i>
+                    </button>
+                    <div id="acc-cough" class="accordion-content px-4 bg-white">
+                        <p class="text-[13px] text-brand-gray leading-relaxed font-medium mb-3">
+                            기침은 건성(마른)과 습성(가래)으로 나뉘어 다르게 접근합니다. 양약 기침약과의 병용도 가능합니다.
+                        </p>
+                        <div class="grid grid-cols-2 gap-3 mb-2">
+                            <div class="bg-slate-50 p-3 rounded-[6px]">
+                                <h4 class="text-[12px] font-bold text-brand-navy mb-1">건성 기침 (건조함)</h4>
+                                <p class="text-[11px] text-brand-gray leading-relaxed">목이 간지럽고 쉴 때 <strong class="text-brand-navy">맥문동탕, 시박탕</strong> 사용 (달고 마시기 쉬움)</p>
+                            </div>
+                            <div class="bg-slate-50 p-3 rounded-[6px]">
+                                <h4 class="text-[12px] font-bold text-brand-navy mb-1">습성 기침 (가래/콧물)</h4>
+                                <p class="text-[11px] text-brand-gray leading-relaxed">가래가 끓을 때 <strong class="text-brand-navy">소청룡탕, 마행감석탕</strong> 등을 병용 활용</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. 복통/설사 -->
+                <div class="card-modern border border-gray-200 overflow-hidden">
+                    <button class="w-full flex items-center justify-between p-4 bg-[#F8FAFC] touch-action" onclick="toggleAccordion('acc-stomach', this)">
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-full bg-amber-50 text-brand-amber flex items-center justify-center shrink-0"><i class="fa-solid fa-stomach"></i></div>
+                            <h3 class="text-[15px] font-bold text-brand-navy text-left">복통 · 장염 (소화기)</h3>
+                        </div>
+                        <i class="fa-solid fa-chevron-down text-brand-gray text-[14px] accordion-icon"></i>
+                    </button>
+                    <div id="acc-stomach" class="accordion-content px-4 bg-white">
+                        <p class="text-[13px] text-brand-gray leading-relaxed font-medium mb-3">
+                            감기로 인해 점막 면역이 떨어지면 소화기 증상(위장염)이 동반됩니다.
+                        </p>
+                        <ul class="text-[12px] text-brand-gray space-y-2 mb-2">
+                            <li><strong class="text-brand-navy">구토 및 물 마시면 토할 때:</strong> 오령산 계열</li>
+                            <li><strong class="text-brand-navy">감기 뒤끝 아급성 설사:</strong> 인삼탕(배가 찰 때), 사심탕(부글거림), 계지가작약탕(경련성 복통)</li>
+                            <li><strong class="text-brand-navy">항생제 복용 후 설사:</strong> 진무탕, 곽향정기산 등으로 점막 회복</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 4. 합병증 -->
+                <div class="card-modern border border-gray-200 overflow-hidden">
+                    <button class="w-full flex items-center justify-between p-4 bg-[#F8FAFC] touch-action" onclick="toggleAccordion('acc-complication', this)">
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-full bg-emerald-50 text-brand-emerald flex items-center justify-center shrink-0"><i class="fa-solid fa-head-side-mask"></i></div>
+                            <h3 class="text-[15px] font-bold text-brand-navy text-left">비염 · 중이염 등 합병증</h3>
+                        </div>
+                        <i class="fa-solid fa-chevron-down text-brand-gray text-[14px] accordion-icon"></i>
+                    </button>
+                    <div id="acc-complication" class="accordion-content px-4 bg-white">
+                        <p class="text-[13px] text-brand-gray leading-relaxed font-medium mb-3">
+                            1개월 이상 만성화된 부비동염(축농증), 중이염은 항생제 내성 주의가 필요합니다.
+                        </p>
+                        <ul class="text-[12px] text-brand-gray space-y-2 mb-2">
+                            <li><strong class="text-brand-navy">코막힘 악화/기침 동반:</strong> 소청룡탕 활용</li>
+                            <li><strong class="text-brand-navy">진한 콧물/가래:</strong> 갈근탕가천궁신이, 신이청폐탕</li>
+                            <li class="text-brand-sky">이비인후과 치료 중 차도가 없다면 한약 병용으로 항생제 의존을 낮출 수 있습니다.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 항생제 섹션 -->
+        <section class="py-12 bg-[#F8FAFC] px-5 border-b border-brand-border">
+            <div class="bg-white p-6 rounded-[8px] shadow-sm border border-brand-border">
+                <h3 class="text-[16px] font-bold text-brand-navy mb-3 flex items-center gap-2">
+                    <i class="fa-solid fa-pills text-brand-sky"></i> 항생제, 언제 복용해야 하나요?
+                </h3>
+                <p class="text-[13px] text-brand-gray leading-relaxed font-medium break-keep mb-3">
+                    상기도감염(감기)의 대부분은 바이러스성으로 항생제가 필요하지 않습니다. 하지만 세균 감염 가능성이 있어 <strong>발열 상태, 체력, 식욕을 충분히 관찰해야 합니다.</strong>
+                </p>
+                <div class="bg-slate-50 p-3 rounded-[6px] border border-gray-100">
+                    <p class="text-[12px] text-brand-navy font-bold leading-relaxed break-keep">
+                        양약을 무조건 거부하기보다 현명한 사용이 필요합니다. 고열(38.5도 이상)이 지속되고 세균 감염 소견이 보이면 항생제를 병용해야 하며, 이는 일본 등 의료 선진국에서도 권장하는 방식입니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ==============================================
+         PAGE 3 : 독감 및 면역연구 (Kampo, EBM)
+         ============================================== -->
+    <div id="page3" class="page-content pt-[100px]">
+        <header class="relative pb-14 px-5 min-h-[460px] flex flex-col justify-end overflow-hidden bg-brand-navy">
+            <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=1000&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover z-0 opacity-40 img-brand-filter" alt="의학 연구">
+            <div class="absolute inset-0 hero-overlay z-10"></div>
+            
+            <div class="relative z-20 reveal-up w-full">
+                <span class="inline-block px-2.5 py-1 bg-white/10 text-brand-lemon text-[10px] font-bold tracking-widest uppercase mb-4 rounded-[4px] border border-white/20 backdrop-blur-sm">
+                    Influenza & Immunity Research
+                </span>
+                <h1 class="text-[30px] font-extrabold text-white tracking-tight mb-4 leading-[1.3] break-keep">
+                    전통과 현대 연구가<br>증명하는 한의학의<br>바이러스 대응
+                </h1>
+                <p class="text-[14px] text-slate-300 font-medium leading-relaxed break-keep">
+                    독감(인플루엔자)과 호흡기 감염병에 대해, 국내외에서는 한약을 활발히 사용하며 그 과학적 기전이 입증되고 있습니다.
+                </p>
+            </div>
+        </header>
+
+        <section class="py-14 bg-white border-b border-brand-border px-5">
+            <div class="mb-8 reveal-up text-center">
+                <span class="text-brand-navy font-bold tracking-widest uppercase text-[10px] mb-2 block border-b-2 border-brand-navy inline-block pb-1">EBM Research</span>
+                <h2 class="text-[20px] font-extrabold text-brand-navy tracking-tight mb-2">독감, 한약으로 치료가 가능한가요?</h2>
+                <p class="text-[14px] text-brand-gray font-medium break-keep">한약의 선제적 복용은 독감의 치료 기간을 단축시킵니다.</p>
+            </div>
+
+            <!-- 논문 인용 UI -->
+            <div class="card-modern bg-[#F8FAFC] border-l-4 border-l-brand-blue mb-8 reveal-up delay-100 relative overflow-hidden">
+                <i class="fa-solid fa-book-medical absolute right-3 bottom-3 text-6xl text-brand-blue/5"></i>
+                <div class="p-5">
+                    <h3 class="text-[14px] font-bold text-brand-navy mb-1">마황탕의 소아 인플루엔자 감염 효과 연구</h3>
+                    <p class="text-[11px] text-brand-gray mb-4">대상: 38℃ 이상 발열 인플루엔자 환아 49증례</p>
+                    
+                    <div class="space-y-2 mb-4">
+                        <div class="flex justify-between items-center text-[12px] pb-1 border-b border-gray-200">
+                            <span class="text-brand-gray">타미플루 단독 투여군</span>
+                            <span class="font-bold text-brand-navy">평균 31.9시간 해열</span>
+                        </div>
+                        <div class="flex justify-between items-center text-[12px] pb-1 border-b border-gray-200">
+                            <span class="text-brand-gray">타미플루 + 마황탕 병용군</span>
+                            <span class="font-bold text-brand-sky">평균 21.9시간 해열</span>
+                        </div>
+                        <div class="flex justify-between items-center text-[12px] pb-1">
+                            <span class="text-brand-navy font-bold">마황탕 단독 투여군</span>
+                            <span class="font-bold text-brand-rose">평균 17.7시간 해열</span>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-3 rounded-[6px] border border-gray-200">
+                        <p class="text-[11px] text-brand-navy font-bold leading-relaxed">
+                            <i class="fa-solid fa-check text-brand-emerald"></i> 연구 결과 요약<br>
+                            <span class="text-brand-gray font-medium block mt-1">타미플루에 필적하거나 그 이상의 해열 속도를 보였으며, 바이러스 증식 억제 효과가 뛰어남이 입증되었습니다. 각 군 모두 부작용은 없었습니다.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-modern bg-[#F8FAFC] border-l-4 border-l-brand-emerald reveal-up delay-200 relative overflow-hidden">
+                <div class="p-5">
+                    <h3 class="text-[14px] font-bold text-brand-navy mb-1">독감 예방과 '보중익기탕' 연구</h3>
+                    <p class="text-[11px] text-brand-gray mb-4">일본 도쿄 알러지호흡기질환 연구소 보고</p>
+                    <p class="text-[12px] text-brand-gray leading-relaxed font-medium mb-3">
+                        보중익기탕은 IL-1 분비 증가 및 Helper T-cell 활성화를 통해 면역을 보완합니다. 연구에서는 백신 접종 후 항체가 미달 시 보중익기탕 병용을 제안할 만큼 백신에 필적하는 예방 효과가 논의되었습니다.
+                    </p>
+                    <p class="text-[11px] text-brand-sky font-bold">해온한의원 의료진도 독감 유행 시 예방 차원에서 복용합니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 일본 Kampo 설명 -->
+        <section class="py-14 bg-brand-navy text-white px-5 relative overflow-hidden border-b border-brand-border">
+            <div class="absolute top-0 left-0 w-[200px] h-[200px] bg-brand-lemon/20 rounded-full blur-3xl opacity-50 transform -translate-x-1/3 -translate-y-1/3"></div>
+            <div class="relative z-10 reveal-up">
+                <h3 class="text-[20px] font-serif font-bold text-brand-lemon mb-4">일본 한방의학(Kampo)의 현실</h3>
+                <p class="text-[13px] text-slate-300 leading-relaxed font-medium break-keep mb-4">
+                    일본은 한의사 제도가 없음에도 불구하고, 의사가 한약(Kampo)을 적극적으로 사용하고 보험 적용 및 전문의 제도 내에서 활용하고 있습니다. (한국보다 사용하는 보험 한약 종류가 더 많습니다.)
+                </p>
+                <p class="text-[13px] text-slate-300 leading-relaxed font-medium break-keep">
+                    이처럼 현대 의학의 테두리 안에서도 한약의 유효성은 강력하게 입증되고 쓰이고 있습니다. 해온은 이러한 세계적 통합의학 흐름과 함께합니다.
+                </p>
+            </div>
+        </section>
+        
+        <!-- 독감 후 등교 -->
+        <section class="py-12 bg-white px-5 border-b border-brand-border">
+             <div class="bg-slate-50 p-6 rounded-[8px] shadow-sm border border-gray-100 reveal-up">
+                <h3 class="text-[16px] font-bold text-brand-navy mb-3 flex items-center gap-2">
+                    <i class="fa-solid fa-school text-brand-sky"></i> 독감, 언제 등교(등원) 가능한가요?
+                </h3>
+                <p class="text-[13px] text-brand-gray leading-relaxed font-medium break-keep mb-3">
+                    열이 완전히 내려가고 안정되면 등원이 가능하며 보통 7일 전후가 소요됩니다. <strong>한약을 병용하면 보통 3-4일 후 해열됩니다.</strong>
+                </p>
+                <p class="text-[12px] text-brand-rose font-bold mb-3">
+                    * 해온한의원에서도 진료확인서 및 진단서 발급이 가능합니다.
+                </p>
+                <p class="text-[12px] text-brand-gray leading-relaxed font-medium">
+                    해열 후에도 기침 등은 남을 수 있습니다. 다른 아이들의 감염 예방과 합병증 방지를 위해 최소 1주일 정도의 안정을 권장합니다.
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <!-- ==============================================
+         하단 푸터 영역 및 공통 CTA
+         ============================================== -->
+    <!-- 철학 섹션 (Footer 위) -->
+    <section class="py-12 bg-brand-light px-5 border-b border-brand-border">
+        <div class="space-y-4">
+            <div class="bg-white p-4 rounded-[8px] border border-gray-200 shadow-sm">
+                <div class="flex items-center gap-2 mb-2"><i class="fa-solid fa-book-open text-brand-navy"></i><h3 class="text-[14px] font-extrabold text-brand-navy">끊임없는 학술교류와 진보</h3></div>
+                <p class="text-[12px] text-brand-gray font-medium break-keep">한의과대학 전·현직 교수, 팀닥터, 전문의 등 4인 진료. 열린 자세로 최신 의학지식을 수용합니다.</p>
+            </div>
+            <div class="bg-white p-4 rounded-[8px] border border-gray-200 shadow-sm">
+                <div class="flex items-center gap-2 mb-2"><i class="fa-solid fa-leaf text-brand-emerald"></i><h3 class="text-[14px] font-extrabold text-brand-navy">전문 한의약품, 엄선된 약재</h3></div>
+                <p class="text-[12px] text-brand-gray font-medium break-keep">KFDA 인증 정품 한약재. 해온 직원 모두 복용하는 깨끗하고 안전한 한약만을 드립니다.</p>
+            </div>
+            <div class="bg-white p-4 rounded-[8px] border border-gray-200 shadow-sm">
+                <div class="flex items-center gap-2 mb-2"><i class="fa-solid fa-heart-pulse text-brand-rose"></i><h3 class="text-[14px] font-extrabold text-brand-navy">안심과 납득가능한 진료</h3></div>
+                <p class="text-[12px] text-brand-gray font-medium break-keep">스스로 납득이 가지 않는 진료는 하지 않습니다. 예후와 생활관리까지 체계적으로 안내합니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-navy py-10 px-5 text-white border-t-4 border-brand-lemon text-center">
+        <span class="text-brand-lemon text-[10px] font-bold tracking-widest uppercase mb-2 block">HAEON KOREAN CLINIC</span>
+        <h3 class="text-[15px] font-serif italic tracking-wide break-keep mb-6">
+            '가업의 뜻과 경험을 바탕으로 한의학을 가꿉니다'
+        </h3>
+        <div class="text-[11px] text-slate-300 space-y-1">
+            <p>대표: 이정욱(한의사) | 사업자번호: 113-90-75851</p>
+            <p>서울시 구로구 새말로 97 테크노마트 2층 9호</p>
+            <p class="mt-4 text-slate-500">&copy; HAEON Clinic. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Sidebar Menu Wrapper -->
+    <div id="side-menu-wrapper" class="fixed inset-0 z-[100] pointer-events-none mx-auto w-full max-w-[480px] overflow-hidden">
+        <div id="menu-backdrop" class="absolute inset-0 bg-brand-navy/70 backdrop-blur-sm opacity-0 transition-opacity duration-300 pointer-events-none" onclick="closeMenu()"></div>
+        <div id="side-menu" class="absolute top-0 right-0 h-full w-[260px] bg-white transform translate-x-full transition-transform duration-300 ease-out shadow-2xl flex flex-col pointer-events-auto">
+            <div class="flex items-center justify-between p-5 border-b border-brand-border bg-white">
+                <span class="font-extrabold text-[16px] tracking-tight text-brand-navy">전체 메뉴</span>
+                <button onclick="closeMenu()" class="text-brand-gray p-1 touch-action text-xl hover:text-brand-navy transition-colors"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            
+            <div class="flex-1 overflow-y-auto px-5 py-6 no-scrollbar flex flex-col gap-8 bg-white">
+                <div>
+                    <h3 class="text-[11px] font-bold text-brand-gray tracking-widest uppercase mb-3 border-l-2 border-brand-lemon pl-2">About</h3>
+                    <ul class="space-y-4">
+                        <li><a href="about.html" class="text-[15px] font-bold text-brand-navy block touch-action flex justify-between items-center group">해온의 철학 <i class="fa-solid fa-chevron-right text-[10px] text-brand-gray group-hover:text-brand-sky transition-colors"></i></a></li>
+                        <li><a href="medical_team.html" class="text-[15px] font-bold text-brand-navy block touch-action flex justify-between items-center group">의료진 소개 <i class="fa-solid fa-chevron-right text-[10px] text-brand-gray group-hover:text-brand-sky transition-colors"></i></a></li>
+                        <li><a href="tour.html" class="text-[15px] font-bold text-brand-navy block touch-action flex justify-between items-center group">원내 둘러보기 <i class="fa-solid fa-chevron-right text-[10px] text-brand-gray group-hover:text-brand-sky transition-colors"></i></a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-[11px] font-bold text-brand-gray tracking-widest uppercase mb-3 border-l-2 border-brand-lemon pl-2">Clinics</h3>
+                    <ul class="space-y-4">
+                        <li><a href="clinic_internal.html" class="text-[15px] font-bold text-brand-navy block touch-action flex justify-between items-center group">내과 / 체질개선 <i class="fa-solid fa-chevron-right text-[10px] text-brand-gray group-hover:text-brand-sky transition-colors"></i></a></li>
+                        <li><a href="clinic_woman_child.html" class="text-[15px] font-bold text-brand-sky block touch-action flex justify-between items-center group">여성 / 소아 <i class="fa-solid fa-chevron-right text-[10px] text-brand-sky"></i></a></li>
+                        <li><a href="clinic_child_tonic.html" class="text-[14px] font-bold text-brand-sky block touch-action pl-3 ml-1">↳ 허약체질·성장·녹용</a></li>
+                        <li><a href="#" class="text-[14px] font-bold text-brand-sky block touch-action pl-3 border-l-2 border-brand-sky ml-1">↳ 감기·면역·호흡기</a></li>
+                        <li><a href="clinic_pain.html" class="text-[15px] font-bold text-brand-navy block touch-action flex justify-between items-center group">통증재활 / 교통사고 <i class="fa-solid fa-chevron-right text-[10px] text-brand-gray group-hover:text-brand-sky transition-colors"></i></a></li>
+                        <li><a href="clinic_sports.html" class="text-[14px] font-bold text-brand-lemon block touch-action p-3 bg-brand-navy rounded-[6px] text-center mt-3 shadow-soft flex items-center justify-center gap-2"><i class="fa-solid fa-stopwatch text-[14px]"></i> 유소년 스포츠 특화</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-[11px] font-bold text-brand-gray tracking-widest uppercase mb-3 border-l-2 border-brand-lemon pl-2">Support</h3>
+                    <ul class="space-y-4">
+                        <li><a href="location.html" class="text-[15px] font-bold text-brand-navy block touch-action flex justify-between items-center group">오시는 길 및 진료시간 <i class="fa-solid fa-chevron-right text-[10px] text-brand-gray group-hover:text-brand-sky transition-colors"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Sticky Bottom Nav (예약) -->
+<div class="fixed bottom-0 left-0 right-0 mx-auto w-full max-w-[480px] z-50 bg-white/95 backdrop-blur-md border-t border-gray-100 shadow-[0_-5px_15px_rgba(0,0,0,0.03)] pb-safe">
+    <div class="px-4 pt-3 pb-5 flex gap-3">
+        <a href="https://pf.kakao.com/_sYeKE" target="_blank" class="flex-1 bg-kakao-bg text-kakao-text py-3 rounded-[6px] font-bold text-center flex items-center justify-center gap-2 touch-action text-[14px]">
+            <i class="fas fa-comment text-[16px]"></i> 카카오톡 상담
+        </a>
+        <a href="https://naver.me/GlJlW9S4" target="_blank" class="flex-1 bg-naver-bg text-white py-3 rounded-[6px] font-bold text-center flex items-center justify-center gap-2 touch-action text-[14px]">
+            <i class="far fa-calendar-check text-[16px]"></i> 네이버 예약
+        </a>
+    </div>
+</div>
+
+<script>
+    // 아코디언 로직 (증상별 치료)
+    function toggleAccordion(id, btn) {
+        const content = document.getElementById(id);
+        const icon = btn.querySelector('.accordion-icon');
+        if (content.classList.contains('active')) {
+            content.classList.remove('active');
+            icon.classList.remove('active');
+        } else {
+            // 다른 아코디언 닫기 (선택적)
+            document.querySelectorAll('.accordion-content').forEach(c => c.classList.remove('active'));
+            document.querySelectorAll('.accordion-icon').forEach(i => i.classList.remove('active'));
+            
+            content.classList.add('active');
+            icon.classList.add('active');
+        }
+    }
+
+    // Tab Switching Logic
+    function switchPage(pageId, btnElement) {
+        document.querySelectorAll('.page-content').forEach(page => { page.classList.remove('active'); });
+        document.querySelectorAll('.tab-btn').forEach(btn => { btn.classList.remove('active'); });
+        document.getElementById(pageId).classList.add('active');
+        btnElement.classList.add('active');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+
+        const obs = new IntersectionObserver(es => { 
+            es.forEach(e => { if(e.isIntersecting) { e.target.classList.add('active'); obs.unobserve(e.target); }}); 
+        }, { threshold: 0.1 });
+        document.getElementById(pageId).querySelectorAll('.reveal-up').forEach(e => {
+            e.classList.remove('active'); obs.observe(e);
+        });
+    }
+
+    // Menu Logic
+    function openMenu() {
+        const wrapper = document.getElementById('side-menu-wrapper');
+        const backdrop = document.getElementById('menu-backdrop');
+        const menu = document.getElementById('side-menu');
+        
+        wrapper.classList.remove('pointer-events-none');
+        requestAnimationFrame(() => {
+            backdrop.classList.remove('opacity-0', 'pointer-events-none');
+            backdrop.classList.add('opacity-100', 'pointer-events-auto');
+            menu.classList.remove('translate-x-full');
+            menu.classList.add('translate-x-0');
+        });
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
+        const wrapper = document.getElementById('side-menu-wrapper');
+        const backdrop = document.getElementById('menu-backdrop');
+        const menu = document.getElementById('side-menu');
+        
+        backdrop.classList.remove('opacity-100', 'pointer-events-auto');
+        backdrop.classList.add('opacity-0', 'pointer-events-none');
+        menu.classList.remove('translate-x-0');
+        menu.classList.add('translate-x-full');
+        
+        document.body.style.overflow = '';
+        setTimeout(() => { wrapper.classList.add('pointer-events-none'); }, 300);
+    }
+
+    // Scroll Animation Observer init
+    window.addEventListener('load', () => {
+        const obs = new IntersectionObserver(es => { 
+            es.forEach(e => { if(e.isIntersecting) { e.target.classList.add('active'); obs.unobserve(e.target); }}); 
+        }, { threshold: 0.1 });
+        document.getElementById('page1').querySelectorAll('.reveal-up').forEach(e => obs.observe(e));
+    });
+</script>
+</body>
+</html>

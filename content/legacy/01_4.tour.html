@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>둘러보기 | 해온한의원</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { 
+                        sans: ['Pretendard', 'sans-serif'],
+                        serif: ['Pretendard', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            navy: '#0F172A',
+                            lemon: '#FFCC00',
+                            lemonHover: '#E6B800',
+                            blue: '#2563eb',
+                            sky: '#0ea5e9',
+                            light: '#F8FAFC',
+                            gray: '#64748b',
+                            border: '#E2E8F0',
+                        },
+                        kakao: { bg: '#FEE500', text: '#191919' },
+                        naver: { bg: '#03C75A' }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Pretendard', sans-serif;
+            background-color: #f1f5f9;
+            color: #0f172a;
+            -webkit-font-smoothing: antialiased;
+            word-break: keep-all;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .mobile-container {
+            max-width: 480px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            min-height: 100vh;
+            box-shadow: 0 0 40px rgba(0,0,0,0.05);
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        ::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .reveal-up {
+            opacity: 0; transform: translateY(20px);
+            transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal-up.active { opacity: 1; transform: translateY(0); }
+        .delay-100 { transition-delay: 0.1s; }
+        .delay-200 { transition-delay: 0.2s; }
+        
+        .touch-action { transition: transform 0.1s ease; }
+        .touch-action:active { transform: scale(0.97); }
+
+        /* Grayscale Filter for Images to match tone */
+        .img-filtered {
+            filter: grayscale(80%) contrast(1.1) brightness(0.95);
+            transition: filter 0.3s ease;
+        }
+        
+        .gallery-card {
+            background: #FFFFFF; border-radius: 8px;
+            border: 1px solid #E2E8F0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+            overflow: hidden;
+            margin-bottom: 24px;
+        }
+        .gallery-img-container {
+            width: 100%; height: 220px; overflow: hidden; position: relative;
+        }
+        .gallery-tag {
+            position: absolute; top: 12px; left: 12px;
+            background: rgba(15, 23, 42, 0.8); backdrop-filter: blur(4px);
+            color: white; font-size: 10px; font-weight: 800;
+            padding: 4px 8px; border-radius: 4px; z-index: 10;
+        }
+        
+        .horizontal-scroll-container {
+            display: flex; gap: 12px; padding: 0 20px 20px 20px;
+            overflow-x: auto; scroll-snap-type: x mandatory;
+        }
+        .horizontal-card {
+            flex: 0 0 260px; scroll-snap-align: center;
+            background: #fff; border: 1px solid #E2E8F0; border-radius: 8px; overflow: hidden;
+        }
+    </style>
+</head>
+<body class="pb-[80px]">
+
+<div class="mobile-container relative pb-10">
+    
+    <!-- Header -->
+    <div class="fixed top-0 left-0 right-0 mx-auto w-full max-w-[480px] z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-brand-border flex items-center justify-between px-5 py-3.5">
+        <button onclick="history.back()" class="text-brand-navy p-1 touch-action">
+            <i class="fa-solid fa-arrow-left text-[18px]"></i>
+        </button>
+        <span class="font-extrabold text-[16px] tracking-tight text-brand-navy">원내 둘러보기</span>
+        <button aria-label="메뉴 열기" class="text-brand-navy p-1 touch-action" onclick="openMenu()">
+            <i class="fa-solid fa-bars text-[20px]"></i>
+        </button>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="pt-24 pb-14 px-5 bg-[#F8FAFC] relative overflow-hidden border-b border-brand-border">
+        <div class="absolute top-0 right-0 w-[200px] h-[200px] bg-brand-lemon/20 rounded-full blur-3xl opacity-50 pointer-events-none transform translate-x-1/3 -translate-y-1/3"></div>
+        <div class="relative z-10 reveal-up">
+            <span class="text-brand-gray font-bold tracking-widest uppercase text-[10px] mb-3 block border-l-2 border-brand-navy pl-2">Clinic Tour</span>
+            <h1 class="text-[26px] font-serif font-bold tracking-tight mb-4 leading-snug text-brand-navy">
+                18년째 한 자리에서,<br>해온한의원은 더욱 도약합니다.
+            </h1>
+            <p class="text-[14px] text-brand-gray font-medium leading-relaxed break-keep">
+                2008년 개원 이래 신도림 테크노마트 한 곳에서 진료해왔습니다.<br>
+                2025년 확장 공사를 통해 더 정밀하고 쾌적한 공간으로 거듭났습니다.
+            </p>
+        </div>
+    </header>
+
+    <!-- Flow 1: 도착과 맞이 -->
+    <section class="py-12 bg-white border-b border-brand-border px-5">
+        <div class="mb-6 reveal-up">
+            <h2 class="text-[18px] font-extrabold text-brand-navy tracking-tight flex items-center gap-2 mb-1">
+                <div class="w-6 h-6 rounded-full bg-brand-light flex items-center justify-center text-[12px]"><i class="fa-solid fa-1"></i></div>
+                도착과 맞이
+            </h2>
+            <p class="text-[13px] text-brand-gray font-medium pl-8">편안하게 내원하고 대기할 수 있는 공간입니다.</p>
+        </div>
+
+        <div class="reveal-up delay-100">
+            <!-- 1. 외관 -->
+            <div class="gallery-card">
+                <div class="gallery-img-container">
+                    <div class="gallery-tag">01. 한의원 외관</div>
+                    <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover img-filtered" alt="한의원 외관">
+                </div>
+                <div class="p-4 bg-brand-light">
+                    <p class="text-[13px] text-brand-gray leading-relaxed font-medium break-keep">
+                        신도림역 3번 출구와 바로 연결되는 테크노마트 2층입니다. 엘리베이터를 타고 2층으로 올라오시면 정면에 한의원이 보입니다. 접근성을 가장 중요하게 생각합니다.
+                    </p>
+                </div>
+            </div>
+
+            <!-- 2. 대기실 -->
+            <div class="gallery-card">
+                <div class="gallery-img-container">
+                    <div class="gallery-tag">02. 대기실</div>
+                    <img src="https://images.unsplash.com/photo-1551076805-e1869033e561?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover img-filtered" alt="대기실">
+                </div>
+                <div class="p-4 bg-brand-light">
+                    <p class="text-[13px] text-brand-gray leading-relaxed font-medium break-keep">
+                        진료를 기다리며 다양한 질환 및 건강 관리 정보를 얻을 수 있는 공간입니다. 각종 진단검사와 치료 사이, 편안하게 쉴 수 있도록 동선을 분리했습니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flow 2: 진단과 상담 -->
+    <section class="py-12 bg-[#F8FAFC] border-b border-brand-border">
+        <div class="px-5 mb-6 reveal-up">
+            <h2 class="text-[18px] font-extrabold text-brand-navy tracking-tight flex items-center gap-2 mb-1">
+                <div class="w-6 h-6 rounded-full bg-white border border-gray-200 flex items-center justify-center text-[12px]"><i class="fa-solid fa-2"></i></div>
+                진단과 상담
+            </h2>
+            <p class="text-[13px] text-brand-gray font-medium pl-8">감(感)이 아닌 데이터로 증상을 확인하고 충분히 설명합니다.</p>
+        </div>
+
+        <div class="horizontal-scroll-container reveal-up delay-100">
+            <!-- 3. 진단검사실 -->
+            <div class="horizontal-card">
+                <div class="h-[140px] relative overflow-hidden">
+                    <div class="gallery-tag">03. 진단검사실</div>
+                    <img src="https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover img-filtered" alt="진단검사실">
+                </div>
+                <div class="p-4">
+                    <h4 class="text-[14px] font-extrabold text-brand-navy mb-1.5">정확한 진료의 시작</h4>
+                    <p class="text-[12px] text-brand-gray leading-relaxed font-medium break-keep">BWA 체수분 검사, 자율신경계(HRV) 검사 등 증상의 구조적·기능적 원인을 파악하기 위한 객관적 진단이 이루어집니다.</p>
+                </div>
+            </div>
+
+            <!-- 4. 진료실 -->
+            <div class="horizontal-card">
+                <div class="h-[140px] relative overflow-hidden">
+                    <div class="gallery-tag">04. 진료 및 상담실</div>
+                    <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover img-filtered" alt="진료실">
+                </div>
+                <div class="p-4">
+                    <h4 class="text-[14px] font-extrabold text-brand-navy mb-1.5">상세한 설명과 피드백</h4>
+                    <p class="text-[12px] text-brand-gray leading-relaxed font-medium break-keep">치료 전후로 상세한 진단 결과 설명이 이루어집니다. 환자가 스스로의 몸 상태를 명확히 이해하고 납득할 수 있도록 돕습니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flow 3: 특화 치료 공간 -->
+    <section class="py-12 bg-white border-b border-brand-border px-5">
+        <div class="mb-6 reveal-up">
+            <h2 class="text-[18px] font-extrabold text-brand-navy tracking-tight flex items-center gap-2 mb-1">
+                <div class="w-6 h-6 rounded-full bg-brand-light flex items-center justify-center text-[12px]"><i class="fa-solid fa-3"></i></div>
+                특화 치료 공간
+            </h2>
+            <p class="text-[13px] text-brand-gray font-medium pl-8">질환별 맞춤 환경에서 안전하게 회복합니다.</p>
+        </div>
+
+        <div class="reveal-up delay-100 space-y-6">
+            
+            <!-- 5. 스포츠 통증재활 집중진료실 -->
+            <div>
+                <div class="flex justify-between items-center mb-2 border-b-2 border-brand-navy pb-2">
+                    <h3 class="text-[15px] font-extrabold text-brand-navy">스포츠 통증·재활 집중진료실</h3>
+                    <span class="text-[10px] font-bold text-white bg-brand-navy px-2 py-0.5 rounded-[4px]">초음파/추나</span>
+                </div>
+                <div class="gallery-card mb-0 border-0 rounded-none shadow-none">
+                    <div class="gallery-img-container rounded-[8px]">
+                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover img-filtered" alt="재활진료실">
+                    </div>
+                    <p class="text-[13px] text-brand-gray leading-relaxed font-medium break-keep mt-3">
+                        단순 침 치료를 넘어, 정밀 초음파 진단을 기반으로 한 재활 및 스포츠 추나 치료가 독립적으로 이루어지는 심화 치료 공간입니다.
+                    </p>
+                </div>
+            </div>
+
+            <!-- 6. 견인교정 및 성장 -->
+            <div>
+                <div class="flex justify-between items-center mb-2 border-b-2 border-brand-navy pb-2">
+                    <h3 class="text-[15px] font-extrabold text-brand-navy">견인교정치료실</h3>
+                    <span class="text-[10px] font-bold text-white bg-brand-navy px-2 py-0.5 rounded-[4px]">성장/체형</span>
+                </div>
+                <div class="gallery-card mb-0 border-0 rounded-none shadow-none">
+                    <div class="gallery-img-container h-[160px] rounded-[8px]">
+                        <img src="https://images.unsplash.com/photo-1584515933487-779824d29309?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover img-filtered" alt="교정치료실">
+                    </div>
+                    <p class="text-[13px] text-brand-gray leading-relaxed font-medium break-keep mt-3">
+                        아이들의 바른 성장과 척추·골반 교정을 위한 전용 치료 기기들이 배치된 공간입니다. 체형의 축을 바로잡는 치료가 진행됩니다.
+                    </p>
+                </div>
+            </div>
+
+            <!-- 7. 일반 치료실 -->
+            <div class="pt-4 border-t border-dashed border-gray-200">
+                <h3 class="text-[15px] font-extrabold text-brand-navy mb-3 border-l-2 border-brand-lemon pl-2">프라이빗 치료실 및 스테이션</h3>
+                <div class="flex gap-3 h-[120px] mb-3">
+                    <div class="flex-1 rounded-[6px] overflow-hidden bg-gray-100">
+                        <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover img-filtered" alt="치료실 배드">
+                    </div>
+                    <div class="flex-1 rounded-[6px] overflow-hidden bg-gray-100">
+                        <img src="https://images.unsplash.com/photo-1551076805-e1869033e561?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover img-filtered" alt="스테이션">
+                    </div>
+                </div>
+                <p class="text-[13px] text-brand-gray leading-relaxed font-medium break-keep">
+                    모든 치료 베드는 격리되어 환자의 프라이버시를 보호하며, 1회용 시트 등 철저한 위생 관리를 원칙으로 합니다. 확장된 스테이션에서 전담 직원이 치료 동선을 안내해 드립니다.
+                </p>
+            </div>
+            
+            <!-- 8. 호흡기 치료실 -->
+            <div class="pt-4 border-t border-dashed border-gray-200">
+                <h3 class="text-[15px] font-extrabold text-brand-navy mb-3 border-l-2 border-brand-lemon pl-2">호흡기 전용 치료실</h3>
+                <p class="text-[13px] text-brand-gray leading-relaxed font-medium break-keep">
+                    소아청소년의 감기, 비염, 중이염 등 잦은 호흡기 질환에 대한 집중 외래 치료를 편안하게 받을 수 있도록 별도로 마련된 공간입니다.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Section: Contact CTA -->
+    <section class="py-14 bg-white px-5 border-b border-brand-border text-center">
+        <div class="reveal-up">
+            <h2 class="text-[28px] font-extrabold text-brand-navy tracking-tight mb-2 font-serif">02.2111.7575</h2>
+            <p class="text-[14px] text-brand-gray font-medium mb-8">환자분마다 편하신 방식으로 예약 및 상담을 도와드립니다.</p>
+            
+            <div class="flex flex-col gap-3">
+                <a href="tel:02-2111-7575" class="w-full bg-brand-navy text-white py-4 rounded-[6px] font-bold text-center flex items-center justify-center gap-2 touch-action text-[15px] shadow-sm">
+                    <i class="fa-solid fa-phone text-[16px]"></i> 전화 문의
+                </a>
+                <div class="flex gap-3">
+                    <a href="https://pf.kakao.com/_sYeKE" target="_blank" class="flex-1 bg-kakao-bg text-kakao-text py-4 rounded-[6px] font-bold text-center flex items-center justify-center gap-2 touch-action text-[14px] shadow-sm">
+                        <i class="fas fa-comment text-[16px]"></i> 카카오톡 문의
+                    </a>
+                    <a href="https://naver.me/GlJlW9S4" target="_blank" class="flex-1 bg-naver-bg text-white py-4 rounded-[6px] font-bold text-center flex items-center justify-center gap-2 touch-action text-[14px] shadow-sm">
+                        <i class="far fa-calendar-check text-[16px]"></i> 네이버 예약
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer 카피 -->
+    <section class="py-10 bg-brand-navy text-center px-5 border-t-4 border-brand-lemon">
+        <span class="text-brand-lemon text-[10px] font-bold tracking-widest uppercase mb-2 block">HAEON KOREAN CLINIC</span>
+        <h3 class="text-[16px] text-white font-serif italic tracking-wide break-keep">
+            '가업의 뜻과 경험을 바탕으로 한의학을 가꿉니다'
+        </h3>
+    </section>
+
+    <!-- Sidebar Menu Wrapper -->
+    <div id="side-menu-wrapper" class="fixed inset-0 z-[100] pointer-events-none mx-auto w-full max-w-[480px] overflow-hidden">
+        <!-- Backdrop -->
+        <div id="menu-backdrop" class="absolute inset-0 bg-brand-navy/70 backdrop-blur-sm opacity-0 transition-opacity duration-300 pointer-events-none" onclick="closeMenu()"></div>
+        
+        <!-- Menu Panel -->
+        <div id="side-menu" class="absolute top-0 right-0 h-full w-[260px] bg-white transform translate-x-full transition-transform duration-300 ease-out shadow-2xl flex flex-col pointer-events-auto">
+            <div class="flex items-center justify-between p-5 border-b border-brand-border bg-white">
+                <span class="font-extrabold text-[16px] tracking-tight text-brand-navy">전체 메뉴</span>
+                <button onclick="closeMenu()" class="text-brand-gray p-1 touch-action text-xl hover:text-brand-navy transition-colors">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            
+            <div class="flex-1 overflow-y-auto px-5 py-6 no-scrollbar flex flex-col gap-8 bg-white">
+                <!-- About -->
+                <div>
+                    <h3 class="text-[11px] font-bold text-brand-gray tracking-widest uppercase mb-3 border-l-2 border-brand-lemon pl-2">About</h3>
+                    <ul class="space-y-4">
+                        <li><a href="about.html" class="text-[15px] font-bold text-brand-navy block touch-action flex justify-between items-center group">해온의 철학 <i class="fa-solid fa-chevron-right text-[10px] text-brand-gray group-hover:text-brand-sky transition-colors"></i></a></li>
+                        <li><a href="medical_team.html" class="text-[15px] font-bold text-brand-navy block touch-action flex justify-between items-center group">의료진 소개 <i class="fa-solid fa-chevron-right text-[10px] text-brand-gray group-hover:text-brand-sky transition-colors"></i></a></li>
+                        <li><a href="tour.html" class="text-[15px] font-bold text-brand-sky block touch-action flex justify-between items-center group">원내 둘러보기 <i class="fa-solid fa-chevron-right text-[10px] text-brand-sky"></i></a></li>
+                    </ul>
+                </div>
+                <!-- Clinics -->
+                <div>
+                    <h3 class="text-[11px] font-bold text-brand-gray tracking-widest uppercase mb-3 border-l-2 border-brand-lemon pl-2">Clinics</h3>
+                    <ul class="space-y-4">
+                        <li><a href="clinic_internal.html" class="text-[15px] font-bold text-brand-navy block touch-action flex justify-between items-center group">내과 / 체질개선 <i class="fa-solid fa-chevron-right text-[10px] text-brand-gray group-hover:text-brand-sky transition-colors"></i></a></li>
+                        <li><a href="clinic_woman.html" class="text-[15px] font-bold text-brand-navy block touch-action flex justify-between items-center group">여성 / 소아 <i class="fa-solid fa-chevron-right text-[10px] text-brand-gray group-hover:text-brand-sky transition-colors"></i></a></li>
+                        <li><a href="clinic_pain.html" class="text-[15px] font-bold text-brand-navy block touch-action flex justify-between items-center group">통증재활 / 교통사고 <i class="fa-solid fa-chevron-right text-[10px] text-brand-gray group-hover:text-brand-sky transition-colors"></i></a></li>
+                        <li><a href="clinic_sports.html" class="text-[14px] font-bold text-brand-lemon block touch-action p-3 bg-brand-navy rounded-[6px] text-center mt-3 shadow-soft flex items-center justify-center gap-2"><i class="fa-solid fa-stopwatch text-[14px]"></i> 유소년 스포츠 특화</a></li>
+                    </ul>
+                </div>
+                <!-- Support -->
+                <div>
+                    <h3 class="text-[11px] font-bold text-brand-gray tracking-widest uppercase mb-3 border-l-2 border-brand-lemon pl-2">Support</h3>
+                    <ul class="space-y-4">
+                        <li><a href="location.html" class="text-[15px] font-bold text-brand-navy block touch-action flex justify-between items-center group">오시는 길 및 진료시간 <i class="fa-solid fa-chevron-right text-[10px] text-brand-gray group-hover:text-brand-sky transition-colors"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function openMenu() {
+        const wrapper = document.getElementById('side-menu-wrapper');
+        const backdrop = document.getElementById('menu-backdrop');
+        const menu = document.getElementById('side-menu');
+        
+        wrapper.classList.remove('pointer-events-none');
+        
+        requestAnimationFrame(() => {
+            backdrop.classList.remove('opacity-0', 'pointer-events-none');
+            backdrop.classList.add('opacity-100', 'pointer-events-auto');
+            menu.classList.remove('translate-x-full');
+            menu.classList.add('translate-x-0');
+        });
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
+        const wrapper = document.getElementById('side-menu-wrapper');
+        const backdrop = document.getElementById('menu-backdrop');
+        const menu = document.getElementById('side-menu');
+        
+        backdrop.classList.remove('opacity-100', 'pointer-events-auto');
+        backdrop.classList.add('opacity-0', 'pointer-events-none');
+        menu.classList.remove('translate-x-0');
+        menu.classList.add('translate-x-full');
+        
+        document.body.style.overflow = '';
+        setTimeout(() => { wrapper.classList.add('pointer-events-none'); }, 300);
+    }
+
+    window.addEventListener('load', () => {
+        const obs = new IntersectionObserver(es => { 
+            es.forEach(e => { 
+                if(e.isIntersecting) { 
+                    e.target.classList.add('active'); 
+                    obs.unobserve(e.target); 
+                }
+            }); 
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal-up').forEach(e => obs.observe(e));
+    });
+</script>
+</body>
+</html>

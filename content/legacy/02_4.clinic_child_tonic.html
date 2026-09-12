@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>허약체질·성장회복 클리닉 | 해온한의원</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { 
+                        sans: ['Pretendard', 'sans-serif'],
+                        serif: ['Pretendard', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            navy: '#0F172A',
+                            lemon: '#FFCC00',
+                            lemonHover: '#E6B800',
+                            blue: '#2563eb',
+                            sky: '#0ea5e9',
+                            light: '#F8FAFC',
+                            gray: '#64748b',
+                            border: '#E2E8F0',
+                            emerald: '#10b981',
+                            rose: '#f43f5e',
+                            amber: '#f59e0b'
+                        },
+                        kakao: { bg: '#FEE500', text: '#191919' },
+                        naver: { bg: '#03C75A' }
+                    },
+                    boxShadow: {
+                        'soft': '0 10px 25px -5px rgba(15, 23, 42, 0.05)',
+                        'card': '0 4px 12px -2px rgba(15, 23, 42, 0.06)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Pretendard', sans-serif;
+            background-color: #f1f5f9;
+            color: #0f172a;
+            -webkit-font-smoothing: antialiased;
+            word-break: keep-all;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .mobile-container {
+            max-width: 480px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            min-height: 100vh;
+            box-shadow: 0 0 40px rgba(0,0,0,0.05);
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        ::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .reveal-up {
+            opacity: 0; transform: translateY(20px);
+            transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal-up.active { opacity: 1; transform: translateY(0); }
+        .delay-100 { transition-delay: 0.1s; }
+        .delay-200 { transition-delay: 0.2s; }
+        
+        .touch-action { transition: transform 0.1s ease; }
+        .touch-action:active { transform: scale(0.97); }
+
+        .card-modern {
+            background: #FFFFFF; border-radius: 8px;
+            border: 1px solid #E2E8F0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+        }
+
+        /* Hero Image Overlay */
+        .hero-overlay {
+            background: linear-gradient(180deg, rgba(15,23,42,0.3) 0%, rgba(15,23,42,0.7) 50%, rgba(15,23,42,0.95) 100%);
+        }
+
+        /* Sophisticated Image Filter */
+        .img-brand-filter {
+            filter: grayscale(60%) contrast(1.1) brightness(0.85);
+            mix-blend-mode: multiply;
+        }
+        
+        .img-mask-bottom {
+            -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
+            mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
+        }
+
+        /* Custom Checkmark List */
+        .check-list li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.75rem;
+            color: #475569;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .check-list li::before {
+            content: '\f00c';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            top: 2px;
+            color: #10b981;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body class="pb-[80px]">
+
+<div class="mobile-container relative pb-10">
+    
+    <div class="fixed top-0 left-0 right-0 mx-auto w-full max-w-[480px] z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-brand-border flex items-center justify-between px-5 py-3.5">
+        <div class="flex items-center gap-2">
+            <button onclick="history.back()" class="text-brand-navy p-1 touch-action -ml-1">
+                <i class="fa-solid fa-arrow-left text-[18px]"></i>
+            </button>
+            <span class="font-extrabold text-[15px] tracking-tight text-brand-navy">허약체질·성장 클리닉</span>
+        </div>
+        <button aria-label="메뉴 열기" class="text-brand-navy p-1 touch-action" onclick="openMenu()">
+            <i class="fa-solid fa-bars text-[20px]"></i>
+        </button>
+    </div>
+
+    <header class="relative pt-24 pb-14 px-5 min-h-[500px] flex flex-col justify-end overflow-hidden bg-brand-navy">
+        <img src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?q=80&w=1000&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover z-0 opacity-70 mix-blend-luminosity" alt="성장기 아이 배경">
+        <div class="absolute inset-0 hero-overlay z-10"></div>
+        
+        <div class="relative z-20 reveal-up w-full">
+            <span class="inline-block px-2.5 py-1 bg-white/10 text-brand-lemon text-[10px] font-bold tracking-widest uppercase mb-4 rounded-[4px] border border-white/20 backdrop-blur-sm">
+                Pediatric Recovery Clinic
+            </span>
+            <h1 class="text-[32px] font-extrabold text-white tracking-tight mb-4 leading-[1.3] break-keep">
+                아이의 회복력과<br>
+                성장 흐름을<br>
+                함께 관리합니다
+            </h1>
+            <p class="text-[14px] text-slate-300 font-medium leading-relaxed mb-5 break-keep">
+                자주 아프고 쉽게 지치거나 발달이 더딘 아이들은<br>몸의 균형과 회복 흐름이 흔들려 있는 경우가 많습니다.
+            </p>
+            <div class="p-3 bg-brand-navy/60 backdrop-blur-md border-l-2 border-brand-lemon rounded-r-[6px]">
+                <p class="text-[13px] text-white font-bold leading-relaxed break-keep">
+                    해온한의원은 성장기 생활 패턴과 면역, 발달 상태를 고려하여 보다 안정적인 성장 환경을 만들어갑니다.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-16 bg-white border-b border-brand-border">
+        <div class="px-5 mb-8 reveal-up text-center">
+            <div class="w-12 h-12 rounded-full bg-brand-light flex items-center justify-center text-brand-emerald mx-auto mb-4 border border-brand-border shadow-sm">
+                <i class="fa-solid fa-seedling text-lg"></i>
+            </div>
+            <h2 class="text-[24px] font-serif font-bold text-brand-navy mb-3 leading-snug tracking-tight">
+                아이들은<br>"크면서 강해지는 것"이<br>아닙니다.
+            </h2>
+        </div>
+
+        <div class="px-5 reveal-up delay-100">
+            <p class="text-[14px] text-brand-gray leading-relaxed break-keep font-medium mb-5 text-center">
+                성장 과정 속에서 면역과 체력, 소화와 수면, 정서와 발달은 계속 변화합니다. 특별한 질병이 없더라도 몸의 회복 균형이 약해져 있는 경우가 많습니다.
+            </p>
+            
+            <div class="bg-[#F8FAFC] rounded-[12px] p-5 border border-brand-border relative overflow-hidden shadow-soft">
+                <div class="absolute top-0 right-0 w-24 h-24 bg-brand-lemon/10 rounded-full blur-xl transform translate-x-1/2 -translate-y-1/2"></div>
+                <ul class="check-list relative z-10 font-bold text-brand-navy">
+                    <li>자주 감기에 걸리고 잘 낫지 않나요?</li>
+                    <li>조금만 뛰어도 쉽게 피곤해하나요?</li>
+                    <li>식욕이 떨어지고 먹는 양이 적나요?</li>
+                    <li>성장 속도가 또래보다 더딘가요?</li>
+                    <li>집중력이 흔들리고 예민한가요?</li>
+                </ul>
+            </div>
+
+            <p class="text-[14px] text-brand-gray leading-relaxed break-keep font-medium mt-5 text-center">
+                한의학에서는 이런 상태를 단순히 "잔병치레"로만 보지 않고 <strong class="text-brand-navy">성장과 발달 흐름 전체 속에서 함께 이해</strong>하려고 합니다.
+            </p>
+        </div>
+    </section>
+
+    <section class="py-16 bg-[#F8FAFC] border-b border-brand-border px-5 relative overflow-hidden">
+        <div class="absolute -left-10 top-20 w-[150px] h-[150px] bg-brand-blue/5 rounded-full blur-3xl"></div>
+        
+        <div class="mb-8 reveal-up relative z-10">
+            <span class="text-brand-navy font-bold tracking-widest uppercase text-[10px] mb-2 block border-l-2 border-brand-lemon pl-2">Comprehensive Diagnosis</span>
+            <h2 class="text-[22px] font-extrabold text-brand-navy tracking-tight mb-3">성장기 아이들은<br>생활 전체를 봐야 합니다</h2>
+            <p class="text-[13px] font-medium text-brand-gray break-keep">전통적인 망문문절 진단과 현대적인 검사·생활 분석의 결합</p>
+        </div>
+
+        <div class="reveal-up delay-100 relative z-10">
+            <!-- 시각적인 그리드 태그 -->
+            <div class="grid grid-cols-2 gap-2.5 mb-6">
+                <div class="bg-white border border-gray-200 p-3 rounded-[8px] shadow-sm flex items-center gap-2.5">
+                    <i class="fa-solid fa-moon text-brand-blue opacity-70"></i><span class="text-[13px] font-bold text-brand-navy">수면 패턴</span>
+                </div>
+                <div class="bg-white border border-gray-200 p-3 rounded-[8px] shadow-sm flex items-center gap-2.5">
+                    <i class="fa-solid fa-school text-brand-emerald opacity-70"></i><span class="text-[13px] font-bold text-brand-navy">학교 생활</span>
+                </div>
+                <div class="bg-white border border-gray-200 p-3 rounded-[8px] shadow-sm flex items-center gap-2.5">
+                    <i class="fa-solid fa-person-running text-brand-rose opacity-70"></i><span class="text-[13px] font-bold text-brand-navy">운동량</span>
+                </div>
+                <div class="bg-white border border-gray-200 p-3 rounded-[8px] shadow-sm flex items-center gap-2.5">
+                    <i class="fa-solid fa-utensils text-brand-amber opacity-70"></i><span class="text-[13px] font-bold text-brand-navy">식사 습관</span>
+                </div>
+                <div class="bg-white border border-gray-200 p-3 rounded-[8px] shadow-sm flex items-center gap-2.5">
+                    <i class="fa-solid fa-bolt text-brand-lemon opacity-70"></i><span class="text-[13px] font-bold text-brand-navy">스트레스</span>
+                </div>
+                <div class="bg-white border border-gray-200 p-3 rounded-[8px] shadow-sm flex items-center gap-2.5">
+                    <i class="fa-solid fa-battery-half text-brand-gray opacity-70"></i><span class="text-[13px] font-bold text-brand-navy">피로 회복</span>
+                </div>
+            </div>
+            
+            <div class="bg-brand-navy text-white p-5 rounded-[12px] relative overflow-hidden shadow-card">
+                <i class="fa-regular fa-clock absolute -right-4 -bottom-4 text-7xl text-brand-lemon opacity-10"></i>
+                <h4 class="text-[14px] font-bold text-brand-lemon mb-2 flex items-center gap-2"><i class="fa-solid fa-circle-info"></i> 첫 내원 시 안내</h4>
+                <p class="text-[13px] leading-relaxed font-medium break-keep relative z-10">
+                    상담과 평가 시간이 조금 더 길어질 수 있습니다. <strong class="text-white">아이의 성장 흐름 속 작은 단서까지 놓치지 않기 위해서입니다.</strong>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white border-b border-brand-border px-5 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSIjZjFmNWY5IiBmaWxsLW9wYWNpdHk9IjAuNCIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMCAwaDQwdjQwSDBWMHptMjAgMjBjNS41MjMgMCAxMC00LjQ3NyAxMC0xMFMyNS41MjMgMCAyMCAwIDEwIDQuNDc3IDEwIDEwczQuNDc3IDEwIDEwIDEwem0wIDJjLTYuNjI3IDAtMTIgNS4zNzMtMTIgMTJzNS4zNzMgMTIgMTIgMTIgMTItNS4zNzMgMTItMTItNS4zNzMtMTItMTItMTJ6Ii8+PC9nPjwvc3ZnPg==')]">
+        <div class="mb-10 reveal-up text-center">
+            <h2 class="text-[24px] font-extrabold text-brand-navy tracking-tight mb-2">허약체질도<br>아이마다 형태가 다릅니다</h2>
+            <p class="text-[13px] font-medium text-brand-gray break-keep">오장(五臟)의 기능 편차에 따른 5가지 맞춤 분석</p>
+        </div>
+
+        <div class="space-y-6 reveal-up delay-100">
+            <!-- 01 간계 -->
+            <div class="bg-white rounded-[12px] border border-gray-200 shadow-soft overflow-hidden relative">
+                <div class="absolute top-0 left-0 w-1.5 h-full bg-brand-blue"></div>
+                <i class="fa-solid fa-wind absolute -right-4 -top-4 text-8xl text-blue-50 z-0"></i>
+                <div class="p-5 relative z-10">
+                    <div class="flex justify-between items-start mb-2">
+                        <span class="text-[10px] font-bold text-brand-blue tracking-widest uppercase">01 / Liver</span>
+                        <div class="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center text-brand-blue"><i class="fa-solid fa-brain"></i></div>
+                    </div>
+                    <h3 class="text-[18px] font-extrabold text-brand-navy mb-1">간계허약아</h3>
+                    <p class="text-[13px] text-brand-blue font-bold mb-3">"긴장과 스트레스에 쉽게 흔들리는 아이"</p>
+                    <p class="text-[13px] text-brand-gray leading-relaxed break-keep font-medium mb-4">정서적 긴장과 스트레스 반응이 크고 신경계와 근육 발달 균형이 흔들리는 유형입니다.</p>
+                    <div class="flex flex-wrap gap-1.5 mb-4">
+                        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-1 rounded-[4px] border border-gray-200">예민함</span>
+                        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-1 rounded-[4px] border border-gray-200">수면불량/야제</span>
+                        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-1 rounded-[4px] border border-gray-200">기능성 복통</span>
+                    </div>
+                    <div class="bg-[#F8FAFC] p-3 rounded-[6px] border border-brand-border">
+                        <p class="text-[11px] text-brand-navy leading-relaxed font-bold"><i class="fa-solid fa-stethoscope text-brand-blue mr-1"></i> 해온의 시선 : 자율신경 밸런스와 수면 리듬의 안정을 돕습니다.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 02 심계 -->
+            <div class="bg-white rounded-[12px] border border-gray-200 shadow-soft overflow-hidden relative">
+                <div class="absolute top-0 left-0 w-1.5 h-full bg-brand-rose"></div>
+                <i class="fa-solid fa-heart-pulse absolute -right-4 -top-4 text-8xl text-rose-50 z-0"></i>
+                <div class="p-5 relative z-10">
+                    <div class="flex justify-between items-start mb-2">
+                        <span class="text-[10px] font-bold text-brand-rose tracking-widest uppercase">02 / Heart</span>
+                        <div class="w-8 h-8 rounded-full bg-rose-50 flex items-center justify-center text-brand-rose"><i class="fa-solid fa-heart"></i></div>
+                    </div>
+                    <h3 class="text-[18px] font-extrabold text-brand-navy mb-1">심계허약아</h3>
+                    <p class="text-[13px] text-brand-rose font-bold mb-3">"쉽게 피곤하고 안정감이 부족한 아이"</p>
+                    <p class="text-[13px] text-brand-gray leading-relaxed break-keep font-medium mb-4">순환과 신경 안정 흐름이 약해져 어지럼과 피로, 불안 증상이 반복되는 유형입니다.</p>
+                    <div class="flex flex-wrap gap-1.5 mb-4">
+                        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-1 rounded-[4px] border border-gray-200">식은땀</span>
+                        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-1 rounded-[4px] border border-gray-200">어지럼/빈혈</span>
+                        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-1 rounded-[4px] border border-gray-200">수족냉증</span>
+                    </div>
+                    <div class="bg-[#F8FAFC] p-3 rounded-[6px] border border-brand-border">
+                        <p class="text-[11px] text-brand-navy leading-relaxed font-bold"><i class="fa-solid fa-stethoscope text-brand-rose mr-1"></i> 해온의 시선 : 근본적인 에너지 순환과 심리적 안정을 돕습니다.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 03 비계 -->
+            <div class="bg-white rounded-[12px] border border-gray-200 shadow-soft overflow-hidden relative">
+                <div class="absolute top-0 left-0 w-1.5 h-full bg-brand-amber"></div>
+                <i class="fa-solid fa-utensils absolute -right-4 -top-4 text-8xl text-amber-50/50 z-0"></i>
+                <div class="p-5 relative z-10">
+                    <div class="flex justify-between items-start mb-2">
+                        <span class="text-[10px] font-bold text-brand-amber tracking-widest uppercase">03 / Spleen</span>
+                        <div class="w-8 h-8 rounded-full bg-amber-50 flex items-center justify-center text-brand-amber"><i class="fa-solid fa-bowl-rice"></i></div>
+                    </div>
+                    <h3 class="text-[18px] font-extrabold text-brand-navy mb-1">비계허약아</h3>
+                    <p class="text-[13px] text-brand-amber font-bold mb-3">"가장 흔하지만 놓치기 쉬운 소화기 유형"</p>
+                    <p class="text-[13px] text-brand-gray leading-relaxed break-keep font-medium mb-4">소화와 흡수, 에너지 분배 기능이 약해진 상태로, 저체중형과 과체중형으로 나뉩니다.</p>
+                    
+                    <div class="grid grid-cols-2 gap-2 mb-4">
+                        <div class="bg-slate-50 p-2.5 rounded-[6px] border border-gray-100">
+                            <span class="block text-[11px] font-extrabold text-brand-navy mb-1">저체중형</span>
+                            <span class="text-[10px] text-slate-500 leading-tight block">식욕부진, 잦은 복통, 마름</span>
+                        </div>
+                        <div class="bg-slate-50 p-2.5 rounded-[6px] border border-gray-100">
+                            <span class="block text-[11px] font-extrabold text-brand-navy mb-1">과체중형</span>
+                            <span class="text-[10px] text-slate-500 leading-tight block">소아비만, 성조숙 경향</span>
+                        </div>
+                    </div>
+                    <div class="bg-[#F8FAFC] p-3 rounded-[6px] border border-brand-border">
+                        <p class="text-[11px] text-brand-navy leading-relaxed font-bold"><i class="fa-solid fa-stethoscope text-brand-amber mr-1"></i> 해온의 시선 : 흡수율을 높여 에너지 분배가 잘 되도록 개선합니다.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 04 폐계 -->
+            <div class="bg-white rounded-[12px] border border-gray-200 shadow-soft overflow-hidden relative">
+                <div class="absolute top-0 left-0 w-1.5 h-full bg-brand-emerald"></div>
+                <i class="fa-solid fa-lungs absolute -right-4 -top-4 text-8xl text-emerald-50/50 z-0"></i>
+                <div class="p-5 relative z-10">
+                    <div class="flex justify-between items-start mb-2">
+                        <span class="text-[10px] font-bold text-brand-emerald tracking-widest uppercase">04 / Lung</span>
+                        <div class="w-8 h-8 rounded-full bg-emerald-50 flex items-center justify-center text-brand-emerald"><i class="fa-solid fa-shield-virus"></i></div>
+                    </div>
+                    <h3 class="text-[18px] font-extrabold text-brand-navy mb-1">폐계허약아</h3>
+                    <p class="text-[13px] text-brand-emerald font-bold mb-3">"자주 아프고 회복이 느린 면역 유형"</p>
+                    <p class="text-[13px] text-brand-gray leading-relaxed break-keep font-medium mb-4">면역과 방어 기능이 약해져 감염과 알레르기 반응이 반복되는 유형입니다.</p>
+                    <div class="flex flex-wrap gap-1.5 mb-4">
+                        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-1 rounded-[4px] border border-gray-200">감기 반복</span>
+                        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-1 rounded-[4px] border border-gray-200">중이염/비염</span>
+                        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-1 rounded-[4px] border border-gray-200">천식/아토피</span>
+                    </div>
+                    <div class="bg-[#F8FAFC] p-3 rounded-[6px] border border-brand-border">
+                        <p class="text-[11px] text-brand-navy leading-relaxed font-bold"><i class="fa-solid fa-stethoscope text-brand-emerald mr-1"></i> 해온의 시선 : 호흡기 면역 체계를 조절하고 방어력을 기릅니다.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 05 신계 -->
+            <div class="bg-white rounded-[12px] border border-gray-200 shadow-soft overflow-hidden relative">
+                <div class="absolute top-0 left-0 w-1.5 h-full bg-brand-navy"></div>
+                <i class="fa-solid fa-child-reaching absolute -right-4 -top-4 text-8xl text-slate-50 z-0"></i>
+                <div class="p-5 relative z-10">
+                    <div class="flex justify-between items-start mb-2">
+                        <span class="text-[10px] font-bold text-brand-navy tracking-widest uppercase">05 / Kidney</span>
+                        <div class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-brand-navy"><i class="fa-solid fa-arrow-trend-up"></i></div>
+                    </div>
+                    <h3 class="text-[18px] font-extrabold text-brand-navy mb-1">신계허약아</h3>
+                    <p class="text-[13px] text-brand-navy font-bold mb-3">"성장과 발달 속도가 느린 유형"</p>
+                    <p class="text-[13px] text-brand-gray leading-relaxed break-keep font-medium mb-4">성장과 발달, 기초 체력 기반 자체가 약한 유형입니다.</p>
+                    <div class="flex flex-wrap gap-1.5 mb-4">
+                        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-1 rounded-[4px] border border-gray-200">성장부진</span>
+                        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-1 rounded-[4px] border border-gray-200">발육지연</span>
+                        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-1 rounded-[4px] border border-gray-200">체력저하/성장통</span>
+                    </div>
+                    <div class="bg-[#F8FAFC] p-3 rounded-[6px] border border-brand-border">
+                        <p class="text-[11px] text-brand-navy leading-relaxed font-bold"><i class="fa-solid fa-stethoscope text-brand-navy mr-1"></i> 해온의 시선 : 뼈와 근육의 발달을 돕는 종합적인 기력 보강을 합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-[#F8FAFC] border-b border-brand-border px-5">
+        <div class="reveal-up text-center mb-8">
+            <span class="text-brand-navy font-bold tracking-widest uppercase text-[10px] mb-2 block">Our Approach</span>
+            <h2 class="text-[22px] font-extrabold text-brand-navy tracking-tight mb-3 leading-snug">성장기 아이들에게<br>"무조건 강한 약"은<br>정답이 아닙니다</h2>
+            <p class="text-[13px] font-medium text-brand-gray break-keep">아이 체질과 상태에 맞춰 필요한 방향으로 균형을 보완합니다.</p>
+        </div>
+
+        <div class="reveal-up delay-100">
+            <div class="grid grid-cols-2 gap-3">
+                <div class="bg-white p-4 rounded-[8px] border border-gray-200 shadow-sm flex flex-col items-center text-center">
+                    <div class="w-10 h-10 rounded-full bg-brand-light flex items-center justify-center text-brand-emerald mb-2">
+                        <i class="fa-solid fa-battery-full text-lg"></i>
+                    </div>
+                    <h4 class="text-[13px] font-extrabold text-brand-navy mb-1">회복력 향상</h4>
+                    <p class="text-[11px] text-brand-gray leading-tight">스스로 이겨내는 힘</p>
+                </div>
+                <div class="bg-white p-4 rounded-[8px] border border-gray-200 shadow-sm flex flex-col items-center text-center">
+                    <div class="w-10 h-10 rounded-full bg-brand-light flex items-center justify-center text-brand-amber mb-2">
+                        <i class="fa-solid fa-utensils text-lg"></i>
+                    </div>
+                    <h4 class="text-[13px] font-extrabold text-brand-navy mb-1">식욕 개선</h4>
+                    <p class="text-[11px] text-brand-gray leading-tight">영양 흡수율 증대</p>
+                </div>
+                <div class="bg-white p-4 rounded-[8px] border border-gray-200 shadow-sm flex flex-col items-center text-center">
+                    <div class="w-10 h-10 rounded-full bg-brand-light flex items-center justify-center text-brand-blue mb-2">
+                        <i class="fa-solid fa-moon text-lg"></i>
+                    </div>
+                    <h4 class="text-[13px] font-extrabold text-brand-navy mb-1">수면 안정</h4>
+                    <p class="text-[11px] text-brand-gray leading-tight">깊은 잠을 통한 성장</p>
+                </div>
+                <div class="bg-white p-4 rounded-[8px] border border-gray-200 shadow-sm flex flex-col items-center text-center">
+                    <div class="w-10 h-10 rounded-full bg-brand-light flex items-center justify-center text-brand-rose mb-2">
+                        <i class="fa-solid fa-arrow-trend-up text-lg"></i>
+                    </div>
+                    <h4 class="text-[13px] font-extrabold text-brand-navy mb-1">성장 흐름</h4>
+                    <p class="text-[11px] text-brand-gray leading-tight">시기에 맞는 발달</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white">
+        <!-- 6-1: 녹용 -->
+        <div class="py-16 px-5 border-b border-brand-border reveal-up relative overflow-hidden bg-brand-navy text-white">
+            <div class="absolute top-0 right-0 w-[200px] h-[200px] bg-brand-lemon/10 rounded-full blur-3xl opacity-50 transform translate-x-1/3 -translate-y-1/3"></div>
+            <div class="relative z-10">
+                <span class="text-brand-lemon font-bold tracking-widest uppercase text-[10px] mb-2 block border-l-2 border-brand-lemon pl-2">Deer Antler Extract</span>
+                <h3 class="text-[22px] font-extrabold text-white tracking-tight mb-3 leading-snug">녹용은 "무조건 키를 크게<br>만드는 약"이 아닙니다</h3>
+                <p class="text-[14px] text-slate-300 leading-relaxed break-keep font-medium mb-6">
+                    녹용은 성장기 아이들의 회복력과 발달 흐름을 보조하기 위해 활용되는 대표적인 한약재입니다. 성장기 피로, 회복 저하, 체력 부족 상황에 주로 쓰입니다.
+                </p>
+                <div class="bg-white/10 backdrop-blur-md p-5 rounded-[8px] border border-white/20">
+                    <h4 class="text-[14px] font-bold text-brand-lemon mb-2 flex items-center gap-2"><i class="fa-solid fa-check"></i> 해온의 녹용 처방 철학</h4>
+                    <p class="text-[13px] text-slate-200 leading-relaxed break-keep font-medium">
+                        아이마다 성장 속도, 운동량, 체질, 수면 상태가 다르기 때문에 "누구에게나 같은 방식으로 사용되는 약재"라고 생각하지 않고 개별 맞춤 처방합니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 6-2: 스포츠 컨디셔닝 -->
+        <div class="py-16 px-5 relative overflow-hidden reveal-up border-b border-brand-border">
+            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1526566762798-8fac9c07aa45?q=80&w=1000&auto=format&fit=crop')] bg-cover bg-center img-brand-filter opacity-10"></div>
+            <div class="relative z-10">
+                <span class="text-brand-navy font-bold tracking-widest uppercase text-[10px] mb-2 block border-l-2 border-brand-lemon pl-2">Sports Conditioning</span>
+                <h3 class="text-[22px] font-extrabold text-brand-navy tracking-tight mb-3">운동하는 아이들은<br>회복 관리가 중요합니다</h3>
+                <p class="text-[14px] text-brand-gray leading-relaxed break-keep font-medium mb-4">
+                    성장기 운동선수들은 운동 적응과 회복 과정 속에서 에너지 소모와 피로 누적이 반복됩니다. 수면 부족, 식욕 저하, 성장통이 동반되는 경우도 많습니다.
+                </p>
+                <div class="inline-flex items-center gap-2 bg-brand-light border border-gray-200 px-4 py-2.5 rounded-[6px] shadow-sm">
+                    <i class="fa-solid fa-stopwatch text-brand-navy"></i>
+                    <p class="text-[13px] text-brand-navy font-bold break-keep">
+                        훈련량과 회복 상태를 고려한 <span class="text-brand-blue">성장기 특화 컨디셔닝</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 6-3: Kampo 관점 -->
+        <div class="py-16 px-5 bg-[#F8FAFC] border-b border-brand-border reveal-up">
+            <div class="bg-white p-6 rounded-[12px] border border-gray-200 shadow-card relative">
+                <i class="fa-solid fa-quote-left absolute top-4 right-4 text-4xl text-brand-lemon opacity-20"></i>
+                <span class="text-brand-gray font-bold tracking-widest uppercase text-[10px] mb-2 block">Kampo Medicine</span>
+                <h3 class="text-[18px] font-extrabold text-brand-navy tracking-tight mb-3 leading-snug">일본에서도 성장기 허약체질에<br>한약을 활용합니다</h3>
+                <p class="text-[13px] text-brand-gray leading-relaxed break-keep font-medium mb-4">
+                    일본에서는 의사들이 Kampo(한방의학)를 활용하여 반복 감염, 식욕부진, 면역 불균형 등 허약체질과 성장기 회복 관리에 접근하는 경우가 많으며 현대의학과 자주 병행됩니다.
+                </p>
+                <p class="text-[13px] text-brand-navy font-bold leading-relaxed break-keep pt-4 border-t border-dashed border-gray-200">
+                    해온한의원 역시 전통 한의학의 경험과 현대적 연구 흐름을 함께 고려하여 보다 안전하고 현실적인 방향의 진료를 지향합니다.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white px-5 text-center">
+        <div class="reveal-up mb-8">
+            <div class="w-14 h-14 rounded-full bg-brand-light flex items-center justify-center text-brand-emerald mx-auto mb-4 border border-brand-border">
+                <i class="fa-solid fa-leaf text-xl"></i>
+            </div>
+            <h2 class="text-[24px] font-serif font-bold text-brand-navy tracking-tight mb-4 leading-snug">성장기 아이들에게 필요한 것은<br>회복의 균형입니다</h2>
+            <p class="text-[14px] text-brand-gray leading-relaxed break-keep font-medium mb-6">
+                아이들이 단순히 "덜 아픈 상태"가 아니라, <strong class="text-brand-navy">잘 먹고, 잘 자고, 잘 회복하여 안정적으로 성장할 수 있는 흐름</strong>을 만드는 것을 중요하게 생각합니다.
+            </p>
+        </div>
+
+        <div class="flex flex-col gap-3 reveal-up delay-100">
+            <a href="location.html" class="w-full bg-brand-navy text-white py-4 rounded-[8px] font-extrabold text-center flex items-center justify-center gap-2 touch-action text-[15px] shadow-md">
+                <i class="fa-solid fa-map-location-dot text-[16px]"></i> 오시는 길 및 진료시간 안내
+            </a>
+        </div>
+    </section>
+
+    <div id="side-menu-wrapper" class="fixed inset-0 z-[100] pointer-events-none mx-auto w-full max-w-[480px] overflow-hidden">
+        <div id="menu-backdrop" class="absolute inset-0 bg-brand-navy/70 backdrop-blur-sm opacity-0 transition-opacity duration-300 pointer-events-none" onclick="closeMenu()"></div>
+        
+        <div id="side-menu" class="absolute top-0 right-0 h-full w-[260px] bg-white transform translate-x-full transition-transform duration-300 ease-out shadow-2xl flex flex-col pointer-events-auto">
+            <div class="flex items-center justify-between p-5 border-b border-brand-border bg-white">
+                <span class="font-extrabold text-[16px] tracking-tight text-brand-navy">전체 메뉴</span>
+                <button onclick="closeMenu()" class="text-brand-gray p-1 touch-action text-xl hover:text-brand-navy transition-colors">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            
+            <div class="flex-1 overflow-y-auto px-5 py-6 no-scrollbar flex flex-col gap-8 bg-white">
+                <div>
+                    <h3 class="text-[11px] font-bold text-brand-gray tracking-widest uppercase mb-3 border-l-2 border-brand-lemon pl-2">About</h3>
+                    <ul class="space-y-4">
+                        <li><a href="about.html" class="text-[15px] font-bold text-brand-navy block touch-action flex justify-between items-center group">해온의 철학 <i class="fa-solid fa-chevron-right text-[10px] text-brand-gray group-hover:text-brand-sky transition-colors"></i></a></li>
+                        <li><a href="medical_team.html" class="text-[15px] font-bold text-brand-navy block touch-action flex justify-between items-center group">의료진 소개 <i class="fa-solid fa-chevron-right text-[10px] text-brand-gray group-hover:text-brand-sky transition-colors"></i></a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-[11px] font-bold text-brand-gray tracking-widest uppercase mb-3 border-l-2 border-brand-lemon pl-2">Clinics</h3>
+                    <ul class="space-y-4">
+                        <li><a href="clinic_internal.html" class="text-[15px] font-bold text-brand-navy block touch-action flex justify-between items-center group">내과 / 체질개선 <i class="fa-solid fa-chevron-right text-[10px] text-brand-gray group-hover:text-brand-sky transition-colors"></i></a></li>
+                        <li><a href="clinic_woman_child.html" class="text-[15px] font-bold text-brand-sky block touch-action flex justify-between items-center group">여성 / 소아 <i class="fa-solid fa-chevron-right text-[10px] text-brand-sky"></i></a></li>
+                        <li><a href="clinic_child_tonic.html" class="text-[14px] font-bold text-brand-sky block touch-action pl-3 border-l-2 border-brand-sky ml-1">허약체질·성장·녹용</a></li>
+                        <li><a href="clinic_pain.html" class="text-[15px] font-bold text-brand-navy block touch-action flex justify-between items-center group">통증재활 / 교통사고 <i class="fa-solid fa-chevron-right text-[10px] text-brand-gray group-hover:text-brand-sky transition-colors"></i></a></li>
+                        <li><a href="clinic_sports.html" class="text-[14px] font-bold text-brand-lemon block touch-action p-3 bg-brand-navy rounded-[6px] text-center mt-3 shadow-soft flex items-center justify-center gap-2"><i class="fa-solid fa-stopwatch text-[14px]"></i> 유소년 스포츠 특화</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-[11px] font-bold text-brand-gray tracking-widest uppercase mb-3 border-l-2 border-brand-lemon pl-2">Support</h3>
+                    <ul class="space-y-4">
+                        <li><a href="location.html" class="text-[15px] font-bold text-brand-navy block touch-action flex justify-between items-center group">오시는 길 및 진료시간 <i class="fa-solid fa-chevron-right text-[10px] text-brand-gray group-hover:text-brand-sky transition-colors"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="fixed bottom-0 left-0 right-0 mx-auto w-full max-w-[480px] z-50 bg-white/95 backdrop-blur-md border-t border-gray-100 shadow-[0_-5px_15px_rgba(0,0,0,0.03)] pb-safe">
+    <div class="px-4 pt-3 pb-5 flex gap-3">
+        <a href="https://pf.kakao.com/_sYeKE" target="_blank" class="flex-1 bg-kakao-bg text-kakao-text py-3 rounded-[6px] font-bold text-center flex items-center justify-center gap-2 touch-action text-[14px]">
+            <i class="fas fa-comment text-[16px]"></i> 카카오톡 상담
+        </a>
+        <a href="https://naver.me/GlJlW9S4" target="_blank" class="flex-1 bg-naver-bg text-white py-3 rounded-[6px] font-bold text-center flex items-center justify-center gap-2 touch-action text-[14px]">
+            <i class="far fa-calendar-check text-[16px]"></i> 네이버 예약
+        </a>
+    </div>
+</div>
+
+<script>
+    function openMenu() {
+        const wrapper = document.getElementById('side-menu-wrapper');
+        const backdrop = document.getElementById('menu-backdrop');
+        const menu = document.getElementById('side-menu');
+        
+        wrapper.classList.remove('pointer-events-none');
+        requestAnimationFrame(() => {
+            backdrop.classList.remove('opacity-0', 'pointer-events-none');
+            backdrop.classList.add('opacity-100', 'pointer-events-auto');
+            menu.classList.remove('translate-x-full');
+            menu.classList.add('translate-x-0');
+        });
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
+        const wrapper = document.getElementById('side-menu-wrapper');
+        const backdrop = document.getElementById('menu-backdrop');
+        const menu = document.getElementById('side-menu');
+        
+        backdrop.classList.remove('opacity-100', 'pointer-events-auto');
+        backdrop.classList.add('opacity-0', 'pointer-events-none');
+        menu.classList.remove('translate-x-0');
+        menu.classList.add('translate-x-full');
+        
+        document.body.style.overflow = '';
+        setTimeout(() => { wrapper.classList.add('pointer-events-none'); }, 300);
+    }
+
+    window.addEventListener('load', () => {
+        const obs = new IntersectionObserver(es => { 
+            es.forEach(e => { 
+                if(e.isIntersecting) { 
+                    e.target.classList.add('active'); 
+                    obs.unobserve(e.target); 
+                }
+            }); 
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal-up').forEach(e => obs.observe(e));
+    });
+</script>
+</body>
+</html>
