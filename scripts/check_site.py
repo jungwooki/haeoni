@@ -86,3 +86,44 @@ for slug in ['digestive','functional-digestive','upper-digestive','lower-digesti
  assert name in pages and name in pages['clinic-internal.html'].refs,name
  assert name in pages['sitemap.html'].refs,name
 print(f'PASS: {len(CONFIG)} visual openings; {len(counts)} unique images; 4 linked digestive guides; mobile menus.')
+# Shared menu order, explicit specialty destinations, original clinic photographs.
+import hashlib
+expected=['한방내과','소아과','부인과','체질관리','통증재활','다이어트','스포츠 MPS']
+for name in names:
+ html=(ROOT/name).read_text()
+ strip=re.search(r'<nav class="department-bar".*?</nav>',html,re.S).group(0)
+ positions=[strip.index(label) for label in expected]
+ assert positions==sorted(positions),(name,'department order')
+ assert 'assets/unified.css' in html,(name,'shared styles')
+ assert 'https://haeonw.com' in strip and 'https://haeon.sportsmps.com/' in strip
+ assert 'specialty-diet' in strip and 'specialty-sports' in strip
+assert 'hero-play' not in (ROOT/'index.html').read_text()
+for photo in json.loads((ROOT/'content/clinic-photo-inventory.json').read_text()):
+ assert hashlib.sha256((ROOT/photo['path']).read_bytes()).hexdigest()==photo['sha256']
+ if photo['width']>500:
+  assert any(photo['path'] in p.refs for p in pages.values()),('clinic photo not displayed',photo['path'])
+for p in json.loads((ROOT/'content/family-pages.json').read_text()):
+ if p['slug'].startswith('women-'):
+  html=(ROOT/p['file']).read_text()
+  assert 'tabbed-reading' in html and 'source-chapter' in html
+print('PASS: unified menus; specialty links; clinic source image integrity and display; women’s reading tabs; no playback toggle.')
+
+# Public guides must not expose withdrawn/planned offerings or silently lose source mappings.
+guide_data=json.loads((ROOT/'content/care-guides.json').read_text())
+for kind,items in guide_data.items():
+ if not isinstance(items,list):continue
+ html=(ROOT/f'care-{kind}.html').read_text()
+ assert html.count('class="care-notice"')==1,(kind,'footer notice')
+ assert html.count('class="care-entry"')==sum(x.get('publication_status','current')=='current' for x in items)
+ for item in items:
+  anchor='id="item-'+item['id']+'"'
+  assert (anchor in html)==(item.get('publication_status','current')=='current'),item['id']
+  assert item['caution'] and item['limit'],item['id']
+ for forbidden in ['대학병원급','재생 속도를 30%','감염 걱정 없음','위험 원천 차단']:
+  assert forbidden not in html,(kind,forbidden)
+ source=json.loads((ROOT.parent/'emr/guides'/f'{kind}.json').read_text())['data']
+ mapped=[sid for item in items for sid in item['source_ids'] if not sid.startswith('USER_')]
+ assert sorted(mapped)==sorted(x['id'] for x in source),(kind,'source coverage')
+for name in names:
+ assert 'href="care.html"' in (ROOT/name).read_text(),(name,'shared care menu')
+print('PASS: care source coverage; planned/withdrawn offerings excluded; cautions and shared entry links.')

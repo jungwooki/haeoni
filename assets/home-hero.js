@@ -3,13 +3,9 @@
   if (!hero) return;
   const slides = [...hero.querySelectorAll('.home-slide')];
   const choices = [...hero.querySelectorAll('.hero-choice')];
-  const play = hero.querySelector('.hero-play');
-  const reduced = matchMedia('(prefers-reduced-motion: reduce)');
-  let current = 0, paused = reduced.matches, visible = true, timer;
+  let current = 0, paused = false, visible = true, timer;
   const sync = () => {
     clearTimeout(timer);
-    play.textContent = paused ? '자동 재생 ▷' : '일시정지 Ⅱ';
-    play.setAttribute('aria-label', paused ? '슬라이드 자동 재생' : '자동 전환 일시정지');
     if (!paused && visible && !document.hidden) timer = setTimeout(() => show(current + 1), 6000);
   };
   const show = (index, manual = false) => {
@@ -21,7 +17,6 @@
     });
     hero.querySelector('.hero-count').textContent = `0${current + 1} / 03`;
     if (manual) {
-      paused = true;
       hero.querySelector('.hero-announcement').textContent = slides[current].getAttribute('aria-label');
     }
     sync();
@@ -29,7 +24,6 @@
   choices.forEach((choice, i) => choice.addEventListener('click', () => show(i, true)));
   hero.querySelector('.hero-prev').addEventListener('click', () => show(current - 1, true));
   hero.querySelector('.hero-next').addEventListener('click', () => show(current + 1, true));
-  play.addEventListener('click', () => { paused = !paused; sync(); });
   hero.addEventListener('keydown', event => {
     if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
       event.preventDefault();
@@ -39,10 +33,10 @@
     }
   });
   hero.addEventListener('focusin', event => {
-    if (event.target !== play) { paused = true; sync(); } else clearTimeout(timer);
+    paused = slides[current].contains(event.target); sync();
   });
+  hero.addEventListener('focusout', () => { setTimeout(() => { paused = slides[current].contains(document.activeElement); sync(); }, 0); });
   document.addEventListener('visibilitychange', sync);
-  reduced.addEventListener('change', () => { if (reduced.matches) paused = true; sync(); });
   if ('IntersectionObserver' in window) new IntersectionObserver(entries => {
     visible = entries[0].isIntersecting; sync();
   }).observe(hero);

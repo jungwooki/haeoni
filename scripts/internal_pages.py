@@ -77,6 +77,7 @@ def build_internal(write,link):
   chapters=[];toc=[];seen=set()
   for idx,section in enumerate(page['sections']):
    label=LABELS.get(page['slug'],{}).get(idx,section['title']).replace('I ','',1)
+   if page['slug']=='diagnosis' and 2<=idx<=7:label=f'유형 {idx-1} · 진찰 소견과 증상'
    toc.append(f'<a href="#guide-{idx}"><span>{idx+1:02}</span>{escape(label)}</a>')
    items=section['items']
    if page['slug']=='diagnosis' and 2<=idx<=7:

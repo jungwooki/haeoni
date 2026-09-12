@@ -57,7 +57,11 @@ def visual_hero(name,title,group_url,group):
  else:visual=diagram(cfg,title)
  copy=('<p class="eyebrow">'+esc(title)+' · HAEON CARE</p><h1>'+headline+'</h1><p class="visual-lead">'+esc(cfg['description'])+'</p>') if hub else ('<p class="eyebrow">'+esc(group)+' · HEALTH GUIDE</p><h1>'+esc(title)+'</h1><p class="visual-lead">'+esc(headline)+'</p>')
  points='<ul class="visual-keypoints">'+''.join('<li>'+esc(p)+'</li>' for p in cfg['points'])+'</ul>'
- action='#care-paths' if hub else '#reading-overview' if name.startswith('internal-') else '#guide-0'
+ action='#care-paths' if hub else '#reading-overview' if name.startswith(('internal-','child-')) else '#guide-0'
+ if name=='clinic-internal.html':
+  copy+='<nav class="internal-quick-paths" aria-label="한방내과 빠른 안내"><a href="#symptom-guides"><span>코·목·기침</span>호흡기 안내 <b aria-hidden="true">→</b></a><a href="#digestive-guides"><span>속·배변의 불편</span>소화기 안내 <b aria-hidden="true">→</b></a></nav>'
+ if name=='clinic-child.html':
+  copy+='<nav class="child-quick-paths" aria-label="소아과 빠른 안내"><a href="child-respiratory.html"><span>잦은 감기·기침</span>호흡기 안내 <b aria-hidden="true">→</b></a><a href="child-growth.html"><span>키·성장 기록</span>성장 안내 <b aria-hidden="true">→</b></a></nav>'
  return '<section class="clinical-visual-hero '+('visual-hub' if hub else 'visual-article')+'" id="visual-intro"><div class="container">'+breadcrumbs+'<div class="visual-opening-grid"><div class="visual-opening-copy">'+copy+points+f'<a class="visual-primary" href="{action}">'+('내게 맞는 안내 찾기' if hub else '자세한 내용 읽기')+' <span aria-hidden="true">↓</span></a></div>'+visual+'</div></div></section>'
 
 def feature_cards(dept):

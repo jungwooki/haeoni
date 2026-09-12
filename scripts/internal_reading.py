@@ -18,12 +18,13 @@ ROWS={
 'upper-digestive':[('위치와 느낌','속쓰림·신물·명치 불편','어디가 어떻게 불편한지'),('나타나는 때','식사·눕는 자세와의 관계','증상 시간과 상황'),('확인할 자료','기존 내시경 등 검사 결과','검사와 치료 이력')],
 'lower-digestive':[('복통','배변 전후 달라지는 불편','통증의 위치와 시간'),('배변','횟수와 변의 형태','설사·변비 등 변화'),('생활과 진료','식사·수면·약물·기존 검사','며칠간의 기록')]
 }
-def reading_tabs(page,chapters):
+def reading_tabs(page,chapters,rows=None,preparation=None):
  cfg=CONFIG[page['file']]
- table='<div class="care-table-wrap"><table class="care-summary-table"><caption>진료에서 함께 살펴볼 내용</caption><thead><tr><th scope="col">구분</th><th scope="col">살펴볼 점</th><th scope="col">알려주실 내용</th></tr></thead><tbody>'+''.join('<tr><th scope="row">'+esc(a)+'</th><td>'+esc(b)+'</td><td>'+esc(c)+'</td></tr>' for a,b,c in ROWS[page['slug']])+'</tbody></table></div>'
+ table='<div class="care-table-wrap"><table class="care-summary-table" role="table"><caption>진료에서 함께 살펴볼 내용</caption><thead><tr role="row"><th scope="col">구분</th><th scope="col">살펴볼 점</th><th scope="col">알려주실 내용</th></tr></thead><tbody>'+''.join('<tr role="row"><th scope="row" role="rowheader">'+esc(a)+'</th><td role="cell" data-label="살펴볼 점">'+esc(b)+'</td><td role="cell" data-label="알려주실 내용">'+esc(c)+'</td></tr>' for a,b,c in (ROWS[page['slug']] if rows is None else rows))+'</tbody></table></div>'
  flow='<ol class="reading-flow">'+''.join('<li><span>'+f'{n:02}'+'</span><strong>'+esc(label)+'</strong></li>' for n,label in enumerate(cfg['points'],1))+'</ol>'
  overview='<h2>'+esc(cfg['headline'])+'</h2>'+flow+table
  prep='<h2>진료 전, 세 가지만 준비해 주세요.</h2><div class="visit-note-grid"><div><span>01</span><h3>증상의 기록</h3><p>가장 불편한 점과 시작한 시점, 반복되는 상황을 알려주세요.</p></div><div><span>02</span><h3>검사와 치료 이력</h3><p>기존 검사 결과와 복용 중인 약을 함께 확인합니다.</p></div><div><span>03</span><h3>꼭 묻고 싶은 질문</h3><p>치료 목표와 생활관리 등 궁금했던 점을 편하게 이야기해 주세요.</p></div></div>'
+ if preparation is not None:prep=preparation
  if page['slug'] in ['functional-digestive','upper-digestive','lower-digestive']:
   # Keep the already-authored warning signs visible in the preparation tab as well.
   prep+='<p class="reading-callout">갑작스럽거나 심한 증상은 예약을 기다리기보다 먼저 진료를 받으세요. 자세한 안내에서 빠른 평가가 필요한 증상을 확인할 수 있습니다.</p>'

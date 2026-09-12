@@ -1,0 +1,230 @@
+/* HAEON: restrained charcoal, warm white and quiet gray. */
+:root{
+ --white:#fff;--text-900:#202a38;--text-700:#46505c;--text-500:#67717b;--text-400:#858c94;
+ --accent:#293648;--accent-deep:#202a38;--accent-pale:#edf0f2;--label:#657080;
+ --canvas:#f5f5f3;--canvas-deep:#eeefed;--line:#dadddf;--line-strong:#bfc5cb;
+ --surface:#f7f7f5;--surface-alt:#eeefed;--border:#dadddf;--border-strong:#bfc5cb;
+ --r-sm:5px;--r-md:5px;--r-lg:5px;--r-xl:5px;--r-full:5px;
+ --shadow-sm:none;--shadow-md:none;--shadow-lg:0 10px 24px #18213012;
+ --sp-1:4px;--sp-2:8px;--sp-3:12px;--sp-4:16px;--sp-5:24px;--sp-6:32px;--sp-7:40px;--sp-8:56px;--sp-9:72px;--sp-10:96px;
+}
+/* Shared scale, surfaces and interaction across every department and detail page. */
+:root{--ink:#202a38;--muted:#67717b;--blue:#293648;--light:#f5f5f3;--border:#dadddf;--care-ink:#202a38;--care-muted:#67717b;--care-line:#dadddf;--care-warm:#f5f5f3;--care-clay:#657080}
+body{font-family:Pretendard,-apple-system,BlinkMacSystemFont,sans-serif;color:var(--ink);background:#ffffff;font-size:16px;line-height:1.8}
+body :is(button,input,select,textarea){font:inherit}body :is(a,button,summary){touch-action:manipulation}body :is(a,button,summary):focus-visible{outline:3px solid #293648;outline-offset:4px}body :is(h1,h2,h3){line-height:1.45;letter-spacing:-.035em;word-break:keep-all;overflow-wrap:anywhere}
+body :is(.page-hero h1,.visual-opening-copy h1,.visual-article .visual-opening-copy h1){font-size:clamp(30px,3vw,42px);font-weight:800}
+body :is(.section-heading h2,.internal-section-heading h2,.care-flow h2,.family-all-guides>h2,.reading-tab-panel>h2){font-size:30px}
+body :is(.internal-topic-group h2,.source-text h2,.reading-section h2,.team-principles h2){font-size:23px}
+body :is(.source-text h3,.care-flow h3,.warm-photo-card h3,.symptom-card h3){font-size:20px}
+body :is(.visual-lead,.page-lead,.section-description,.prose,.source-text,.team-principles p,.visit-note-grid p,.care-flow li p){font-size:16px;line-height:1.8}
+body :is(.eyebrow,.visual-opening-copy .eyebrow,.care-flow .eyebrow){font-size:12px;letter-spacing:.07em;color:#657080}
+body :is(.clinical-visual-hero,.page-hero){background:var(--canvas);color:var(--ink);border-bottom:1px solid var(--border)}
+body :is(.topic-link,.reading-sidebar nav a,.mobile-reading-nav nav a,.on-this-page a){font-size:15px;line-height:1.65;min-height:48px}
+body :is(.button,.visual-primary,.internal-mobile-tools>a,.mobile-reading-nav summary){font-size:14px;min-height:48px;border-radius:5px}
+body :is(.internal-topic-group,.care-flow,.symptom-card,.warm-photo-card,.team-principles,.source-chapter,.clinical-note){border-radius:5px;border-color:var(--border);box-shadow:none}
+body :is(.internal-topic-group,.symptom-card,.warm-photo-card,.source-chapter){background:#ffffff}
+body :is(.care-flow,.team-principles,.clinical-note,.on-this-page){background:var(--light)}
+body :is(.topic-link,.warm-photo-card,.symptom-card,.department-card,.reading-tabs a){transition:background-color .18s,border-color .18s,color .18s;transform:none}
+body :is(.topic-link,.warm-photo-card,.symptom-card,.department-card):hover{background:#eeefed;color:#293648}
+body .reading-tabs a{font-size:15px;min-height:48px}body .reading-tabs a[aria-selected=true]{background:#293648;border-color:#293648;color:white}
+body .source-chapter summary{font-size:17px;line-height:1.7;min-height:56px;padding:18px 22px}body .source-chapter summary>span{font-size:12px;color:#657080}
+body .source-chapter>.reading-section{padding:24px}body .reading-flow strong{font-size:15px}body .reading-sidebar a[aria-current]{background:#eeefed;color:#293648;border-color:#293648}
+body .visual-keypoints li{font-size:13px;border-radius:5px;background:#ffffff;border-color:var(--border)}
+/* Photographs can be cropped to their frames, but must never stretch. */
+body main img{max-width:100%;object-fit:cover;transform:none;animation:none}
+body .visual-opening-photo .visual-image-frame{height:360px;border-radius:5px;background:var(--canvas);border:1px solid var(--border);box-shadow:var(--shadow-md)}
+body .visual-image-frame img{width:100%;height:100%;object-fit:cover}
+body .warm-photo-card img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+body .clinical-figure img{width:100%;height:auto;max-height:none;object-fit:contain}
+body :is(.doctor-card img,.profile-photo){width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:center top;border-radius:5px}
+body .editorial-image{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:5px}
+body .warm-photo-card{align-items:start}.common-clinic-opening{display:grid;grid-template-columns:1fr 1fr;gap:16px 44px;align-items:center}.common-clinic-opening .breadcrumbs{grid-column:1/-1}.common-clinic-opening .eyebrow,.common-clinic-opening h1,.common-clinic-opening .page-lead{grid-column:1}.common-clinic-photo{grid-column:2;grid-row:2/5;margin:0;border-radius:5px;overflow:hidden}.common-clinic-photo img{display:block;width:100%}
+body .specialty-link{border-radius:5px!important;background:#f1f0ee;color:#535960!important}.specialty-link.specialty-sports{background:#edf0f2;color:#46505c!important}.department-bar .specialty-link{height:34px;padding:0 14px;align-self:center;border:1px solid #dadddf}.department-bar .specialty-sports{border-color:#dadddf}.mega-grid .specialty-link{padding-inline:12px;margin-top:5px}.specialty-link:hover{filter:brightness(.97)}.department-card.specialty-link{border-radius:0!important}.department-action{display:block;margin-top:24px;color:var(--blue);font-size:14px;font-weight:650}.department-card>.department-action{position:static!important}.specialty-link .department-action{color:inherit}
+.clinic-photo-section{padding-block:64px;background:#f5f5f3}.clinic-photo-grid{columns:3;column-gap:20px}.clinic-photo-grid figure{margin:0 0 20px;break-inside:avoid;background:#ffffff;border:1px solid #dadddf;border-radius:5px;overflow:hidden}.clinic-photo-grid img{display:block;width:100%;height:auto}.clinic-photo-grid figcaption{padding:12px 16px;font-size:13px;color:#67717b}.clinic-photo-section .section-heading{margin-bottom:28px}
+@media(max-width:800px){body :is(.page-hero h1,.visual-opening-copy h1,.visual-article .visual-opening-copy h1){font-size:30px}body :is(.section-heading h2,.internal-section-heading h2,.care-flow h2,.family-all-guides>h2,.reading-tab-panel>h2){font-size:25px}body :is(.visual-lead,.page-lead,.section-description,.source-text,.prose){font-size:16px}body .container{width:calc(100% - 40px)}.common-clinic-opening{display:block}.common-clinic-photo{margin-top:28px}.clinic-photo-grid{columns:2}body .department-bar{gap:20px}body .department-bar a{font-size:13px}body .source-chapter summary{font-size:16px}body .warm-photo-card{display:block}body .visual-opening-photo .visual-image-frame{height:280px}}
+@media(max-width:540px){body :is(.page-hero h1,.visual-opening-copy h1,.visual-article .visual-opening-copy h1){font-size:28px}.clinic-photo-grid{columns:1}.clinic-photo-section{padding-block:40px}body .source-chapter>.reading-section{padding:20px 16px}body .reading-tabs a{font-size:14px}body .visual-keypoints li{font-size:12px}body .department-card .eyebrow{font-size:10px}body .department-card p{font-size:14px}.department-bar .specialty-link{padding-inline:12px}}
+@media(prefers-reduced-motion:reduce){body *,body *:before,body *:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+body:is(.clinic-visual,.internal-renewal,.care-unified,.child-renewal){--care-ink:#202a38;--care-muted:#67717b;--care-line:#dadddf;--care-warm:#f5f5f3;--care-clay:#657080;--blue:#293648;--internal-ink:#202a38;--internal-accent:#293648;--internal-pale:#eeefed;--internal-line:#dadddf;background:#ffffff}
+body .page-lead,body .visual-lead{color:#67717b}body .breadcrumbs{color:#67717b}body .breadcrumbs a{color:inherit}
+@media(max-width:800px){body{padding-bottom:calc(76px + env(safe-area-inset-bottom))}body .floating-contact{left:0;right:0;bottom:0;align-items:stretch;background:white;padding:8px 12px calc(8px + env(safe-area-inset-bottom));border-top:1px solid #dadddf}body .floating-links,body .floating-links[hidden]{display:grid!important;grid-template-columns:repeat(3,1fr);width:100%;box-shadow:none;border:0;gap:8px;flex-direction:row}body .floating-links a{min-height:52px;padding:8px;font-size:13px;flex-direction:row;gap:8px;border:1px solid #dadddf;border-radius:5px}body .floating-links a:nth-child(2){background:#202a38;color:white}body .floating-contact .quick-toggle{display:none!important}body .site-footer{padding-bottom:32px!important}}
+
+/* Shared components: one visual language from the home page to detailed guides. */
+:root{--navy:var(--text-900);--blue:var(--accent);--light:var(--canvas);--muted:var(--text-500)}
+body{line-height:1.7;letter-spacing:0}
+body h2{font-size:30px;font-weight:800;letter-spacing:-.5px}
+body h3{font-size:20px;font-weight:700}
+body .section{padding-block:var(--sp-10)}
+body :is(.page-hero,.clinical-visual-hero){background:var(--canvas);padding-bottom:56px}
+body :is(.page-hero h1,.visual-opening-copy h1){line-height:1.3;letter-spacing:-1px}
+body :is(.eyebrow,.visual-opening-copy .eyebrow){font-size:12.5px;font-weight:700;letter-spacing:.03em;color:var(--label)}
+body :is(.prose,.source-text,.reading-section){color:var(--text-700);line-height:1.7}
+body :is(.button,.visual-primary){border-radius:var(--r-full);padding:13px 26px;gap:16px;font-size:14.5px;font-weight:700;line-height:1.5;min-height:48px;background:var(--white);color:var(--accent);border:1.5px solid var(--accent);transform:none}
+body :is(.button,.visual-primary):hover{background:var(--accent-pale);transform:none;box-shadow:var(--shadow-sm)}
+body .header-booking{background:var(--accent);color:white;border:0;box-shadow:var(--shadow-sm)}
+body .header-booking:hover{filter:brightness(.95)}
+body :is(a,button,summary){transition:color .18s,background-color .18s,border-color .18s,box-shadow .18s}
+body :is(a,button,summary):focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+body .department-bar{background:var(--white);border-color:var(--border)}
+body .mega-menu{border-color:var(--border);box-shadow:var(--shadow-lg)}
+body .mega-grid a{color:var(--text-700);border-radius:var(--r-sm)}
+body .mega-grid a:hover{background:var(--canvas);color:var(--accent)}
+body .department-grid{border:0;gap:20px}
+body .department-card{border:1px solid var(--border);border-radius:var(--r-lg);padding:28px;box-shadow:var(--shadow-sm)}
+body .department-card h3{font-size:22px;margin:16px 0 12px}
+body :is(.department-card,.warm-photo-card,.symptom-card):hover{border-color:var(--line-strong);background:var(--canvas);box-shadow:var(--shadow-md)}
+body .department-card.specialty-link{border-radius:var(--r-lg)!important}
+body .specialty-link.specialty-diet{background:var(--canvas-deep);color:#535960!important;border-color:#dadddf}
+body .specialty-link.specialty-sports{background:#edf0f2;color:#46505c!important;border-color:#dadddf}
+body .specialty-link :is(p,.department-action){color:inherit}
+body :is(.visual-keypoints li,.profile-toc a){background:var(--canvas);border:1px solid var(--border);color:var(--text-700);border-radius:var(--r-full)}
+body :is(.care-flow,.team-principles,.on-this-page,.clinical-note,.reading-flow,.reading-summary,.visual-diagram){background:var(--canvas);border-color:var(--border);border-radius:var(--r-lg)}
+body .reading-tabs{gap:8px;border-color:var(--border)}
+body .reading-tabs a{border-radius:var(--r-full);border:1px solid var(--border);background:var(--white);color:var(--text-700);padding:12px 20px}
+body .reading-tabs a[aria-selected=true]{background:var(--accent);border-color:var(--accent);color:white}
+body .source-chapter{border:1px solid var(--border);box-shadow:var(--shadow-sm)}
+body .source-chapter[open]{border-color:var(--line-strong)}
+body .source-chapter summary{color:var(--text-900);background:var(--white);border-radius:var(--r-lg)}
+body .source-chapter summary:hover{background:var(--canvas)}
+body .source-chapter summary b{color:var(--accent)}
+body .source-chapter[open] summary{background:var(--canvas)}
+body :is(.visual-diagram li,.reading-flow li){background:white;color:var(--text-700);border-color:var(--border)}
+body :is(.visual-diagram figcaption,.visual-opening-photo figcaption){color:var(--text-500)}
+body :is(.visual-diagram li span,.reading-flow strong){color:var(--accent)}
+body .values-grid article{background:var(--surface);padding:28px;border:1px solid var(--border);border-radius:var(--r-lg)}
+body .values-grid{gap:24px}
+body .shared-cta{background:var(--canvas);border-color:var(--border)}
+body .visit-section{background:var(--canvas);color:var(--text-900)}
+body .visit-section :is(.visit-address,.station,.contact-label,.contact-panel>p,.hours-link,.underlined-link){color:var(--text-700)}
+body .contact-panel{border-color:var(--border)}
+body .site-footer{background:var(--surface);border-top:1px solid var(--border)}
+body .back-top{border-radius:var(--r-full)}
+body .clinic-photo-section{background:var(--canvas)}
+.clinic-photo-section{--photo-gap:24px}
+body .clinic-photo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--photo-gap)}
+body .clinic-photo-grid + .button{margin-top:var(--photo-gap)}
+body .clinic-photo-grid figure{margin:0;background:white;border:1px solid var(--border);border-radius:var(--r-lg);box-shadow:var(--shadow-sm)}
+body .clinic-photo-grid img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+body .clinic-photo-grid figcaption{padding:16px 20px;color:var(--text-700)}
+body .floating-contact .quick-toggle{background:var(--accent);border-color:var(--accent);border-radius:var(--r-full)}
+@media(max-width:1100px){body .home-slide-copy h2{font-size:36px}}
+@media(max-width:800px){
+ body .section{padding-block:56px}body h2{font-size:26px}
+ body .home-slide-photo{position:relative;inset:auto;height:300px;margin:20px 20px 0;border-radius:5px}
+ body .home-slide-photo img,body #home-slide-3 .home-slide-photo img{height:100%;object-fit:cover}
+ body .home-slide-copy{width:100%}body .home-slide-copy h2{font-size:32px}
+ body .home-slide-inner{min-height:390px;padding-block:32px}
+ .clinic-photo-section{--photo-gap:16px}
+ body .clinic-photo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ body .floating-links a:nth-child(2){background:var(--accent);color:white;border:0}
+ body .department-card{padding:24px 20px}
+}
+@media(max-width:540px){
+ body .home-slide-photo{height:230px}body .home-slide-inner{min-height:400px}
+ body .home-slide-description{font-size:15px}body .home-slide-copy h2{font-size:30px}
+ body .clinic-photo-grid{grid-template-columns:1fr}body .department-grid{gap:12px}
+ body .department-card{padding:22px 16px}body .department-card h3{font-size:20px}
+ body .reading-tabs a{padding:12px 14px;font-size:14px}
+}
+@media print{body .clinical-figure img{object-fit:contain}body .section{padding-block:24px}body .floating-contact{display:none!important}}
+/* Explicit shared overrides also cover the more specific clinical templates. */
+body:is(.clinic-visual,.internal-renewal,.care-unified,.child-renewal) :is(.clinical-visual-hero,.page-hero){background:var(--canvas)}
+body:is(.clinic-visual,.internal-renewal,.care-unified,.child-renewal) :is(.care-flow,.team-principles,.clinical-note){background:var(--canvas);border-color:var(--border)}
+body:is(.clinic-visual,.internal-renewal,.care-unified,.child-renewal) .visual-opening-photo .visual-image-frame{height:360px;border-radius:var(--r-xl);border-color:var(--border);box-shadow:var(--shadow-md)}
+body:is(.clinic-visual,.internal-renewal,.care-unified,.child-renewal) .visual-opening-photo img{height:100%;width:100%;object-fit:cover}
+body :is(.home-slide-copy,.shared-cta,.contact-actions) .button,body .header-booking,body .visual-primary{border-radius:var(--r-full)}
+@media(max-width:800px){body:is(.clinic-visual,.internal-renewal,.care-unified,.child-renewal) .visual-opening-photo .visual-image-frame{height:280px}}
+@media(max-width:800px){body .header-booking{display:none}body .site-menu{margin-left:auto}body .site-menu summary{min-width:70px}body .menu-label{display:inline}}
+
+/* Homepage reference: full-bleed photography with a quiet charcoal veil. */
+body .home-carousel{background:#182130;color:#fff}
+body .home-slide{min-height:0;overflow:hidden}
+body .home-slide-photo,body #home-slide-3 .home-slide-photo{position:absolute;inset:0;height:100%;margin:0;border-radius:0;background:#182130;display:block}
+body .home-slide-photo img,body #home-slide-3 .home-slide-photo img{display:block;width:100%;height:100%;max-height:none;object-fit:cover;object-position:center 50%}
+body .home-slide-photo:after,body #home-slide-3 .home-slide-photo:after{content:'';display:block;position:absolute;inset:0;background:linear-gradient(90deg,rgba(16,25,43,.79) 0%,rgba(16,25,43,.64) 43%,rgba(16,25,43,.32) 100%);pointer-events:none}
+body .home-slide-inner{min-height:760px;min-height:clamp(700px,calc(100svh - 132px),960px);padding-block:96px 110px;align-items:center}
+body .home-slide-copy{width:min(730px,68%)}
+body .home-slide-copy .eyebrow{display:flex;align-items:center;gap:18px;color:#c6cedb;font-size:12px;font-weight:700;letter-spacing:.18em;margin-bottom:36px}
+body .home-slide-copy .eyebrow:before{content:'';width:34px;height:1px;background:#c6cedb;flex-shrink:0}
+body .home-slide-label{font-size:20px;font-weight:500;color:#d8deea;margin-bottom:24px}
+body .home-slide-copy h2{font-size:clamp(44px,4.5vw,68px);line-height:1.22;font-weight:800;letter-spacing:-.045em;color:#fff;text-shadow:0 2px 20px #10192b15}
+body .home-slide-description{max-width:620px;font-size:17px;line-height:1.9;color:#d2d9e4;margin:30px 0 36px}
+body .home-slide-description strong{color:#fff;font-size:18px;font-weight:600}
+body .home-slide-copy .button{background:#fff;color:#263247;border:1px solid #fff;border-radius:5px;padding:17px 28px;min-height:58px;box-shadow:none;font-size:15px;gap:28px}
+body .home-slide-copy .button:hover{background:#e9edf4;border-color:#e9edf4;color:#182130}
+body .home-carousel-controls{background:#1b2535;border-top:1px solid #ffffff28}
+body .hero-choice,body .hero-choice:first-child{color:#bec8d7;border-color:#ffffff20}
+body .hero-choice>span{color:#aab7cb}
+body .hero-choice[aria-pressed=true]{background:#ffffff09;color:#fff}
+body .hero-choice[aria-pressed=true]:before{background:#bbc9dd;height:2px}
+body .hero-choice:hover{background:#ffffff10}
+body .hero-count{color:#c4cedd}
+body .hero-transport button{background:transparent;color:#fff;border:1px solid #ffffff40;border-radius:5px}
+body .hero-transport button:hover{background:#ffffff15}
+body .home-carousel :is(a,button):focus-visible{outline:3px solid #d6e3ff;outline-offset:4px}
+@media(max-width:800px){
+ body .home-slide-inner{min-height:730px;padding-block:72px 80px}
+ body .home-slide-copy{width:100%;max-width:620px}
+ body .home-slide-copy h2{font-size:44px}
+ body .home-slide-photo:after,body #home-slide-3 .home-slide-photo:after{background:linear-gradient(90deg,#10192bcc,#10192b75),linear-gradient(0deg,#10192b45,transparent)}
+ body .home-slide-photo img{object-position:58% center}
+ body .home-slide-copy .eyebrow{font-size:10px;letter-spacing:.14em;margin-bottom:30px;gap:12px}
+ body .home-slide-label{font-size:17px;margin-bottom:22px}
+ body .home-slide-description{font-size:16px;line-height:1.85}
+}
+@media(max-width:540px){
+ body .home-slide-inner{min-height:680px;padding-block:64px 70px}
+ body .home-slide-copy h2{font-size:clamp(33px,9vw,44px);line-height:1.3}
+ body .home-slide-description{font-size:15px;margin:26px 0 30px}
+ body .home-slide-description strong{font-size:16px}
+ body .home-slide-copy .button{min-height:52px;font-size:14px;padding:14px 22px}
+ body .hero-choice{line-height:1.6}
+}
+
+/* One header geometry on every generated page, irrespective of body template. */
+html{scrollbar-gutter:stable}
+body .site-header.multi-header{--header:132px;height:132px;background:#fff}
+body .site-header.multi-header .header-inner{width:min(1240px,calc(100% - 96px));height:88px;margin-inline:auto;gap:30px}
+body .site-header.multi-header .brand img{width:170px;height:auto}
+body .site-header.multi-header .desktop-nav{gap:28px}
+body .site-header.multi-header .desktop-nav a{font-size:15px;font-weight:600}
+body .site-header.multi-header .department-bar{height:44px;gap:36px;justify-content:center;padding-inline:24px}
+body .site-header.multi-header .department-bar a{font-size:13px}
+body .site-header.multi-header .header-booking{min-height:44px;padding:12px 19px;gap:20px;background:#293648;color:#fff;border-radius:5px}
+body .site-header.multi-header .mega-grid{width:min(1240px,calc(100% - 96px));margin-inline:auto}
+body :is(.button,.visual-primary,.topic-link,.reading-tabs a,.profile-toc a,.visual-keypoints li,.source-chapter,.source-chapter summary,.department-card,.warm-photo-card,.symptom-card,.care-flow,.visual-image-frame,.clinical-note,.on-this-page,.team-principles,.common-clinic-photo,.doctor-card img,.profile-photo,.editorial-image,.clinic-photo-grid figure,.visual-diagram,.floating-links,.floating-links a,.quick-toggle){border-radius:5px!important;box-shadow:none}
+body .specialty-link{background:#f1f2f2!important;color:#46505c!important;border-color:#dadddf!important;border-radius:5px!important}
+body .department-card.specialty-link{border-radius:5px!important}
+body .department-card{box-shadow:none;background:#fff}
+body :is(.department-card,.warm-photo-card,.symptom-card):hover{box-shadow:none;background:#f4f5f4;border-color:#a9b1b9}
+body :is(.care-flow,.team-principles,.clinical-note,.on-this-page,.reading-summary,.visual-diagram){background:#f5f5f3}
+body .visual-keypoints li{background:transparent;border-color:#dadddf;color:#58616b}
+body .floating-contact .floating-links a{background:#fff;color:#293648;border-color:#dadddf}
+body .floating-contact .floating-links a:nth-child(2){background:#293648;color:white}
+body .floating-contact .quick-toggle{background:#293648;color:white;border-color:#293648}
+body :is(.page-hero,.clinical-visual-hero) .eyebrow{color:#657080}
+@media(min-width:801px){body .floating-contact{right:20px}body .floating-contact .floating-links{width:72px}}
+@media(max-width:1100px) and (min-width:801px){body .site-header.multi-header .header-inner{gap:18px}body .site-header.multi-header .desktop-nav{gap:18px}}
+@media(max-width:800px){
+ body .site-header.multi-header{--header:114px;height:114px}
+ body .site-header.multi-header .header-inner{width:calc(100% - 40px);height:72px;gap:14px}
+ body .site-header.multi-header .brand img{width:142px}
+ body .site-header.multi-header .department-bar{height:42px;gap:24px;justify-content:flex-start;padding-inline:20px}
+ body .site-header.multi-header .department-bar a{height:42px;font-size:13px}
+ body .site-header.multi-header .header-booking{display:none}
+ body .site-header.multi-header .mega-grid{width:calc(100% - 40px)}
+ body .floating-contact .floating-links{width:100%;grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(max-width:540px){body .site-header.multi-header .brand img{width:132px}}
+/* Active links use an underline instead of changing text width. */
+body .site-header.multi-header .department-bar a{font-weight:600}
+.fee-intro{color:var(--text-500);font-size:15px;margin-bottom:24px}.fee-nav{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:48px}.fee-nav a{padding:10px 16px;border:1px solid var(--border);border-radius:5px;font-size:14px}.fee-nav a:hover{background:var(--canvas)}.fee-group{margin-bottom:56px;scroll-margin-top:calc(var(--header) + 24px)}.fee-group h2{font-size:24px;margin-bottom:22px}.fee-scroll{overflow-x:auto;border-top:2px solid #293648}.fee-table{width:100%;border-collapse:collapse;font-size:15px;line-height:1.6}.fee-table caption{text-align:left;padding:12px 0;color:var(--text-500);font-size:13px}.fee-table th,.fee-table td{padding:16px;border-bottom:1px solid var(--border);text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}.fee-table thead{background:var(--canvas)}.fee-table th:first-child{text-align:left;white-space:normal;min-width:260px}.fee-table tbody th{font-weight:600}.fee-table small{display:block;font-size:12px;color:var(--text-500);font-weight:400;margin-top:5px}.fee-table tbody tr:hover{background:#f8f8f7}.fee-footnote{font-size:14px;color:var(--text-500)}
+@media(max-width:800px){.fee-table{min-width:750px;font-size:14px}.fee-table th,.fee-table td{padding:14px 12px}.fee-group h2{font-size:22px}.fee-nav{margin-bottom:32px}.fee-scroll:before{content:'표를 좌우로 밀어 전체 항목을 확인하세요.';display:block;font-size:12px;color:var(--text-500);padding:12px 0}}
+@media print{.fee-table{min-width:0;font-size:10px}.fee-table th,.fee-table td{padding:8px;white-space:normal}.fee-table th:first-child{min-width:0}.fee-scroll{overflow:visible}.fee-nav{display:none}.fee-table tr{break-inside:avoid}}
+/* Location map stays entirely visible so labels and landmarks remain readable. */
+.location-layout{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:48px;align-items:start}
+.location-map{margin:0;min-width:0}.location-map>a{display:block;border:1px solid var(--border);border-radius:5px;overflow:hidden}
+body .location-map img{display:block;width:100%;height:auto;aspect-ratio:auto;object-fit:contain}
+.location-map figcaption{font-size:12px;color:var(--text-500);line-height:1.7;margin-top:12px}
+.location-details h2{font-size:28px;line-height:1.45}.location-address{margin:22px 0;color:var(--text-700);font-size:16px;line-height:1.8}
+.location-details .prose{margin-top:32px}.location-details .prose h3{font-size:20px;margin:28px 0 12px;padding-top:24px;border-top:1px solid var(--border)}
+@media(max-width:800px){.location-layout{grid-template-columns:1fr;gap:32px}.location-details h2{font-size:26px}.location-details .button{max-width:100%}}

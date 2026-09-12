@@ -4,6 +4,8 @@ from pathlib import Path
 from html import escape
 import json,re
 from internal_pages import render_item
+from child_reading import child_reading
+from internal_reading import reading_tabs
 from clinical_visuals import source_image, feature_cards, care_flow
 ROOT=Path(__file__).resolve().parents[1]
 PAGES=json.loads((ROOT/'content/family-pages.json').read_text())
@@ -26,12 +28,16 @@ def build_family(write,link):
    for idx,s in enumerate(p['sections']):
     label=s['title'];toc.append(link('#guide-'+str(idx),escape(label)))
     body=''.join(source_image(i,p['file'],idx,seen) if i['type']=='image' else render_item(i) for i in s['items']);body=re.sub(r'<h3>(.*?)</h3>',r'<h2>\1</h2>',body,count=1,flags=re.S)
-    chapters.append(f'<section class="reading-section" id="guide-{idx}"><div class="section-index">{idx+1:02}<span>{escape(label)}</span></div>{body}</section>')
+    if dept in ['child','women']:
+     chapters.append(f'<details class="source-chapter" id="guide-{idx}"><summary><span>{idx+1:02}</span>{escape(label)}<b aria-hidden="true">＋</b></summary><div class="reading-section">{body}</div></details>')
+    else:
+     chapters.append(f'<section class="reading-section" id="guide-{idx}"><div class="section-index">{idx+1:02}<span>{escape(label)}</span></div>{body}</section>')
    nav=navigation(dept,p['file']);home='clinic-'+dept+'.html'
    sidebar='<aside class="reading-sidebar">'+link(home,name+' 전체 안내 ↗','reading-home')+'<nav aria-label="'+name+' 세부 안내">'+nav+'</nav></aside>'
    mobile='<div class="internal-mobile-tools">'+link(home,'← '+name+' 전체')+'<details class="mobile-reading-nav"><summary>다른 안내 보기 <span aria-hidden="true">＋</span></summary><nav aria-label="모바일 '+name+' 세부 안내">'+nav+'</nav></details></div>'
    contents='<details class="on-this-page" open><summary>이 페이지에서 살펴볼 내용</summary><nav aria-label="본문 목차">'+''.join(toc)+'</nav></details>'
    related='<nav class="article-pagination" aria-label="다음 안내">'+link(home,'← '+name+' 전체')+link(articles[(n+1)%len(articles)]['file'],articles[(n+1)%len(articles)]['title']+' →')+'</nav>'
    note='<p class="clinical-note">이 안내는 건강에 대한 이해를 돕는 참고 정보입니다. 증상과 질환에 대한 정확한 판단은 의료진의 진료가 필요합니다.</p>'
-   content='<section class="section reading-wrap"><div class="container">'+mobile+'<div class="reading-layout">'+sidebar+'<article class="reading-article">'+contents+''.join(chapters)+note+related+'</article></div></div></section>'
+   reading=child_reading(p,chapters) if dept=='child' else reading_tabs(p,chapters,rows=[(section['title'],'관련 안내와 진료 과정','궁금한 점과 기존 진료 경험') for section in p['sections'][:3]])
+   content='<section class="section reading-wrap"><div class="container">'+mobile+'<div class="reading-layout">'+sidebar+'<article class="reading-article">'+reading+note+related+'</article></div></div></section>'
    write(p['file'],p['title'],content,group=name,desc='진료의 이해에서 일상 속 관리까지, 해온이 함께합니다.',eyebrow=en+' · HEALTH GUIDE')
