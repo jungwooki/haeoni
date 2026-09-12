@@ -1,0 +1,95 @@
+{
+  "checked_on": "2026-09-12",
+  "files": [
+    {
+      "path": "emr/guides/diagnostic_test_guide.html",
+      "sha256": "cc49ff4618890d6d4f3790ab94e2fef349f34cb0143567a5e8d9fb2b272580cd",
+      "bytes": 31030
+    },
+    {
+      "path": "emr/guides/prescription.tsx",
+      "sha256": "2090a16295ab5b20ac97a717630bffb3c51f58aaf9195aa9c594a54281825bd9",
+      "bytes": 71008
+    },
+    {
+      "path": "emr/guides/diagnostic.html",
+      "sha256": "40ce07b64818814b872984eeb00b2ab54b7843e2180db2f642fcb50af64c4178",
+      "bytes": 25173
+    },
+    {
+      "path": "emr/guides/diagnostic.json",
+      "sha256": "083930789cd15b9bde23919f03d1061a29acb05da9e5c9b130264c9ebe3ff689",
+      "bytes": 16981
+    },
+    {
+      "path": "emr/guides/guide.css",
+      "sha256": "ef0eace5acd41e2bb0013b9ba6052fcd3b63bd27e31ffa3849704b2516d864c0",
+      "bytes": 4391
+    },
+    {
+      "path": "emr/guides/guide.js",
+      "sha256": "4457ea1eea9bb976f133a93ebfbe86bfe07c8145d44ae150dad3e45132e2ddc5",
+      "bytes": 4557
+    },
+    {
+      "path": "emr/guides/index.html",
+      "sha256": "f3749553167cfdd56c2da1d807d4bb446beb06b0c8310b1ffb23d5393a32c6e6",
+      "bytes": 6698
+    },
+    {
+      "path": "emr/guides/prescription.html",
+      "sha256": "382347420acb176ab0d56be0ecf8c4d7271dcfb8675fbf489a89ccf0c71c5fc2",
+      "bytes": 64060
+    },
+    {
+      "path": "emr/guides/prescription.json",
+      "sha256": "09a0c33377290f7fc66b5c447b6adc30bc6256f002f90f8ca063e7f5a59f37ff",
+      "bytes": 69444
+    },
+    {
+      "path": "emr/guides/process.html",
+      "sha256": "5fe64989905f4736f60afcdc8a1175fbc0eaa0489cf52a18d7253c8eac6163bf",
+      "bytes": 53973
+    },
+    {
+      "path": "emr/guides/treatment.html",
+      "sha256": "caf5b17e20833358d8bb1749c5ffdb11191fbf575b2babda19f7647939f1990c",
+      "bytes": 32499
+    },
+    {
+      "path": "emr/guides/treatment.json",
+      "sha256": "a5b7eb41d8c009803ae4880732240411b4d7f4d01eb6545d70d14661c319549b",
+      "bytes": 26796
+    },
+    {
+      "path": "emr/guides/source/process.html",
+      "sha256": "1af476504e919734d8c7d820edffe3330a194f2fbbfe488197f3a3078724de97",
+      "bytes": 48228
+    },
+    {
+      "path": "emr/guides/source/treatment.tsx",
+      "sha256": "0a597b909c652d397dcd773b3a880cd96ac61bbe12a128f646ae2957be8d60be",
+      "bytes": 40982
+    }
+  ],
+  "embedded_data": "3개 HTML의 내장 데이터와 해당 JSON 필드별 일치 확인",
+  "source_differences": {
+    "prescription.tsx": [
+      "GMSYS.indication",
+      "K_GMSYS.indication"
+    ],
+    "source/treatment.tsx": [],
+    "diagnostic_test_guide.html": [
+      "FIT_LOAD.category",
+      "FIT_AGILITY.category",
+      "FIT_BALANCE.category",
+      "FIT_LACTATE.category"
+    ]
+  },
+  "decisions": {
+    "process": "진료 철학·검사 통합 설명·처방 제형·기기 안내·경과·의료진 연결 반영",
+    "prescription": "최신 원장 요청에 따라 적응증 키워드와 7축 설명용 그래프 복원. 제형별 대표 약재 유지, 개별 주의 문구 하단 통합.",
+    "diagnostic_treatment": "분류별 해설·진행 방식·해석 한계·주의사항으로 편집",
+    "not_republished": "검사·치료의 정밀도·효과 점수와 확정적 회복 곡선, 원문의 성분 기전 단정. 처방 도식은 설명용으로 복원."
+  }
+}

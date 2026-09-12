@@ -5,6 +5,7 @@ from pathlib import Path
 from html import escape as esc
 import json,re
 from clinic_photos import photo_gallery
+from care_editorial import prescription_common
 from care_guides import build_care, home_section, related, LINKS as CARE_LINKS, notice as care_notice
 from floating_menu import FLOATING, ASSETS, install_on_legacy
 from internal_pages import build_internal, PAGES
@@ -74,6 +75,7 @@ def write(name,title,content,group='한의원 소개',desc='본질을 지키며 
  if name.startswith('care'):
   html=html.replace('</head>','<script src="assets/care-guides.js" defer></script></head>')
   html=html.replace(care_notice(),'').replace('</main>', '<div class="container">'+care_notice()+'</div></main>')
+ if name=='care-prescription.html':html=html.replace('<div class="container">'+care_notice(),'<div class="container">'+prescription_common()+care_notice())
  html=html.replace('class="nav-current"','class="nav-current" aria-current="page"')
  (ROOT/name).write_text(html)
 def paras(lines):return ''.join('<p>'+esc(x)+'</p>' for x in lines if x.strip())

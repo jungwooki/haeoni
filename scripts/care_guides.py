@@ -3,6 +3,7 @@
 from pathlib import Path
 from html import escape as e
 import json
+from care_editorial import process_reading, prescription_reading, variant_details, catalog_reading
 ROOT=Path(__file__).resolve().parents[1]
 DATA=json.loads((ROOT/'content/care-guides.json').read_text())
 NOTICE='진료의 이해를 돕기 위한 안내입니다. 검사·처방·치료는 개인의 상태와 의료진의 판단에 따라 달라지며, 효과와 부작용에는 개인차가 있습니다.'
@@ -18,20 +19,29 @@ def related(name):
 def overview():return '<section class="section"><div class="container"><div class="care-introduction"><p class="eyebrow">듣고 · 살피고 · 설명하고 · 함께 확인합니다</p><h2>진료의 시작은<br>환자분의 이야기입니다.</h2><p>증상이 언제 시작되었는지, 일상에서 어떤 불편이 있는지 먼저 듣습니다. 진찰과 필요한 검사에서 얻은 정보를 함께 살펴 치료를 계획하고, 이후의 변화를 확인합니다.</p><p>검사나 치료의 종류보다 중요한 것은 지금의 상태에 무엇이 필요한지 설명하고 함께 결정하는 과정입니다.</p></div>'+cards()+notice()+'</div></section>'
 def process():
  steps=[('이야기를 듣습니다','가장 불편한 증상, 시작된 시기와 반복되는 상황을 이야기해 주세요. 생활·수면·식사, 이전 진료 경험도 함께 살핍니다.'),('몸의 상태를 살핍니다','문진과 진찰을 통해 현재 상태를 살피고, 추가 확인이 필요한 내용을 정리합니다.'),('필요한 검사를 설명합니다','검사가 필요한 경우 확인하려는 내용과 한계, 준비사항을 먼저 안내합니다. 모든 검사를 일괄적으로 시행하는 것은 아닙니다.'),('치료 계획을 함께 정합니다','치료를 고려하는 이유와 진행 방법, 주의사항 및 비용을 설명합니다. 궁금한 점이나 부담되는 부분을 말씀해 주세요.'),('경과를 함께 확인합니다','이전과 달라진 점, 남아 있는 불편과 이상 반응을 확인합니다. 상태에 따라 계획을 조정하거나 추가 평가·의뢰를 안내합니다.')]
- return '<section class="section"><div class="container care-guide-shell">'+navigation('care-process.html')+'<div class="care-process-layout"><img src="assets/images/renewal/eb753b27d10c44.jpg" alt="해온한의원 상담 공간" loading="lazy"><ol class="care-steps">'+''.join(f'<li><span>0{i+1}</span><div><h2>{title}</h2><p>{desc}</p></div></li>' for i,(title,desc) in enumerate(steps))+'</ol></div><section class="care-preparation"><h2>진료 전 준비하면 좋은 것</h2><p>복용 중인 약·한약·건강기능식품 목록, 알레르기와 수술 이력, 이전 검사 결과가 있으면 가져오세요. 임신·수유 여부도 알려주세요.</p></section>'+notice()+'</div></section>'
+ return '<section class="section"><div class="container care-guide-shell">'+navigation('care-process.html')+'<div class="care-process-layout"><img src="assets/images/renewal/eb753b27d10c44.jpg" alt="해온한의원 상담 모습" loading="lazy"><ol class="care-steps">'+''.join(f'<li><span>0{i+1}</span><div><h2>{title}</h2><p>{desc}</p></div></li>' for i,(title,desc) in enumerate(steps))+'</ol></div><section class="care-preparation"><h2>진료 전 준비하면 좋은 것</h2><p>복용 중인 약·한약·건강기능식품 목록, 알레르기와 수술 이력, 이전 검사 결과가 있으면 가져오세요. 임신·수유 여부도 알려주세요.</p></section>'+process_reading()+notice()+'</div></section>'
 REFS={
-'diagnostic':[('검사와 결과의 이해 · MedlinePlus','https://medlineplus.gov/lab-tests/'),('혈구검사 안내','https://medlineplus.gov/lab-tests/complete-blood-count-cbc/'),('간 관련 혈액검사 안내','https://medlineplus.gov/lab-tests/liver-function-tests/')],
-'prescription':[('한약 관련 안전성 안내 · NCCIH','https://www.nccih.nih.gov/health/traditional-chinese-medicine-what-you-need-to-know')],
+'diagnostic':[],
+'prescription':[('일본동양의학회 · 日本東洋医学会','https://www.jsom.or.jp/'),('한약 사용과 간 손상 관련 국내 연구 · Frontiers in Pharmacology (2025)','https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2025.1498124/full')],
  'treatment':[('침 치료 안전성 · NCCIH','https://www.nccih.nih.gov/health/acupuncture-effectiveness-and-safety'),('척추 수기 치료 안전성 · NCCIH','https://www.nccih.nih.gov/health/spinal-manipulation-what-you-need-to-know'),('부항 안전성 · NCCIH','https://www.nccih.nih.gov/health/cupping'),('봉독 약침 이상반응 문헌 검토','https://pubmed.ncbi.nlm.nih.gov/35448847/')]
 }
+def treatment_details(item):
+ if not item.get('procedure'):return ''
+ return '<section class="care-treatment-details"><h3>진행 방법</h3><p>'+e(item['procedure'])+'</p><h3>쉽게 이해하기</h3><p>'+e(item['explanation'])+'</p></section>'
+
 def catalog(kind):
- title=dict((key,t) for key,t,_,_ in PANELS)[kind];items=[x for x in DATA[kind] if x.get('publication_status','current')=='current'];cats=list(dict.fromkeys(x['category'] for x in items))
- intro={'diagnostic':'검사마다 확인하는 정보와 해석 범위가 다릅니다. 결과는 문진·진찰과 함께 이해합니다.','treatment':'진료에서 설명을 들은 치료가 어떤 방식인지 확인해 보세요. 적용 전 주의사항도 함께 살펴보실 수 있습니다.','prescription':'처방명을 가나다순으로 살펴볼 수 있습니다. 실제 제형·구성·복용법과 보험 적용 여부는 진료 시 확인합니다.'}[kind]
+ title=dict((key,t) for key,t,_,_ in PANELS)[kind];items=[x for x in DATA[kind] if x.get('publication_status','current')=='current'];cats=list(dict.fromkeys(c for x in items for c in x.get('categories',[x['category']])))
+ intro={'diagnostic':'검사마다 한의학적 해석, 범위가 다릅니다. 결과는 한의학적 문진, 진찰과 함께 이해합니다.','treatment':'진료에서 설명을 들은 치료가 어떤 방식인지 확인해 보세요. 적용 전 주의사항도 함께 살펴보실 수 있습니다.','prescription':'처방명을 가나다순으로 살펴볼 수 있습니다. 실제 제형·구성·복용법과 보험 적용 여부는 진료 시 확인합니다.'}[kind]
  if kind=='prescription':items=sorted(items,key=lambda x:x['name'])
- out='<section class="section"><div class="container care-guide-shell">'+navigation('care-'+kind+'.html')+'<p class="care-catalog-intro">'+intro+'</p><div class="care-filters" hidden><div><label for="care-search">'+title+' 이름 검색</label><input id="care-search" type="search" placeholder="이름을 입력하세요" autocomplete="off"></div><div><label for="care-category">분류</label><select id="care-category"><option value="">전체</option>'+''.join('<option>'+e(c)+'</option>' for c in cats)+'</select></div></div><p class="care-count" aria-live="polite">'+str(len(items))+'개 항목</p><div class="care-catalog">'
+ out='<section class="section"><div class="container care-guide-shell">'+navigation('care-'+kind+'.html')+catalog_reading(kind)+'<p class="care-catalog-intro">'+intro+'</p><div class="care-filters" hidden><div><label for="care-search">'+title+(' 이름·약재·키워드 검색' if kind=='prescription' else ' 이름·키워드 검색' if kind=='treatment' else ' 이름 검색')+'</label><input id="care-search" type="search" placeholder="검색어를 입력하세요" autocomplete="off"></div><div><label for="care-category">분류</label><select id="care-category"><option value="">전체</option>'+''.join('<option>'+e(c)+'</option>' for c in cats)+'</select></div></div><p class="care-count" aria-live="polite">'+str(len(items))+'개 항목</p><div class="care-catalog">'
  for x in items:
-  out+=f'<details class="care-entry" id="item-{e(x["id"])}" data-category="{e(x["category"])}" data-name="{e(x["name"])}"><summary><span><small>{e(x["category"])}</small><strong>{e(x["name"])}</strong></span><span class="care-entry-toggle" aria-hidden="true">＋</span></summary><div class="care-entry-content"><p>{e(x["description"])}</p><h3>함께 알아두세요</h3><p>{e(x["limit"])}</p><div class="care-entry-caution"><h3>진료 전 확인할 사항</h3><p>{e(x["caution"])}</p></div></div></details>'
- out+='</div><p class="care-no-results" hidden>일치하는 항목이 없습니다. 검색어나 분류를 바꿔보세요.</p><details class="care-references"><summary>안내에 참고한 자료</summary><ul>'+''.join(f'<li><a href="{u}" target="_blank" rel="noopener noreferrer">{t} ↗</a></li>' for t,u in REFS[kind])+'</ul><p>일반적인 검사·안전성 정보를 위한 자료이며, 특정 장비·제품이나 개인의 치료 효과를 보장하는 근거는 아닙니다.</p></details>'+notice()+'</div></section>'
+  notes='' if kind=='prescription' else '<h3>함께 알아두세요</h3><p>'+e(x["limit"])+'</p><div class="care-entry-caution"><h3>진료 전 확인할 사항</h3><p>'+e(x["caution"])+'</p></div>'
+  keywords='<div class="care-treatment-keywords"><h3>관련 키워드</h3><p>'+e(x['keywords'])+'</p></div>' if kind=='treatment' else ''
+  out+=f'<details class="care-entry" id="item-{e(x["id"])}" data-category="{e(x["category"])}" data-name="{e(x["name"])}" data-categories="{e(json.dumps(x.get("categories",[x["category"]]),ensure_ascii=False))}" data-search="{e(x["name"]+" "+x.get("keywords", "")+" "+" ".join(v["ingredients"]+" "+v.get("keywords", "") for v in x.get("variants",[])))}"><summary><span><small>{e(x["category"])}</small><strong>{e(x["name"])}</strong></span><span class="care-entry-toggle" aria-hidden="true">＋</span></summary><div class="care-entry-content">{keywords}<p>{e(x["description"])}</p>{variant_details(x)}{treatment_details(x) if kind=="treatment" else ""}{notes}</div></details>'
+ out+='</div><p class="care-no-results" hidden>일치하는 항목이 없습니다. 검색어나 분류를 바꿔보세요.</p>'
+ if REFS[kind]:
+  out+='<details class="care-references"><summary>안내에 참고한 자료</summary><ul>'+''.join(f'<li><a href="{u}" target="_blank" rel="noopener noreferrer">{t} ↗</a></li>' for t,u in REFS[kind])+'</ul><p>일반적인 검사·안전성 정보를 위한 자료이며, 특정 장비·제품이나 개인의 치료 효과를 보장하는 근거는 아닙니다.</p></details>'
+ out+=notice()+'</div></section>'
  return out
 
 def build_care(write):

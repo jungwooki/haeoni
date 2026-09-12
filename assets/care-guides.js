@@ -8,7 +8,7 @@
     const term = normalize(input.value);
     let count = 0;
     entries.forEach(entry => {
-      entry.hidden = !(normalize(entry.dataset.name).includes(term) && (!category.value || category.value === entry.dataset.category));
+      entry.hidden = !(normalize(entry.dataset.search || entry.dataset.name).includes(term) && (!category.value || JSON.parse(entry.dataset.categories || JSON.stringify([entry.dataset.category])).includes(category.value)));
       if (!entry.hidden) count++;
     });
     document.querySelector('.care-count').textContent = `${count}개 항목`;
