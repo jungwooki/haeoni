@@ -1,0 +1,30 @@
+/* Constitutional herbal care: the same restrained typography and 5px corners. */
+.tonic-intro{max-width:880px;font-size:17px;line-height:1.9;color:#46505c}
+.tonic-intro nav{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:28px}
+.tonic-intro nav a{font-size:14px;border-bottom:1px solid #8d969f;padding:8px 0;color:#293648}
+.tonic-section{padding-top:64px;margin-top:64px;border-top:1px solid #dadddf;scroll-margin-top:160px}
+.tonic-section>h2{font-size:32px;line-height:1.5;margin:12px 0 24px}
+.tonic-lead{max-width:780px;font-size:16px;line-height:1.9;color:#46505c;margin-bottom:32px}
+.tonic-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;align-items:start}
+.tonic-card{border:1px solid #dadddf;border-radius:5px;background:#f7f7f5;overflow:hidden}
+.tonic-card summary{padding:28px;list-style:none;cursor:pointer;min-height:232px;display:flex;flex-direction:column}
+.tonic-card summary::-webkit-details-marker{display:none}
+.tonic-card h3{font-size:22px;line-height:1.5;margin:14px 0 12px;color:#202a38}
+.tonic-card summary p{font-size:14px;line-height:1.8;color:#58616a;margin:0 0 24px}
+.tonic-card .tonic-more{margin-top:auto;display:flex;justify-content:space-between;font-size:13px;font-weight:650;color:#293648}
+.tonic-card[open]{background:#fff;border-color:#8d969f}.tonic-card[open] summary{border-bottom:1px solid #dadddf}
+.tonic-card[open] .tonic-more>span{transform:rotate(45deg)}
+.tonic-card summary:hover{background:#eff0ed}.tonic-card summary:focus-visible{outline:2px solid #293648;outline-offset:-3px}
+.tonic-card-body{padding:0 28px 28px}.tonic-card-body h4{font-size:15px;margin:24px 0 10px;color:#293648}.tonic-card-body p{font-size:15px;line-height:1.9;color:#46505c}
+.tonic-card-body a{font-size:13px;margin-top:20px;display:inline-block}
+.tonic-research-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.tonic-research-grid article{border-top:2px solid #657080;padding-top:24px;scroll-margin-top:160px}
+.tonic-research-grid h3{font-size:23px;line-height:1.5;margin:16px 0 24px}.tonic-research-grid p{font-size:15px;line-height:1.9;color:#46505c;margin:0 0 18px}
+.tonic-research-grid .tonic-research-limit{font-size:13px;color:#626b76;border-left:2px solid #cbd0d5;padding-left:14px}
+.tonic-research-grid a{display:block;font-size:12px;line-height:1.7;text-decoration:underline;text-underline-offset:4px;margin:12px 0;color:#46505c;overflow-wrap:anywhere}
+.tonic-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin:32px 0}
+.tonic-steps article{padding:24px;background:#f5f5f3;border-radius:5px}.tonic-steps span{font-size:12px;color:#657080}.tonic-steps h3{font-size:19px;margin:16px 0}.tonic-steps p{font-size:15px;line-height:1.8;color:#46505c}
+.tonic-prescription-links{display:flex;flex-wrap:wrap;gap:16px 28px;margin:32px 0 48px}.tonic-prescription-links a{font-size:14px;border-bottom:1px solid #cbd0d5;padding-bottom:8px}
+.tonic-related-title{font-size:22px;margin:28px 0}.tonic-common-note{border-top:1px solid #dadddf;margin-top:56px;padding-top:28px}.tonic-common-note h2{font-size:16px}.tonic-common-note p{font-size:13px;line-height:1.9;color:#626b76;margin-top:12px}
+@media(max-width:1000px){.tonic-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.tonic-research-grid{grid-template-columns:1fr;gap:36px}}
+@media(max-width:600px){.tonic-grid,.tonic-steps{grid-template-columns:1fr}.tonic-section{padding-top:40px;margin-top:40px;scroll-margin-top:138px}.tonic-section>h2{font-size:26px}.tonic-card summary{padding:24px;min-height:200px}.tonic-card-body{padding:0 24px 24px}.tonic-research-grid article{scroll-margin-top:138px}.tonic-intro{font-size:16px}.tonic-steps{gap:16px}.tonic-card h3{font-size:21px}}

@@ -17,6 +17,17 @@ META={'child':('소아과','CHILD & ADOLESCENT','아이의 오늘을 살피고,<
 def selected(dept,slugs):return [p for slug in slugs for p in PAGES if p['slug']==dept+'-'+slug]
 def navigation(dept,current):
  return ''.join('<div><h3>'+title+'</h3>'+''.join('<a href="'+p['file']+'"'+(' aria-current="page"' if p['file']==current else '')+'>'+p['title']+'</a>' for p in selected(dept,slugs))+'</div>' for title,slugs in GROUPS[dept])
+def women_summary_rows(slug):
+ if 'miscarriage' in slug or 'recurrent-loss' in slug:
+  return [('현재 상태','출혈·통증·발열과 회복 경과','산부인과 진료 결과와 처치 내용'),('진료 이력','이전 임신과 유산 경험','검사 결과와 복용 중인 약'),('회복 계획','휴식·일상 복귀와 다음 상담','생활에서 필요한 도움과 궁금한 점')]
+ if 'postpartum' in slug or 'body-changes' in slug or 'parenting' in slug:
+  return [('출산 후 경과','통증·출혈·피로 등 현재의 변화','출산 시점과 방법, 기존 진료 내용'),('수유와 복용약','수유 상태와 함께 사용하는 약','약·한약·건강기능식품 목록'),('일상 회복','수면·식사와 돌봄 부담','가장 불편한 점과 필요한 도움')]
+ if 'infertility' in slug or 'assisted' in slug or 'planning' in slug:
+  return [('부부의 진료 이력','기존 난임 평가와 치료 과정','양측 검사 결과와 복용약'),('월경과 생활','월경 주기·수면·식사 등 변화','최근 기록과 가장 불편한 점'),('진료 일정','진행 중인 시술과 병행 여부','담당 의료진의 안내와 예정 일정')]
+ if slug=='women-pregnancy':
+  return [('임신 경과','임신 주수와 산전 진료 내용','산부인과 검사 결과'),('현재의 불편','소화·통증 등 증상과 변화','증상이 시작된 시점과 심한 정도'),('처방 상담','복용 필요성과 성분 확인','현재 약·한약·건강기능식품 목록')]
+ return [('증상의 기록','월경·통증·냉감 등 현재 불편','언제 시작되어 어떻게 달라졌는지'),('진료 이력','검사·치료와 병력','검사 결과 및 복용약'),('생활 상태','수면·식사·활동과 스트레스','일상에서 부담되는 점과 질문')]
+
 def build_family(write,link):
  for dept,(name,en,headline,desc) in META.items():
   articles=[p for p in PAGES if p['slug'].startswith(dept+'-')]
@@ -38,6 +49,6 @@ def build_family(write,link):
    contents='<details class="on-this-page" open><summary>이 페이지에서 살펴볼 내용</summary><nav aria-label="본문 목차">'+''.join(toc)+'</nav></details>'
    related='<nav class="article-pagination" aria-label="다음 안내">'+link(home,'← '+name+' 전체')+link(articles[(n+1)%len(articles)]['file'],articles[(n+1)%len(articles)]['title']+' →')+'</nav>'
    note='<p class="clinical-note">이 안내는 건강에 대한 이해를 돕는 참고 정보입니다. 증상과 질환에 대한 정확한 판단은 의료진의 진료가 필요합니다.</p>'
-   reading=child_reading(p,chapters) if dept=='child' else reading_tabs(p,chapters,rows=[(section['title'],'관련 안내와 진료 과정','궁금한 점과 기존 진료 경험') for section in p['sections'][:3]])
+   reading=child_reading(p,chapters) if dept=='child' else reading_tabs(p,chapters,rows=women_summary_rows(p['slug']))
    content='<section class="section reading-wrap"><div class="container">'+mobile+'<div class="reading-layout">'+sidebar+'<article class="reading-article">'+reading+note+related+'</article></div></div></section>'
    write(p['file'],p['title'],content,group=name,desc='진료의 이해에서 일상 속 관리까지, 해온이 함께합니다.',eyebrow=en+' · HEALTH GUIDE')

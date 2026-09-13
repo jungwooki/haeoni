@@ -4,7 +4,10 @@ from pathlib import Path
 from html import escape as esc
 import json,hashlib
 ROOT=Path(__file__).resolve().parents[1]
+WITHHELD=json.loads((ROOT/'content/publication-withheld-images.json').read_text())
 CONFIG=json.loads((ROOT/'content/visual-guides.json').read_text())
+for cfg in CONFIG.values():
+ if (cfg.get('image') or {}).get('path') in WITHHELD:cfg.pop('image')
 ARTICLES=sum([json.loads((ROOT/'content'/name).read_text()) for name in ['internal-pages.json','family-pages.json','digestive-pages.json']],[])
 CANONICAL={};PLACEMENTS={};_hashes={};_cache={}
 def register(image,page,anchor):
@@ -26,12 +29,14 @@ for page in ARTICLES:
    if item['type']=='image':register(item,page['file'],'guide-'+str(idx))
 
 def image_html(item,opening=False):
+ if item['path'] in WITHHELD:return ''
  path=CANONICAL[item['path']];alt=esc(item['alt'],quote=True)
  priority='fetchpriority="high"' if opening else 'loading="lazy"'
  # Inline diagrams and source charts retain their full original extent.
  return f'<div class="visual-image-frame"><img src="{path}" alt="{alt}" width="{item["width"]}" height="{item["height"]}" {priority}></div>'
 
 def source_image(item,page,idx,seen):
+ if item['path'] in WITHHELD:return ''
  path=CANONICAL[item['path']];owner,anchor=PLACEMENTS[path]
  token=(owner,anchor,path)
  if token in seen:return ''

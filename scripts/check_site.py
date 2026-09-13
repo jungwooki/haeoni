@@ -5,6 +5,8 @@ from pathlib import Path
 from html.parser import HTMLParser
 from urllib.parse import urlsplit,unquote
 import json,re
+from publication_review import public_html, edited_text, OVERRIDES
+from clinical_visuals import WITHHELD
 ROOT=Path(__file__).resolve().parents[1]
 class Page(HTMLParser):
  def __init__(self):super().__init__();self.ids=[];self.refs=[];self.h1=0;self.words=[]
@@ -43,24 +45,27 @@ print(f'PASS: {len(names)} pages; local links/assets; anchor targets; shared nav
 for article in json.loads((ROOT/'content/internal-pages.json').read_text())+json.loads((ROOT/'content/family-pages.json').read_text())+json.loads((ROOT/'content/digestive-pages.json').read_text()):
  page=pages[article['file']]
  rendered=normalize(' '.join(page.words))
- for block in article['source_text']:
-  assert normalize(block) in rendered,(article['file'],'source text omitted',block[:60])
  for section in article['sections']:
   for item in section['items']:
-   if item['type']=='image':
+   if item['type']=='text':
+    reviewed=Page();reviewed.feed(public_html(item['html']))
+    assert normalize(' '.join(reviewed.words)) in rendered,(article['file'],'reviewed source text omitted',item.get('text','')[:60])
+ for section in article['sections']:
+  for item in section['items']:
+   if item['type']=='image' and item['path'] not in WITHHELD:
     from clinical_visuals import CANONICAL, PLACEMENTS
     canonical=CANONICAL[item['path']]
     owner,anchor=PLACEMENTS[canonical]
     assert canonical in pages[owner].refs,(owner,item['path'])
     assert anchor in pages[owner].ids,(owner,'missing image placement')
-   if item['type'] in ['link','embed']:assert item['url'] in page.refs,(article['file'],item['url'])
+   if item['type'] in ['link','embed']:assert item['url'].replace('https://haeoni.com/d','care-diagnostic.html') in page.refs,(article['file'],item['url'])
 for name in json.loads((ROOT/'content/floating-pages.json').read_text()):
  s=(ROOT/name).read_text();p=Page();p.feed(s)
  assert s.count('class="floating-contact"')==1,(name,'floating menu missing/duplicated')
  assert p.ids.count('floating-links')==1,(name,'duplicate quick menu ID')
  for ref in ['assets/floating.css','assets/floating.js','https://pf.kakao.com/_sYeKE','https://m.booking.naver.com/booking/6/bizes/150330','01_3.location.html']:
   assert ref in p.refs,(name,ref)
-print('PASS: internal, pediatric and women’s source text/images/resources preserved; floating menu on every published page.')
+print('PASS: internal, pediatric and women’s reviewed text and retained images/resources present; floating menu on every published page.')
 for route in json.loads((ROOT/'content/family-routes.json').read_text()):
  assert route['target'] in pages,route
 print('PASS: all 46 original pediatric/women’s menu destinations mapped.')
@@ -88,7 +93,7 @@ for slug in ['digestive','functional-digestive','upper-digestive','lower-digesti
 print(f'PASS: {len(CONFIG)} visual openings; {len(counts)} unique images; 4 linked digestive guides; mobile menus.')
 # Shared menu order, explicit specialty destinations, original clinic photographs.
 import hashlib
-expected=['한방내과','소아과','부인과','체질관리','통증재활','다이어트','스포츠 MPS']
+expected=['한방내과','소아과','부인과','체질보약','통증재활','다이어트','스포츠 MPS']
 for name in names:
  html=(ROOT/name).read_text()
  strip=re.search(r'<nav class="department-bar".*?</nav>',html,re.S).group(0)
@@ -127,3 +132,22 @@ for kind,items in guide_data.items():
 for name in names:
  assert 'href="care.html"' in (ROOT/name).read_text(),(name,'shared care menu')
 print('PASS: care source coverage; planned/withdrawn offerings excluded; cautions and shared entry links.')
+
+# An old domain must never reappear in a published navigation/resource URL.
+for name,p in pages.items():
+ for ref in p.refs:
+  assert urlsplit(ref).hostname not in ('haeoni.com','www.haeoni.com'),(name,ref)
+redirects=json.loads((ROOT/'content/legacy-redirects.json').read_text())
+for name,target in redirects.items():
+ assert target in pages and 'url='+target in (ROOT/name).read_text(),(name,target)
+# Every scoped editorial replacement remains tied to its original captured block.
+import hashlib
+for item in OVERRIDES:
+ assert hashlib.sha256(item['original_html'].encode()).hexdigest()==item['source_sha256']
+ reviewed=Page();reviewed.feed(public_html(item['html']))
+ assert normalize(' '.join(reviewed.words)) in normalize(' '.join(pages[item['page']].words)),item['page']
+print('PASS: old-domain links absent; legacy routes redirect; reviewed public copy present.')
+
+for image_path in WITHHELD:
+ assert not any(image_path in p.refs for p in pages.values()),image_path
+print('PASS: withheld clinical charts remain outside public pages.')

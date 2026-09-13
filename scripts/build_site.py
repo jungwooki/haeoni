@@ -4,7 +4,11 @@
 from pathlib import Path
 from html import escape as esc
 import json,re
+from urllib.parse import urlencode
 from clinic_photos import photo_gallery
+from pain_care import pain_page, certification
+from tonic_care import tonic_page
+from publication_review import public_html
 from care_editorial import prescription_common
 from care_guides import build_care, home_section, related, LINKS as CARE_LINKS, notice as care_notice
 from floating_menu import FLOATING, ASSETS, install_on_legacy
@@ -21,25 +25,28 @@ def link(url,label,cls=''):
   url,kind=EXTERNAL_CLINICS[url];cls+=' specialty-link specialty-'+kind
   label+=' <span aria-hidden="true">↗</span>';extra=' target="_blank" rel="noopener noreferrer" aria-label="'+esc(re.sub('<[^>]+>','',label).strip(' ↗'),quote=True)+' 별도 사이트, 새 창"'
  return f'<a class="{cls.strip()}" href="{esc(url,quote=True)}"{extra}>{label}</a>' 
-depts=[('internal','한방내과','INTERNAL MEDICINE','증상을 넘어, 몸 전체의 흐름을 살핍니다.','호흡기 · 소화기 · 검사와 변증진단','/rhinitis'),('child','소아과','CHILD & ADOLESCENT','아이의 오늘과 건강한 성장을 함께 봅니다.','성장 · 허약체질 · 소아청소년 건강','/kids'),('women','부인과','WOMEN’S HEALTH','여성의 생애주기마다 세심하게 함께합니다.','여성질환 · 임신 준비 · 산후 회복','/woman'),('weight','다이어트','WEIGHT MANAGEMENT','생활과 몸의 변화를 함께 살핍니다.','체중 · 체형 · 생활 관리','https://haeonw.com'),('constitution','체질관리','CONSTITUTIONAL CARE','같은 증상도, 나의 몸에 맞게 살핍니다.','허약체질 · 보약 · 한약 처방','/152'),('pain','통증재활','PAIN & REHABILITATION','움직임의 회복에서 일상의 회복까지.','근골격 통증 · 재활 · 회복 관리','https://haeon.sportsmps.com/'),('sports','스포츠 MPS','SPORTS MPS','운동하는 몸과 마음을 함께 이해합니다.','유소년 스포츠 · 성인 운동 · MPS 평가','https://haeon.sportsmps.com/')]
+depts=[('internal','한방내과','INTERNAL MEDICINE','증상을 넘어, 몸 전체의 흐름을 살핍니다.','호흡기 · 소화기 · 검사와 변증진단','/rhinitis'),('child','소아과','CHILD & ADOLESCENT','아이의 오늘과 건강한 성장을 함께 봅니다.','성장 · 허약체질 · 소아청소년 건강','/kids'),('women','부인과','WOMEN’S HEALTH','여성의 생애주기마다 세심하게 함께합니다.','여성질환 · 임신 준비 · 산후 회복','/woman'),('weight','다이어트','WEIGHT MANAGEMENT','생활과 몸의 변화를 함께 살핍니다.','체중 · 체형 · 생활 관리','https://haeonw.com'),('constitution','체질보약','CONSTITUTIONAL CARE','같은 증상도, 나의 몸에 맞게 살핍니다.','허약체질 · 보약 · 한약 처방','/152'),('pain','통증재활','PAIN & REHABILITATION','움직임의 회복에서 일상의 회복까지.','근골격 통증 · 재활 · 회복 관리','https://haeon.sportsmps.com/'),('sports','스포츠 MPS','SPORTS MPS','운동하는 몸과 마음을 함께 이해합니다.','유소년 스포츠 · 성인 운동 · MPS 평가','https://haeon.sportsmps.com/')]
 depts=sorted(depts,key=lambda d:['internal','child','women','constitution','pain','weight','sports'].index(d[0]))
 docs=[('lee','이정욱','대표원장 · 한방내과 겸임교수','한방내과 · 소아과 · 소아 스포츠 · 난치성질환'),('jung','정지은','한방소아과 전문의','소아청소년 · 부인과 · 비만 · 통증'),('han','한유경','원장 · 한의사','한방내과 · 재활 · 산후 여성질환 · 피부·비만'),('cho','조내경','원장 · 한의사','한방부인과 · 재활 · 피부질환 · 비만')]
 about_links=[('01_1.about.html','해온의 철학·인사말'),('history.html','역사와 전통'),('contribution.html','사회공헌')]
-visit_links=[('time.html','진료시간'),('01_3.location.html','오시는 길·주차'),('01_4.tour.html','공간 둘러보기'),('https://pf.kakao.com/_sYeKE','상담·예약'),('fees.html','비급여수가 안내')]
-nav_groups=[('한의원 소개',about_links),('진료 분야',[(f'clinic-{d[0]}.html',d[1]) for d in depts]),('의료진',[('01_2.team.html','의료진 전체')]+[(f'doctor-{d[0]}.html',d[1]+' 원장') for d in docs]),('이용 안내',visit_links),('해온 소식',[('https://haeoni.com/community','소식·소통'),('sitemap.html','전체 페이지')])]
+visit_links=[('time.html','진료시간'),('01_3.location.html','오시는 길·주차'),('01_4.tour.html','공간 둘러보기'),('https://pf.kakao.com/_sYeKE','카카오톡 상담'),('https://m.booking.naver.com/booking/6/bizes/150330','네이버 예약'),('fees.html','비급여수가 안내')]
+nav_groups=[('한의원 소개',about_links),('진료 분야',[(f'clinic-{d[0]}.html',d[1]) for d in depts]),('의료진',[('01_2.team.html','의료진 전체')]+[(f'doctor-{d[0]}.html',d[1]+' 원장') for d in docs]),('이용 안내',visit_links),('해온 소식',[('sitemap.html','전체 페이지')])]
 nav_groups.insert(2,('해온의 진료',[('care.html','진료 안내 전체')]+CARE_LINKS))
 nav_groups.append(('한방내과 세부 안내',[(p['file'],p['title']) for p in PAGES]))
 def header(current):
+ translate_url='https://translate.google.com/translate?'+urlencode({'sl':'ko','tl':'ja','hl':'ja','u':'https://haeoni.com/'+current})
+ language_link=f'<details class="header-language notranslate" translate="no"><summary aria-label="언어 선택 / 言語選択"><span class="language-flag" aria-hidden="true">🇰🇷</span><span class="language-code">KO</span><span aria-hidden="true">⌄</span></summary><div class="language-options"><a class="language-ko" href="{current}" data-original="https://haeoni.com/{current}" lang="ko" aria-current="true"><span aria-hidden="true">🇰🇷</span> 한국어</a><a class="language-ja" href="{esc(translate_url,quote=True)}" lang="ja"><span aria-hidden="true">🇯🇵</span> 日本語<small>Google 自動翻訳</small></a></div></details>'
  parent='care.html' if current.startswith('care') else '01_2.team.html' if current.startswith('doctor-') else 'departments.html' if current.startswith(('clinic-', 'internal-', 'child-', 'women-')) else 'time.html' if current in ['01_3.location.html','01_4.tour.html'] else '01_1.about.html' if current in ['history.html','contribution.html'] else current
  groups=''.join('<section><h2>'+title+'</h2>'+''.join(link(u,n) for u,n in items)+'</section>' for title,items in nav_groups)
  nav=''.join(link(u,n,'nav-current' if parent==u else '') for u,n in [('01_1.about.html','한의원 소개'),('departments.html','진료 분야'),('care.html','해온의 진료'),('01_2.team.html','의료진'),('time.html','이용 안내')])
  strip=''.join(link('clinic-'+d[0]+'.html',d[1],'nav-current' if (current=='clinic-'+d[0]+'.html' or current.startswith(d[0]+'-')) else '') for d in depts)
- return f'''<a class="skip-link" href="#main">본문으로 바로가기</a><header class="site-header multi-header"><div class="container header-inner"><a class="brand" href="index.html" aria-label="해온한의원 홈"><img src="assets/images/logo.jpg" alt="해온한의원" width="451" height="147"></a><nav class="desktop-nav" aria-label="주 메뉴">{nav}</nav><a class="button button-yellow header-booking" href="https://pf.kakao.com/_sYeKE" target="_blank" rel="noopener noreferrer">상담·예약 ↗</a><details class="site-menu"><summary aria-label="전체 메뉴"><span class="menu-lines" aria-hidden="true">☰</span><span class="menu-label">전체 메뉴</span></summary><div class="mega-menu"><div class="container mega-grid">{groups}</div></div></details></div><nav class="department-bar" aria-label="진료 분야">{strip}</nav></header>'''
+ return f'''<a class="skip-link" href="#main">본문으로 바로가기</a><header class="site-header multi-header"><div class="container header-inner"><a class="brand" href="index.html" aria-label="해온한의원 홈"><img src="assets/images/logo.jpg" alt="해온한의원" width="451" height="147"></a><nav class="desktop-nav" aria-label="주 메뉴">{nav}</nav>{language_link}<details class="site-menu"><summary aria-label="전체 메뉴"><span class="menu-lines" aria-hidden="true">☰</span><span class="menu-label">전체 메뉴</span></summary><div class="mega-menu"><div class="container mega-grid">{groups}</div></div></details></div><nav class="department-bar" aria-label="진료 분야">{strip}</nav></header>'''
 legacy=(ROOT/'content/legacy/index.html').read_text()
 footer=re.search(r'<footer class="site-footer">.*?</footer>',legacy,re.S).group(0)
+footer=footer.replace('>이용약관<','>웹사이트 이용 안내<')
 footer=footer.replace('<div class="footer-links">','<div class="footer-links"><a href="sitemap.html">전체 페이지</a>')
 mobile=re.search(r'<nav class="mobile-contact".*?</nav>',legacy,re.S).group(0)
-cta='''<section class="shared-cta"><div class="container"><div><p class="eyebrow">HERE FOR YOU</p><h2>궁금한 점부터, 편하게 이야기해 주세요.</h2><p>4인의 의료진이 함께하는 해온한의원</p></div><a class="button button-yellow" href="https://pf.kakao.com/_sYeKE" target="_blank" rel="noopener noreferrer">상담·예약 ↗</a></div></section>'''
+cta='''<section class="shared-cta"><div class="container"><div><p class="eyebrow">HERE FOR YOU</p><h2>궁금한 점부터, 편하게 이야기해 주세요.</h2><p>4인의 의료진이 함께하는 해온한의원</p></div><div class="contact-action-group"><a class="button contact-kakao" href="https://pf.kakao.com/_sYeKE" target="_blank" rel="noopener noreferrer">카카오톡 상담 ↗</a><a class="button contact-naver" href="https://m.booking.naver.com/booking/6/bizes/150330" target="_blank" rel="noopener noreferrer">네이버 예약 ↗</a><a class="button contact-directions" href="01_3.location.html">오시는 길 →</a></div></div></section>'''
 manifest=[]
 def write(name,title,content,group='한의원 소개',desc='본질을 지키며 미래로 향합니다.',hero=True,eyebrow='HAEON KOREAN MEDICINE'):
  manifest.append(name)
@@ -71,18 +78,20 @@ def write(name,title,content,group='한의원 소개',desc='본질을 지키며 
   html=html.replace('</head>','<link rel="stylesheet" href="assets/internal-renewal.css"></head>')
  if name=='clinic-child.html' or name.startswith('child-'):
   html=html.replace('class="clinic-visual care-unified"','class="clinic-visual care-unified child-renewal"').replace('</head>','<link rel="stylesheet" href="assets/child-renewal.css"></head>')
- html=html.replace('</head>','<link rel="stylesheet" href="assets/unified.css"><link rel="stylesheet" href="assets/care-guides.css"></head>')
+ html=html.replace('</head>','<link rel="stylesheet" href="assets/unified.css"><link rel="stylesheet" href="assets/care-guides.css"><link rel="stylesheet" href="assets/contact-care.css"><script src="assets/language.js" defer></script></head>')
+ if name=='clinic-constitution.html':html=html.replace('</head>','<link rel="stylesheet" href="assets/tonic-care.css"></head>')
  if name.startswith('care'):
   html=html.replace('</head>','<script src="assets/care-guides.js" defer></script></head>')
   html=html.replace(care_notice(),'').replace('</main>', '<div class="container">'+care_notice()+'</div></main>')
  if name=='care-prescription.html':html=html.replace('<div class="container">'+care_notice(),'<div class="container">'+prescription_common()+care_notice())
  html=html.replace('class="nav-current"','class="nav-current" aria-current="page"')
+ html=public_html(html).replace('https://haeoni.com/d','care-diagnostic.html').replace('https://haeoni.com/?mode=policy','terms.html').replace('https://haeoni.com/?mode=privacy','privacy.html')
  (ROOT/name).write_text(html)
 def paras(lines):return ''.join('<p>'+esc(x)+'</p>' for x in lines if x.strip())
 def prose(lines):return '<div class="prose">'+paras(lines)+'</div>'
 def doc_cards():return '<div class="doctor-grid">'+''.join(f'<a class="doctor-card" href="doctor-{slug}.html"><img src="assets/images/doctor-{slug}.jpg" alt="{name} 원장" width="600" height="750" loading="lazy"><div><p class="eyebrow">{role}</p><h3>{name} <small>원장</small></h3><p>{area}</p><span class="underlined-link">인사말·약력·연구 활동 <span aria-hidden="true">↗</span></span></div></a>' for slug,name,role,area in docs)+'</div>'
 def dept_cards():
- return '<div class="department-grid">'+''.join(link('clinic-'+d[0]+'.html',f'<span class="eyebrow">0{i+1} / {d[2]}</span><h3>{d[1]}</h3><p>{d[4]}</p><span class="department-action">'+('별도 사이트' if d[0] in ['weight','sports'] else '진료 안내')+'</span>','department-card') for i,d in enumerate(depts))+'</div>'
+ return '<div class="department-grid">'+''.join(link('clinic-'+d[0]+'.html',f'<span class="eyebrow">0{i+1} / {d[2]}</span><h3>{d[1]}</h3><p>{d[4]}</p>{certification(True) if d[0]=="pain" else ""}<span class="department-action">'+('별도 사이트' if d[0] in ['weight','sports'] else '진료 안내')+'</span>','department-card') for i,d in enumerate(depts))+'</div>'
 
 # Homepage keeps its established visual design while every menu opens a page.
 main=re.search(r'<main id="main">(.*?)</main>',legacy,re.S).group(1)
@@ -125,9 +134,13 @@ constitution=[lookup[u] for u in ['/152','/147','/kids4','/146','/kids5']]
 selections={'internal':internal,'child':child,'women':women,'weight':[lookup['https://haeonw.com']],'constitution':constitution,'pain':[lookup['https://haeon.sportsmps.com/']],'sports':[lookup['https://haeon.sportsmps.com/']]}
 for slug,name,en,desc,area,source in depts:
  if slug in ['internal','child','women']:continue
+ if slug=='pain':
+  write('clinic-pain.html','통증재활 · 스포츠 진료',pain_page(),group='진료 분야',desc='통증·재활과 스포츠 진료, 일상과 운동의 움직임을 함께 살핍니다.',eyebrow='PAIN & SPORTS CARE')
+  continue
  items=selections[slug]
  links=''.join(link(ROUTES.get(r['url'], 'https://haeoni.com'+r['url'] if r['url'].startswith('/') else r['url']),esc(r['title'].replace('비만','다이어트'))+' <span aria-hidden="true">↗</span>','topic-link') for r in items)
  content=f'<section class="section"><div class="container"><div class="section-heading"><h2>{area.replace(" · ","<br>",1)}</h2><p class="section-description">궁금한 내용부터 차근차근 살펴보세요.<br>진료와 생활관리에 필요한 세부 안내를 확인하세요.</p></div><div class="topic-grid">{links}</div><div class="team-principles"><h2>몸과 마음을 함께 살피는 의료진</h2><p>증상과 생활에 귀 기울이고, 진단과 치료에 대해 충분히 설명하는 진료를 지향합니다.</p>{link("01_2.team.html","의료진 소개 →","underlined-link")}</div></div></section>'
+ if slug=='constitution':content=tonic_page(links)
  write(f'clinic-{slug}.html',name,content,group='진료 분야',desc=desc,eyebrow=en)
 from fees import fee_page
 write('fees.html','비급여 수가표',fee_page(),group='이용 안내',desc='진료 항목별 비급여 비용을 안내합니다.',eyebrow='FEES')
@@ -137,6 +150,10 @@ write('01_3.location.html','오시는 길·주차','''<section class="section"><
 gallery=read('gallery.json') if (ROOT/'content/gallery.json').exists() else []
 photos=''.join(f'<figure><img src="assets/images/{n}" alt="해온한의원 2층 내부 공간 {i+1}" width="1920" height="{3413 if i in (2,8) else 1080}" loading="lazy"></figure>' for i,n in enumerate(gallery))
 write('01_4.tour.html','공간 둘러보기','<section class="section"><div class="container"><div class="section-heading"><h2>익숙한 곳에서,<br>더 편안한 진료를.</h2><p class="section-description">2008년 개원 이래 신도림 테크노마트에서 진료하고 있습니다.<br>2025년 확장공사를 통해 더 깨끗하고 넓은 공간으로 거듭났습니다.</p></div><div class="gallery-grid">'+photos+'</div></div></section>',group='이용 안내',desc='신도림 테크노마트 2층, 해온의 공간을 만나보세요.',eyebrow='SPACE OF HAEON')
+# Local legal/information destinations; imported policy is retained verbatim.
+privacy_lines=(ROOT/'content/privacy-original.txt').read_text().split('Agreement',1)[-1].strip().splitlines()
+write('privacy.html','개인정보처리방침','<section class="section"><div class="container prose">'+paras(privacy_lines)+'</div></section>',group='이용 안내',desc='개인정보 처리와 권리 행사에 관한 안내입니다.',eyebrow='PRIVACY')
+write('terms.html','웹사이트 이용 안내','<section class="section"><div class="container prose"><h2>진료 정보의 이용</h2><p>이 홈페이지는 해온한의원의 진료 분야와 이용 정보를 제공합니다. 건강 정보는 이해를 돕기 위한 자료이며, 개인의 진단이나 처방을 대신하지 않습니다.</p><h2>상담과 예약</h2><p>상담·예약 버튼은 카카오톡과 네이버의 서비스로 연결됩니다. 해당 서비스의 이용약관과 개인정보처리방침이 적용되며, 예약 확정과 변경은 예약 서비스 또는 한의원으로 확인하세요.</p><h2>콘텐츠와 문의</h2><p>홈페이지 자료의 이용이나 내용에 관해 궁금한 사항은 해온한의원으로 문의해 주세요.</p><p><a href="tel:02-2111-7575">02-2111-7575</a></p><p><a href="privacy.html">개인정보처리방침 보기</a></p></div></section>',group='이용 안내',desc='홈페이지의 정보와 상담·예약 연결에 관한 안내입니다.',eyebrow='WEBSITE INFORMATION')
 build_care(write)
 build_internal(write,link)
 build_family(write,link)

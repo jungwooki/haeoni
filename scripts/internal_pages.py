@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """Render source-backed internal medicine articles; pure standard library."""
 from pathlib import Path
+from publication_review import public_html
 from html import escape
 import json,re
 from clinical_visuals import CONFIG, source_image, feature_cards, care_flow
@@ -16,7 +17,7 @@ def figure(item):
 
 def render_item(i):
  if i['type']=='image':return figure(i)
- if i['type']=='text':return '<div class="source-text">'+i['html']+'</div>'
+ if i['type']=='text':return '<div class="source-text">'+public_html(i['html'])+'</div>'
  if i['type']=='link':return f'<a class="article-resource" href="{escape(i["url"],quote=True)}">{escape(i["label"])} <span aria-hidden="true">↗</span></a>'
  if i['type']=='embed':
   url=escape(i['url'],quote=True)

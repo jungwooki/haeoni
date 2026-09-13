@@ -17,6 +17,8 @@
   "time.html",
   "01_3.location.html",
   "01_4.tour.html",
+  "privacy.html",
+  "terms.html",
   "care.html",
   "care-process.html",
   "care-diagnostic.html",
@@ -77,12 +79,5 @@
   "women-uterus-ovaries.html",
   "women-pms-stress.html",
   "women-cold-sensitivity.html",
-  "sitemap.html",
-  "02_3.clinic_child_treatment.html",
-  "03_2.clinic_papa.html",
-  "03_1.clinic_respiratory.html",
-  "02_4.clinic_child_tonic.html",
-  "02-1.clinic_child.html",
-  "04_1.clinic_woman.html",
-  "02_2.clinic_child_integrated.html"
+  "sitemap.html"
 ]
