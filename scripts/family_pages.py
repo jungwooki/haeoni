@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 """Source-backed pediatric and women's health hubs and reading pages."""
+from page_routes import department_file
 from pathlib import Path
 from html import escape
 import json,re
@@ -33,7 +34,7 @@ def build_family(write,link):
   articles=[p for p in PAGES if p['slug'].startswith(dept+'-')]
   cards=''.join('<section class="internal-topic-group"><p class="eyebrow">'+f'{n:02} / {en}'+'</p><h2>'+title+'</h2>'+''.join(link(p['file'],p['title']+' →','topic-link') for p in selected(dept,slugs))+'</section>' for n,(title,slugs) in enumerate(GROUPS[dept],1))
   content='<section class="section family-hub"><div class="container">'+care_flow(dept)+'<section id="care-paths"><div class="internal-section-heading"><div><p class="eyebrow">나의 이야기에서 시작하는 진료</p><h2>'+('아이와 함께 읽는 건강 안내' if dept=='child' else '지금의 나에게 맞는 건강 안내')+'</h2></div></div>'+feature_cards(dept)+'</section><section class="family-all-guides"><h2>'+name+' 전체 안내</h2><div class="internal-topic-grid">'+cards+'</div></section><div class="team-principles"><h2>편안하게 이야기해 주세요.</h2><p>네 명의 의료진이 진료의 관점과 경험을 나누며 몸과 마음에 귀 기울입니다.</p>'+link('01_2.team.html','4인의 의료진 만나보기 →','underlined-link')+'</div></div></section>'
-  write('clinic-'+dept+'.html',name,content,group='진료 분야',desc=desc,eyebrow=en)
+  write(department_file(dept),name,content,group='진료 분야',desc=desc,eyebrow=en)
   for n,p in enumerate(articles):
    chapters=[];toc=[];seen=set()
    for idx,s in enumerate(p['sections']):
@@ -43,7 +44,7 @@ def build_family(write,link):
      chapters.append(f'<details class="source-chapter" id="guide-{idx}"><summary><span>{idx+1:02}</span>{escape(label)}<b aria-hidden="true">＋</b></summary><div class="reading-section">{body}</div></details>')
     else:
      chapters.append(f'<section class="reading-section" id="guide-{idx}"><div class="section-index">{idx+1:02}<span>{escape(label)}</span></div>{body}</section>')
-   nav=navigation(dept,p['file']);home='clinic-'+dept+'.html'
+   nav=navigation(dept,p['file']);home=department_file(dept)
    sidebar='<aside class="reading-sidebar">'+link(home,name+' 전체 안내 ↗','reading-home')+'<nav aria-label="'+name+' 세부 안내">'+nav+'</nav></aside>'
    mobile='<div class="internal-mobile-tools">'+link(home,'← '+name+' 전체')+'<details class="mobile-reading-nav"><summary>다른 안내 보기 <span aria-hidden="true">＋</span></summary><nav aria-label="모바일 '+name+' 세부 안내">'+nav+'</nav></details></div>'
    contents='<details class="on-this-page" open><summary>이 페이지에서 살펴볼 내용</summary><nav aria-label="본문 목차">'+''.join(toc)+'</nav></details>'

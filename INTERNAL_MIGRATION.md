@@ -28,7 +28,7 @@
 
 | 원본 | 새 파일 |
 |---|---|
-| https://haeoni.com/rhini1 | internal-respiratory.html |
+| https://haeoni.com/rhini1 | rhini1.html |
 | https://haeoni.com/rhini50 | internal-cotton-care.html |
 | https://haeoni.com/rhinitis1 | internal-rhinitis.html |
 | https://haeoni.com/126 | internal-nose-function.html |

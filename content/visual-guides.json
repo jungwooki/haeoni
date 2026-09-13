@@ -1,5 +1,5 @@
 {
-  "internal-respiratory.html": {
+  "rhini1.html": {
     "headline": "코·목·기침을 하나의 흐름으로 살핍니다.",
     "points": [
       "증상의 위치",
@@ -884,7 +884,7 @@
           "height": 853
         },
         "title": "코·목·기침, 호흡기 진료",
-        "url": "internal-respiratory.html"
+        "url": "rhini1.html"
       },
       {
         "image": {
@@ -916,7 +916,7 @@
       }
     ]
   },
-  "clinic-child.html": {
+  "kids10.html": {
     "headline": "아이의 오늘에 귀 기울이고,<br>건강한 성장을 함께합니다.",
     "description": "반복되는 감기부터 식사와 소화, 성장의 고민까지. 아이의 표정과 보호자의 이야기를 함께 살피며 진료합니다.",
     "image": {
@@ -979,7 +979,7 @@
       }
     ]
   },
-  "clinic-women.html": {
+  "woman1.html": {
     "headline": "여성의 시간에 맞춰,<br>몸과 마음을 돌봅니다.",
     "description": "임신을 준비하는 시간, 출산 뒤 회복하는 시간, 일상에서 느끼는 변화까지. 지금의 나에게 필요한 진료를 함께 찾습니다.",
     "image": {

@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """Check generated pages, navigation, assets, anchors and source preservation."""
+from page_routes import is_hub
 from pathlib import Path
 from html.parser import HTMLParser
 from urllib.parse import urlsplit,unquote
@@ -81,7 +82,7 @@ for name,cfg in CONFIG.items():
  assert 'id="visual-intro"' in html and 'class="visual-keypoints"' in html,name
  if cfg.get('image'):assert cfg['image']['path'] in pages[name].refs,name
  else:assert 'class="visual-diagram"' in html,name
- if not name.startswith('clinic-'):assert 'class="internal-mobile-tools"' in html,name
+ if not is_hub(name):assert 'class="internal-mobile-tools"' in html,name
 counts=Counter(p for p in images if not p.endswith('/logo.jpg'))
 assert all(n==1 for n in counts.values()),[(p,n) for p,n in counts.items() if n>1]
 import hashlib

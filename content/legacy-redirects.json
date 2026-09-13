@@ -3,7 +3,11 @@
   "03_2.clinic_papa.html": "child-pfapa.html",
   "03_1.clinic_respiratory.html": "child-respiratory.html",
   "02_4.clinic_child_tonic.html": "child-constitution.html",
-  "02-1.clinic_child.html": "clinic-child.html",
-  "04_1.clinic_woman.html": "clinic-women.html",
-  "02_2.clinic_child_integrated.html": "child-integrated.html"
+  "02-1.clinic_child.html": "kids10.html",
+  "04_1.clinic_woman.html": "woman1.html",
+  "02_2.clinic_child_integrated.html": "child-integrated.html",
+  "clinic-child.html": "kids10.html",
+  "internal-respiratory.html": "rhini1.html",
+  "clinic-women.html": "woman1.html",
+  "clinic-pain.html": "pain1.html"
 }

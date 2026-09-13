@@ -48,7 +48,7 @@
 | 둘러보기 | /92 | 01_4.tour.html | 이관 |
 | 오시는 길 | /93 | 01_3.location.html | 이관 |
 | 사회공헌 프로그램 | /142 | contribution.html | 소개 본문 이관 / 부속 이미지 추가 검토 |
-| 소아청소년 | /kids | clinic-child.html | 분야별 목차 구축 / 상세 본문 미이관 |
+| 소아청소년 | /kids | kids10.html | 분야별 목차 구축 / 상세 본문 미이관 |
 | 한방소아과 안내 | /kids10 | child-overview.html | 본문·사진 이관 / 연관 게시물·자료 원본 연결 |
 | 소아진료, 통합적 관점으로 | /120 | child-integrated.html | 본문·사진 이관 / 연관 게시물·자료 원본 연결 |
 | 소아침, 뜸, 한약 | /144 | child-treatments.html | 본문·사진 이관 / 연관 게시물·자료 원본 연결 |
@@ -70,7 +70,7 @@
 | 키성장부진 유형 | /149 | child-growth-causes.html | 본문·사진 이관 / 연관 게시물·자료 원본 연결 |
 | 키성장 진단 | /151 | child-growth-diagnosis.html | 본문·사진 이관 / 연관 게시물·자료 원본 연결 |
 | 키성장 치료 | /150 | child-growth-care.html | 본문·사진 이관 / 연관 게시물·자료 원본 연결 |
-| 여성 | /woman | clinic-women.html | 분야별 목차 구축 / 상세 본문 미이관 |
+| 여성 | /woman | woman1.html | 분야별 목차 구축 / 상세 본문 미이관 |
 | 한방부인과 안내 | /woman1 | women-overview.html | 본문·사진 이관 / 연관 게시물·자료 원본 연결 |
 | 생애주기별 건강관리 | /61 | women-life-stages.html | 본문·사진 이관 / 연관 게시물·자료 원본 연결 |
 | 난임 및 임신준비 | /64 | women-pregnancy-planning.html | 본문·사진 이관 / 연관 게시물·자료 원본 연결 |
@@ -97,7 +97,7 @@
 | PMS 스트레스와 마음의 병 | /98 | women-pms-stress.html | 본문·사진 이관 / 연관 게시물·자료 원본 연결 |
 | 수족냉증, 찬 체질 | /99 | women-cold-sensitivity.html | 본문·사진 이관 / 연관 게시물·자료 원본 연결 |
 | 내과비염 | /rhinitis | clinic-internal.html | 세부 안내 10개 로컬 연결 |
-| 호흡기내과 안내 | /rhini1 | internal-respiratory.html | 한방내과 본문·사진 이관 / 연관 게시물·안내책자는 원본 연결 |
+| 호흡기내과 안내 | /rhini1 | rhini1.html | 한방내과 본문·사진 이관 / 연관 게시물·안내책자는 원본 연결 |
 | 코목 5분약솜 | /rhini50 | internal-cotton-care.html | 한방내과 본문·사진 이관 / 연관 게시물·안내책자는 원본 연결 |
 | 비염축농증 클리닉 | /79 | internal-rhinitis.html | 한방내과 본문·사진 이관 / 연관 게시물·안내책자는 원본 연결 |
 | 비염? | /rhinitis1 | internal-rhinitis.html | 한방내과 본문·사진 이관 / 연관 게시물·안내책자는 원본 연결 |

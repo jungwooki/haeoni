@@ -1,0 +1,12 @@
+# Apache: publish this file alongside the HTML pages; mod_rewrite is required.
+RewriteEngine On
+RewriteRule ^clinic-child\.html$ /kids10 [R=301,L]
+RewriteRule ^internal-respiratory\.html$ /rhini1 [R=301,L]
+RewriteRule ^clinic-women\.html$ /woman1 [R=301,L]
+RewriteRule ^clinic-pain\.html$ /pain1 [R=301,L]
+
+# Only redirect browser requests, avoiding a loop after the internal rewrite.
+RewriteCond %{THE_REQUEST} \s/+(kids10|rhini1|woman1|pain1)\.html[?\s]
+RewriteRule ^(kids10|rhini1|woman1|pain1)\.html$ /$1 [R=301,L]
+RewriteRule ^(kids10|rhini1|woman1|pain1)/$ /$1 [R=301,L]
+RewriteRule ^(kids10|rhini1|woman1|pain1)$ $1.html [END]

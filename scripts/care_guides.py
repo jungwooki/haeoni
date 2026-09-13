@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 """Public-facing, conservatively edited companion to the EMR guides."""
+from page_routes import is_clinic_page
 from pathlib import Path
 from html import escape as e
 import json
@@ -14,7 +15,7 @@ def navigation(current):return '<nav class="care-guide-nav" aria-label="해온�
 def cards():return '<div class="care-guide-cards">'+''.join(f'<a class="care-guide-card" href="care-{key}.html"><img src="{img}" alt="해온한의원 진료 공간" loading="lazy"><div><span class="eyebrow">0{i+1}</span><h3>{title}</h3><p>{desc}</p><span class="care-card-action">자세히 보기 →</span></div></a>' for i,(key,title,desc,img) in enumerate(PANELS))+'</div>'
 def home_section():return '<section class="section care-home"><div class="container"><div class="section-heading"><div><p class="eyebrow">해온의 진료</p><h2>충분히 듣고, 필요한 정보를 살피고,<br>진료의 방향을 설명합니다.</h2></div><p class="section-description">한의학적 진찰과 필요한 검사 결과를 함께 살펴<br>환자분의 상태에 맞는 치료를 계획합니다.</p></div>'+cards()+'</div></section>'
 def related(name):
- if not name.startswith(('clinic-','internal-','child-','women-')):return ''
+ if not is_clinic_page(name):return ''
  return '<section class="care-related"><div class="container"><h2>진료가 궁금하신가요?</h2><p>검사와 치료의 진행 방법, 진료 전 확인할 내용을 살펴보세요.</p><div>'+''.join(f'<a href="{u}">{t} →</a>' for u,t in LINKS)+'</div></div></section>'
 def overview():return '<section class="section"><div class="container"><div class="care-introduction"><p class="eyebrow">듣고 · 살피고 · 설명하고 · 함께 확인합니다</p><h2>진료의 시작은<br>환자분의 이야기입니다.</h2><p>증상이 언제 시작되었는지, 일상에서 어떤 불편이 있는지 먼저 듣습니다. 진찰과 필요한 검사에서 얻은 정보를 함께 살펴 치료를 계획하고, 이후의 변화를 확인합니다.</p><p>검사나 치료의 종류보다 중요한 것은 지금의 상태에 무엇이 필요한지 설명하고 함께 결정하는 과정입니다.</p></div>'+cards()+notice()+'</div></section>'
 def process():
