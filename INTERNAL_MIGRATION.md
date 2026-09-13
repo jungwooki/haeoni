@@ -16,8 +16,8 @@
 - content/internal-pages.json: 렌더링할 본문, 이미지 위치, 목차/제목, 원문 비교 자료.
 - content/internal-assets.json: 사진·도해 20개의 원본 URL, 로컬 경로, 실제 크기.
 - scripts/internal_pages.py: 한방내과 첫 페이지와 상세 페이지 생성.
-- assets/internal.css: 읽기용 본문, 목차, 단계별 사진 및 모바일 레이아웃.
-- scripts/floating_menu.py, assets/floating.css, assets/floating.js: 전체 HTML의 세로형 상담·예약·길찾기 메뉴.
+- assets/styles/clinical/internal.css: 읽기용 본문, 목차, 단계별 사진 및 모바일 레이아웃.
+- scripts/floating_menu.py, assets/styles/shared/floating.css, assets/scripts/shared/floating.js: 전체 HTML의 세로형 상담·예약·길찾기 메뉴.
 
 ## 검증
 

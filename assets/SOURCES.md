@@ -7,9 +7,9 @@
 - Pretendard 1.3.9, 네이비 #1e293b, 블루 #2563eb, 카카오 노랑 #fee500.
 
 ## 기존 haeoni.com에서 가져온 이미지 (원본 그대로 저장)
-- images/logo.jpg: https://cdn.imweb.me/thumbnail/20260826/3fbefcf7d95b8.jpg
-- images/original-hero-2.jpg: https://cdn.imweb.me/thumbnail/20251205/f3f4801984723.jpg
-- images/original-hero-1.jpg: https://cdn.imweb.me/thumbnail/20251204/6e354b8e97a56.jpg
+- images/brand/logo.jpg: https://cdn.imweb.me/thumbnail/20260826/3fbefcf7d95b8.jpg
+- images/spaces/original-hero-2.jpg: https://cdn.imweb.me/thumbnail/20251205/f3f4801984723.jpg
+- images/people/original-hero-1.jpg: https://cdn.imweb.me/thumbnail/20251204/6e354b8e97a56.jpg
 
 ## 내용 및 연결
 - 모토와 비전: 사용자 제공 내용.
@@ -23,8 +23,8 @@
 
 ## 편집 및 미리보기
 - index.html: 문구, 이미지, 링크.
-- assets/home.css: 데스크톱 및 모바일 레이아웃.
-- assets/home.js: 모바일 메뉴 닫기와 Escape 키 처리.
+- assets/styles/shared/home.css: 데스크톱 및 모바일 레이아웃.
+- assets/scripts/shared/home.js: 모바일 메뉴 닫기와 Escape 키 처리.
 - index.html을 직접 열거나, haeoni.com 폴더에서 python3 -m http.server로 확인.
 - CSS와 이미지 경로는 상대경로. Pretendard 글꼴 로딩에는 인터넷 연결이 필요하며 시스템 글꼴 폴백 포함.
 - 첫 화면만 리뉴얼한 단계로 연결된 상세 페이지의 디자인은 기존 상태.

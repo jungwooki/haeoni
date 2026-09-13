@@ -1,0 +1,4764 @@
+{
+  "schema_version": 1,
+  "assets": [
+    {
+      "id": "images/brand/logo",
+      "path": "assets/images/brand/logo.jpg",
+      "kind": "image",
+      "bytes": 33079,
+      "sha256": "e83262b5a5eac0c6e7af8a987a97fbae2f227ccaa4ed2e5b5feba06b6bbf5400",
+      "status": "published",
+      "used_by": [
+        "01_1.about.html",
+        "01_2.team.html",
+        "01_3.location.html",
+        "01_4.tour.html",
+        "care-diagnostic.html",
+        "care-prescription.html",
+        "care-process.html",
+        "care-treatment.html",
+        "care.html",
+        "child-antler.html",
+        "child-cold-care.html",
+        "child-cold-prevention.html",
+        "child-constitution.html",
+        "child-growth-care.html",
+        "child-growth-causes.html",
+        "child-growth-diagnosis.html",
+        "child-growth.html",
+        "child-herbal-guide.html",
+        "child-herbal-prescription.html",
+        "child-infections.html",
+        "child-integrated.html",
+        "child-overview.html",
+        "child-pfapa-care.html",
+        "child-pfapa.html",
+        "child-respiratory.html",
+        "child-treatments.html",
+        "clinic-constitution.html",
+        "clinic-internal.html",
+        "clinic-sports.html",
+        "clinic-weight.html",
+        "contribution.html",
+        "departments.html",
+        "doctor-cho.html",
+        "doctor-han.html",
+        "doctor-jung.html",
+        "doctor-lee.html",
+        "fees.html",
+        "history.html",
+        "index.html",
+        "internal-cold.html",
+        "internal-cotton-care.html",
+        "internal-cough-treatment.html",
+        "internal-cough.html",
+        "internal-diagnosis.html",
+        "internal-digestive.html",
+        "internal-functional-digestive.html",
+        "internal-lower-digestive.html",
+        "internal-nose-function.html",
+        "internal-otitis.html",
+        "internal-rhinitis-treatment.html",
+        "internal-rhinitis.html",
+        "internal-upper-digestive.html",
+        "kids10.html",
+        "pain1.html",
+        "privacy.html",
+        "rhini1.html",
+        "sitemap.html",
+        "terms.html",
+        "time.html",
+        "woman1.html",
+        "women-assisted-reproduction.html",
+        "women-body-changes.html",
+        "women-cold-sensitivity.html",
+        "women-female-infertility.html",
+        "women-infertility-care.html",
+        "women-infertility.html",
+        "women-life-stages.html",
+        "women-male-infertility.html",
+        "women-miscarriage-lifestyle.html",
+        "women-miscarriage-surgery.html",
+        "women-miscarriage.html",
+        "women-overview.html",
+        "women-parenting.html",
+        "women-pms-stress.html",
+        "women-postpartum-care.html",
+        "women-postpartum-lifestyle.html",
+        "women-postpartum.html",
+        "women-pregnancy-planning.html",
+        "women-pregnancy.html",
+        "women-recurrent-loss.html",
+        "women-uterus-ovaries.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20260826/3fbefcf7d95b8.jpg",
+        "https://haeoni.com/86"
+      ],
+      "metadata_files": [
+        "content/clinic-photo-inventory.json"
+      ],
+      "alt_texts": [],
+      "width": 451,
+      "height": 147
+    },
+    {
+      "id": "images/clinic/09e3375b5b0590ab",
+      "path": "assets/images/clinic/09e3375b5b0590ab.jpg",
+      "kind": "image",
+      "bytes": 384372,
+      "sha256": "09e3375b5b0590ab451b3630e30b9b476ea8807cac5c1a72879f80797d2dc798",
+      "status": "published",
+      "used_by": [
+        "01_4.tour.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200412/686ec3753e26f.jpg",
+        "https://haeoni.com/92"
+      ],
+      "metadata_files": [
+        "content/clinic-photo-inventory.json"
+      ],
+      "alt_texts": [],
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "id": "images/clinic/0e1b47c8bb2d3e9f",
+      "path": "assets/images/clinic/0e1b47c8bb2d3e9f.jpg",
+      "kind": "image",
+      "bytes": 315849,
+      "sha256": "0e1b47c8bb2d3e9fc5f927821014996387ca1412a879e7567717087127ac2f8a",
+      "status": "published",
+      "used_by": [
+        "history.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200308/bf3aa1ee60991.jpg",
+        "https://haeoni.com/87"
+      ],
+      "metadata_files": [
+        "content/clinic-photo-inventory.json"
+      ],
+      "alt_texts": [],
+      "width": 1920,
+      "height": 1114
+    },
+    {
+      "id": "images/clinic/19878513b962b04e",
+      "path": "assets/images/clinic/19878513b962b04e.jpg",
+      "kind": "image",
+      "bytes": 516490,
+      "sha256": "19878513b962b04e71f5e6bea9eb11b705626183a399092c068b830d2fa0222d",
+      "status": "published",
+      "used_by": [
+        "history.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200412/06c7de00d8fdd.jpg",
+        "https://haeoni.com/87"
+      ],
+      "metadata_files": [
+        "content/clinic-photo-inventory.json"
+      ],
+      "alt_texts": [],
+      "width": 1920,
+      "height": 1278
+    },
+    {
+      "id": "images/clinic/47e0fe7dc9588391",
+      "path": "assets/images/clinic/47e0fe7dc9588391.jpg",
+      "kind": "image",
+      "bytes": 408674,
+      "sha256": "47e0fe7dc9588391dd5002f3a64aac7295625f63b4c0a2ae0928bd7e42b349d0",
+      "status": "published",
+      "used_by": [
+        "01_4.tour.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20190304/5c7bfed352613.jpg",
+        "https://haeoni.com/92"
+      ],
+      "metadata_files": [
+        "content/clinic-photo-inventory.json"
+      ],
+      "alt_texts": [],
+      "width": 1066,
+      "height": 1600
+    },
+    {
+      "id": "images/clinic/89ab8d5189e5eb44",
+      "path": "assets/images/clinic/89ab8d5189e5eb44.jpg",
+      "kind": "image",
+      "bytes": 16694,
+      "sha256": "89ab8d5189e5eb442efc1daf3b0a7b2e80e63248612235c4329bc75f82501108",
+      "status": "unreferenced",
+      "used_by": [],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20260826/2443cdf499662.jpg",
+        "https://haeoni.com/86"
+      ],
+      "metadata_files": [
+        "content/clinic-photo-inventory.json"
+      ],
+      "alt_texts": [],
+      "width": 190,
+      "height": 70
+    },
+    {
+      "id": "images/clinical/family/0117191d100f",
+      "path": "assets/images/clinical/family/0117191d100f.jpg",
+      "kind": "image",
+      "bytes": 314366,
+      "sha256": "0dbbc737d2dd2d2ae5fb2c3401020beb299a01be11cf5c58a66377dad5b4a1b2",
+      "status": "published",
+      "used_by": [
+        "women-miscarriage-lifestyle.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20191226/13d47b9dc5fd6.jpg"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json",
+        "content/visual-guides.json"
+      ],
+      "alt_texts": [
+        "유산후 생활관리 안내 사진·도해"
+      ],
+      "width": 1280,
+      "height": 853
+    },
+    {
+      "id": "images/clinical/family/0397c56057d9",
+      "path": "assets/images/clinical/family/0397c56057d9.jpg",
+      "kind": "image",
+      "bytes": 181018,
+      "sha256": "657ec9cd6500365e9599ca510bd7218e830d233fc1d94e43f1e49cdcb299c607",
+      "status": "published",
+      "used_by": [
+        "child-growth-diagnosis.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200402/cc99c6aa4f524.jpg"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json"
+      ],
+      "alt_texts": [
+        "키성장 진단 안내 사진·도해"
+      ],
+      "width": 1280,
+      "height": 719
+    },
+    {
+      "id": "images/clinical/family/085f961e75c3",
+      "path": "assets/images/clinical/family/085f961e75c3.jpg",
+      "kind": "image",
+      "bytes": 43152,
+      "sha256": "29bd40892cc480cf4fbfd26304709c1776b44f72059c782139e4e9e713386a57",
+      "status": "published",
+      "used_by": [
+        "women-life-stages.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20190221/5c6e5d86cde11.jpg"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json"
+      ],
+      "alt_texts": [
+        "생애주기별 건강관리 안내 사진·도해"
+      ],
+      "width": 640,
+      "height": 640
+    },
+    {
+      "id": "images/clinical/family/0cf339b71c88",
+      "path": "assets/images/clinical/family/0cf339b71c88.jpg",
+      "kind": "image",
+      "bytes": 69496,
+      "sha256": "d3215a806d8a33d3899db9e6679b0d803d372f5a792f9853e42e1da5b11b0247",
+      "status": "published",
+      "used_by": [
+        "child-constitution.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200402/5e0412dd4b2ee.jpg"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json"
+      ],
+      "alt_texts": [
+        "허약체질 클리닉 안내 사진·도해"
+      ],
+      "width": 600,
+      "height": 600
+    },
+    {
+      "id": "images/clinical/family/12aa254b8b80",
+      "path": "assets/images/clinical/family/12aa254b8b80.jpg",
+      "kind": "image",
+      "bytes": 163732,
+      "sha256": "c5245ea2f9ef83525f59cb2553b97d845643c8e62e24dfac7231dece96b01751",
+      "status": "published",
+      "used_by": [
+        "women-overview.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20190221/5c6e585c0e300.jpg"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json"
+      ],
+      "alt_texts": [
+        "한방부인과 안내 안내 사진·도해"
+      ],
+      "width": 1280,
+      "height": 1097
+    },
+    {
+      "id": "images/clinical/family/19f4a9576cd9",
+      "path": "assets/images/clinical/family/19f4a9576cd9.jpg",
+      "kind": "image",
+      "bytes": 47083,
+      "sha256": "e89c2ada429af4cb62c8b54d0af5f16170e9c1b5e1c34dc48b8668bc1396190e",
+      "status": "published",
+      "used_by": [
+        "women-life-stages.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20190221/5c6e5d85b35fc.jpg"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json"
+      ],
+      "alt_texts": [
+        "생애주기별 건강관리 안내 사진·도해"
+      ],
+      "width": 640,
+      "height": 640
+    },
+    {
+      "id": "images/clinical/family/1dcbd108991c",
+      "path": "assets/images/clinical/family/1dcbd108991c.jpg",
+      "kind": "image",
+      "bytes": 21183,
+      "sha256": "a9b90b0a387f8147814a6e04b90a46e38061b73dfe85d4abaef657670e269a3b",
+      "status": "withheld",
+      "used_by": [],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200403/3bd5625787cb8.jpg"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json"
+      ],
+      "alt_texts": [
+        "2. 마황탕의 인플루엔자바이러스의 증식억제효과는 상당히 뛰어납니다."
+      ],
+      "width": 550,
+      "height": 234
+    },
+    {
+      "id": "images/clinical/family/20aaabadb561",
+      "path": "assets/images/clinical/family/20aaabadb561.jpg",
+      "kind": "image",
+      "bytes": 42967,
+      "sha256": "42a9268aeb8e3cf8464203e61b12acd28d694b149b4ba992f19a85fd7191bd2c",
+      "status": "withheld",
+      "used_by": [],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200403/b23748b49f92e.jpg"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json"
+      ],
+      "alt_texts": [
+        "3. 마황탕의 과학적 작용기전, 마황탕의 바이러스 감염 억제기전은 다음과 같습니다."
+      ],
+      "width": 550,
+      "height": 331
+    },
+    {
+      "id": "images/clinical/family/215510c2d41c",
+      "path": "assets/images/clinical/family/215510c2d41c.jpg",
+      "kind": "image",
+      "bytes": 203906,
+      "sha256": "743837b4c26838dcc8db9d3eae898d7af17af099fe59037a3b11691fad5cb317",
+      "status": "published",
+      "used_by": [
+        "child-treatments.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200308/32227ead3d59a.jpg"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json",
+        "content/supplemental-images.json"
+      ],
+      "alt_texts": [
+        "소아침, 뜸, 한약 사진·자료",
+        "키성장 치료 사진·자료"
+      ],
+      "width": 600,
+      "height": 600
+    },
+    {
+      "id": "images/clinical/family/23a7ba132c36",
+      "path": "assets/images/clinical/family/23a7ba132c36.jpg",
+      "kind": "image",
+      "bytes": 98321,
+      "sha256": "4b5941e5d6ba74f78ae8b140e5716934d5b9ad2a0930705e29e886fde9b7fdb6",
+      "status": "published",
+      "used_by": [
+        "women-miscarriage.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20191226/23dc872e92a00.jpg"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json",
+        "content/visual-guides.json"
+      ],
+      "alt_texts": [
+        "유산회복 클리닉 안내 사진·도해"
+      ],
+      "width": 1280,
+      "height": 853
+    },
+    {
+      "id": "images/clinical/family/2f1213209c2b",
+      "path": "assets/images/clinical/family/2f1213209c2b.jpg",
+      "kind": "image",
+      "bytes": 194466,
+      "sha256": "974b481dacab9674c227e5be020983e11aa71b830ca40a178852231eaf667ae0",
+      "status": "published",
+      "used_by": [
+        "child-herbal-guide.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200311/0753c48f14f7d.jpg"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json",
+        "content/visual-guides.json"
+      ],
+      "alt_texts": [
+        "한약 복용방법, 주의사항 안내 사진·도해"
+      ],
+      "width": 1279,
+      "height": 854
+    },
+    {
+      "id": "images/clinical/family/2fd2a4a0fc1f",
+      "path": "assets/images/clinical/family/2fd2a4a0fc1f.jpg",
+      "kind": "image",
+      "bytes": 70930,
+      "sha256": "20f59dc77bab871c6a463449da5b179c072f21f13f2188c7d58e2f5aa1260048",
+      "status": "published",
+      "used_by": [
+        "child-constitution.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200402/37a4ce512b584.jpg"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json"
+      ],
+      "alt_texts": [
+        "허약체질 클리닉 안내 사진·도해"
+      ],
+      "width": 600,
+      "height": 600
+    },
+    {
+      "id": "images/clinical/family/31b515f00819",
+      "path": "assets/images/clinical/family/31b515f00819.jpg",
+      "kind": "image",
+      "bytes": 64218,
+      "sha256": "ac0ac1d6108b4d0f6f87faf70ad1a5f6abc9edd62cfe9b3fd779b41ea23022ee",
+      "status": "published",
+      "used_by": [
+        "child-treatments.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200308/d3c0567f7eb0a.jpg"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json",
+        "content/supplemental-images.json"
+      ],
+      "alt_texts": [
+        "소아침, 뜸, 한약 사진·자료",
+        "키성장 치료 사진·자료"
+      ],
+      "width": 600,
+      "height": 600
+    },
+    {
+      "id": "images/clinical/family/33159d6efeb5",
+      "path": "assets/images/clinical/family/33159d6efeb5.jpg",
+      "kind": "image",
+      "bytes": 65465,
+      "sha256": "d4f2e18a1d05ae5b897550d3c4410b13334602d0f6f7bb63f30f2d5d713d13dc",
+      "status": "published",
+      "used_by": [
+        "women-uterus-ovaries.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20191224/aa54adc599ee6.jpg"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json"
+      ],
+      "alt_texts": [
+        "여성질환 클리닉 안내 사진·도해"
+      ],
+      "width": 1279,
+      "height": 854
+    },
+    {
+      "id": "images/clinical/family/353a12d9e671",
+      "path": "assets/images/clinical/family/353a12d9e671.jpg",
+      "kind": "image",
+      "bytes": 219684,
+      "sha256": "335d9a402e6184f410c7d1363eec9cf3717f51c3fb6dc7721146a0f200f9cf66",
+      "status": "published",
+      "used_by": [
+        "child-growth-care.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200402/78c983f4f5cde.jpg"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json"
+      ],
+      "alt_texts": [
+        "키성장 치료 안내 사진·도해"
+      ],
+      "width": 1920,
+      "height": 1079
+    },
+    {
+      "id": "images/clinical/family/365ca554bf4a",
+      "path": "assets/images/clinical/family/365ca554bf4a.jpg",
+      "kind": "image",
+      "bytes": 385480,
+      "sha256": "d4ef11d663c01c4cab1d5f4dcbd6c308a44ca4ee66575db1cb65a4178a43204e",
+      "status": "published",
+      "used_by": [
+        "child-constitution.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200402/6bd3601821306.jpg"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json"
+      ],
+      "alt_texts": [
+        "허약체질 클리닉 안내 사진·도해"
+      ],
+      "width": 1920,
+      "height": 1079
+    },
+    {
+      "id": "images/clinical/family/373c7693f874",
+      "path": "assets/images/clinical/family/373c7693f874.jpg",
+      "kind": "image",
+      "bytes": 1012789,
+      "sha256": "5707cf35c9fc78c1c0885cac01227726e0258a6c225139b80f3dd2178d9f4ca8",
+      "status": "published",
+      "used_by": [
+        "child-integrated.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200104/110ca2af8b4e1.jpg"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json",
+        "content/visual-guides.json"
+      ],
+      "alt_texts": [
+        "소아진료, 통합적 관점으로 안내 사진·도해"
+      ],
+      "width": 1200,
+      "height": 1800
+    },
+    {
+      "id": "images/clinical/family/3a452622a8c5",
+      "path": "assets/images/clinical/family/3a452622a8c5.jpg",
+      "kind": "image",
+      "bytes": 160101,
+      "sha256": "0c09cad0b79a5895267af4803b4630e6df0a13fba09edffcc476362fc888380f",
+      "status": "published",
+      "used_by": [
+        "women-cold-sensitivity.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20191224/244513497e5cf.jpg"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json",
+        "content/visual-guides.json"
+      ],
+      "alt_texts": [
+        "수족냉증, 찬 체질 안내 사진·도해"
+      ],
+      "width": 1280,
+      "height": 853
+    },
+    {
+      "id": "images/clinical/family/3ab7ad2183d8",
+      "path": "assets/images/clinical/family/3ab7ad2183d8.jpg",
+      "kind": "image",
+      "bytes": 271051,
+      "sha256": "cb282e56cf9430933240d62862f5dd599eb6369b920f879a3faaab765297fa4c",
+      "status": "published",
+      "used_by": [
+        "child-treatments.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200308/ab5e9eec30ac8.jpg"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json",
+        "content/supplemental-images.json"
+      ],
+      "alt_texts": [
+        "소아침, 뜸, 한약 사진·자료",
+        "키성장 치료 사진·자료"
+      ],
+      "width": 600,
+      "height": 600
+    },
+    {
+      "id": "images/clinical/family/47a3a9197669",
+      "path": "assets/images/clinical/family/47a3a9197669.jpg",
+      "kind": "image",
+      "bytes": 388028,
+      "sha256": "c3291de1df5cf3c5d73f195555f79896c1ae1c8ad7139a1ecd13dfa5668f64ba",
+      "status": "published",
+      "used_by": [
+        "women-body-changes.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20191226/8299c0457e1a0.jpg"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json",
+        "content/visual-guides.json"
+      ],
+      "alt_texts": [
+        "산후에 변화하는 몸 안내 사진·도해"
+      ],
+      "width": 1125,
+      "height": 1688
+    },
+    {
+      "id": "images/clinical/family/4990d398e6c2",
+      "path": "assets/images/clinical/family/4990d398e6c2.png",
+      "kind": "image",
+      "bytes": 410444,
+      "sha256": "7c7540af824b6d28632da72510ff8d4ccc376996d401170111e3f39897141caf",
+      "status": "withheld",
+      "used_by": [],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20220826/c6cfb714c937a.png"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json"
+      ],
+      "alt_texts": [
+        "파파증후군 한의학적접근 안내 사진·도해"
+      ],
+      "width": 745,
+      "height": 1042
+    },
+    {
+      "id": "images/clinical/family/4c32a6a3d311",
+      "path": "assets/images/clinical/family/4c32a6a3d311.jpg",
+      "kind": "image",
+      "bytes": 203178,
+      "sha256": "b8f68cda26fcb311a6cd97e5428b48a1ee1894798be7469749f3f70d4828ecf0",
+      "status": "published",
+      "used_by": [
+        "child-cold-care.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200308/6f569be9705d6.jpg"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json",
+        "content/visual-guides.json"
+      ],
+      "alt_texts": [
+        "감기의 치료관리 안내 사진·도해"
+      ],
+      "width": 1280,
+      "height": 853
+    },
+    {
+      "id": "images/clinical/family/4fd0f0108b6e",
+      "path": "assets/images/clinical/family/4fd0f0108b6e.png",
+      "kind": "image",
+      "bytes": 389518,
+      "sha256": "ff63e9c3e0502a8f92cd625641e7e0a99d1752f43159dd73ac7fff97b7d8782c",
+      "status": "published",
+      "used_by": [
+        "women-miscarriage-surgery.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200104/f0a10b12db553.png"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json"
+      ],
+      "alt_texts": [
+        "계류유산과 중절수술 후 치료 안내 사진·도해"
+      ],
+      "width": 648,
+      "height": 893
+    },
+    {
+      "id": "images/clinical/family/58d94847bee1",
+      "path": "assets/images/clinical/family/58d94847bee1.jpg",
+      "kind": "image",
+      "bytes": 51081,
+      "sha256": "85d5fbb969dbe1ec9d34eddb8ab5e280a6816236b62e1fd10d1f83daf406de01",
+      "status": "withheld",
+      "used_by": [],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200403/50d76579d95ce.jpg"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json"
+      ],
+      "alt_texts": [
+        "1. 타미플루 복용환자나, 마황탕 복용환자나 최종 회복에 필요한 시간은 같습니다. 초기 증상의 회복속도는 마황탕을 복용한 환자군에서 더 빠르게 나타나고 있죠."
+      ],
+      "width": 550,
+      "height": 335
+    },
+    {
+      "id": "images/clinical/family/5b3e1b7a532a",
+      "path": "assets/images/clinical/family/5b3e1b7a532a.png",
+      "kind": "image",
+      "bytes": 612826,
+      "sha256": "b88a08e8fe9c689d528aa90e8aa8444660b8d7abb653ac0c0500dca9af5e4728",
+      "status": "withheld",
+      "used_by": [],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20191225/9cbf41f5483d2.png"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json"
+      ],
+      "alt_texts": [
+        "임신중 출산 과정까지 안내 사진·도해"
+      ],
+      "width": 1024,
+      "height": 927
+    },
+    {
+      "id": "images/clinical/family/5f2323058b72",
+      "path": "assets/images/clinical/family/5f2323058b72.jpg",
+      "kind": "image",
+      "bytes": 221064,
+      "sha256": "2c1d1a8fb98387508b8779201ce716d87aeecb9bfafd35b149c541973947dbca",
+      "status": "published",
+      "used_by": [
+        "child-growth.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200402/422ba9c48b37c.jpg"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json",
+        "content/supplemental-images.json",
+        "content/visual-guides.json"
+      ],
+      "alt_texts": [
+        "키성장 클리닉 사진·자료"
+      ],
+      "width": 1280,
+      "height": 853
+    },
+    {
+      "id": "images/clinical/family/6010a7568823",
+      "path": "assets/images/clinical/family/6010a7568823.jpg",
+      "kind": "image",
+      "bytes": 70055,
+      "sha256": "11e212eba2fe21a36c184c153329e5d1f5af1a8c341ce1445dd0530c1f12a12a",
+      "status": "published",
+      "used_by": [
+        "child-constitution.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200402/6f41d4c7ac50f.jpg"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json"
+      ],
+      "alt_texts": [
+        "허약체질 클리닉 안내 사진·도해"
+      ],
+      "width": 600,
+      "height": 600
+    },
+    {
+      "id": "images/clinical/family/6191b62d625e",
+      "path": "assets/images/clinical/family/6191b62d625e.jpg",
+      "kind": "image",
+      "bytes": 265479,
+      "sha256": "6bb1b90daea3112c6af8c348cd68ed16700a133c516dac7eb27d61fb6a049297",
+      "status": "published",
+      "used_by": [
+        "child-overview.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200104/79a57569fc132.jpg"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json",
+        "content/visual-guides.json"
+      ],
+      "alt_texts": [
+        "한방소아과 안내 안내 사진·도해"
+      ],
+      "width": 1194,
+      "height": 1592
+    },
+    {
+      "id": "images/clinical/family/67d64020cdad",
+      "path": "assets/images/clinical/family/67d64020cdad.png",
+      "kind": "image",
+      "bytes": 196267,
+      "sha256": "7545fcb93f73c728b1b36da027ba95f8ab041bc714faf908a9c0dfd8a08121fc",
+      "status": "withheld",
+      "used_by": [],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20220826/19aa263a08111.png"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json"
+      ],
+      "alt_texts": [
+        "파파증후군 한의학적접근 안내 사진·도해"
+      ],
+      "width": 746,
+      "height": 962
+    },
+    {
+      "id": "images/clinical/family/6e495913a797",
+      "path": "assets/images/clinical/family/6e495913a797.jpg",
+      "kind": "image",
+      "bytes": 155253,
+      "sha256": "5563dba9dede203b4476c3e4a1d045e44091516dca22794a9f8bec0583096def",
+      "status": "published",
+      "used_by": [
+        "women-male-infertility.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200315/d93c1e7ffea19.jpg"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json",
+        "content/visual-guides.json"
+      ],
+      "alt_texts": [
+        "남성의 난임 안내 사진·도해"
+      ],
+      "width": 1280,
+      "height": 853
+    },
+    {
+      "id": "images/clinical/family/6fef503112e4",
+      "path": "assets/images/clinical/family/6fef503112e4.png",
+      "kind": "image",
+      "bytes": 1035918,
+      "sha256": "a456d465a0e53273ca845ff3a40b27daf5ac22ea481e2e46ec81469ba39b6b3e",
+      "status": "published",
+      "used_by": [
+        "child-pfapa.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20220826/3b06ab2b9138f.png"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json"
+      ],
+      "alt_texts": [
+        "파파증후군 안내 사진·도해"
+      ],
+      "width": 1280,
+      "height": 1339
+    },
+    {
+      "id": "images/clinical/family/72c731e071db",
+      "path": "assets/images/clinical/family/72c731e071db.jpg",
+      "kind": "image",
+      "bytes": 178519,
+      "sha256": "a9064daaf42fb5f214264d7004eba8487b567e2f97505563704b36de27dc0115",
+      "status": "published",
+      "used_by": [
+        "women-postpartum-lifestyle.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20191226/79adb28d69d35.jpg"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json",
+        "content/visual-guides.json"
+      ],
+      "alt_texts": [
+        "산후 조리 방법 안내 사진·도해"
+      ],
+      "width": 1280,
+      "height": 852
+    },
+    {
+      "id": "images/clinical/family/828fa5a94ab2",
+      "path": "assets/images/clinical/family/828fa5a94ab2.jpg",
+      "kind": "image",
+      "bytes": 71699,
+      "sha256": "1d8a1a8b01583d3f5c811069c4bd94f1403fb78a1e14a5574af27ce895858bb8",
+      "status": "published",
+      "used_by": [
+        "child-constitution.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200402/ae497ba34ce68.jpg"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json"
+      ],
+      "alt_texts": [
+        "허약체질 클리닉 안내 사진·도해"
+      ],
+      "width": 600,
+      "height": 600
+    },
+    {
+      "id": "images/clinical/family/88711dbe3b13",
+      "path": "assets/images/clinical/family/88711dbe3b13.jpg",
+      "kind": "image",
+      "bytes": 530593,
+      "sha256": "5aadc5b143103b094183adf52b0737df6d4e6ccebdc0f6cd47d0411cf3d3d0cc",
+      "status": "published",
+      "used_by": [
+        "women-postpartum.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20191226/667aebf8d39bf.jpg"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json",
+        "content/visual-guides.json"
+      ],
+      "alt_texts": [
+        "산후 클리닉 안내 사진·도해"
+      ],
+      "width": 1160,
+      "height": 600
+    },
+    {
+      "id": "images/clinical/family/8a199abcf573",
+      "path": "assets/images/clinical/family/8a199abcf573.jpg",
+      "kind": "image",
+      "bytes": 66681,
+      "sha256": "e0039015e296a2a49c4cb0489caa25f0f3afab2e8389bc7940dcbac8a9f7a733",
+      "status": "published",
+      "used_by": [
+        "child-treatments.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200308/e62a7356b76ed.jpg"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json",
+        "content/supplemental-images.json"
+      ],
+      "alt_texts": [
+        "소아침, 뜸, 한약 사진·자료",
+        "키성장 치료 사진·자료"
+      ],
+      "width": 600,
+      "height": 600
+    },
+    {
+      "id": "images/clinical/family/960da7835c1c",
+      "path": "assets/images/clinical/family/960da7835c1c.jpg",
+      "kind": "image",
+      "bytes": 791614,
+      "sha256": "7ac078f79b4db79b3c92ef3dec22f559f906a8c1609f028e129a26f2483b4b38",
+      "status": "published",
+      "used_by": [
+        "child-antler.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200329/5902d58b0cc02.jpg"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json",
+        "content/visual-guides.json"
+      ],
+      "alt_texts": [
+        "녹용의 역할 안내 사진·도해"
+      ],
+      "width": 1173,
+      "height": 1173
+    },
+    {
+      "id": "images/clinical/family/96172debb45a",
+      "path": "assets/images/clinical/family/96172debb45a.jpg",
+      "kind": "image",
+      "bytes": 247529,
+      "sha256": "565744abdd44314e06f21578cec3dd816e60de7ad9ff210948353e3932989916",
+      "status": "published",
+      "used_by": [
+        "child-overview.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200104/92ce9158bdd12.jpg"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json"
+      ],
+      "alt_texts": [
+        "한방소아과 안내 안내 사진·도해"
+      ],
+      "width": 1194,
+      "height": 1592
+    },
+    {
+      "id": "images/clinical/family/98e8f0044fd5",
+      "path": "assets/images/clinical/family/98e8f0044fd5.png",
+      "kind": "image",
+      "bytes": 512454,
+      "sha256": "acec0d1782888848c7ebe6ac4d8a65b2738b98fc33262761003a06a1e1d01ec5",
+      "status": "withheld",
+      "used_by": [],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20220826/510b4cd187b04.png"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json"
+      ],
+      "alt_texts": [
+        "파파증후군 한의학적접근 안내 사진·도해"
+      ],
+      "width": 756,
+      "height": 1037
+    },
+    {
+      "id": "images/clinical/family/9a73b4de7380",
+      "path": "assets/images/clinical/family/9a73b4de7380.jpg",
+      "kind": "image",
+      "bytes": 132912,
+      "sha256": "7b4dc3bd798100173f4796c882bebe7097e34d2d430f0f4dee448010c583ba7c",
+      "status": "published",
+      "used_by": [
+        "child-growth-diagnosis.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200402/fcbf32e4b7d86.jpg"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json"
+      ],
+      "alt_texts": [
+        "키성장 진단 안내 사진·도해"
+      ],
+      "width": 1280,
+      "height": 719
+    },
+    {
+      "id": "images/clinical/family/9b91105bc779",
+      "path": "assets/images/clinical/family/9b91105bc779.png",
+      "kind": "image",
+      "bytes": 349777,
+      "sha256": "807d68ecf77388b19c48544454a1f95e2d7136f1e0d932863c36d2c3c941cd97",
+      "status": "published",
+      "used_by": [
+        "child-infections.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200403/e798cf3fa3a13.png"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json"
+      ],
+      "alt_texts": [
+        "호흡기감염병 치료관리 안내 사진·도해"
+      ],
+      "width": 936,
+      "height": 712
+    },
+    {
+      "id": "images/clinical/family/9e213458596d",
+      "path": "assets/images/clinical/family/9e213458596d.png",
+      "kind": "image",
+      "bytes": 256263,
+      "sha256": "8f597a6ef362daf08cec88e642a8a5568004138398c1472b6997c3588c9b5bfe",
+      "status": "published",
+      "used_by": [
+        "women-recurrent-loss.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200104/32f220bbbfe25.png"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json"
+      ],
+      "alt_texts": [
+        "반복유산 치료와 착상탕 안내 사진·도해"
+      ],
+      "width": 670,
+      "height": 841
+    },
+    {
+      "id": "images/clinical/family/a87278d4f11d",
+      "path": "assets/images/clinical/family/a87278d4f11d.jpg",
+      "kind": "image",
+      "bytes": 400800,
+      "sha256": "7e993b61e30b89a14dba234fdc7cc6660bcd10b84c5d7f88b7c6a991d25c8bd7",
+      "status": "published",
+      "used_by": [
+        "child-herbal-prescription.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200308/cac50db1c8b1c.jpg"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json",
+        "content/visual-guides.json"
+      ],
+      "alt_texts": [
+        "한약 처방의 특징 안내 사진·도해"
+      ],
+      "width": 1123,
+      "height": 1691
+    },
+    {
+      "id": "images/clinical/family/a9be194e2c63",
+      "path": "assets/images/clinical/family/a9be194e2c63.jpg",
+      "kind": "image",
+      "bytes": 123570,
+      "sha256": "dbec8b3957a1a8043480776433c16d49f57d0ce446b77f7db150bbcdfd46f4bb",
+      "status": "published",
+      "used_by": [
+        "women-pregnancy-planning.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20191225/c91c323798134.jpg"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json"
+      ],
+      "alt_texts": [
+        "난임 및 임신준비 안내 사진·도해",
+        "난임시술과 한의약치료병행 안내 사진·도해",
+        "난임은 불임과 다릅니다. 안내 사진·도해",
+        "난임을 치료하는 방법 안내 사진·도해",
+        "여성의 난임 안내 사진·도해"
+      ],
+      "width": 1280,
+      "height": 960
+    },
+    {
+      "id": "images/clinical/family/ab7d075aa89b",
+      "path": "assets/images/clinical/family/ab7d075aa89b.jpg",
+      "kind": "image",
+      "bytes": 157743,
+      "sha256": "fead95c419260248acea63ca0a66c0a47833f4113484101199871c7834f46434",
+      "status": "published",
+      "used_by": [
+        "child-herbal-guide.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200311/1749e8156133f.jpg"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json"
+      ],
+      "alt_texts": [
+        "한약 복용방법, 주의사항 안내 사진·도해"
+      ],
+      "width": 1280,
+      "height": 1280
+    },
+    {
+      "id": "images/clinical/family/b4dee47aea90",
+      "path": "assets/images/clinical/family/b4dee47aea90.jpg",
+      "kind": "image",
+      "bytes": 200352,
+      "sha256": "be53fb8889bef95872941756174fe35444a5f371c04bc309ee3cbab53a4d3695",
+      "status": "published",
+      "used_by": [
+        "child-growth-diagnosis.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200402/e63524e30c363.jpg"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json"
+      ],
+      "alt_texts": [
+        "키성장 진단 안내 사진·도해"
+      ],
+      "width": 1280,
+      "height": 719
+    },
+    {
+      "id": "images/clinical/family/ba832910bf3d",
+      "path": "assets/images/clinical/family/ba832910bf3d.jpg",
+      "kind": "image",
+      "bytes": 204590,
+      "sha256": "e80e9824aab05a7f837b62cfad10bb3d4a901848aca1d5efc24e31fa832c92f0",
+      "status": "published",
+      "used_by": [
+        "child-growth.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200402/0dc3f94204e8a.jpg"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json",
+        "content/supplemental-images.json"
+      ],
+      "alt_texts": [
+        "키성장 클리닉 사진·자료"
+      ],
+      "width": 1280,
+      "height": 848
+    },
+    {
+      "id": "images/clinical/family/bcb6afda737b",
+      "path": "assets/images/clinical/family/bcb6afda737b.jpg",
+      "kind": "image",
+      "bytes": 260631,
+      "sha256": "083cb9f5c5b9f96659082f06c31b3d2cfc1d1e9d8c915bac41613476b23079f4",
+      "status": "published",
+      "used_by": [
+        "women-pms-stress.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20191224/33f94d66cd248.jpg"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json",
+        "content/visual-guides.json"
+      ],
+      "alt_texts": [
+        "PMS 스트레스와 마음의 병 안내 사진·도해"
+      ],
+      "width": 1280,
+      "height": 853
+    },
+    {
+      "id": "images/clinical/family/c1e96d75348a",
+      "path": "assets/images/clinical/family/c1e96d75348a.jpg",
+      "kind": "image",
+      "bytes": 43882,
+      "sha256": "8ced38058c826f6e8bcff938531e735b67743efa12f0460e04e88f3793a4b4c1",
+      "status": "published",
+      "used_by": [
+        "women-life-stages.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20190221/5c6e5d8645a0b.jpg"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json"
+      ],
+      "alt_texts": [
+        "생애주기별 건강관리 안내 사진·도해"
+      ],
+      "width": 640,
+      "height": 640
+    },
+    {
+      "id": "images/clinical/family/c2e0dc6eeb60",
+      "path": "assets/images/clinical/family/c2e0dc6eeb60.png",
+      "kind": "image",
+      "bytes": 458711,
+      "sha256": "ac91882e83741270deaf3df9a091a720859377dfa9064db1180a5a8c56b96459",
+      "status": "withheld",
+      "used_by": [],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20220826/3a3f787942f13.png"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json"
+      ],
+      "alt_texts": [
+        "파파증후군 한의학적접근 안내 사진·도해"
+      ],
+      "width": 747,
+      "height": 1023
+    },
+    {
+      "id": "images/clinical/family/c3aa09c7e5d2",
+      "path": "assets/images/clinical/family/c3aa09c7e5d2.jpg",
+      "kind": "image",
+      "bytes": 68967,
+      "sha256": "34232035f8e12b8f4a9c9a559a6e942c7ca00459b79deb89b8b4befa5d7d6abc",
+      "status": "published",
+      "used_by": [
+        "child-growth-care.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200402/eb6a81be60ed2.jpg"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json",
+        "content/visual-guides.json"
+      ],
+      "alt_texts": [
+        "키성장 치료 안내 사진·도해"
+      ],
+      "width": 600,
+      "height": 600
+    },
+    {
+      "id": "images/clinical/family/c4a4ddec44da",
+      "path": "assets/images/clinical/family/c4a4ddec44da.jpg",
+      "kind": "image",
+      "bytes": 72412,
+      "sha256": "436fd89d72eab5a91fae2b2481e8cd32f9f602ab86ebf869b32708f76728a7ad",
+      "status": "published",
+      "used_by": [
+        "child-constitution.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200402/ab49b67b7874b.jpg"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json"
+      ],
+      "alt_texts": [
+        "허약체질 클리닉 안내 사진·도해"
+      ],
+      "width": 600,
+      "height": 600
+    },
+    {
+      "id": "images/clinical/family/cb0c557c18e8",
+      "path": "assets/images/clinical/family/cb0c557c18e8.jpg",
+      "kind": "image",
+      "bytes": 179016,
+      "sha256": "9d881a9bf86d943b026d70b2e57d257519b705dc26d4ae97a54821c05a43d2a2",
+      "status": "published",
+      "used_by": [
+        "women-pregnancy.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20201122/3dadca8b88da9.jpg"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json",
+        "content/visual-guides.json"
+      ],
+      "alt_texts": [
+        "임신중 출산 과정까지 안내 사진·도해"
+      ],
+      "width": 1280,
+      "height": 853
+    },
+    {
+      "id": "images/clinical/family/ceacb99f75de",
+      "path": "assets/images/clinical/family/ceacb99f75de.jpg",
+      "kind": "image",
+      "bytes": 115348,
+      "sha256": "f3d4d19aee0b06f4dee7ddab204adf0cba4022c4a9b404e797a1bef8ed97a181",
+      "status": "published",
+      "used_by": [
+        "women-pregnancy.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20191225/324c4059439fb.jpg"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json"
+      ],
+      "alt_texts": [
+        "임신중 출산 과정까지 안내 사진·도해"
+      ],
+      "width": 1280,
+      "height": 853
+    },
+    {
+      "id": "images/clinical/family/ceeb66101d8f",
+      "path": "assets/images/clinical/family/ceeb66101d8f.png",
+      "kind": "image",
+      "bytes": 129966,
+      "sha256": "f0f1c46fbc4bbf58dd165dd4d3cd5c8dbabc3f25b860cea7617f020e893317c8",
+      "status": "published",
+      "used_by": [
+        "child-pfapa.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20220826/e3d9995097f87.png"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json"
+      ],
+      "alt_texts": [
+        "파파증후군 안내 사진·도해"
+      ],
+      "width": 773,
+      "height": 565
+    },
+    {
+      "id": "images/clinical/family/dd5ab1f75579",
+      "path": "assets/images/clinical/family/dd5ab1f75579.jpg",
+      "kind": "image",
+      "bytes": 117766,
+      "sha256": "613e2a0c09231576078850cb8a807bfd8c1b51c71ed6009f961a968588cc915c",
+      "status": "published",
+      "used_by": [
+        "child-growth-diagnosis.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200402/5605b64aa35be.jpg"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json"
+      ],
+      "alt_texts": [
+        "키성장 진단 안내 사진·도해"
+      ],
+      "width": 1280,
+      "height": 719
+    },
+    {
+      "id": "images/clinical/family/de00648977ae",
+      "path": "assets/images/clinical/family/de00648977ae.jpg",
+      "kind": "image",
+      "bytes": 42582,
+      "sha256": "761916cea96a1b2fe010f53379991c01f07e3dd1cb6f3a6a26a09f015f7058fd",
+      "status": "published",
+      "used_by": [
+        "women-life-stages.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20190221/5c6e5a9b1c94c.jpg"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json"
+      ],
+      "alt_texts": [
+        "생애주기별 건강관리 안내 사진·도해"
+      ],
+      "width": 640,
+      "height": 640
+    },
+    {
+      "id": "images/clinical/family/e243259509a4",
+      "path": "assets/images/clinical/family/e243259509a4.png",
+      "kind": "image",
+      "bytes": 677643,
+      "sha256": "8594bb6144a912dcb904a50666199cc46e5e64621a596016f3241164e8691b82",
+      "status": "published",
+      "used_by": [
+        "child-integrated.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200401/297d81853d5b1.png"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json"
+      ],
+      "alt_texts": [
+        "소아진료, 통합적 관점으로 안내 사진·도해"
+      ],
+      "width": 640,
+      "height": 640
+    },
+    {
+      "id": "images/clinical/family/e3323f4467de",
+      "path": "assets/images/clinical/family/e3323f4467de.jpeg",
+      "kind": "image",
+      "bytes": 44844,
+      "sha256": "ec4d61de687e745220ebd326ad8e0b8ac6cf1131a5a753740727aa5278a27268",
+      "status": "published",
+      "used_by": [
+        "child-constitution.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200402/88ecc88ea1df6.jpeg"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json",
+        "content/visual-guides.json"
+      ],
+      "alt_texts": [
+        "허약체질 클리닉 안내 사진·도해"
+      ],
+      "width": 620,
+      "height": 356
+    },
+    {
+      "id": "images/clinical/family/e5091ec5c4cc",
+      "path": "assets/images/clinical/family/e5091ec5c4cc.jpg",
+      "kind": "image",
+      "bytes": 66191,
+      "sha256": "01dd9da13e1e323793b1e0793961fcedabd183b9c84b1086f7d32069b5540ebb",
+      "status": "published",
+      "used_by": [
+        "child-pfapa.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20220826/6802183dbb9fe.jpg"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json"
+      ],
+      "alt_texts": [
+        "파파증후군 아이의 흔한 편도 감염"
+      ],
+      "width": 720,
+      "height": 235
+    },
+    {
+      "id": "images/clinical/family/ea79db2756dc",
+      "path": "assets/images/clinical/family/ea79db2756dc.jpg",
+      "kind": "image",
+      "bytes": 111101,
+      "sha256": "24a662bf3f4851e4b0f84e4e29ecabd33dc18ac5f881230313745e2b38de71f5",
+      "status": "published",
+      "used_by": [
+        "women-postpartum-care.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/upload/S201805155afa9b6849507/edfd49a86e37f.jpg"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json",
+        "content/supplemental-images.json"
+      ],
+      "alt_texts": [
+        "산후, 예방과 치료 사진·자료"
+      ],
+      "width": 640,
+      "height": 480
+    },
+    {
+      "id": "images/clinical/family/ef994075bead",
+      "path": "assets/images/clinical/family/ef994075bead.jpg",
+      "kind": "image",
+      "bytes": 87106,
+      "sha256": "a44d1554e893bddfff2d0b43d600da090345598692e0d5383be8baf24bbb9ccd",
+      "status": "published",
+      "used_by": [
+        "child-cold-care.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200308/e20368650ef41.jpg"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json"
+      ],
+      "alt_texts": [
+        "감기의 치료관리 안내 사진·도해"
+      ],
+      "width": 1280,
+      "height": 853
+    },
+    {
+      "id": "images/clinical/family/f15d2b01b261",
+      "path": "assets/images/clinical/family/f15d2b01b261.jpg",
+      "kind": "image",
+      "bytes": 172295,
+      "sha256": "3199b329fe8ff30bab10a626c60b9e33bf25f5e4084f941d30fc2781d099b527",
+      "status": "published",
+      "used_by": [
+        "women-uterus-ovaries.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20191224/34c9ef1bcc5e8.jpg"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json"
+      ],
+      "alt_texts": [
+        "PMS 스트레스와 마음의 병 안내 사진·도해",
+        "여성질환 클리닉 안내 사진·도해"
+      ],
+      "width": 1280,
+      "height": 853
+    },
+    {
+      "id": "images/clinical/family/f20ac15520d1",
+      "path": "assets/images/clinical/family/f20ac15520d1.jpg",
+      "kind": "image",
+      "bytes": 70095,
+      "sha256": "8a2e1085321cc6f44e41a014f2224562a6cdc0e1465569836846e37a935feed9",
+      "status": "published",
+      "used_by": [
+        "women-infertility.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20191225/8e314dfbd489f.jpg"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json"
+      ],
+      "alt_texts": [
+        "난임은 불임과 다릅니다. 안내 사진·도해"
+      ],
+      "width": 640,
+      "height": 1421
+    },
+    {
+      "id": "images/clinical/family/f544666d1340",
+      "path": "assets/images/clinical/family/f544666d1340.jpg",
+      "kind": "image",
+      "bytes": 117623,
+      "sha256": "7d24dadcc51b07aa5d13af3242841ebbd047ee603df882a6891a4301e47dc99f",
+      "status": "published",
+      "used_by": [
+        "women-uterus-ovaries.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20190221/5c6e541d6f126.jpg"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json",
+        "content/visual-guides.json"
+      ],
+      "alt_texts": [
+        "한방부인과 안내 안내 사진·도해"
+      ],
+      "width": 1280,
+      "height": 993
+    },
+    {
+      "id": "images/clinical/family/fc380704b819",
+      "path": "assets/images/clinical/family/fc380704b819.jpg",
+      "kind": "image",
+      "bytes": 228502,
+      "sha256": "1254f8a09b14b7c36f738dbd113fbef5d62043b7dc4bec3993b2553594dbde11",
+      "status": "published",
+      "used_by": [
+        "child-cold-care.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200308/ff56d8de7b24b.jpg"
+      ],
+      "metadata_files": [
+        "content/family-assets.json",
+        "content/family-pages.json"
+      ],
+      "alt_texts": [
+        "감기의 치료관리 안내 사진·도해"
+      ],
+      "width": 1280,
+      "height": 853
+    },
+    {
+      "id": "images/clinical/internal/0389be6a3308",
+      "path": "assets/images/clinical/internal/0389be6a3308.jpg",
+      "kind": "image",
+      "bytes": 217638,
+      "sha256": "ef7cdbd0afb69635d02fcf652903219c921704db9fec0552a74e336edfcc3e9a",
+      "status": "published",
+      "used_by": [
+        "internal-cough-treatment.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200329/4cb6584e96b2a.jpg"
+      ],
+      "metadata_files": [
+        "content/internal-assets.json",
+        "content/internal-pages.json"
+      ],
+      "alt_texts": [
+        "기침의 유형별 치료 안내 사진·도해"
+      ],
+      "width": 1189,
+      "height": 1189
+    },
+    {
+      "id": "images/clinical/internal/0cdae6c3ae6f",
+      "path": "assets/images/clinical/internal/0cdae6c3ae6f.jpg",
+      "kind": "image",
+      "bytes": 52469,
+      "sha256": "a2adc66732e32f7ba21faf7b6eb2314b0a219c70f40a74455d9540ad3948694a",
+      "status": "published",
+      "used_by": [
+        "internal-rhinitis.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200308/4f48a48d8fbe1.jpg"
+      ],
+      "metadata_files": [
+        "content/internal-assets.json",
+        "content/internal-pages.json"
+      ],
+      "alt_texts": [
+        "비염·축농증 이해하기 안내 사진·도해"
+      ],
+      "width": 690,
+      "height": 239
+    },
+    {
+      "id": "images/clinical/internal/19876f053035",
+      "path": "assets/images/clinical/internal/19876f053035.jpg",
+      "kind": "image",
+      "bytes": 45179,
+      "sha256": "0210b69c737f598062b0b97c101a6dd2aecd0cb126db5be348a0a94255a8b198",
+      "status": "unreferenced",
+      "used_by": [],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200317/2f1e1776b5580.jpg"
+      ],
+      "metadata_files": [
+        "content/internal-assets.json",
+        "content/supplemental-images.json"
+      ],
+      "alt_texts": [],
+      "width": 700,
+      "height": 700
+    },
+    {
+      "id": "images/clinical/internal/1e6941ec3fb4",
+      "path": "assets/images/clinical/internal/1e6941ec3fb4.jpg",
+      "kind": "image",
+      "bytes": 219792,
+      "sha256": "fd41d8fb60445f8b6871782a4f21df06abc3ad07f5f726a939ba6e2a17e32534",
+      "status": "published",
+      "used_by": [
+        "internal-cough-treatment.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200329/2561ff6697360.jpg"
+      ],
+      "metadata_files": [
+        "content/internal-assets.json",
+        "content/internal-pages.json",
+        "content/visual-guides.json"
+      ],
+      "alt_texts": [
+        "기침의 유형별 치료 안내 사진·도해"
+      ],
+      "width": 1125,
+      "height": 1125
+    },
+    {
+      "id": "images/clinical/internal/2c70f800914a",
+      "path": "assets/images/clinical/internal/2c70f800914a.jpg",
+      "kind": "image",
+      "bytes": 69625,
+      "sha256": "cf5735348d4377290b0cfc823dd025f95fb1570c47f7ed57cec1208d30db8025",
+      "status": "published",
+      "used_by": [
+        "internal-diagnosis.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20210128/152381733c373.jpg"
+      ],
+      "metadata_files": [
+        "content/internal-assets.json",
+        "content/internal-pages.json"
+      ],
+      "alt_texts": [
+        "4단계 鼻癰, 鼻臭, 鼻淵, 鼻涕, 鼻槁"
+      ],
+      "width": 700,
+      "height": 500
+    },
+    {
+      "id": "images/clinical/internal/3099e8bdc22c",
+      "path": "assets/images/clinical/internal/3099e8bdc22c.jpg",
+      "kind": "image",
+      "bytes": 81938,
+      "sha256": "93c7ab59a7b38fcf0c3bc0c7859b60c698e9134a471f1825dfa09cf041b3a6bc",
+      "status": "published",
+      "used_by": [
+        "internal-diagnosis.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20210128/26603194255d5.jpg"
+      ],
+      "metadata_files": [
+        "content/internal-assets.json",
+        "content/internal-pages.json"
+      ],
+      "alt_texts": [
+        "2단계 鼻窒, 鼻流涕, 鼽嚔"
+      ],
+      "width": 700,
+      "height": 500
+    },
+    {
+      "id": "images/clinical/internal/3413874e3787",
+      "path": "assets/images/clinical/internal/3413874e3787.jpg",
+      "kind": "image",
+      "bytes": 65414,
+      "sha256": "0db5312b55ca00ba42a23ff4d1c40d64fae67fded92aae385805c57a63d89daa",
+      "status": "published",
+      "used_by": [
+        "internal-diagnosis.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20210128/c3f408e9e2f31.jpg"
+      ],
+      "metadata_files": [
+        "content/internal-assets.json",
+        "content/internal-pages.json"
+      ],
+      "alt_texts": [
+        "3단계 鼻齆, 鼻竅閉塞, 鼻竅不利"
+      ],
+      "width": 700,
+      "height": 500
+    },
+    {
+      "id": "images/clinical/internal/426c43b11127",
+      "path": "assets/images/clinical/internal/426c43b11127.jpg",
+      "kind": "image",
+      "bytes": 158476,
+      "sha256": "dc4a55c2412ef1c768ef4dfc55452fe8f8b8bb84d15990ab2f537d8811386616",
+      "status": "published",
+      "used_by": [
+        "internal-diagnosis.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200321/66daaf6349ac5.jpg"
+      ],
+      "metadata_files": [
+        "content/internal-assets.json",
+        "content/internal-pages.json"
+      ],
+      "alt_texts": [
+        "6단계 鼻茸, 鼻塞"
+      ],
+      "width": 700,
+      "height": 500
+    },
+    {
+      "id": "images/clinical/internal/4a2a05609589",
+      "path": "assets/images/clinical/internal/4a2a05609589.jpg",
+      "kind": "image",
+      "bytes": 33949,
+      "sha256": "54912cf5caa83aecf947946d2a0227a0fa41c148832383ae4a7e5014b6ec8b74",
+      "status": "published",
+      "used_by": [
+        "internal-rhinitis.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200324/5c541b094922d.jpg"
+      ],
+      "metadata_files": [
+        "content/internal-assets.json",
+        "content/internal-pages.json",
+        "content/visual-guides.json"
+      ],
+      "alt_texts": [
+        "코·목 5분 약솜관리 안내 사진·도해"
+      ],
+      "width": 432,
+      "height": 521
+    },
+    {
+      "id": "images/clinical/internal/4fd2d6a93c07",
+      "path": "assets/images/clinical/internal/4fd2d6a93c07.jpg",
+      "kind": "image",
+      "bytes": 79248,
+      "sha256": "09d08b97a48da2fd52b4549c7b14b6c6bfa0cc79cb49b54c95ed71bd4dcfc301",
+      "status": "published",
+      "used_by": [
+        "internal-cotton-care.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200308/9f0cc31ca0956.jpg"
+      ],
+      "metadata_files": [
+        "content/internal-assets.json",
+        "content/internal-pages.json",
+        "content/visual-guides.json"
+      ],
+      "alt_texts": [
+        "코·목 5분 약솜관리 안내 사진·도해"
+      ],
+      "width": 690,
+      "height": 470
+    },
+    {
+      "id": "images/clinical/internal/7380d66817ab",
+      "path": "assets/images/clinical/internal/7380d66817ab.jpg",
+      "kind": "image",
+      "bytes": 54589,
+      "sha256": "8b065bd9c38b60860dd7d7e722fd3e1dfd81eaed41fcb16697e10f887445dbd9",
+      "status": "published",
+      "used_by": [
+        "internal-rhinitis.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200308/058be0bda75ac.jpg"
+      ],
+      "metadata_files": [
+        "content/internal-assets.json",
+        "content/internal-pages.json"
+      ],
+      "alt_texts": [
+        "비염·축농증 이해하기 안내 사진·도해"
+      ],
+      "width": 690,
+      "height": 240
+    },
+    {
+      "id": "images/clinical/internal/76441bbf5d0c",
+      "path": "assets/images/clinical/internal/76441bbf5d0c.png",
+      "kind": "image",
+      "bytes": 281378,
+      "sha256": "ae522d5a34562f35e217b5548a694a889ad21bd6dc69c88d6e8f3a77098c9f24",
+      "status": "published",
+      "used_by": [
+        "internal-nose-function.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200308/4427961ec9d96.png"
+      ],
+      "metadata_files": [
+        "content/internal-assets.json",
+        "content/internal-pages.json",
+        "content/visual-guides.json"
+      ],
+      "alt_texts": [
+        "코가 하는 일 안내 사진·도해"
+      ],
+      "width": 800,
+      "height": 349
+    },
+    {
+      "id": "images/clinical/internal/7a66c88d5208",
+      "path": "assets/images/clinical/internal/7a66c88d5208.jpg",
+      "kind": "image",
+      "bytes": 87390,
+      "sha256": "09eabf29caab92d2f5e0f1271c3852beeaac51a5900798d714d9a6532d394b23",
+      "status": "unreferenced",
+      "used_by": [],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200329/16770fbec0af0.jpg"
+      ],
+      "metadata_files": [
+        "content/internal-assets.json",
+        "content/supplemental-images.json"
+      ],
+      "alt_texts": [],
+      "width": 700,
+      "height": 467
+    },
+    {
+      "id": "images/clinical/internal/810803edcb17",
+      "path": "assets/images/clinical/internal/810803edcb17.jpg",
+      "kind": "image",
+      "bytes": 71570,
+      "sha256": "6fa41596a8559dc434408cbee651f129ba34e8a7653e69cd6a6afc89d3a63fe7",
+      "status": "published",
+      "used_by": [
+        "internal-diagnosis.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20210128/35a693060d22f.jpg"
+      ],
+      "metadata_files": [
+        "content/internal-assets.json",
+        "content/internal-pages.json"
+      ],
+      "alt_texts": [
+        "비염 6단계 진단 안내 사진·도해"
+      ],
+      "width": 700,
+      "height": 500
+    },
+    {
+      "id": "images/clinical/internal/a87ffc1ef764",
+      "path": "assets/images/clinical/internal/a87ffc1ef764.jpg",
+      "kind": "image",
+      "bytes": 71420,
+      "sha256": "6ab2cd17c794afc8385c5c14e47993983c877f1d0a2e64fbdbafffc8e65313ba",
+      "status": "published",
+      "used_by": [
+        "internal-diagnosis.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20210128/7fba5d9008494.jpg"
+      ],
+      "metadata_files": [
+        "content/internal-assets.json",
+        "content/internal-pages.json"
+      ],
+      "alt_texts": [
+        "4단계 鼻癰, 鼻臭, 鼻淵, 鼻涕, 鼻槁"
+      ],
+      "width": 700,
+      "height": 500
+    },
+    {
+      "id": "images/clinical/internal/a893b48c178f",
+      "path": "assets/images/clinical/internal/a893b48c178f.jpg",
+      "kind": "image",
+      "bytes": 53183,
+      "sha256": "905d8d07caf991677f52a5c8ccb1f79639891a30b75a37d1f8f38c104db09d87",
+      "status": "published",
+      "used_by": [
+        "internal-otitis.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20181207/5c09cae9867b1.jpg"
+      ],
+      "metadata_files": [
+        "content/internal-assets.json",
+        "content/internal-pages.json",
+        "content/visual-guides.json"
+      ],
+      "alt_texts": [
+        "중이염 안내 안내 사진·도해"
+      ],
+      "width": 640,
+      "height": 427
+    },
+    {
+      "id": "images/clinical/internal/b09cf1cd6dc9",
+      "path": "assets/images/clinical/internal/b09cf1cd6dc9.jpg",
+      "kind": "image",
+      "bytes": 94132,
+      "sha256": "07ca0e1db803c297466ee82e34728b43d14c63af1b98fa35bb35b45b4597135c",
+      "status": "published",
+      "used_by": [
+        "rhini1.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20190222/5c6ec15548938.jpg"
+      ],
+      "metadata_files": [
+        "content/internal-assets.json",
+        "content/internal-pages.json",
+        "content/visual-guides.json"
+      ],
+      "alt_texts": [
+        "호흡기내과 안내 안내 사진·도해"
+      ],
+      "width": 1280,
+      "height": 1280
+    },
+    {
+      "id": "images/clinical/internal/b8791bc5895f",
+      "path": "assets/images/clinical/internal/b8791bc5895f.jpg",
+      "kind": "image",
+      "bytes": 93546,
+      "sha256": "2abccfe84c08888d1a2e62aaef90d29652bf726115d75e8761fab217b822b7ef",
+      "status": "published",
+      "used_by": [
+        "internal-cough.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200403/032d169fcd4dd.jpg"
+      ],
+      "metadata_files": [
+        "content/internal-assets.json",
+        "content/supplemental-images.json",
+        "content/visual-guides.json"
+      ],
+      "alt_texts": [
+        "기침의 유형별 치료 사진·자료"
+      ],
+      "width": 700,
+      "height": 467
+    },
+    {
+      "id": "images/clinical/internal/d61a4797c695",
+      "path": "assets/images/clinical/internal/d61a4797c695.jpg",
+      "kind": "image",
+      "bytes": 85926,
+      "sha256": "4750654b9f584b37feb0db42576dd602920306ecd765ab29f1c6407f3217a5a3",
+      "status": "published",
+      "used_by": [
+        "internal-diagnosis.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20210128/8b4542c07da23.jpg"
+      ],
+      "metadata_files": [
+        "content/internal-assets.json",
+        "content/internal-pages.json"
+      ],
+      "alt_texts": [
+        "1단계 鼻鼽, 鼽嚔, 鼻塞"
+      ],
+      "width": 700,
+      "height": 500
+    },
+    {
+      "id": "images/clinical/internal/d6f7a6222881",
+      "path": "assets/images/clinical/internal/d6f7a6222881.jpg",
+      "kind": "image",
+      "bytes": 91239,
+      "sha256": "0e39516f6bbf6cfc7d38bc883723ed9021f2d023c47f7e210741df03954a9d51",
+      "status": "published",
+      "used_by": [
+        "internal-diagnosis.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20210128/39fbe19e83a38.jpg"
+      ],
+      "metadata_files": [
+        "content/internal-assets.json",
+        "content/internal-pages.json"
+      ],
+      "alt_texts": [
+        "비염 6단계 진단 안내 사진·도해"
+      ],
+      "width": 700,
+      "height": 500
+    },
+    {
+      "id": "images/clinical/internal/da1fa1c68d63",
+      "path": "assets/images/clinical/internal/da1fa1c68d63.jpg",
+      "kind": "image",
+      "bytes": 33949,
+      "sha256": "54912cf5caa83aecf947946d2a0227a0fa41c148832383ae4a7e5014b6ec8b74",
+      "status": "unreferenced",
+      "used_by": [],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200326/9c866f38828d8.jpg"
+      ],
+      "metadata_files": [
+        "content/internal-assets.json",
+        "content/internal-pages.json"
+      ],
+      "alt_texts": [
+        "코가 하는 일 안내 사진·도해"
+      ],
+      "width": 432,
+      "height": 521
+    },
+    {
+      "id": "images/clinical/internal/dbfab3d0a156",
+      "path": "assets/images/clinical/internal/dbfab3d0a156.jpg",
+      "kind": "image",
+      "bytes": 214428,
+      "sha256": "e08a7ee053a61434b5a174c1211ea5ad3be72dabb73c707da0635b17b9b5fb9c",
+      "status": "published",
+      "used_by": [
+        "internal-cold.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200308/ce2dae6fab0fe.jpg"
+      ],
+      "metadata_files": [
+        "content/internal-assets.json",
+        "content/internal-pages.json",
+        "content/visual-guides.json"
+      ],
+      "alt_texts": [
+        "감기·독감 안내 안내 사진·도해"
+      ],
+      "width": 1279,
+      "height": 854
+    },
+    {
+      "id": "images/clinical/internal/efe087b86941",
+      "path": "assets/images/clinical/internal/efe087b86941.jpg",
+      "kind": "image",
+      "bytes": 172542,
+      "sha256": "ac8950f591c51f274d6b091d0af4b741da3b6aa6fc8092c5fa77ffe787b0ce0e",
+      "status": "published",
+      "used_by": [
+        "internal-diagnosis.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200321/f6d9c40fbb9da.jpg"
+      ],
+      "metadata_files": [
+        "content/internal-assets.json",
+        "content/internal-pages.json"
+      ],
+      "alt_texts": [
+        "5단계 鼻涕, 鼻癰, 鼻藁"
+      ],
+      "width": 700,
+      "height": 500
+    },
+    {
+      "id": "images/editorial/0386e264cdd89d",
+      "path": "assets/images/editorial/0386e264cdd89d.jpg",
+      "kind": "image",
+      "bytes": 423128,
+      "sha256": "2593f06a7eb19cfd1354f994a2fb445e75663f81f471d534d29324954c79bdde",
+      "status": "published",
+      "used_by": [
+        "clinic-internal.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200402/694ddcef8bc97.jpg"
+      ],
+      "metadata_files": [
+        "content/renewal-assets.json",
+        "content/visual-guides.json"
+      ],
+      "alt_texts": [
+        "복부 불편을 표현하는 여성"
+      ],
+      "width": 1688,
+      "height": 1125
+    },
+    {
+      "id": "images/editorial/0814baedff2d8f",
+      "path": "assets/images/editorial/0814baedff2d8f.jpg",
+      "kind": "image",
+      "bytes": 585594,
+      "sha256": "f255db743ee6d7deb16bf2c5794742e3788c2d27f00cc3b314c30234d2b04f0e",
+      "status": "published",
+      "used_by": [
+        "kids10.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200401/29c5db5c752a2.jpg"
+      ],
+      "metadata_files": [
+        "content/renewal-assets.json",
+        "content/visual-guides.json"
+      ],
+      "alt_texts": [
+        "아이의 식사를 돕는 보호자"
+      ],
+      "width": 1688,
+      "height": 1125
+    },
+    {
+      "id": "images/editorial/0c73cd9677177e",
+      "path": "assets/images/editorial/0c73cd9677177e.jpg",
+      "kind": "image",
+      "bytes": 1082989,
+      "sha256": "148469d201179d433e96ef6ce584a255e8ec53c90ae0ad60c02f526370941614",
+      "status": "published",
+      "used_by": [
+        "clinic-internal.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200326/ab892d68ba0f9.jpg"
+      ],
+      "metadata_files": [
+        "content/renewal-assets.json",
+        "content/visual-guides.json"
+      ],
+      "alt_texts": [
+        "진료 기록과 의료 도구"
+      ],
+      "width": 1400,
+      "height": 1000
+    },
+    {
+      "id": "images/editorial/1ca5a62c86fdd3",
+      "path": "assets/images/editorial/1ca5a62c86fdd3.jpg",
+      "kind": "image",
+      "bytes": 243064,
+      "sha256": "c7cb80c5cfe6eed8f1afa3ddc1d6e2cc6b96d546b374f78455cb74c8c6e5175c",
+      "status": "published",
+      "used_by": [
+        "internal-functional-digestive.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200402/c673e29ccb109.jpg"
+      ],
+      "metadata_files": [
+        "content/renewal-assets.json",
+        "content/visual-guides.json"
+      ],
+      "alt_texts": [
+        "복부에 손을 얹고 불편함을 느끼는 여성"
+      ],
+      "width": 1688,
+      "height": 1125
+    },
+    {
+      "id": "images/editorial/1dc744030955a3",
+      "path": "assets/images/editorial/1dc744030955a3.jpg",
+      "kind": "image",
+      "bytes": 420957,
+      "sha256": "ef6fa376c835c130c8c1861f160272948219e8d50f6cb4f5b3706444384e76f9",
+      "status": "published",
+      "used_by": [
+        "women-pregnancy-planning.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20190221/5c6e4bcea26c1.jpg"
+      ],
+      "metadata_files": [
+        "content/renewal-assets.json",
+        "content/visual-guides.json"
+      ],
+      "alt_texts": [
+        "의료진과 상담하는 부부"
+      ],
+      "width": 1688,
+      "height": 1125
+    },
+    {
+      "id": "images/editorial/22a86908cfc599",
+      "path": "assets/images/editorial/22a86908cfc599.jpg",
+      "kind": "image",
+      "bytes": 338941,
+      "sha256": "5dfe2f04b9586f33c9ad6f1a7451b8acd356b877b863f4b940f6d95367a5f7e6",
+      "status": "published",
+      "used_by": [
+        "woman1.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20201120/ab23ed5d00a9d.jpg"
+      ],
+      "metadata_files": [
+        "content/renewal-assets.json",
+        "content/visual-guides.json"
+      ],
+      "alt_texts": [
+        "임신 중 배에 손을 얹은 여성"
+      ],
+      "width": 1688,
+      "height": 1125
+    },
+    {
+      "id": "images/editorial/2b4e1167057f7f",
+      "path": "assets/images/editorial/2b4e1167057f7f.jpg",
+      "kind": "image",
+      "bytes": 152628,
+      "sha256": "3204337e1b48fd076a757fbf7099e74f6a9475e31a5e14e1d73997b720bf7c77",
+      "status": "published",
+      "used_by": [
+        "women-life-stages.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200402/044188f0f0ee2.jpg"
+      ],
+      "metadata_files": [
+        "content/renewal-assets.json",
+        "content/visual-guides.json"
+      ],
+      "alt_texts": [
+        "함께 운동하는 두 여성"
+      ],
+      "width": 849,
+      "height": 606
+    },
+    {
+      "id": "images/editorial/49c6ec3d0c6ec4",
+      "path": "assets/images/editorial/49c6ec3d0c6ec4.jpg",
+      "kind": "image",
+      "bytes": 558967,
+      "sha256": "a8aae330651ddd8dad65e97377aa1995f0b1c24c9a820895450138e16f466592",
+      "status": "unreferenced",
+      "used_by": [],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20201127/4bdb3d014baec.jpg"
+      ],
+      "metadata_files": [
+        "content/renewal-assets.json"
+      ],
+      "alt_texts": [
+        "진찰 중 손목을 살피는 모습"
+      ],
+      "width": 1688,
+      "height": 1125
+    },
+    {
+      "id": "images/editorial/4c2f5c5d80aaf1",
+      "path": "assets/images/editorial/4c2f5c5d80aaf1.jpg",
+      "kind": "image",
+      "bytes": 426924,
+      "sha256": "f2f01d466c4c84cf0cdc2d1aae81f4b6d9b4a33b9661372ace5382ed58c32992",
+      "status": "published",
+      "used_by": [
+        "women-infertility-care.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20191221/12c60e04b1a95.jpg"
+      ],
+      "metadata_files": [
+        "content/renewal-assets.json",
+        "content/visual-guides.json"
+      ],
+      "alt_texts": [
+        "창가에서 휴식하는 여성"
+      ],
+      "width": 1690,
+      "height": 1125
+    },
+    {
+      "id": "images/editorial/4ef49f71be8323",
+      "path": "assets/images/editorial/4ef49f71be8323.jpg",
+      "kind": "image",
+      "bytes": 365351,
+      "sha256": "ea85a01b39917d8c1f9102bc01f07c49943c8dbb16bed7b4e8afa7e03fd764d6",
+      "status": "published",
+      "used_by": [
+        "child-growth-causes.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20190222/5c6ec2abd97af.jpg"
+      ],
+      "metadata_files": [
+        "content/renewal-assets.json",
+        "content/visual-guides.json"
+      ],
+      "alt_texts": [
+        "책상에서 활동하는 아이"
+      ],
+      "width": 1691,
+      "height": 1123
+    },
+    {
+      "id": "images/editorial/52c07d5c58168b",
+      "path": "assets/images/editorial/52c07d5c58168b.jpg",
+      "kind": "image",
+      "bytes": 436613,
+      "sha256": "2a6b5720e0a3d4bcee31ff23e421c2264cfc0c3f2c3dfbefde3d7ff8e602563c",
+      "status": "published",
+      "used_by": [
+        "internal-digestive.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200414/3b7b26550d2c3.jpg"
+      ],
+      "metadata_files": [
+        "content/renewal-assets.json",
+        "content/visual-guides.json"
+      ],
+      "alt_texts": [
+        "진료실에서 의견을 나누는 의료진"
+      ],
+      "width": 1690,
+      "height": 1125
+    },
+    {
+      "id": "images/editorial/5c3cc7c0521af2",
+      "path": "assets/images/editorial/5c3cc7c0521af2.jpg",
+      "kind": "image",
+      "bytes": 381187,
+      "sha256": "ce4d6e39976d968877b20ec7c9c5b3c02509a72a84b9ac1695a4fba08a6e4cea",
+      "status": "published",
+      "used_by": [
+        "child-cold-prevention.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200403/ea9b9f0ef55e5.jpg"
+      ],
+      "metadata_files": [
+        "content/renewal-assets.json",
+        "content/visual-guides.json"
+      ],
+      "alt_texts": [
+        "식탁에서 식사하는 아이"
+      ],
+      "width": 1688,
+      "height": 1125
+    },
+    {
+      "id": "images/editorial/69d52be894fa1e",
+      "path": "assets/images/editorial/69d52be894fa1e.jpg",
+      "kind": "image",
+      "bytes": 597733,
+      "sha256": "af512c252ad1ba5ead5ec9d22bfa486af8018e2fe44d9ed67e4d80f879cf88fc",
+      "status": "published",
+      "used_by": [
+        "woman1.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200315/f5addace936f0.jpg"
+      ],
+      "metadata_files": [
+        "content/renewal-assets.json",
+        "content/visual-guides.json"
+      ],
+      "alt_texts": [
+        "나무 곁에서 미소 짓는 여성"
+      ],
+      "width": 1688,
+      "height": 1125
+    },
+    {
+      "id": "images/editorial/6a5e79943b40c4",
+      "path": "assets/images/editorial/6a5e79943b40c4.jpg",
+      "kind": "image",
+      "bytes": 337739,
+      "sha256": "e15081f046c020f2dc9c5f52f02d890944ab264e4c7acec168d31e7c69bc52ec",
+      "status": "published",
+      "used_by": [
+        "women-assisted-reproduction.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20201119/d9010c33e8bea.jpg"
+      ],
+      "metadata_files": [
+        "content/renewal-assets.json",
+        "content/visual-guides.json"
+      ],
+      "alt_texts": [
+        "상담 중 고민을 이야기하는 여성"
+      ],
+      "width": 1688,
+      "height": 1125
+    },
+    {
+      "id": "images/editorial/72dfa352ffbf1d",
+      "path": "assets/images/editorial/72dfa352ffbf1d.jpeg",
+      "kind": "image",
+      "bytes": 449353,
+      "sha256": "16df116e5b3fcf0bdfe048c9db9ae34cd26efe7e31fc8eec5a886dc5d9170344",
+      "status": "published",
+      "used_by": [
+        "child-pfapa-care.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200401/ece80211c5fa5.jpeg"
+      ],
+      "metadata_files": [
+        "content/renewal-assets.json",
+        "content/visual-guides.json"
+      ],
+      "alt_texts": [
+        "강의하는 해온한의원 한의사"
+      ],
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "id": "images/editorial/77675f13bcff46",
+      "path": "assets/images/editorial/77675f13bcff46.jpg",
+      "kind": "image",
+      "bytes": 711645,
+      "sha256": "833c5c8d46f996b4e0ccbdb7c454cf91cab6700a23871dc8a7e6d5d9ad73b92d",
+      "status": "unreferenced",
+      "used_by": [],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200330/d4afb1d5700b8.jpg"
+      ],
+      "metadata_files": [
+        "content/renewal-assets.json"
+      ],
+      "alt_texts": [
+        "햇살 아래서 몸을 움직이는 여성"
+      ],
+      "width": 1688,
+      "height": 1125
+    },
+    {
+      "id": "images/editorial/79c7fd3900bb45",
+      "path": "assets/images/editorial/79c7fd3900bb45.jpg",
+      "kind": "image",
+      "bytes": 430583,
+      "sha256": "7a9eb22797ad6f1fb6c15ba60e3d1e71acc0a6535bd85f0d716eb51074e9d63d",
+      "status": "published",
+      "used_by": [
+        "women-postpartum-care.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20201119/327f6826abdbe.jpg"
+      ],
+      "metadata_files": [
+        "content/renewal-assets.json",
+        "content/visual-guides.json"
+      ],
+      "alt_texts": [
+        "집에서 편안하게 쉬는 여성"
+      ],
+      "width": 1688,
+      "height": 1125
+    },
+    {
+      "id": "images/editorial/82e93d6af4a3c9",
+      "path": "assets/images/editorial/82e93d6af4a3c9.jpg",
+      "kind": "image",
+      "bytes": 394981,
+      "sha256": "7ba47bd0d498726e50ced02797c1f77ead28d5dfd9a0df1adbd17533d944e56f",
+      "status": "published",
+      "used_by": [
+        "internal-rhinitis-treatment.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200402/b00426f1b61a4.jpg"
+      ],
+      "metadata_files": [
+        "content/renewal-assets.json",
+        "content/visual-guides.json"
+      ],
+      "alt_texts": [
+        "회의하며 의견을 나누는 의료진"
+      ],
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "images/editorial/84fda36efc76e5",
+      "path": "assets/images/editorial/84fda36efc76e5.jpg",
+      "kind": "image",
+      "bytes": 583188,
+      "sha256": "fc1a1a4a123333ab99d59a7e20d3faf9d23300e0d40500c7fe7ddcf03dce4558",
+      "status": "published",
+      "used_by": [
+        "child-respiratory.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200403/dacacfa30f4f6.jpg"
+      ],
+      "metadata_files": [
+        "content/renewal-assets.json",
+        "content/visual-guides.json"
+      ],
+      "alt_texts": [
+        "부모와 함께 쉬는 아이"
+      ],
+      "width": 1688,
+      "height": 1125
+    },
+    {
+      "id": "images/editorial/85c992df21acc6",
+      "path": "assets/images/editorial/85c992df21acc6.jpg",
+      "kind": "image",
+      "bytes": 318368,
+      "sha256": "2470170a1ed702a9e358ae25f0762a05417ac9cfd78f312019c7d3e7ef7977bf",
+      "status": "published",
+      "used_by": [
+        "women-overview.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20201119/51b48217c9070.jpg"
+      ],
+      "metadata_files": [
+        "content/renewal-assets.json",
+        "content/visual-guides.json"
+      ],
+      "alt_texts": [
+        "밝은 실내에서 몸을 이완하는 여성"
+      ],
+      "width": 1592,
+      "height": 1194
+    },
+    {
+      "id": "images/editorial/9a23af771c5eba",
+      "path": "assets/images/editorial/9a23af771c5eba.jpg",
+      "kind": "image",
+      "bytes": 345198,
+      "sha256": "bca945d850593f31097b944d34c6fcb6e61bf2e97cb76c5592a946c8f3e0a6b2",
+      "status": "published",
+      "used_by": [
+        "woman1.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200401/c2d984c16a47d.jpg"
+      ],
+      "metadata_files": [
+        "content/renewal-assets.json",
+        "content/visual-guides.json"
+      ],
+      "alt_texts": [
+        "아이를 안고 앉아 있는 보호자"
+      ],
+      "width": 1688,
+      "height": 1125
+    },
+    {
+      "id": "images/editorial/9da00536237d1d",
+      "path": "assets/images/editorial/9da00536237d1d.jpg",
+      "kind": "image",
+      "bytes": 783200,
+      "sha256": "b2300cf9ad1f08a1cfe246b170a7e61ab6752c285132af7977c0d61528d8480e",
+      "status": "unreferenced",
+      "used_by": [],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20190222/5c6ebef371de5.jpg"
+      ],
+      "metadata_files": [
+        "content/renewal-assets.json"
+      ],
+      "alt_texts": [
+        "야외에서 쉬는 여성"
+      ],
+      "width": 1694,
+      "height": 1122
+    },
+    {
+      "id": "images/editorial/b09beaa2c75986",
+      "path": "assets/images/editorial/b09beaa2c75986.jpg",
+      "kind": "image",
+      "bytes": 621756,
+      "sha256": "f2a7bdca9414f29a862b7f04c0a2dd2a0fcf8ee86b95124b9f110d4c858ad3c6",
+      "status": "published",
+      "used_by": [
+        "woman1.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20190221/5c6e4b7fbd3dc.jpg"
+      ],
+      "metadata_files": [
+        "content/renewal-assets.json",
+        "content/visual-guides.json"
+      ],
+      "alt_texts": [
+        "야외에서 몸을 움직이는 여성"
+      ],
+      "width": 1688,
+      "height": 1125
+    },
+    {
+      "id": "images/editorial/b375aaaa3336aa",
+      "path": "assets/images/editorial/b375aaaa3336aa.jpg",
+      "kind": "image",
+      "bytes": 318038,
+      "sha256": "75c4394b2575c0a762285acd60c52edade8ebac3ad87e0b368ea54c22a1a840c",
+      "status": "published",
+      "used_by": [
+        "01_1.about.html",
+        "clinic-internal.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200407/8753351841c1b.jpg",
+        "https://haeoni.com/86"
+      ],
+      "metadata_files": [
+        "content/clinic-photo-inventory.json",
+        "content/renewal-assets.json",
+        "content/visual-guides.json"
+      ],
+      "alt_texts": [
+        "차트를 살피는 해온한의원 한의사"
+      ],
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "id": "images/editorial/bd115d9673917d",
+      "path": "assets/images/editorial/bd115d9673917d.jpg",
+      "kind": "image",
+      "bytes": 403196,
+      "sha256": "46cc1ea94c205e6428979961b133e4cecdebef63d43134020ae89bc975a2cd84",
+      "status": "published",
+      "used_by": [
+        "kids10.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200402/3af1c70f9f2cd.jpg"
+      ],
+      "metadata_files": [
+        "content/renewal-assets.json",
+        "content/visual-guides.json"
+      ],
+      "alt_texts": [
+        "교실에서 손을 든 아이"
+      ],
+      "width": 1688,
+      "height": 1125
+    },
+    {
+      "id": "images/editorial/cb05bbfecd8a48",
+      "path": "assets/images/editorial/cb05bbfecd8a48.jpg",
+      "kind": "image",
+      "bytes": 467142,
+      "sha256": "1cca44b14a2e302a2e41bdcadf2c703b60be1378c1afabc8ad885e9bd6798522",
+      "status": "published",
+      "used_by": [
+        "women-infertility.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200401/2882278af325f.jpg"
+      ],
+      "metadata_files": [
+        "content/renewal-assets.json",
+        "content/visual-guides.json"
+      ],
+      "alt_texts": [
+        "함께 서 있는 세 가족"
+      ],
+      "width": 1688,
+      "height": 1125
+    },
+    {
+      "id": "images/editorial/e616ebed4b6677",
+      "path": "assets/images/editorial/e616ebed4b6677.jpg",
+      "kind": "image",
+      "bytes": 1287173,
+      "sha256": "2353a671e015017c08a87c314358fdd93e0469b54cb01140bbd6b441eadfd449",
+      "status": "published",
+      "used_by": [
+        "women-parenting.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20191222/88279a31b3ff4.jpg"
+      ],
+      "metadata_files": [
+        "content/renewal-assets.json",
+        "content/visual-guides.json"
+      ],
+      "alt_texts": [
+        "계곡에서 쉬는 여성"
+      ],
+      "width": 1687,
+      "height": 1126
+    },
+    {
+      "id": "images/editorial/eb753b27d10c44",
+      "path": "assets/images/editorial/eb753b27d10c44.jpg",
+      "kind": "image",
+      "bytes": 189675,
+      "sha256": "d95cca625a5058387f4f90842983a742678aed33d0f1ccd971c06a9b46df4de0",
+      "status": "published",
+      "used_by": [
+        "01_1.about.html",
+        "care-process.html",
+        "care.html",
+        "clinic-internal.html",
+        "index.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20220905/1308c77adf879.jpg",
+        "https://haeoni.com/86"
+      ],
+      "metadata_files": [
+        "content/clinic-photo-inventory.json",
+        "content/renewal-assets.json",
+        "content/visual-guides.json"
+      ],
+      "alt_texts": [
+        "환자와 마주 앉아 상담하는 해온한의원 한의사"
+      ],
+      "width": 1279,
+      "height": 853
+    },
+    {
+      "id": "images/editorial/eb9562e8e05686",
+      "path": "assets/images/editorial/eb9562e8e05686.jpg",
+      "kind": "image",
+      "bytes": 418491,
+      "sha256": "93549535f21010b727b1f20bdd58cce71a23b71668bc89949247db63f31e20b5",
+      "status": "published",
+      "used_by": [
+        "child-treatments.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200401/9332604883737.jpg"
+      ],
+      "metadata_files": [
+        "content/renewal-assets.json",
+        "content/visual-guides.json"
+      ],
+      "alt_texts": [
+        "아이를 진찰하는 의료진"
+      ],
+      "width": 1688,
+      "height": 1125
+    },
+    {
+      "id": "images/editorial/f859ee027f155a",
+      "path": "assets/images/editorial/f859ee027f155a.jpg",
+      "kind": "image",
+      "bytes": 562604,
+      "sha256": "363461205056c5234fa408a7035a867ed3fb1d99e736f557ca1ab23255372319",
+      "status": "unreferenced",
+      "used_by": [],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20200402/729f32c577167.jpg"
+      ],
+      "metadata_files": [
+        "content/renewal-assets.json"
+      ],
+      "alt_texts": [
+        "햇살이 드는 창가의 여성"
+      ],
+      "width": 1595,
+      "height": 1191
+    },
+    {
+      "id": "images/editorial/fb0448cac9445e",
+      "path": "assets/images/editorial/fb0448cac9445e.jpg",
+      "kind": "image",
+      "bytes": 604986,
+      "sha256": "36befcf784f4b6e1215ec7f1fd4937a50880439a1b0802a83cf0eecf669ac530",
+      "status": "published",
+      "used_by": [
+        "kids10.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20190222/5c6ebedd3a0e4.jpg"
+      ],
+      "metadata_files": [
+        "content/renewal-assets.json",
+        "content/visual-guides.json"
+      ],
+      "alt_texts": [
+        "야외에서 아이를 바라보는 보호자"
+      ],
+      "width": 1688,
+      "height": 1125
+    },
+    {
+      "id": "images/editorial/ff52fb037a88f0",
+      "path": "assets/images/editorial/ff52fb037a88f0.jpg",
+      "kind": "image",
+      "bytes": 372922,
+      "sha256": "bc8965b28d03b28943356ad3338175a9f7c8c23bb1caba7c005e6951399ab877",
+      "status": "published",
+      "used_by": [
+        "kids10.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20190222/5c6ec25c611a4.jpg"
+      ],
+      "metadata_files": [
+        "content/renewal-assets.json",
+        "content/visual-guides.json"
+      ],
+      "alt_texts": [
+        "함께 웃는 아이와 부모"
+      ],
+      "width": 1673,
+      "height": 1136
+    },
+    {
+      "id": "images/location/location-map",
+      "path": "assets/images/location/location-map.png",
+      "kind": "image",
+      "bytes": 1778261,
+      "sha256": "7fd2a49187ae8e28a1f1a8f595c4ec04fb494e58a676705427aa4d9b1155e13c",
+      "status": "published",
+      "used_by": [
+        "01_3.location.html"
+      ],
+      "sources": [],
+      "metadata_files": [],
+      "alt_texts": []
+    },
+    {
+      "id": "images/people/doctor-cho",
+      "path": "assets/images/people/doctor-cho.jpg",
+      "kind": "image",
+      "bytes": 28559,
+      "sha256": "62a5241fc911262fbc99fefde0f8436e74d3f0030b428df2e0418b2c59e086f4",
+      "status": "published",
+      "used_by": [
+        "01_2.team.html",
+        "doctor-cho.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20250801/fed3799117b4c.jpg",
+        "https://haeoni.com/165"
+      ],
+      "metadata_files": [
+        "content/clinic-photo-inventory.json"
+      ],
+      "alt_texts": [],
+      "width": 640,
+      "height": 640
+    },
+    {
+      "id": "images/people/doctor-han",
+      "path": "assets/images/people/doctor-han.jpg",
+      "kind": "image",
+      "bytes": 26374,
+      "sha256": "5a5e99928ee309261a46aef0228c7e4cc984425bf916f323ae47a7bfe36ba267",
+      "status": "published",
+      "used_by": [
+        "01_2.team.html",
+        "doctor-han.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20250801/4b49dcc814ffd.jpg",
+        "https://haeoni.com/165"
+      ],
+      "metadata_files": [
+        "content/clinic-photo-inventory.json"
+      ],
+      "alt_texts": [],
+      "width": 640,
+      "height": 640
+    },
+    {
+      "id": "images/people/doctor-jung",
+      "path": "assets/images/people/doctor-jung.jpg",
+      "kind": "image",
+      "bytes": 34144,
+      "sha256": "5124bf028bb21d52bef81fe506687734820ded3f3ab24f6eb1b257712547b9d8",
+      "status": "published",
+      "used_by": [
+        "01_2.team.html",
+        "doctor-jung.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20250801/0d754b3232d76.jpg",
+        "https://haeoni.com/165"
+      ],
+      "metadata_files": [
+        "content/clinic-photo-inventory.json"
+      ],
+      "alt_texts": [],
+      "width": 640,
+      "height": 640
+    },
+    {
+      "id": "images/people/doctor-lee",
+      "path": "assets/images/people/doctor-lee.jpg",
+      "kind": "image",
+      "bytes": 26626,
+      "sha256": "6a2b3c4f234293c9eff2246f2f9490acfbc80761d3ee23ee7e2de46cd158f8cc",
+      "status": "published",
+      "used_by": [
+        "01_2.team.html",
+        "doctor-lee.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20250801/e613735f7bd83.jpg",
+        "https://haeoni.com/165"
+      ],
+      "metadata_files": [
+        "content/clinic-photo-inventory.json"
+      ],
+      "alt_texts": [],
+      "width": 640,
+      "height": 640
+    },
+    {
+      "id": "images/people/original-hero-1",
+      "path": "assets/images/people/original-hero-1.jpg",
+      "kind": "image",
+      "bytes": 520651,
+      "sha256": "b026c6a571f246788d4c601cbb8b364cdd17eabe254e6c6f35000f39ad629685",
+      "status": "published",
+      "used_by": [
+        "index.html"
+      ],
+      "sources": [],
+      "metadata_files": [],
+      "alt_texts": []
+    },
+    {
+      "id": "images/spaces/original-hero-2",
+      "path": "assets/images/spaces/original-hero-2.jpg",
+      "kind": "image",
+      "bytes": 456556,
+      "sha256": "b60ed49a646339a98c153ccd1e73e9767b8ba68e96244e2d3c0a2e446f02d98a",
+      "status": "published",
+      "used_by": [
+        "01_1.about.html",
+        "index.html"
+      ],
+      "sources": [],
+      "metadata_files": [],
+      "alt_texts": []
+    },
+    {
+      "id": "images/spaces/room-child",
+      "path": "assets/images/spaces/room-child.jpg",
+      "kind": "image",
+      "bytes": 350290,
+      "sha256": "ab6a3c03b33729497457fe969579934716e7ad1dac26247bbad165ec8e50795f",
+      "status": "unreferenced",
+      "used_by": [],
+      "sources": [],
+      "metadata_files": [],
+      "alt_texts": []
+    },
+    {
+      "id": "images/spaces/room-ultrasound",
+      "path": "assets/images/spaces/room-ultrasound.jpg",
+      "kind": "image",
+      "bytes": 266201,
+      "sha256": "faaaf13d1b282086239d034a18ef3a0d5994cfc38d206d1bd9584b05f2966aff",
+      "status": "published",
+      "used_by": [
+        "care.html",
+        "index.html",
+        "pain1.html"
+      ],
+      "sources": [],
+      "metadata_files": [],
+      "alt_texts": []
+    },
+    {
+      "id": "images/spaces/tour-01",
+      "path": "assets/images/spaces/tour-01.jpg",
+      "kind": "image",
+      "bytes": 341399,
+      "sha256": "0db49575fb59d100a17634279c568438738fb0532b6963c97158eeb27db6aa20",
+      "status": "published",
+      "used_by": [
+        "01_4.tour.html",
+        "index.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20251207/85030f05bc2bd.jpg",
+        "https://haeoni.com/92"
+      ],
+      "metadata_files": [
+        "content/clinic-photo-inventory.json"
+      ],
+      "alt_texts": [],
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "images/spaces/tour-02",
+      "path": "assets/images/spaces/tour-02.jpg",
+      "kind": "image",
+      "bytes": 397854,
+      "sha256": "20e18088e3df843eb301e75abce019039e79c65597a7e80ae8373dd66f65fdc6",
+      "status": "published",
+      "used_by": [
+        "01_4.tour.html",
+        "index.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20251207/a9cdbe76fe90e.jpg",
+        "https://haeoni.com/92"
+      ],
+      "metadata_files": [
+        "content/clinic-photo-inventory.json"
+      ],
+      "alt_texts": [],
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "images/spaces/tour-03",
+      "path": "assets/images/spaces/tour-03.jpg",
+      "kind": "image",
+      "bytes": 1342970,
+      "sha256": "e9857e21dbac25197a7d8ff7ce5ea61091764eead6da1742e4277dd7dab0e778",
+      "status": "published",
+      "used_by": [
+        "01_4.tour.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20251207/8f8e8a65e0745.jpg",
+        "https://haeoni.com/92"
+      ],
+      "metadata_files": [
+        "content/clinic-photo-inventory.json"
+      ],
+      "alt_texts": [],
+      "width": 1920,
+      "height": 3413
+    },
+    {
+      "id": "images/spaces/tour-04",
+      "path": "assets/images/spaces/tour-04.jpg",
+      "kind": "image",
+      "bytes": 354730,
+      "sha256": "fe0cfaf9030f17289ff72f240902e7bdd64780504827825380274a875864c032",
+      "status": "published",
+      "used_by": [
+        "01_4.tour.html",
+        "clinic-constitution.html",
+        "index.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20251207/1187ab8bb9feb.jpg",
+        "https://haeoni.com/92"
+      ],
+      "metadata_files": [
+        "content/clinic-photo-inventory.json"
+      ],
+      "alt_texts": [],
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "images/spaces/tour-05",
+      "path": "assets/images/spaces/tour-05.jpg",
+      "kind": "image",
+      "bytes": 454484,
+      "sha256": "cffc6aaa3b67230d28aa9c65c31d5b1cc4020d8a1c8968bff38d152db74d7c86",
+      "status": "published",
+      "used_by": [
+        "01_4.tour.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20251207/2de1b19580453.jpg",
+        "https://haeoni.com/92"
+      ],
+      "metadata_files": [
+        "content/clinic-photo-inventory.json"
+      ],
+      "alt_texts": [],
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "images/spaces/tour-06",
+      "path": "assets/images/spaces/tour-06.jpg",
+      "kind": "image",
+      "bytes": 343576,
+      "sha256": "48bfe6db23e5d4e87b2f2d1dcd474234abbb43d0e6b35992b33197571a04b312",
+      "status": "published",
+      "used_by": [
+        "01_4.tour.html",
+        "index.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20251207/8b2cb8fc34441.jpg",
+        "https://haeoni.com/92"
+      ],
+      "metadata_files": [
+        "content/clinic-photo-inventory.json"
+      ],
+      "alt_texts": [],
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "images/spaces/tour-07",
+      "path": "assets/images/spaces/tour-07.jpg",
+      "kind": "image",
+      "bytes": 316348,
+      "sha256": "3d4051dbf8a3accb5018caae29eadcc34b901012bbc5d26a4da311486c400647",
+      "status": "published",
+      "used_by": [
+        "01_4.tour.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20251207/a50bd11fa0922.jpg",
+        "https://haeoni.com/92"
+      ],
+      "metadata_files": [
+        "content/clinic-photo-inventory.json"
+      ],
+      "alt_texts": [],
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "images/spaces/tour-08",
+      "path": "assets/images/spaces/tour-08.jpg",
+      "kind": "image",
+      "bytes": 383294,
+      "sha256": "94182bffaae28b62fe1d8d884a17810e28924d1ed617abd1f07764724010ceb6",
+      "status": "published",
+      "used_by": [
+        "01_4.tour.html",
+        "care.html",
+        "index.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20251207/eca0837914493.jpg",
+        "https://haeoni.com/92"
+      ],
+      "metadata_files": [
+        "content/clinic-photo-inventory.json"
+      ],
+      "alt_texts": [],
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "images/spaces/tour-09",
+      "path": "assets/images/spaces/tour-09.jpg",
+      "kind": "image",
+      "bytes": 1385511,
+      "sha256": "b24d5699328be86036499eb7935d957b18b5f8b96d97edf02ca4ecc543edff62",
+      "status": "published",
+      "used_by": [
+        "01_4.tour.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20251207/371204b51bf9b.jpg",
+        "https://haeoni.com/92"
+      ],
+      "metadata_files": [
+        "content/clinic-photo-inventory.json"
+      ],
+      "alt_texts": [],
+      "width": 1920,
+      "height": 3413
+    },
+    {
+      "id": "images/spaces/tour-10",
+      "path": "assets/images/spaces/tour-10.jpg",
+      "kind": "image",
+      "bytes": 294420,
+      "sha256": "c7206ce9b15a1e7ce3fe71a568ae8857d1f1a263e938c36e36c98e220ac5496d",
+      "status": "published",
+      "used_by": [
+        "01_4.tour.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20251207/ca1d21f87592c.jpg",
+        "https://haeoni.com/92"
+      ],
+      "metadata_files": [
+        "content/clinic-photo-inventory.json"
+      ],
+      "alt_texts": [],
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "images/spaces/tour-11",
+      "path": "assets/images/spaces/tour-11.jpg",
+      "kind": "image",
+      "bytes": 444082,
+      "sha256": "f08b8ed073c6d5a4f64f3ee7eac10284438d01270264dd85c81cdf718b45646f",
+      "status": "published",
+      "used_by": [
+        "01_4.tour.html",
+        "index.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20251207/49596991da281.jpg",
+        "https://haeoni.com/92"
+      ],
+      "metadata_files": [
+        "content/clinic-photo-inventory.json"
+      ],
+      "alt_texts": [],
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "images/spaces/tour-12",
+      "path": "assets/images/spaces/tour-12.jpg",
+      "kind": "image",
+      "bytes": 364213,
+      "sha256": "caa46e2fd887b14812f8fc58212f87ccbd0496ffeeb0e0792843800fdcc13597",
+      "status": "published",
+      "used_by": [
+        "01_4.tour.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20251207/8441f1a431176.jpg",
+        "https://haeoni.com/92"
+      ],
+      "metadata_files": [
+        "content/clinic-photo-inventory.json"
+      ],
+      "alt_texts": [],
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "images/spaces/tour-13",
+      "path": "assets/images/spaces/tour-13.jpg",
+      "kind": "image",
+      "bytes": 326500,
+      "sha256": "59d750572942aef706fe817c3f8a0b0d4d865200a20d1e7426b27a455d6f503d",
+      "status": "published",
+      "used_by": [
+        "01_4.tour.html",
+        "care.html",
+        "index.html"
+      ],
+      "sources": [
+        "https://cdn.imweb.me/thumbnail/20251207/42b0fcfc40743.jpg",
+        "https://haeoni.com/92"
+      ],
+      "metadata_files": [
+        "content/clinic-photo-inventory.json"
+      ],
+      "alt_texts": [],
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "scripts/care/care-guides",
+      "path": "assets/scripts/care/care-guides.js",
+      "kind": "script",
+      "bytes": 1356,
+      "sha256": "e23a4639a5ca78b4ccd35dbe57aacc5334276729fc3dd8dfb80f9059a244be67",
+      "status": "published",
+      "used_by": [
+        "care-diagnostic.html",
+        "care-prescription.html",
+        "care-process.html",
+        "care-treatment.html",
+        "care.html"
+      ],
+      "sources": [],
+      "metadata_files": [],
+      "alt_texts": []
+    },
+    {
+      "id": "scripts/clinical/internal",
+      "path": "assets/scripts/clinical/internal.js",
+      "kind": "script",
+      "bytes": 3268,
+      "sha256": "f96aafe9af16ce9ca734cc9e0477c243e8d7491ccbec215c63adb0ed9a0bea7e",
+      "status": "published",
+      "used_by": [
+        "child-antler.html",
+        "child-cold-care.html",
+        "child-cold-prevention.html",
+        "child-constitution.html",
+        "child-growth-care.html",
+        "child-growth-causes.html",
+        "child-growth-diagnosis.html",
+        "child-growth.html",
+        "child-herbal-guide.html",
+        "child-herbal-prescription.html",
+        "child-infections.html",
+        "child-integrated.html",
+        "child-overview.html",
+        "child-pfapa-care.html",
+        "child-pfapa.html",
+        "child-respiratory.html",
+        "child-treatments.html",
+        "clinic-internal.html",
+        "internal-cold.html",
+        "internal-cotton-care.html",
+        "internal-cough-treatment.html",
+        "internal-cough.html",
+        "internal-diagnosis.html",
+        "internal-digestive.html",
+        "internal-functional-digestive.html",
+        "internal-lower-digestive.html",
+        "internal-nose-function.html",
+        "internal-otitis.html",
+        "internal-rhinitis-treatment.html",
+        "internal-rhinitis.html",
+        "internal-upper-digestive.html",
+        "kids10.html",
+        "rhini1.html",
+        "woman1.html",
+        "women-assisted-reproduction.html",
+        "women-body-changes.html",
+        "women-cold-sensitivity.html",
+        "women-female-infertility.html",
+        "women-infertility-care.html",
+        "women-infertility.html",
+        "women-life-stages.html",
+        "women-male-infertility.html",
+        "women-miscarriage-lifestyle.html",
+        "women-miscarriage-surgery.html",
+        "women-miscarriage.html",
+        "women-overview.html",
+        "women-parenting.html",
+        "women-pms-stress.html",
+        "women-postpartum-care.html",
+        "women-postpartum-lifestyle.html",
+        "women-postpartum.html",
+        "women-pregnancy-planning.html",
+        "women-pregnancy.html",
+        "women-recurrent-loss.html",
+        "women-uterus-ovaries.html"
+      ],
+      "sources": [],
+      "metadata_files": [],
+      "alt_texts": []
+    },
+    {
+      "id": "scripts/clinical/photo-motion",
+      "path": "assets/scripts/clinical/photo-motion.js",
+      "kind": "script",
+      "bytes": 1173,
+      "sha256": "cfde4daa74a3103feaff523ce7a1687782b39b356ef4b58fe1333fc6f2bf37fe",
+      "status": "published",
+      "used_by": [
+        "01_1.about.html",
+        "01_2.team.html",
+        "01_3.location.html",
+        "01_4.tour.html",
+        "care-diagnostic.html",
+        "care-prescription.html",
+        "care-process.html",
+        "care-treatment.html",
+        "care.html",
+        "child-antler.html",
+        "child-cold-care.html",
+        "child-cold-prevention.html",
+        "child-constitution.html",
+        "child-growth-care.html",
+        "child-growth-causes.html",
+        "child-growth-diagnosis.html",
+        "child-growth.html",
+        "child-herbal-guide.html",
+        "child-herbal-prescription.html",
+        "child-infections.html",
+        "child-integrated.html",
+        "child-overview.html",
+        "child-pfapa-care.html",
+        "child-pfapa.html",
+        "child-respiratory.html",
+        "child-treatments.html",
+        "clinic-constitution.html",
+        "clinic-internal.html",
+        "clinic-sports.html",
+        "clinic-weight.html",
+        "contribution.html",
+        "departments.html",
+        "doctor-cho.html",
+        "doctor-han.html",
+        "doctor-jung.html",
+        "doctor-lee.html",
+        "fees.html",
+        "history.html",
+        "index.html",
+        "internal-cold.html",
+        "internal-cotton-care.html",
+        "internal-cough-treatment.html",
+        "internal-cough.html",
+        "internal-diagnosis.html",
+        "internal-digestive.html",
+        "internal-functional-digestive.html",
+        "internal-lower-digestive.html",
+        "internal-nose-function.html",
+        "internal-otitis.html",
+        "internal-rhinitis-treatment.html",
+        "internal-rhinitis.html",
+        "internal-upper-digestive.html",
+        "kids10.html",
+        "pain1.html",
+        "privacy.html",
+        "rhini1.html",
+        "sitemap.html",
+        "terms.html",
+        "time.html",
+        "woman1.html",
+        "women-assisted-reproduction.html",
+        "women-body-changes.html",
+        "women-cold-sensitivity.html",
+        "women-female-infertility.html",
+        "women-infertility-care.html",
+        "women-infertility.html",
+        "women-life-stages.html",
+        "women-male-infertility.html",
+        "women-miscarriage-lifestyle.html",
+        "women-miscarriage-surgery.html",
+        "women-miscarriage.html",
+        "women-overview.html",
+        "women-parenting.html",
+        "women-pms-stress.html",
+        "women-postpartum-care.html",
+        "women-postpartum-lifestyle.html",
+        "women-postpartum.html",
+        "women-pregnancy-planning.html",
+        "women-pregnancy.html",
+        "women-recurrent-loss.html",
+        "women-uterus-ovaries.html"
+      ],
+      "sources": [],
+      "metadata_files": [],
+      "alt_texts": []
+    },
+    {
+      "id": "scripts/home/home-hero",
+      "path": "assets/scripts/home/home-hero.js",
+      "kind": "script",
+      "bytes": 2794,
+      "sha256": "897a1bcb2e445dbcf4fa9213bf3bb2657f7a571e46c91197c7959d9ee266331e",
+      "status": "published",
+      "used_by": [
+        "index.html"
+      ],
+      "sources": [],
+      "metadata_files": [],
+      "alt_texts": []
+    },
+    {
+      "id": "scripts/shared/floating",
+      "path": "assets/scripts/shared/floating.js",
+      "kind": "script",
+      "bytes": 578,
+      "sha256": "b36a3fe5af17f5e9853cb587649a94db9c0c566f3d32ed5d1155f6ed87c1fb0f",
+      "status": "published",
+      "used_by": [
+        "01_1.about.html",
+        "01_2.team.html",
+        "01_3.location.html",
+        "01_4.tour.html",
+        "care-diagnostic.html",
+        "care-prescription.html",
+        "care-process.html",
+        "care-treatment.html",
+        "care.html",
+        "child-antler.html",
+        "child-cold-care.html",
+        "child-cold-prevention.html",
+        "child-constitution.html",
+        "child-growth-care.html",
+        "child-growth-causes.html",
+        "child-growth-diagnosis.html",
+        "child-growth.html",
+        "child-herbal-guide.html",
+        "child-herbal-prescription.html",
+        "child-infections.html",
+        "child-integrated.html",
+        "child-overview.html",
+        "child-pfapa-care.html",
+        "child-pfapa.html",
+        "child-respiratory.html",
+        "child-treatments.html",
+        "clinic-constitution.html",
+        "clinic-internal.html",
+        "clinic-sports.html",
+        "clinic-weight.html",
+        "contribution.html",
+        "departments.html",
+        "doctor-cho.html",
+        "doctor-han.html",
+        "doctor-jung.html",
+        "doctor-lee.html",
+        "fees.html",
+        "history.html",
+        "index.html",
+        "internal-cold.html",
+        "internal-cotton-care.html",
+        "internal-cough-treatment.html",
+        "internal-cough.html",
+        "internal-diagnosis.html",
+        "internal-digestive.html",
+        "internal-functional-digestive.html",
+        "internal-lower-digestive.html",
+        "internal-nose-function.html",
+        "internal-otitis.html",
+        "internal-rhinitis-treatment.html",
+        "internal-rhinitis.html",
+        "internal-upper-digestive.html",
+        "kids10.html",
+        "pain1.html",
+        "privacy.html",
+        "rhini1.html",
+        "sitemap.html",
+        "terms.html",
+        "time.html",
+        "woman1.html",
+        "women-assisted-reproduction.html",
+        "women-body-changes.html",
+        "women-cold-sensitivity.html",
+        "women-female-infertility.html",
+        "women-infertility-care.html",
+        "women-infertility.html",
+        "women-life-stages.html",
+        "women-male-infertility.html",
+        "women-miscarriage-lifestyle.html",
+        "women-miscarriage-surgery.html",
+        "women-miscarriage.html",
+        "women-overview.html",
+        "women-parenting.html",
+        "women-pms-stress.html",
+        "women-postpartum-care.html",
+        "women-postpartum-lifestyle.html",
+        "women-postpartum.html",
+        "women-pregnancy-planning.html",
+        "women-pregnancy.html",
+        "women-recurrent-loss.html",
+        "women-uterus-ovaries.html"
+      ],
+      "sources": [],
+      "metadata_files": [],
+      "alt_texts": []
+    },
+    {
+      "id": "scripts/shared/home",
+      "path": "assets/scripts/shared/home.js",
+      "kind": "script",
+      "bytes": 580,
+      "sha256": "eaaca8bb861237643541d00cb27a1285de28bc6d90ab7b1e6e7e6b11d7f7938b",
+      "status": "published",
+      "used_by": [
+        "01_1.about.html",
+        "01_2.team.html",
+        "01_3.location.html",
+        "01_4.tour.html",
+        "care-diagnostic.html",
+        "care-prescription.html",
+        "care-process.html",
+        "care-treatment.html",
+        "care.html",
+        "child-antler.html",
+        "child-cold-care.html",
+        "child-cold-prevention.html",
+        "child-constitution.html",
+        "child-growth-care.html",
+        "child-growth-causes.html",
+        "child-growth-diagnosis.html",
+        "child-growth.html",
+        "child-herbal-guide.html",
+        "child-herbal-prescription.html",
+        "child-infections.html",
+        "child-integrated.html",
+        "child-overview.html",
+        "child-pfapa-care.html",
+        "child-pfapa.html",
+        "child-respiratory.html",
+        "child-treatments.html",
+        "clinic-constitution.html",
+        "clinic-internal.html",
+        "clinic-sports.html",
+        "clinic-weight.html",
+        "contribution.html",
+        "departments.html",
+        "doctor-cho.html",
+        "doctor-han.html",
+        "doctor-jung.html",
+        "doctor-lee.html",
+        "fees.html",
+        "history.html",
+        "index.html",
+        "internal-cold.html",
+        "internal-cotton-care.html",
+        "internal-cough-treatment.html",
+        "internal-cough.html",
+        "internal-diagnosis.html",
+        "internal-digestive.html",
+        "internal-functional-digestive.html",
+        "internal-lower-digestive.html",
+        "internal-nose-function.html",
+        "internal-otitis.html",
+        "internal-rhinitis-treatment.html",
+        "internal-rhinitis.html",
+        "internal-upper-digestive.html",
+        "kids10.html",
+        "pain1.html",
+        "privacy.html",
+        "rhini1.html",
+        "sitemap.html",
+        "terms.html",
+        "time.html",
+        "woman1.html",
+        "women-assisted-reproduction.html",
+        "women-body-changes.html",
+        "women-cold-sensitivity.html",
+        "women-female-infertility.html",
+        "women-infertility-care.html",
+        "women-infertility.html",
+        "women-life-stages.html",
+        "women-male-infertility.html",
+        "women-miscarriage-lifestyle.html",
+        "women-miscarriage-surgery.html",
+        "women-miscarriage.html",
+        "women-overview.html",
+        "women-parenting.html",
+        "women-pms-stress.html",
+        "women-postpartum-care.html",
+        "women-postpartum-lifestyle.html",
+        "women-postpartum.html",
+        "women-pregnancy-planning.html",
+        "women-pregnancy.html",
+        "women-recurrent-loss.html",
+        "women-uterus-ovaries.html"
+      ],
+      "sources": [],
+      "metadata_files": [],
+      "alt_texts": []
+    },
+    {
+      "id": "scripts/shared/language",
+      "path": "assets/scripts/shared/language.js",
+      "kind": "script",
+      "bytes": 1007,
+      "sha256": "7ad83f8cdc5017c42712115ba0044fd4b50728f7734e2e649c29efc9b23a7cb8",
+      "status": "published",
+      "used_by": [
+        "01_1.about.html",
+        "01_2.team.html",
+        "01_3.location.html",
+        "01_4.tour.html",
+        "care-diagnostic.html",
+        "care-prescription.html",
+        "care-process.html",
+        "care-treatment.html",
+        "care.html",
+        "child-antler.html",
+        "child-cold-care.html",
+        "child-cold-prevention.html",
+        "child-constitution.html",
+        "child-growth-care.html",
+        "child-growth-causes.html",
+        "child-growth-diagnosis.html",
+        "child-growth.html",
+        "child-herbal-guide.html",
+        "child-herbal-prescription.html",
+        "child-infections.html",
+        "child-integrated.html",
+        "child-overview.html",
+        "child-pfapa-care.html",
+        "child-pfapa.html",
+        "child-respiratory.html",
+        "child-treatments.html",
+        "clinic-constitution.html",
+        "clinic-internal.html",
+        "clinic-sports.html",
+        "clinic-weight.html",
+        "contribution.html",
+        "departments.html",
+        "doctor-cho.html",
+        "doctor-han.html",
+        "doctor-jung.html",
+        "doctor-lee.html",
+        "fees.html",
+        "history.html",
+        "index.html",
+        "internal-cold.html",
+        "internal-cotton-care.html",
+        "internal-cough-treatment.html",
+        "internal-cough.html",
+        "internal-diagnosis.html",
+        "internal-digestive.html",
+        "internal-functional-digestive.html",
+        "internal-lower-digestive.html",
+        "internal-nose-function.html",
+        "internal-otitis.html",
+        "internal-rhinitis-treatment.html",
+        "internal-rhinitis.html",
+        "internal-upper-digestive.html",
+        "kids10.html",
+        "pain1.html",
+        "privacy.html",
+        "rhini1.html",
+        "sitemap.html",
+        "terms.html",
+        "time.html",
+        "woman1.html",
+        "women-assisted-reproduction.html",
+        "women-body-changes.html",
+        "women-cold-sensitivity.html",
+        "women-female-infertility.html",
+        "women-infertility-care.html",
+        "women-infertility.html",
+        "women-life-stages.html",
+        "women-male-infertility.html",
+        "women-miscarriage-lifestyle.html",
+        "women-miscarriage-surgery.html",
+        "women-miscarriage.html",
+        "women-overview.html",
+        "women-parenting.html",
+        "women-pms-stress.html",
+        "women-postpartum-care.html",
+        "women-postpartum-lifestyle.html",
+        "women-postpartum.html",
+        "women-pregnancy-planning.html",
+        "women-pregnancy.html",
+        "women-recurrent-loss.html",
+        "women-uterus-ovaries.html"
+      ],
+      "sources": [],
+      "metadata_files": [],
+      "alt_texts": []
+    },
+    {
+      "id": "styles/care/care-guides",
+      "path": "assets/styles/care/care-guides.css",
+      "kind": "style",
+      "bytes": 7154,
+      "sha256": "36000f5d75a8f4c811edcc4147079262019390d8a9ca3167fab1cdbdb0b1c0c4",
+      "status": "published",
+      "used_by": [
+        "01_1.about.html",
+        "01_2.team.html",
+        "01_3.location.html",
+        "01_4.tour.html",
+        "care-diagnostic.html",
+        "care-prescription.html",
+        "care-process.html",
+        "care-treatment.html",
+        "care.html",
+        "child-antler.html",
+        "child-cold-care.html",
+        "child-cold-prevention.html",
+        "child-constitution.html",
+        "child-growth-care.html",
+        "child-growth-causes.html",
+        "child-growth-diagnosis.html",
+        "child-growth.html",
+        "child-herbal-guide.html",
+        "child-herbal-prescription.html",
+        "child-infections.html",
+        "child-integrated.html",
+        "child-overview.html",
+        "child-pfapa-care.html",
+        "child-pfapa.html",
+        "child-respiratory.html",
+        "child-treatments.html",
+        "clinic-constitution.html",
+        "clinic-internal.html",
+        "clinic-sports.html",
+        "clinic-weight.html",
+        "contribution.html",
+        "departments.html",
+        "doctor-cho.html",
+        "doctor-han.html",
+        "doctor-jung.html",
+        "doctor-lee.html",
+        "fees.html",
+        "history.html",
+        "index.html",
+        "internal-cold.html",
+        "internal-cotton-care.html",
+        "internal-cough-treatment.html",
+        "internal-cough.html",
+        "internal-diagnosis.html",
+        "internal-digestive.html",
+        "internal-functional-digestive.html",
+        "internal-lower-digestive.html",
+        "internal-nose-function.html",
+        "internal-otitis.html",
+        "internal-rhinitis-treatment.html",
+        "internal-rhinitis.html",
+        "internal-upper-digestive.html",
+        "kids10.html",
+        "pain1.html",
+        "privacy.html",
+        "rhini1.html",
+        "sitemap.html",
+        "terms.html",
+        "time.html",
+        "woman1.html",
+        "women-assisted-reproduction.html",
+        "women-body-changes.html",
+        "women-cold-sensitivity.html",
+        "women-female-infertility.html",
+        "women-infertility-care.html",
+        "women-infertility.html",
+        "women-life-stages.html",
+        "women-male-infertility.html",
+        "women-miscarriage-lifestyle.html",
+        "women-miscarriage-surgery.html",
+        "women-miscarriage.html",
+        "women-overview.html",
+        "women-parenting.html",
+        "women-pms-stress.html",
+        "women-postpartum-care.html",
+        "women-postpartum-lifestyle.html",
+        "women-postpartum.html",
+        "women-pregnancy-planning.html",
+        "women-pregnancy.html",
+        "women-recurrent-loss.html",
+        "women-uterus-ovaries.html"
+      ],
+      "sources": [],
+      "metadata_files": [],
+      "alt_texts": []
+    },
+    {
+      "id": "styles/clinical/child-renewal",
+      "path": "assets/styles/clinical/child-renewal.css",
+      "kind": "style",
+      "bytes": 9658,
+      "sha256": "2545515f4b82850f5556a33fe86cfeed99de95aae6377824c4ce2fdfa85874bb",
+      "status": "published",
+      "used_by": [
+        "child-antler.html",
+        "child-cold-care.html",
+        "child-cold-prevention.html",
+        "child-constitution.html",
+        "child-growth-care.html",
+        "child-growth-causes.html",
+        "child-growth-diagnosis.html",
+        "child-growth.html",
+        "child-herbal-guide.html",
+        "child-herbal-prescription.html",
+        "child-infections.html",
+        "child-integrated.html",
+        "child-overview.html",
+        "child-pfapa-care.html",
+        "child-pfapa.html",
+        "child-respiratory.html",
+        "child-treatments.html",
+        "kids10.html"
+      ],
+      "sources": [],
+      "metadata_files": [],
+      "alt_texts": []
+    },
+    {
+      "id": "styles/clinical/clinical-visuals",
+      "path": "assets/styles/clinical/clinical-visuals.css",
+      "kind": "style",
+      "bytes": 15450,
+      "sha256": "3a1aeea52715756b1bd61904dbdd8ac871f98eb5506019ce1937d9631dc7d491",
+      "status": "published",
+      "used_by": [
+        "child-antler.html",
+        "child-cold-care.html",
+        "child-cold-prevention.html",
+        "child-constitution.html",
+        "child-growth-care.html",
+        "child-growth-causes.html",
+        "child-growth-diagnosis.html",
+        "child-growth.html",
+        "child-herbal-guide.html",
+        "child-herbal-prescription.html",
+        "child-infections.html",
+        "child-integrated.html",
+        "child-overview.html",
+        "child-pfapa-care.html",
+        "child-pfapa.html",
+        "child-respiratory.html",
+        "child-treatments.html",
+        "clinic-internal.html",
+        "internal-cold.html",
+        "internal-cotton-care.html",
+        "internal-cough-treatment.html",
+        "internal-cough.html",
+        "internal-diagnosis.html",
+        "internal-digestive.html",
+        "internal-functional-digestive.html",
+        "internal-lower-digestive.html",
+        "internal-nose-function.html",
+        "internal-otitis.html",
+        "internal-rhinitis-treatment.html",
+        "internal-rhinitis.html",
+        "internal-upper-digestive.html",
+        "kids10.html",
+        "rhini1.html",
+        "woman1.html",
+        "women-assisted-reproduction.html",
+        "women-body-changes.html",
+        "women-cold-sensitivity.html",
+        "women-female-infertility.html",
+        "women-infertility-care.html",
+        "women-infertility.html",
+        "women-life-stages.html",
+        "women-male-infertility.html",
+        "women-miscarriage-lifestyle.html",
+        "women-miscarriage-surgery.html",
+        "women-miscarriage.html",
+        "women-overview.html",
+        "women-parenting.html",
+        "women-pms-stress.html",
+        "women-postpartum-care.html",
+        "women-postpartum-lifestyle.html",
+        "women-postpartum.html",
+        "women-pregnancy-planning.html",
+        "women-pregnancy.html",
+        "women-recurrent-loss.html",
+        "women-uterus-ovaries.html"
+      ],
+      "sources": [],
+      "metadata_files": [],
+      "alt_texts": []
+    },
+    {
+      "id": "styles/clinical/internal-renewal",
+      "path": "assets/styles/clinical/internal-renewal.css",
+      "kind": "style",
+      "bytes": 13451,
+      "sha256": "065b8645257638f9bf160c9ee89f43ece6961a2ee4a6a2c010223d6de516843a",
+      "status": "published",
+      "used_by": [
+        "child-antler.html",
+        "child-cold-care.html",
+        "child-cold-prevention.html",
+        "child-constitution.html",
+        "child-growth-care.html",
+        "child-growth-causes.html",
+        "child-growth-diagnosis.html",
+        "child-growth.html",
+        "child-herbal-guide.html",
+        "child-herbal-prescription.html",
+        "child-infections.html",
+        "child-integrated.html",
+        "child-overview.html",
+        "child-pfapa-care.html",
+        "child-pfapa.html",
+        "child-respiratory.html",
+        "child-treatments.html",
+        "clinic-constitution.html",
+        "clinic-internal.html",
+        "clinic-sports.html",
+        "clinic-weight.html",
+        "internal-cold.html",
+        "internal-cotton-care.html",
+        "internal-cough-treatment.html",
+        "internal-cough.html",
+        "internal-diagnosis.html",
+        "internal-digestive.html",
+        "internal-functional-digestive.html",
+        "internal-lower-digestive.html",
+        "internal-nose-function.html",
+        "internal-otitis.html",
+        "internal-rhinitis-treatment.html",
+        "internal-rhinitis.html",
+        "internal-upper-digestive.html",
+        "kids10.html",
+        "pain1.html",
+        "rhini1.html",
+        "woman1.html",
+        "women-assisted-reproduction.html",
+        "women-body-changes.html",
+        "women-cold-sensitivity.html",
+        "women-female-infertility.html",
+        "women-infertility-care.html",
+        "women-infertility.html",
+        "women-life-stages.html",
+        "women-male-infertility.html",
+        "women-miscarriage-lifestyle.html",
+        "women-miscarriage-surgery.html",
+        "women-miscarriage.html",
+        "women-overview.html",
+        "women-parenting.html",
+        "women-pms-stress.html",
+        "women-postpartum-care.html",
+        "women-postpartum-lifestyle.html",
+        "women-postpartum.html",
+        "women-pregnancy-planning.html",
+        "women-pregnancy.html",
+        "women-recurrent-loss.html",
+        "women-uterus-ovaries.html"
+      ],
+      "sources": [],
+      "metadata_files": [],
+      "alt_texts": []
+    },
+    {
+      "id": "styles/clinical/internal",
+      "path": "assets/styles/clinical/internal.css",
+      "kind": "style",
+      "bytes": 8706,
+      "sha256": "6e39d7c8c952a72a65c33e791c36f9dd6fab25ab1b5cf9ae567b1d61d489a9c9",
+      "status": "published",
+      "used_by": [
+        "01_1.about.html",
+        "01_2.team.html",
+        "01_3.location.html",
+        "01_4.tour.html",
+        "care-diagnostic.html",
+        "care-prescription.html",
+        "care-process.html",
+        "care-treatment.html",
+        "care.html",
+        "child-antler.html",
+        "child-cold-care.html",
+        "child-cold-prevention.html",
+        "child-constitution.html",
+        "child-growth-care.html",
+        "child-growth-causes.html",
+        "child-growth-diagnosis.html",
+        "child-growth.html",
+        "child-herbal-guide.html",
+        "child-herbal-prescription.html",
+        "child-infections.html",
+        "child-integrated.html",
+        "child-overview.html",
+        "child-pfapa-care.html",
+        "child-pfapa.html",
+        "child-respiratory.html",
+        "child-treatments.html",
+        "clinic-constitution.html",
+        "clinic-internal.html",
+        "clinic-sports.html",
+        "clinic-weight.html",
+        "contribution.html",
+        "departments.html",
+        "doctor-cho.html",
+        "doctor-han.html",
+        "doctor-jung.html",
+        "doctor-lee.html",
+        "fees.html",
+        "history.html",
+        "index.html",
+        "internal-cold.html",
+        "internal-cotton-care.html",
+        "internal-cough-treatment.html",
+        "internal-cough.html",
+        "internal-diagnosis.html",
+        "internal-digestive.html",
+        "internal-functional-digestive.html",
+        "internal-lower-digestive.html",
+        "internal-nose-function.html",
+        "internal-otitis.html",
+        "internal-rhinitis-treatment.html",
+        "internal-rhinitis.html",
+        "internal-upper-digestive.html",
+        "kids10.html",
+        "pain1.html",
+        "privacy.html",
+        "rhini1.html",
+        "sitemap.html",
+        "terms.html",
+        "time.html",
+        "woman1.html",
+        "women-assisted-reproduction.html",
+        "women-body-changes.html",
+        "women-cold-sensitivity.html",
+        "women-female-infertility.html",
+        "women-infertility-care.html",
+        "women-infertility.html",
+        "women-life-stages.html",
+        "women-male-infertility.html",
+        "women-miscarriage-lifestyle.html",
+        "women-miscarriage-surgery.html",
+        "women-miscarriage.html",
+        "women-overview.html",
+        "women-parenting.html",
+        "women-pms-stress.html",
+        "women-postpartum-care.html",
+        "women-postpartum-lifestyle.html",
+        "women-postpartum.html",
+        "women-pregnancy-planning.html",
+        "women-pregnancy.html",
+        "women-recurrent-loss.html",
+        "women-uterus-ovaries.html"
+      ],
+      "sources": [],
+      "metadata_files": [],
+      "alt_texts": []
+    },
+    {
+      "id": "styles/clinical/tonic-care",
+      "path": "assets/styles/clinical/tonic-care.css",
+      "kind": "style",
+      "bytes": 3730,
+      "sha256": "6b4b5b0d3cd2dad0ae61df90769b47b09e9f103bf55e9e1b79549e0483b808bf",
+      "status": "published",
+      "used_by": [
+        "clinic-constitution.html"
+      ],
+      "sources": [],
+      "metadata_files": [],
+      "alt_texts": []
+    },
+    {
+      "id": "styles/home/home-hero",
+      "path": "assets/styles/home/home-hero.css",
+      "kind": "style",
+      "bytes": 6045,
+      "sha256": "3911a652def0d4bbf71c59a786bbd3129d9b80ec98a916cbfbd9052f457b4e97",
+      "status": "published",
+      "used_by": [
+        "index.html"
+      ],
+      "sources": [],
+      "metadata_files": [],
+      "alt_texts": []
+    },
+    {
+      "id": "styles/shared/contact-care",
+      "path": "assets/styles/shared/contact-care.css",
+      "kind": "style",
+      "bytes": 7740,
+      "sha256": "90068f8273a35395e189a121c3d3f45bc973a200e2ea9cfe4e0389478f964d69",
+      "status": "published",
+      "used_by": [
+        "01_1.about.html",
+        "01_2.team.html",
+        "01_3.location.html",
+        "01_4.tour.html",
+        "care-diagnostic.html",
+        "care-prescription.html",
+        "care-process.html",
+        "care-treatment.html",
+        "care.html",
+        "child-antler.html",
+        "child-cold-care.html",
+        "child-cold-prevention.html",
+        "child-constitution.html",
+        "child-growth-care.html",
+        "child-growth-causes.html",
+        "child-growth-diagnosis.html",
+        "child-growth.html",
+        "child-herbal-guide.html",
+        "child-herbal-prescription.html",
+        "child-infections.html",
+        "child-integrated.html",
+        "child-overview.html",
+        "child-pfapa-care.html",
+        "child-pfapa.html",
+        "child-respiratory.html",
+        "child-treatments.html",
+        "clinic-constitution.html",
+        "clinic-internal.html",
+        "clinic-sports.html",
+        "clinic-weight.html",
+        "contribution.html",
+        "departments.html",
+        "doctor-cho.html",
+        "doctor-han.html",
+        "doctor-jung.html",
+        "doctor-lee.html",
+        "fees.html",
+        "history.html",
+        "index.html",
+        "internal-cold.html",
+        "internal-cotton-care.html",
+        "internal-cough-treatment.html",
+        "internal-cough.html",
+        "internal-diagnosis.html",
+        "internal-digestive.html",
+        "internal-functional-digestive.html",
+        "internal-lower-digestive.html",
+        "internal-nose-function.html",
+        "internal-otitis.html",
+        "internal-rhinitis-treatment.html",
+        "internal-rhinitis.html",
+        "internal-upper-digestive.html",
+        "kids10.html",
+        "pain1.html",
+        "privacy.html",
+        "rhini1.html",
+        "sitemap.html",
+        "terms.html",
+        "time.html",
+        "woman1.html",
+        "women-assisted-reproduction.html",
+        "women-body-changes.html",
+        "women-cold-sensitivity.html",
+        "women-female-infertility.html",
+        "women-infertility-care.html",
+        "women-infertility.html",
+        "women-life-stages.html",
+        "women-male-infertility.html",
+        "women-miscarriage-lifestyle.html",
+        "women-miscarriage-surgery.html",
+        "women-miscarriage.html",
+        "women-overview.html",
+        "women-parenting.html",
+        "women-pms-stress.html",
+        "women-postpartum-care.html",
+        "women-postpartum-lifestyle.html",
+        "women-postpartum.html",
+        "women-pregnancy-planning.html",
+        "women-pregnancy.html",
+        "women-recurrent-loss.html",
+        "women-uterus-ovaries.html"
+      ],
+      "sources": [],
+      "metadata_files": [],
+      "alt_texts": []
+    },
+    {
+      "id": "styles/shared/floating",
+      "path": "assets/styles/shared/floating.css",
+      "kind": "style",
+      "bytes": 2299,
+      "sha256": "a0462a9ec9a83d42e650961a3865348987cc86e6e283b8ff0181d6472e54a5b2",
+      "status": "published",
+      "used_by": [
+        "01_1.about.html",
+        "01_2.team.html",
+        "01_3.location.html",
+        "01_4.tour.html",
+        "care-diagnostic.html",
+        "care-prescription.html",
+        "care-process.html",
+        "care-treatment.html",
+        "care.html",
+        "child-antler.html",
+        "child-cold-care.html",
+        "child-cold-prevention.html",
+        "child-constitution.html",
+        "child-growth-care.html",
+        "child-growth-causes.html",
+        "child-growth-diagnosis.html",
+        "child-growth.html",
+        "child-herbal-guide.html",
+        "child-herbal-prescription.html",
+        "child-infections.html",
+        "child-integrated.html",
+        "child-overview.html",
+        "child-pfapa-care.html",
+        "child-pfapa.html",
+        "child-respiratory.html",
+        "child-treatments.html",
+        "clinic-constitution.html",
+        "clinic-internal.html",
+        "clinic-sports.html",
+        "clinic-weight.html",
+        "contribution.html",
+        "departments.html",
+        "doctor-cho.html",
+        "doctor-han.html",
+        "doctor-jung.html",
+        "doctor-lee.html",
+        "fees.html",
+        "history.html",
+        "index.html",
+        "internal-cold.html",
+        "internal-cotton-care.html",
+        "internal-cough-treatment.html",
+        "internal-cough.html",
+        "internal-diagnosis.html",
+        "internal-digestive.html",
+        "internal-functional-digestive.html",
+        "internal-lower-digestive.html",
+        "internal-nose-function.html",
+        "internal-otitis.html",
+        "internal-rhinitis-treatment.html",
+        "internal-rhinitis.html",
+        "internal-upper-digestive.html",
+        "kids10.html",
+        "pain1.html",
+        "privacy.html",
+        "rhini1.html",
+        "sitemap.html",
+        "terms.html",
+        "time.html",
+        "woman1.html",
+        "women-assisted-reproduction.html",
+        "women-body-changes.html",
+        "women-cold-sensitivity.html",
+        "women-female-infertility.html",
+        "women-infertility-care.html",
+        "women-infertility.html",
+        "women-life-stages.html",
+        "women-male-infertility.html",
+        "women-miscarriage-lifestyle.html",
+        "women-miscarriage-surgery.html",
+        "women-miscarriage.html",
+        "women-overview.html",
+        "women-parenting.html",
+        "women-pms-stress.html",
+        "women-postpartum-care.html",
+        "women-postpartum-lifestyle.html",
+        "women-postpartum.html",
+        "women-pregnancy-planning.html",
+        "women-pregnancy.html",
+        "women-recurrent-loss.html",
+        "women-uterus-ovaries.html"
+      ],
+      "sources": [],
+      "metadata_files": [],
+      "alt_texts": []
+    },
+    {
+      "id": "styles/shared/home",
+      "path": "assets/styles/shared/home.css",
+      "kind": "style",
+      "bytes": 13885,
+      "sha256": "04c0afe65edeb1df3b4bf173054407dbbc123c24c779fce6a2d452e17879c956",
+      "status": "published",
+      "used_by": [
+        "01_1.about.html",
+        "01_2.team.html",
+        "01_3.location.html",
+        "01_4.tour.html",
+        "care-diagnostic.html",
+        "care-prescription.html",
+        "care-process.html",
+        "care-treatment.html",
+        "care.html",
+        "child-antler.html",
+        "child-cold-care.html",
+        "child-cold-prevention.html",
+        "child-constitution.html",
+        "child-growth-care.html",
+        "child-growth-causes.html",
+        "child-growth-diagnosis.html",
+        "child-growth.html",
+        "child-herbal-guide.html",
+        "child-herbal-prescription.html",
+        "child-infections.html",
+        "child-integrated.html",
+        "child-overview.html",
+        "child-pfapa-care.html",
+        "child-pfapa.html",
+        "child-respiratory.html",
+        "child-treatments.html",
+        "clinic-constitution.html",
+        "clinic-internal.html",
+        "clinic-sports.html",
+        "clinic-weight.html",
+        "contribution.html",
+        "departments.html",
+        "doctor-cho.html",
+        "doctor-han.html",
+        "doctor-jung.html",
+        "doctor-lee.html",
+        "fees.html",
+        "history.html",
+        "index.html",
+        "internal-cold.html",
+        "internal-cotton-care.html",
+        "internal-cough-treatment.html",
+        "internal-cough.html",
+        "internal-diagnosis.html",
+        "internal-digestive.html",
+        "internal-functional-digestive.html",
+        "internal-lower-digestive.html",
+        "internal-nose-function.html",
+        "internal-otitis.html",
+        "internal-rhinitis-treatment.html",
+        "internal-rhinitis.html",
+        "internal-upper-digestive.html",
+        "kids10.html",
+        "pain1.html",
+        "privacy.html",
+        "rhini1.html",
+        "sitemap.html",
+        "terms.html",
+        "time.html",
+        "woman1.html",
+        "women-assisted-reproduction.html",
+        "women-body-changes.html",
+        "women-cold-sensitivity.html",
+        "women-female-infertility.html",
+        "women-infertility-care.html",
+        "women-infertility.html",
+        "women-life-stages.html",
+        "women-male-infertility.html",
+        "women-miscarriage-lifestyle.html",
+        "women-miscarriage-surgery.html",
+        "women-miscarriage.html",
+        "women-overview.html",
+        "women-parenting.html",
+        "women-pms-stress.html",
+        "women-postpartum-care.html",
+        "women-postpartum-lifestyle.html",
+        "women-postpartum.html",
+        "women-pregnancy-planning.html",
+        "women-pregnancy.html",
+        "women-recurrent-loss.html",
+        "women-uterus-ovaries.html"
+      ],
+      "sources": [],
+      "metadata_files": [],
+      "alt_texts": []
+    },
+    {
+      "id": "styles/shared/site",
+      "path": "assets/styles/shared/site.css",
+      "kind": "style",
+      "bytes": 10551,
+      "sha256": "d01c22e1587831e3233ac7df7c849608ee100a4163bb4170a82eacd7157a6207",
+      "status": "published",
+      "used_by": [
+        "01_1.about.html",
+        "01_2.team.html",
+        "01_3.location.html",
+        "01_4.tour.html",
+        "care-diagnostic.html",
+        "care-prescription.html",
+        "care-process.html",
+        "care-treatment.html",
+        "care.html",
+        "child-antler.html",
+        "child-cold-care.html",
+        "child-cold-prevention.html",
+        "child-constitution.html",
+        "child-growth-care.html",
+        "child-growth-causes.html",
+        "child-growth-diagnosis.html",
+        "child-growth.html",
+        "child-herbal-guide.html",
+        "child-herbal-prescription.html",
+        "child-infections.html",
+        "child-integrated.html",
+        "child-overview.html",
+        "child-pfapa-care.html",
+        "child-pfapa.html",
+        "child-respiratory.html",
+        "child-treatments.html",
+        "clinic-constitution.html",
+        "clinic-internal.html",
+        "clinic-sports.html",
+        "clinic-weight.html",
+        "contribution.html",
+        "departments.html",
+        "doctor-cho.html",
+        "doctor-han.html",
+        "doctor-jung.html",
+        "doctor-lee.html",
+        "fees.html",
+        "history.html",
+        "index.html",
+        "internal-cold.html",
+        "internal-cotton-care.html",
+        "internal-cough-treatment.html",
+        "internal-cough.html",
+        "internal-diagnosis.html",
+        "internal-digestive.html",
+        "internal-functional-digestive.html",
+        "internal-lower-digestive.html",
+        "internal-nose-function.html",
+        "internal-otitis.html",
+        "internal-rhinitis-treatment.html",
+        "internal-rhinitis.html",
+        "internal-upper-digestive.html",
+        "kids10.html",
+        "pain1.html",
+        "privacy.html",
+        "rhini1.html",
+        "sitemap.html",
+        "terms.html",
+        "time.html",
+        "woman1.html",
+        "women-assisted-reproduction.html",
+        "women-body-changes.html",
+        "women-cold-sensitivity.html",
+        "women-female-infertility.html",
+        "women-infertility-care.html",
+        "women-infertility.html",
+        "women-life-stages.html",
+        "women-male-infertility.html",
+        "women-miscarriage-lifestyle.html",
+        "women-miscarriage-surgery.html",
+        "women-miscarriage.html",
+        "women-overview.html",
+        "women-parenting.html",
+        "women-pms-stress.html",
+        "women-postpartum-care.html",
+        "women-postpartum-lifestyle.html",
+        "women-postpartum.html",
+        "women-pregnancy-planning.html",
+        "women-pregnancy.html",
+        "women-recurrent-loss.html",
+        "women-uterus-ovaries.html"
+      ],
+      "sources": [],
+      "metadata_files": [],
+      "alt_texts": []
+    },
+    {
+      "id": "styles/shared/unified",
+      "path": "assets/styles/shared/unified.css",
+      "kind": "style",
+      "bytes": 25858,
+      "sha256": "bd627fe7558d6e4250dc925a4f81f5eb63b0547f568d58f2b154f9bf05b2f182",
+      "status": "published",
+      "used_by": [
+        "01_1.about.html",
+        "01_2.team.html",
+        "01_3.location.html",
+        "01_4.tour.html",
+        "care-diagnostic.html",
+        "care-prescription.html",
+        "care-process.html",
+        "care-treatment.html",
+        "care.html",
+        "child-antler.html",
+        "child-cold-care.html",
+        "child-cold-prevention.html",
+        "child-constitution.html",
+        "child-growth-care.html",
+        "child-growth-causes.html",
+        "child-growth-diagnosis.html",
+        "child-growth.html",
+        "child-herbal-guide.html",
+        "child-herbal-prescription.html",
+        "child-infections.html",
+        "child-integrated.html",
+        "child-overview.html",
+        "child-pfapa-care.html",
+        "child-pfapa.html",
+        "child-respiratory.html",
+        "child-treatments.html",
+        "clinic-constitution.html",
+        "clinic-internal.html",
+        "clinic-sports.html",
+        "clinic-weight.html",
+        "contribution.html",
+        "departments.html",
+        "doctor-cho.html",
+        "doctor-han.html",
+        "doctor-jung.html",
+        "doctor-lee.html",
+        "fees.html",
+        "history.html",
+        "index.html",
+        "internal-cold.html",
+        "internal-cotton-care.html",
+        "internal-cough-treatment.html",
+        "internal-cough.html",
+        "internal-diagnosis.html",
+        "internal-digestive.html",
+        "internal-functional-digestive.html",
+        "internal-lower-digestive.html",
+        "internal-nose-function.html",
+        "internal-otitis.html",
+        "internal-rhinitis-treatment.html",
+        "internal-rhinitis.html",
+        "internal-upper-digestive.html",
+        "kids10.html",
+        "pain1.html",
+        "privacy.html",
+        "rhini1.html",
+        "sitemap.html",
+        "terms.html",
+        "time.html",
+        "woman1.html",
+        "women-assisted-reproduction.html",
+        "women-body-changes.html",
+        "women-cold-sensitivity.html",
+        "women-female-infertility.html",
+        "women-infertility-care.html",
+        "women-infertility.html",
+        "women-life-stages.html",
+        "women-male-infertility.html",
+        "women-miscarriage-lifestyle.html",
+        "women-miscarriage-surgery.html",
+        "women-miscarriage.html",
+        "women-overview.html",
+        "women-parenting.html",
+        "women-pms-stress.html",
+        "women-postpartum-care.html",
+        "women-postpartum-lifestyle.html",
+        "women-postpartum.html",
+        "women-pregnancy-planning.html",
+        "women-pregnancy.html",
+        "women-recurrent-loss.html",
+        "women-uterus-ovaries.html"
+      ],
+      "sources": [],
+      "metadata_files": [],
+      "alt_texts": []
+    }
+  ],
+  "duplicate_groups": [
+    [
+      "assets/images/clinical/internal/4a2a05609589.jpg",
+      "assets/images/clinical/internal/da1fa1c68d63.jpg"
+    ]
+  ]
+}

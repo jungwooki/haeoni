@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """Build static HTML with a shared navigation; no build dependencies required."""
+from site_assets import migrate_archived_asset_paths, asset_url
+from asset_catalog import write_catalog
 from page_routes import department_file, is_clinic_page
 from pathlib import Path
 from html import escape as esc
@@ -41,8 +43,8 @@ def header(current):
  groups=''.join('<section><h2>'+title+'</h2>'+''.join(link(u,n) for u,n in items)+'</section>' for title,items in nav_groups)
  nav=''.join(link(u,n,'nav-current' if parent==u else '') for u,n in [('01_1.about.html','한의원 소개'),('departments.html','진료 분야'),('care.html','해온의 진료'),('01_2.team.html','의료진'),('time.html','이용 안내')])
  strip=''.join(link(department_file(d[0]),d[1],'nav-current' if (current==department_file(d[0]) or current.startswith(d[0]+'-') or (current=='rhini1.html' and d[0]=='internal')) else '') for d in depts)
- return f'''<a class="skip-link" href="#main">본문으로 바로가기</a><header class="site-header multi-header"><div class="container header-inner"><a class="brand" href="index.html" aria-label="해온한의원 홈"><img src="assets/images/logo.jpg" alt="해온한의원" width="451" height="147"></a><nav class="desktop-nav" aria-label="주 메뉴">{nav}</nav>{language_link}<details class="site-menu"><summary aria-label="전체 메뉴"><span class="menu-lines" aria-hidden="true">☰</span><span class="menu-label">전체 메뉴</span></summary><div class="mega-menu"><div class="container mega-grid">{groups}</div></div></details></div><nav class="department-bar" aria-label="진료 분야">{strip}</nav></header>'''
-legacy=(ROOT/'content/legacy/index.html').read_text()
+ return f'''<a class="skip-link" href="#main">본문으로 바로가기</a><header class="site-header multi-header"><div class="container header-inner"><a class="brand" href="index.html" aria-label="해온한의원 홈"><img src="assets/images/brand/logo.jpg" alt="해온한의원" width="451" height="147"></a><nav class="desktop-nav" aria-label="주 메뉴">{nav}</nav>{language_link}<details class="site-menu"><summary aria-label="전체 메뉴"><span class="menu-lines" aria-hidden="true">☰</span><span class="menu-label">전체 메뉴</span></summary><div class="mega-menu"><div class="container mega-grid">{groups}</div></div></details></div><nav class="department-bar" aria-label="진료 분야">{strip}</nav></header>'''
+legacy=migrate_archived_asset_paths((ROOT/'content/legacy/index.html').read_text())
 footer=re.search(r'<footer class="site-footer">.*?</footer>',legacy,re.S).group(0)
 footer=footer.replace('>이용약관<','>웹사이트 이용 안내<')
 footer=footer.replace('<div class="footer-links">','<div class="footer-links"><a href="sitemap.html">전체 페이지</a>')
@@ -59,30 +61,30 @@ def write(name,title,content,group='한의원 소개',desc='본질을 지키며 
  group_url={'해온의 진료':'care.html','의료진':'01_2.team.html','진료 분야':'departments.html','이용 안내':'time.html','한방내과':'clinic-internal.html','소아과':'kids10.html','부인과':'woman1.html'}.get(group,'01_1.about.html')
  top=f'<section class="page-hero"><div class="container"><nav class="breadcrumbs" aria-label="현재 위치"><a href="index.html">홈</a><span>/</span><a href="{group_url}">{group}</a><span>/</span><span aria-current="page">{title}</span></nav><p class="eyebrow">{eyebrow}</p><h1>{title}</h1><p class="page-lead">{desc}</p></div></section>' if hero else ''
  if name in ['clinic-constitution.html','pain1.html']:
-  photo='tour-04.jpg' if name=='clinic-constitution.html' else 'room-ultrasound.jpg'
+  photo='spaces/tour-04.jpg' if name=='clinic-constitution.html' else 'spaces/room-ultrasound.jpg'
   top=top.replace('<div class="container">','<div class="container common-clinic-opening">',1).replace('</div></section>',f'<figure class="common-clinic-photo"><img src="assets/images/{photo}" alt="해온한의원 진료 공간" decoding="async"></figure></div></section>')
  if name in VISUAL_CONFIG:
   top=visual_hero(name,title,group_url,group)
- html=f'''<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#1e293b"><meta name="description" content="{esc(title+' | '+desc,quote=True)}"><title>{title} | 해온한의원</title><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" crossorigin><link rel="stylesheet" href="assets/home.css"><link rel="stylesheet" href="assets/site.css"><script src="assets/home.js" defer></script><link rel="stylesheet" href="assets/internal.css"><script src="assets/photo-motion.js" defer></script>{ASSETS}</head><body id="top">{header(name)}<main id="main">{top}{content}{cta if hero else ''}</main>{footer}{FLOATING}</body></html>'''
+ html=f'''<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#1e293b"><meta name="description" content="{esc(title+' | '+desc,quote=True)}"><title>{title} | 해온한의원</title><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" crossorigin><link rel="stylesheet" href="assets/styles/shared/home.css"><link rel="stylesheet" href="assets/styles/shared/site.css"><script src="assets/scripts/shared/home.js" defer></script><link rel="stylesheet" href="assets/styles/clinical/internal.css"><script src="assets/scripts/clinical/photo-motion.js" defer></script>{ASSETS}</head><body id="top">{header(name)}<main id="main">{top}{content}{cta if hero else ''}</main>{footer}{FLOATING}</body></html>'''
  if name=='index.html':
   html=html.replace('<body id="top">','<body id="top" class="home-renewal">')
-  html=html.replace('</head>',f'<link rel="preload" as="image" href="assets/images/{HERO_SLIDES[0][0]}"><link rel="stylesheet" href="assets/home-hero.css"><script src="assets/home-hero.js" defer></script></head>')
+  html=html.replace('</head>',f'<link rel="preload" as="image" href="{asset_url(HERO_SLIDES[0][0])}"><link rel="stylesheet" href="assets/styles/home/home-hero.css"><script src="assets/scripts/home/home-hero.js" defer></script></head>')
  if name in ('clinic-internal.html', 'rhini1.html') or name.startswith('internal-'):
-  html=html.replace('<body id="top">','<body id="top" class="internal-renewal">').replace('</head>','<script src="assets/internal.js" defer></script></head>')
+  html=html.replace('<body id="top">','<body id="top" class="internal-renewal">').replace('</head>','<script src="assets/scripts/clinical/internal.js" defer></script></head>')
  if name in VISUAL_CONFIG:
   html=html.replace('<body id="top">','<body id="top" class="clinic-visual">').replace('class="internal-renewal"','class="internal-renewal clinic-visual"')
-  html=html.replace('</head>','<link rel="stylesheet" href="assets/clinical-visuals.css"></head>')
-  if 'src="assets/internal.js"' not in html:html=html.replace('</head>','<script src="assets/internal.js" defer></script></head>')
+  html=html.replace('</head>','<link rel="stylesheet" href="assets/styles/clinical/clinical-visuals.css"></head>')
+  if 'src="assets/scripts/clinical/internal.js"' not in html:html=html.replace('</head>','<script src="assets/scripts/clinical/internal.js" defer></script></head>')
  if is_clinic_page(name):
   html=html.replace('<body id="top">','<body id="top" class="care-unified">')
   html=html.replace('class="clinic-visual"','class="clinic-visual care-unified"')
-  html=html.replace('</head>','<link rel="stylesheet" href="assets/internal-renewal.css"></head>')
+  html=html.replace('</head>','<link rel="stylesheet" href="assets/styles/clinical/internal-renewal.css"></head>')
  if name=='kids10.html' or name.startswith('child-'):
-  html=html.replace('class="clinic-visual care-unified"','class="clinic-visual care-unified child-renewal"').replace('</head>','<link rel="stylesheet" href="assets/child-renewal.css"></head>')
- html=html.replace('</head>','<link rel="stylesheet" href="assets/unified.css"><link rel="stylesheet" href="assets/care-guides.css"><link rel="stylesheet" href="assets/contact-care.css"><script src="assets/language.js" defer></script></head>')
- if name=='clinic-constitution.html':html=html.replace('</head>','<link rel="stylesheet" href="assets/tonic-care.css"></head>')
+  html=html.replace('class="clinic-visual care-unified"','class="clinic-visual care-unified child-renewal"').replace('</head>','<link rel="stylesheet" href="assets/styles/clinical/child-renewal.css"></head>')
+ html=html.replace('</head>','<link rel="stylesheet" href="assets/styles/shared/unified.css"><link rel="stylesheet" href="assets/styles/care/care-guides.css"><link rel="stylesheet" href="assets/styles/shared/contact-care.css"><script src="assets/scripts/shared/language.js" defer></script></head>')
+ if name=='clinic-constitution.html':html=html.replace('</head>','<link rel="stylesheet" href="assets/styles/clinical/tonic-care.css"></head>')
  if name.startswith('care'):
-  html=html.replace('</head>','<script src="assets/care-guides.js" defer></script></head>')
+  html=html.replace('</head>','<script src="assets/scripts/care/care-guides.js" defer></script></head>')
   html=html.replace(care_notice(),'').replace('</main>', '<div class="container">'+care_notice()+'</div></main>')
  if name=='care-prescription.html':html=html.replace('<div class="container">'+care_notice(),'<div class="container">'+prescription_common()+care_notice())
  html=html.replace('class="nav-current"','class="nav-current" aria-current="page"')
@@ -90,7 +92,7 @@ def write(name,title,content,group='한의원 소개',desc='본질을 지키며 
  (ROOT/name).write_text(html)
 def paras(lines):return ''.join('<p>'+esc(x)+'</p>' for x in lines if x.strip())
 def prose(lines):return '<div class="prose">'+paras(lines)+'</div>'
-def doc_cards():return '<div class="doctor-grid">'+''.join(f'<a class="doctor-card" href="doctor-{slug}.html"><img src="assets/images/doctor-{slug}.jpg" alt="{name} 원장" width="600" height="750" loading="lazy"><div><p class="eyebrow">{role}</p><h3>{name} <small>원장</small></h3><p>{area}</p><span class="underlined-link">인사말·약력·연구 활동 <span aria-hidden="true">↗</span></span></div></a>' for slug,name,role,area in docs)+'</div>'
+def doc_cards():return '<div class="doctor-grid">'+''.join(f'<a class="doctor-card" href="doctor-{slug}.html"><img src="{asset_url("images/people/doctor-" + slug)}" alt="{name} 원장" width="600" height="750" loading="lazy"><div><p class="eyebrow">{role}</p><h3>{name} <small>원장</small></h3><p>{area}</p><span class="underlined-link">인사말·약력·연구 활동 <span aria-hidden="true">↗</span></span></div></a>' for slug,name,role,area in docs)+'</div>'
 def dept_cards():
  return '<div class="department-grid">'+''.join(link(department_file(d[0]),f'<span class="eyebrow">0{i+1} / {d[2]}</span><h3>{d[1]}</h3><p>{d[4]}</p>{certification(True) if d[0]=="pain" else ""}<span class="department-action">'+('별도 사이트' if d[0] in ['weight','sports'] else '진료 안내')+'</span>','department-card') for i,d in enumerate(depts))+'</div>'
 
@@ -107,7 +109,7 @@ main=re.sub(r'<figure class="team-image">.*?</figure>','',main,count=1,flags=re.
 main=re.sub(r'(<section\b[^>]*\bid="team")',lambda m:home_section()+m.group(1),main,count=1) if 'id="team"' in main else main+home_section()
 write('index.html','해온한의원',main,hero=False)
 about=read('about-original.json')
-write('01_1.about.html','해온의 철학·인사말','<section class="section"><div class="container editorial-grid"><aside><p class="eyebrow">OUR PHILOSOPHY</p><h2>가업의 뜻과 경험,<br>마음의 아픔까지.</h2><img class="editorial-image" src="assets/images/original-hero-2.jpg" alt="해온한의원 진료실" width="1920" height="1080"></aside>'+'<div>'+prose(about['86'])+'</div>'+'</div></section>',desc='3대를 이어온 진료의 마음으로, 한의학을 가꾸어 갑니다.')
+write('01_1.about.html','해온의 철학·인사말','<section class="section"><div class="container editorial-grid"><aside><p class="eyebrow">OUR PHILOSOPHY</p><h2>가업의 뜻과 경험,<br>마음의 아픔까지.</h2><img class="editorial-image" src="assets/images/spaces/original-hero-2.jpg" alt="해온한의원 진료실" width="1920" height="1080"></aside>'+'<div>'+prose(about['86'])+'</div>'+'</div></section>',desc='3대를 이어온 진료의 마음으로, 한의학을 가꾸어 갑니다.')
 write('history.html','역사와 전통','<section class="section"><div class="container editorial-grid"><aside><p class="eyebrow">PAST · PRESENT · FUTURE</p><h2>깊은 뿌리에서<br>새로운 내일로.</h2><div class="milestones"><p><strong>3대</strong> 가업의 뜻과 경험</p><p><strong>2008</strong> 신도림에서 개원</p><p><strong>2017</strong> 강의와 학술교류</p><p><strong>2025</strong> 테크노마트 2층 확장</p></div></aside>'+'<div>'+prose(about['87'])+'</div>'+'</div></section>',desc='원칙을 지키며 전통을 이어갑니다.')
 write('contribution.html','사회공헌','<section class="section"><div class="container editorial-grid"><aside><p class="eyebrow">GIVING TOGETHER</p><h2>진료실 밖에서도<br>함께하는 마음.</h2></aside>'+prose(about['142'])+'</div></section>',desc='개원 이래 지속적으로 나눔을 실천합니다.')
 write('01_2.team.html','4인의 의료진','<section class="section"><div class="container"><div class="section-heading"><h2>각자의 깊이,<br>함께 넓어지는 진료.</h2><p class="section-description">한방내과 겸임교수, 한방소아과 전문의와<br>한방병원 진료 경험을 갖춘 의료진이 함께합니다.<br>인사말과 약력, 연구 활동을 자세히 만나보세요.</p></div>'+doc_cards()+'<div class="team-principles"><h2>사람을 이해하는 진료</h2><p>환자의 성장과 생활, 회복 과정까지 함께 이해하려 노력합니다. 진료실 안에서의 설명과 대화, 진료 이후의 생활관리까지 중요하게 생각합니다.</p>'+link('departments.html','7개 진료 분야 살펴보기 →','underlined-link')+'</div></div></section>',group='의료진',desc='열린 마음과 각자의 경험으로, 한 사람을 세심하게 살핍니다.',eyebrow='MEDICAL TEAM')
@@ -125,7 +127,7 @@ for slug,name,role,area in docs:
  if cur:sections.append((label,cur))
  toc='<nav class="profile-toc" aria-label="원장 소개 목차">'+''.join(link(f'#profile-{i}',h) for i,(h,_) in enumerate(sections))+'</nav>'
  body=''+''.join(f'<section id="profile-{i}" class="profile-section"><h2>{h}</h2>'+prose(lines)+'</section>' for i,(h,lines) in enumerate(sections))
- content=f'<section class="section"><div class="container profile-grid"><aside><img class="profile-photo" src="assets/images/doctor-{slug}.jpg" alt="{name} 원장" width="600" height="750"><p class="eyebrow">{role}</p><h2>{name} <small>원장</small></h2><p class="profile-area">{area}</p>{toc}{link("time.html","원장별 진료일정 문의 →","underlined-link")}</aside><div>{body}</div></div><div class="container related-doctors"><h2>함께하는 의료진</h2>'+''.join(link(f'doctor-{s}.html',n+' 원장 →','button') for s,n,_,_ in docs if s!=slug)+'</div></section>'
+ content=f'<section class="section"><div class="container profile-grid"><aside><img class="profile-photo" src="{asset_url("images/people/doctor-" + slug)}" alt="{name} 원장" width="600" height="750"><p class="eyebrow">{role}</p><h2>{name} <small>원장</small></h2><p class="profile-area">{area}</p>{toc}{link("time.html","원장별 진료일정 문의 →","underlined-link")}</aside><div>{body}</div></div><div class="container related-doctors"><h2>함께하는 의료진</h2>'+''.join(link(f'doctor-{s}.html',n+' 원장 →','button') for s,n,_,_ in docs if s!=slug)+'</div></section>'
  write(f'doctor-{slug}.html',name+' 원장',content,group='의료진',desc=role,eyebrow='PEOPLE OF HAEON')
 write('departments.html','진료 분야','<section class="section"><div class="container"><div class="section-heading"><h2>7개 진료 분야,<br>삶의 여러 순간을 함께.</h2><p class="section-description">아이의 성장부터 어른의 일상까지.<br>필요한 진료 분야와 세부 안내를 찾아보세요.</p></div>'+dept_cards()+'</div></section>',group='진료 분야',desc='한의학의 기반 위에, 다양한 몸과 마음의 이야기를 살핍니다.',eyebrow='DEPARTMENTS')
 rows=read('inventory.json')
@@ -147,9 +149,9 @@ from fees import fee_page
 write('fees.html','비급여 수가표',fee_page(),group='이용 안내',desc='진료 항목별 비급여 비용을 안내합니다.',eyebrow='FEES')
 # Practical information: use current 2F address, keeping the stale source in the migration log.
 write('time.html','진료시간 안내','''<section class="section"><div class="container editorial-grid"><aside><p class="eyebrow">OPENING HOURS</p><h2>일상에 맞춰<br>방문하실 수 있도록.</h2><p class="aside-copy">원장별 진료시간은 별도로 문의해 주세요.</p><a class="underlined-link" href="tel:02-2111-7575">02.2111.7575 →</a></aside><div><table class="hours-table"><caption>해온한의원 진료시간</caption><thead><tr><th scope="col">요일</th><th scope="col">진료시간</th></tr></thead><tbody><tr><th scope="row">월요일·수요일</th><td>10:00–21:00</td></tr><tr><th scope="row">화요일·목요일·금요일</th><td>10:00–20:00</td></tr><tr><th scope="row">토요일</th><td>10:00–15:00</td></tr><tr><th scope="row">평일 점심시간</th><td>13:00–14:00</td></tr></tbody></table><p class="aside-copy">일요일·공휴일 및 원장별 일정은 방문 전 문의해 주세요.</p><a class="underlined-link" href="01_3.location.html">오시는 길·주차 안내 →</a></div></div></section>''',group='이용 안내',desc='신도림 테크노마트 2층에서 진료합니다.',eyebrow='VISIT HAEON')
-write('01_3.location.html','오시는 길·주차','''<section class="section"><div class="container location-layout"><figure class="location-map"><a href="https://naver.me/GlJlW9S4" target="_blank" rel="noopener noreferrer" aria-label="네이버 지도에서 위치 보기 (새 창)"><img src="assets/images/location-map.png" alt="해온한의원 신도림본원 위치. 신도림역 3번 출구 지하통로 연결, 테크노마트 2층." width="1302" height="1208"></a><figcaption>네이버 지도 · 지도를 누르면 네이버 지도가 새 창에서 열립니다.</figcaption></figure><div class="location-details"><aside><p class="eyebrow">LOCATION</p><h2>신도림역과 연결된<br>테크노마트 2층.</h2><p class="aside-copy">서울시 구로구 새말로 97<br>신도림 테크노마트 2층 9호</p><a class="underlined-link" href="https://naver.me/GlJlW9S4" target="_blank" rel="noopener noreferrer">네이버 지도에서 보기 ↗</a></aside><div class="prose"><h2>지하철로 오시는 길</h2><p>1·2호선 신도림역 3번 출구 지하통로를 통해 테크노마트로 들어오세요. 엘리베이터 또는 에스컬레이터로 2층으로 올라오시면 됩니다.</p><h2>주차 안내</h2><p>테크노마트 지하 3층부터 지하 7층까지 주차장을 이용하실 수 있습니다. 주차는 3시간 무료입니다.</p><p>토요일은 주변 도로가 혼잡할 수 있으니 예약 시간보다 조금 일찍 도착해 주세요.</p><h2>2008년부터 신도림에서</h2><p>해온한의원은 2008년부터 신도림 테크노마트에서 진료하고 있습니다. 2025년 2층 확장공사를 통해 더욱 많은 분들께 세밀한 진료로 보답합니다.</p><a class="underlined-link" href="time.html">진료시간 확인 →</a></div></div></div></section>''',group='이용 안내',desc='1·2호선 신도림역 지하통로로 편하게 오세요.',eyebrow='LOCATION & PARKING')
+write('01_3.location.html','오시는 길·주차','''<section class="section"><div class="container location-layout"><figure class="location-map"><a href="https://naver.me/GlJlW9S4" target="_blank" rel="noopener noreferrer" aria-label="네이버 지도에서 위치 보기 (새 창)"><img src="assets/images/location/location-map.png" alt="해온한의원 신도림본원 위치. 신도림역 3번 출구 지하통로 연결, 테크노마트 2층." width="1302" height="1208"></a><figcaption>네이버 지도 · 지도를 누르면 네이버 지도가 새 창에서 열립니다.</figcaption></figure><div class="location-details"><aside><p class="eyebrow">LOCATION</p><h2>신도림역과 연결된<br>테크노마트 2층.</h2><p class="aside-copy">서울시 구로구 새말로 97<br>신도림 테크노마트 2층 9호</p><a class="underlined-link" href="https://naver.me/GlJlW9S4" target="_blank" rel="noopener noreferrer">네이버 지도에서 보기 ↗</a></aside><div class="prose"><h2>지하철로 오시는 길</h2><p>1·2호선 신도림역 3번 출구 지하통로를 통해 테크노마트로 들어오세요. 엘리베이터 또는 에스컬레이터로 2층으로 올라오시면 됩니다.</p><h2>주차 안내</h2><p>테크노마트 지하 3층부터 지하 7층까지 주차장을 이용하실 수 있습니다. 주차는 3시간 무료입니다.</p><p>토요일은 주변 도로가 혼잡할 수 있으니 예약 시간보다 조금 일찍 도착해 주세요.</p><h2>2008년부터 신도림에서</h2><p>해온한의원은 2008년부터 신도림 테크노마트에서 진료하고 있습니다. 2025년 2층 확장공사를 통해 더욱 많은 분들께 세밀한 진료로 보답합니다.</p><a class="underlined-link" href="time.html">진료시간 확인 →</a></div></div></div></section>''',group='이용 안내',desc='1·2호선 신도림역 지하통로로 편하게 오세요.',eyebrow='LOCATION & PARKING')
 gallery=read('gallery.json') if (ROOT/'content/gallery.json').exists() else []
-photos=''.join(f'<figure><img src="assets/images/{n}" alt="해온한의원 2층 내부 공간 {i+1}" width="1920" height="{3413 if i in (2,8) else 1080}" loading="lazy"></figure>' for i,n in enumerate(gallery))
+photos=''.join(f'<figure><img src="assets/images/spaces/{n}" alt="해온한의원 2층 내부 공간 {i+1}" width="1920" height="{3413 if i in (2,8) else 1080}" loading="lazy"></figure>' for i,n in enumerate(gallery))
 write('01_4.tour.html','공간 둘러보기','<section class="section"><div class="container"><div class="section-heading"><h2>익숙한 곳에서,<br>더 편안한 진료를.</h2><p class="section-description">2008년 개원 이래 신도림 테크노마트에서 진료하고 있습니다.<br>2025년 확장공사를 통해 더 깨끗하고 넓은 공간으로 거듭났습니다.</p></div><div class="gallery-grid">'+photos+'</div></div></section>',group='이용 안내',desc='신도림 테크노마트 2층, 해온의 공간을 만나보세요.',eyebrow='SPACE OF HAEON')
 # Local legal/information destinations; imported policy is retained verbatim.
 privacy_lines=(ROOT/'content/privacy-original.txt').read_text().split('Agreement',1)[-1].strip().splitlines()
@@ -166,3 +168,5 @@ for old_name, target in read('legacy-redirects.json').items():
 legacy_names=install_on_legacy(manifest)
 (ROOT/'content/floating-pages.json').write_text(json.dumps(manifest+legacy_names,ensure_ascii=False,indent=2))
 print('Built',len(manifest),'pages; floating menu on',len(manifest)+len(legacy_names),'published pages')
+
+write_catalog()

@@ -64,7 +64,7 @@ for name in json.loads((ROOT/'content/floating-pages.json').read_text()):
  s=(ROOT/name).read_text();p=Page();p.feed(s)
  assert s.count('class="floating-contact"')==1,(name,'floating menu missing/duplicated')
  assert p.ids.count('floating-links')==1,(name,'duplicate quick menu ID')
- for ref in ['assets/floating.css','assets/floating.js','https://pf.kakao.com/_sYeKE','https://m.booking.naver.com/booking/6/bizes/150330','01_3.location.html']:
+ for ref in ['assets/styles/shared/floating.css','assets/scripts/shared/floating.js','https://pf.kakao.com/_sYeKE','https://m.booking.naver.com/booking/6/bizes/150330','01_3.location.html']:
   assert ref in p.refs,(name,ref)
 print('PASS: internal, pediatric and women’s reviewed text and retained images/resources present; floating menu on every published page.')
 for route in json.loads((ROOT/'content/family-routes.json').read_text()):
@@ -78,7 +78,7 @@ images=[]
 for name,cfg in CONFIG.items():
  html=(ROOT/name).read_text()
  images+=re.findall(r'<img[^>]+src="([^"]+)"',html)
- assert 'assets/internal.js' in html and 'assets/clinical-visuals.css' in html,name
+ assert 'assets/scripts/clinical/internal.js' in html and 'assets/styles/clinical/clinical-visuals.css' in html,name
  assert 'id="visual-intro"' in html and 'class="visual-keypoints"' in html,name
  if cfg.get('image'):assert cfg['image']['path'] in pages[name].refs,name
  else:assert 'class="visual-diagram"' in html,name
@@ -100,7 +100,7 @@ for name in names:
  strip=re.search(r'<nav class="department-bar".*?</nav>',html,re.S).group(0)
  positions=[strip.index(label) for label in expected]
  assert positions==sorted(positions),(name,'department order')
- assert 'assets/unified.css' in html,(name,'shared styles')
+ assert 'assets/styles/shared/unified.css' in html,(name,'shared styles')
  assert 'https://haeonw.com' in strip and 'https://haeon.sportsmps.com/' in strip
  assert 'specialty-diet' in strip and 'specialty-sports' in strip
 assert 'hero-play' not in (ROOT/'index.html').read_text()

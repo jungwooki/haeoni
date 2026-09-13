@@ -2,7 +2,7 @@
   {
     "source": "https://cdn.imweb.me/thumbnail/20260826/3fbefcf7d95b8.jpg",
     "source_page": "https://haeoni.com/86",
-    "path": "assets/images/logo.jpg",
+    "path": "assets/images/brand/logo.jpg",
     "sha256": "e83262b5a5eac0c6e7af8a987a97fbae2f227ccaa4ed2e5b5feba06b6bbf5400",
     "width": 451,
     "height": 147
@@ -18,7 +18,7 @@
   {
     "source": "https://cdn.imweb.me/thumbnail/20200407/8753351841c1b.jpg",
     "source_page": "https://haeoni.com/86",
-    "path": "assets/images/renewal/b375aaaa3336aa.jpg",
+    "path": "assets/images/editorial/b375aaaa3336aa.jpg",
     "sha256": "75c4394b2575c0a762285acd60c52edade8ebac3ad87e0b368ea54c22a1a840c",
     "width": 1920,
     "height": 1280
@@ -26,7 +26,7 @@
   {
     "source": "https://cdn.imweb.me/thumbnail/20220905/1308c77adf879.jpg",
     "source_page": "https://haeoni.com/86",
-    "path": "assets/images/renewal/eb753b27d10c44.jpg",
+    "path": "assets/images/editorial/eb753b27d10c44.jpg",
     "sha256": "d95cca625a5058387f4f90842983a742678aed33d0f1ccd971c06a9b46df4de0",
     "width": 1279,
     "height": 853
@@ -50,7 +50,7 @@
   {
     "source": "https://cdn.imweb.me/thumbnail/20250801/e613735f7bd83.jpg",
     "source_page": "https://haeoni.com/165",
-    "path": "assets/images/doctor-lee.jpg",
+    "path": "assets/images/people/doctor-lee.jpg",
     "sha256": "6a2b3c4f234293c9eff2246f2f9490acfbc80761d3ee23ee7e2de46cd158f8cc",
     "width": 640,
     "height": 640
@@ -58,7 +58,7 @@
   {
     "source": "https://cdn.imweb.me/thumbnail/20250801/0d754b3232d76.jpg",
     "source_page": "https://haeoni.com/165",
-    "path": "assets/images/doctor-jung.jpg",
+    "path": "assets/images/people/doctor-jung.jpg",
     "sha256": "5124bf028bb21d52bef81fe506687734820ded3f3ab24f6eb1b257712547b9d8",
     "width": 640,
     "height": 640
@@ -66,7 +66,7 @@
   {
     "source": "https://cdn.imweb.me/thumbnail/20250801/4b49dcc814ffd.jpg",
     "source_page": "https://haeoni.com/165",
-    "path": "assets/images/doctor-han.jpg",
+    "path": "assets/images/people/doctor-han.jpg",
     "sha256": "5a5e99928ee309261a46aef0228c7e4cc984425bf916f323ae47a7bfe36ba267",
     "width": 640,
     "height": 640
@@ -74,7 +74,7 @@
   {
     "source": "https://cdn.imweb.me/thumbnail/20250801/fed3799117b4c.jpg",
     "source_page": "https://haeoni.com/165",
-    "path": "assets/images/doctor-cho.jpg",
+    "path": "assets/images/people/doctor-cho.jpg",
     "sha256": "62a5241fc911262fbc99fefde0f8436e74d3f0030b428df2e0418b2c59e086f4",
     "width": 640,
     "height": 640
@@ -98,7 +98,7 @@
   {
     "source": "https://cdn.imweb.me/thumbnail/20251207/85030f05bc2bd.jpg",
     "source_page": "https://haeoni.com/92",
-    "path": "assets/images/tour-01.jpg",
+    "path": "assets/images/spaces/tour-01.jpg",
     "sha256": "0db49575fb59d100a17634279c568438738fb0532b6963c97158eeb27db6aa20",
     "width": 1920,
     "height": 1080
@@ -106,7 +106,7 @@
   {
     "source": "https://cdn.imweb.me/thumbnail/20251207/a9cdbe76fe90e.jpg",
     "source_page": "https://haeoni.com/92",
-    "path": "assets/images/tour-02.jpg",
+    "path": "assets/images/spaces/tour-02.jpg",
     "sha256": "20e18088e3df843eb301e75abce019039e79c65597a7e80ae8373dd66f65fdc6",
     "width": 1920,
     "height": 1080
@@ -114,7 +114,7 @@
   {
     "source": "https://cdn.imweb.me/thumbnail/20251207/8f8e8a65e0745.jpg",
     "source_page": "https://haeoni.com/92",
-    "path": "assets/images/tour-03.jpg",
+    "path": "assets/images/spaces/tour-03.jpg",
     "sha256": "e9857e21dbac25197a7d8ff7ce5ea61091764eead6da1742e4277dd7dab0e778",
     "width": 1920,
     "height": 3413
@@ -122,7 +122,7 @@
   {
     "source": "https://cdn.imweb.me/thumbnail/20251207/1187ab8bb9feb.jpg",
     "source_page": "https://haeoni.com/92",
-    "path": "assets/images/tour-04.jpg",
+    "path": "assets/images/spaces/tour-04.jpg",
     "sha256": "fe0cfaf9030f17289ff72f240902e7bdd64780504827825380274a875864c032",
     "width": 1920,
     "height": 1080
@@ -130,7 +130,7 @@
   {
     "source": "https://cdn.imweb.me/thumbnail/20251207/2de1b19580453.jpg",
     "source_page": "https://haeoni.com/92",
-    "path": "assets/images/tour-05.jpg",
+    "path": "assets/images/spaces/tour-05.jpg",
     "sha256": "cffc6aaa3b67230d28aa9c65c31d5b1cc4020d8a1c8968bff38d152db74d7c86",
     "width": 1920,
     "height": 1080
@@ -138,7 +138,7 @@
   {
     "source": "https://cdn.imweb.me/thumbnail/20251207/8b2cb8fc34441.jpg",
     "source_page": "https://haeoni.com/92",
-    "path": "assets/images/tour-06.jpg",
+    "path": "assets/images/spaces/tour-06.jpg",
     "sha256": "48bfe6db23e5d4e87b2f2d1dcd474234abbb43d0e6b35992b33197571a04b312",
     "width": 1920,
     "height": 1080
@@ -146,7 +146,7 @@
   {
     "source": "https://cdn.imweb.me/thumbnail/20251207/a50bd11fa0922.jpg",
     "source_page": "https://haeoni.com/92",
-    "path": "assets/images/tour-07.jpg",
+    "path": "assets/images/spaces/tour-07.jpg",
     "sha256": "3d4051dbf8a3accb5018caae29eadcc34b901012bbc5d26a4da311486c400647",
     "width": 1920,
     "height": 1080
@@ -154,7 +154,7 @@
   {
     "source": "https://cdn.imweb.me/thumbnail/20251207/eca0837914493.jpg",
     "source_page": "https://haeoni.com/92",
-    "path": "assets/images/tour-08.jpg",
+    "path": "assets/images/spaces/tour-08.jpg",
     "sha256": "94182bffaae28b62fe1d8d884a17810e28924d1ed617abd1f07764724010ceb6",
     "width": 1920,
     "height": 1080
@@ -162,7 +162,7 @@
   {
     "source": "https://cdn.imweb.me/thumbnail/20251207/371204b51bf9b.jpg",
     "source_page": "https://haeoni.com/92",
-    "path": "assets/images/tour-09.jpg",
+    "path": "assets/images/spaces/tour-09.jpg",
     "sha256": "b24d5699328be86036499eb7935d957b18b5f8b96d97edf02ca4ecc543edff62",
     "width": 1920,
     "height": 3413
@@ -170,7 +170,7 @@
   {
     "source": "https://cdn.imweb.me/thumbnail/20251207/ca1d21f87592c.jpg",
     "source_page": "https://haeoni.com/92",
-    "path": "assets/images/tour-10.jpg",
+    "path": "assets/images/spaces/tour-10.jpg",
     "sha256": "c7206ce9b15a1e7ce3fe71a568ae8857d1f1a263e938c36e36c98e220ac5496d",
     "width": 1920,
     "height": 1080
@@ -178,7 +178,7 @@
   {
     "source": "https://cdn.imweb.me/thumbnail/20251207/49596991da281.jpg",
     "source_page": "https://haeoni.com/92",
-    "path": "assets/images/tour-11.jpg",
+    "path": "assets/images/spaces/tour-11.jpg",
     "sha256": "f08b8ed073c6d5a4f64f3ee7eac10284438d01270264dd85c81cdf718b45646f",
     "width": 1920,
     "height": 1080
@@ -186,7 +186,7 @@
   {
     "source": "https://cdn.imweb.me/thumbnail/20251207/8441f1a431176.jpg",
     "source_page": "https://haeoni.com/92",
-    "path": "assets/images/tour-12.jpg",
+    "path": "assets/images/spaces/tour-12.jpg",
     "sha256": "caa46e2fd887b14812f8fc58212f87ccbd0496ffeeb0e0792843800fdcc13597",
     "width": 1920,
     "height": 1080
@@ -194,7 +194,7 @@
   {
     "source": "https://cdn.imweb.me/thumbnail/20251207/42b0fcfc40743.jpg",
     "source_page": "https://haeoni.com/92",
-    "path": "assets/images/tour-13.jpg",
+    "path": "assets/images/spaces/tour-13.jpg",
     "sha256": "59d750572942aef706fe817c3f8a0b0d4d865200a20d1e7426b27a455d6f503d",
     "width": 1920,
     "height": 1080
