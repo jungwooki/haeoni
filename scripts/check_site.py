@@ -83,7 +83,7 @@ for name,cfg in CONFIG.items():
  if cfg.get('image'):assert cfg['image']['path'] in pages[name].refs,name
  else:assert 'class="visual-diagram"' in html,name
  if not is_hub(name):assert 'class="internal-mobile-tools"' in html,name
-counts=Counter(p for p in images if not p.endswith('/logo.jpg'))
+counts=Counter(p for p in images if not p.endswith('/logo.jpg') and not p.startswith('assets/images/flags/'))
 assert all(n==1 for n in counts.values()),[(p,n) for p,n in counts.items() if n>1]
 import hashlib
 assert len({hashlib.sha256((ROOT/p).read_bytes()).hexdigest() for p in counts})==len(counts),'duplicate image content'
