@@ -122,3 +122,6 @@
 .child-renewal .team-principles p{font-size:16px;line-height:1.8}
 .child-renewal .visual-hub .visual-primary{display:inline-flex}
 @media(max-width:800px){.child-renewal .visual-hub .visual-primary{margin-top:12px}.child-renewal .family-all-guides>h2{font-size:25px}}
+
+/* Compact decorative icons for the five constitution types. */
+.constitution-emoji{display:grid;place-items:center;width:88px;height:88px;margin:0 0 24px;border-radius:20px;background:var(--light);font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji",sans-serif;font-size:48px;line-height:1}

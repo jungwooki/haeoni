@@ -16,6 +16,7 @@ def figure(item):
  return f'<figure class="clinical-figure"><img src="{item["path"]}" alt="{escape(item["alt"],quote=True)}" width="{item["width"]}" height="{item["height"]}" loading="lazy"></figure>'
 
 def render_item(i):
+ if i['type']=='emoji':return '<div class="constitution-emoji" aria-hidden="true">'+escape(i['value'])+'</div>'
  if i['type']=='image':return figure(i)
  if i['type']=='text':return '<div class="source-text">'+public_html(i['html'])+'</div>'
  if i['type']=='link':return f'<a class="article-resource" href="{escape(i["url"],quote=True)}">{escape(i["label"])} <span aria-hidden="true">↗</span></a>'

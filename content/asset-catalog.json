@@ -2,6 +2,20 @@
   "schema_version": 1,
   "assets": [
     {
+      "id": "images/brand/footer-logo",
+      "path": "assets/images/brand/footer-logo.png",
+      "kind": "image",
+      "bytes": 135377,
+      "sha256": "493b01f22052278de2a2f7a471b875a1315a053346fd908cdd8ebbace1f66a28",
+      "status": "published",
+      "used_by": [
+        "index.html"
+      ],
+      "sources": [],
+      "metadata_files": [],
+      "alt_texts": []
+    },
+    {
       "id": "images/brand/logo",
       "path": "assets/images/brand/logo.jpg",
       "kind": "image",
@@ -276,29 +290,6 @@
       "height": 640
     },
     {
-      "id": "images/clinical/family/0cf339b71c88",
-      "path": "assets/images/clinical/family/0cf339b71c88.jpg",
-      "kind": "image",
-      "bytes": 69496,
-      "sha256": "d3215a806d8a33d3899db9e6679b0d803d372f5a792f9853e42e1da5b11b0247",
-      "status": "published",
-      "used_by": [
-        "child-constitution.html"
-      ],
-      "sources": [
-        "https://cdn.imweb.me/thumbnail/20200402/5e0412dd4b2ee.jpg"
-      ],
-      "metadata_files": [
-        "content/family-assets.json",
-        "content/family-pages.json"
-      ],
-      "alt_texts": [
-        "허약체질 클리닉 안내 사진·도해"
-      ],
-      "width": 600,
-      "height": 600
-    },
-    {
       "id": "images/clinical/family/12aa254b8b80",
       "path": "assets/images/clinical/family/12aa254b8b80.jpg",
       "kind": "image",
@@ -458,29 +449,6 @@
       ],
       "width": 1279,
       "height": 854
-    },
-    {
-      "id": "images/clinical/family/2fd2a4a0fc1f",
-      "path": "assets/images/clinical/family/2fd2a4a0fc1f.jpg",
-      "kind": "image",
-      "bytes": 70930,
-      "sha256": "20f59dc77bab871c6a463449da5b179c072f21f13f2188c7d58e2f5aa1260048",
-      "status": "published",
-      "used_by": [
-        "child-constitution.html"
-      ],
-      "sources": [
-        "https://cdn.imweb.me/thumbnail/20200402/37a4ce512b584.jpg"
-      ],
-      "metadata_files": [
-        "content/family-assets.json",
-        "content/family-pages.json"
-      ],
-      "alt_texts": [
-        "허약체질 클리닉 안내 사진·도해"
-      ],
-      "width": 600,
-      "height": 600
     },
     {
       "id": "images/clinical/family/31b515f00819",
@@ -809,29 +777,6 @@
       "height": 853
     },
     {
-      "id": "images/clinical/family/6010a7568823",
-      "path": "assets/images/clinical/family/6010a7568823.jpg",
-      "kind": "image",
-      "bytes": 70055,
-      "sha256": "11e212eba2fe21a36c184c153329e5d1f5af1a8c341ce1445dd0530c1f12a12a",
-      "status": "published",
-      "used_by": [
-        "child-constitution.html"
-      ],
-      "sources": [
-        "https://cdn.imweb.me/thumbnail/20200402/6f41d4c7ac50f.jpg"
-      ],
-      "metadata_files": [
-        "content/family-assets.json",
-        "content/family-pages.json"
-      ],
-      "alt_texts": [
-        "허약체질 클리닉 안내 사진·도해"
-      ],
-      "width": 600,
-      "height": 600
-    },
-    {
       "id": "images/clinical/family/6191b62d625e",
       "path": "assets/images/clinical/family/6191b62d625e.jpg",
       "kind": "image",
@@ -946,29 +891,6 @@
       ],
       "width": 1280,
       "height": 852
-    },
-    {
-      "id": "images/clinical/family/828fa5a94ab2",
-      "path": "assets/images/clinical/family/828fa5a94ab2.jpg",
-      "kind": "image",
-      "bytes": 71699,
-      "sha256": "1d8a1a8b01583d3f5c811069c4bd94f1403fb78a1e14a5574af27ce895858bb8",
-      "status": "published",
-      "used_by": [
-        "child-constitution.html"
-      ],
-      "sources": [
-        "https://cdn.imweb.me/thumbnail/20200402/ae497ba34ce68.jpg"
-      ],
-      "metadata_files": [
-        "content/family-assets.json",
-        "content/family-pages.json"
-      ],
-      "alt_texts": [
-        "허약체질 클리닉 안내 사진·도해"
-      ],
-      "width": 600,
-      "height": 600
     },
     {
       "id": "images/clinical/family/88711dbe3b13",
@@ -1365,29 +1287,6 @@
       ],
       "alt_texts": [
         "키성장 치료 안내 사진·도해"
-      ],
-      "width": 600,
-      "height": 600
-    },
-    {
-      "id": "images/clinical/family/c4a4ddec44da",
-      "path": "assets/images/clinical/family/c4a4ddec44da.jpg",
-      "kind": "image",
-      "bytes": 72412,
-      "sha256": "436fd89d72eab5a91fae2b2481e8cd32f9f602ab86ebf869b32708f76728a7ad",
-      "status": "published",
-      "used_by": [
-        "child-constitution.html"
-      ],
-      "sources": [
-        "https://cdn.imweb.me/thumbnail/20200402/ab49b67b7874b.jpg"
-      ],
-      "metadata_files": [
-        "content/family-assets.json",
-        "content/family-pages.json"
-      ],
-      "alt_texts": [
-        "허약체질 클리닉 안내 사진·도해"
       ],
       "width": 600,
       "height": 600
@@ -4183,8 +4082,8 @@
       "id": "styles/clinical/child-renewal",
       "path": "assets/styles/clinical/child-renewal.css",
       "kind": "style",
-      "bytes": 9658,
-      "sha256": "2545515f4b82850f5556a33fe86cfeed99de95aae6377824c4ce2fdfa85874bb",
+      "bytes": 9966,
+      "sha256": "4dd13e66fdd12f46d10a18d4b3a34dd433ccc96215a30ce4ff92f7ff44c7bc8d",
       "status": "published",
       "used_by": [
         "child-antler.html",
@@ -4664,8 +4563,8 @@
       "id": "styles/shared/home",
       "path": "assets/styles/shared/home.css",
       "kind": "style",
-      "bytes": 13885,
-      "sha256": "04c0afe65edeb1df3b4bf173054407dbbc123c24c779fce6a2d452e17879c956",
+      "bytes": 14030,
+      "sha256": "1a65f3d82a3c7a038e5c49a6a6009e9c4a71ef4a1f2f2625a67715804f6d2528",
       "status": "published",
       "used_by": [
         "01_1.about.html",

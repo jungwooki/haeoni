@@ -449,12 +449,8 @@
         "title": "I 간계허약아",
         "items": [
           {
-            "type": "image",
-            "source": "https://cdn.imweb.me/thumbnail/20200402/5e0412dd4b2ee.jpg",
-            "path": "assets/images/clinical/family/0cf339b71c88.jpg",
-            "alt": "허약체질 클리닉 안내 사진·도해",
-            "width": 600,
-            "height": 600
+            "type": "emoji",
+            "value": "💪"
           },
           {
             "type": "text",
@@ -468,12 +464,8 @@
         "title": "I 심계허약아",
         "items": [
           {
-            "type": "image",
-            "source": "https://cdn.imweb.me/thumbnail/20200402/6f41d4c7ac50f.jpg",
-            "path": "assets/images/clinical/family/6010a7568823.jpg",
-            "alt": "허약체질 클리닉 안내 사진·도해",
-            "width": 600,
-            "height": 600
+            "type": "emoji",
+            "value": "❤️"
           },
           {
             "type": "text",
@@ -487,12 +479,8 @@
         "title": "I 비계허약아",
         "items": [
           {
-            "type": "image",
-            "source": "https://cdn.imweb.me/thumbnail/20200402/37a4ce512b584.jpg",
-            "path": "assets/images/clinical/family/2fd2a4a0fc1f.jpg",
-            "alt": "허약체질 클리닉 안내 사진·도해",
-            "width": 600,
-            "height": 600
+            "type": "emoji",
+            "value": "🍽️"
           },
           {
             "type": "text",
@@ -506,12 +494,8 @@
         "title": "I 폐계허약아",
         "items": [
           {
-            "type": "image",
-            "source": "https://cdn.imweb.me/thumbnail/20200402/ae497ba34ce68.jpg",
-            "path": "assets/images/clinical/family/828fa5a94ab2.jpg",
-            "alt": "허약체질 클리닉 안내 사진·도해",
-            "width": 600,
-            "height": 600
+            "type": "emoji",
+            "value": "🛡️"
           },
           {
             "type": "text",
@@ -525,12 +509,8 @@
         "title": "I 신계허약아",
         "items": [
           {
-            "type": "image",
-            "source": "https://cdn.imweb.me/thumbnail/20200402/ab49b67b7874b.jpg",
-            "path": "assets/images/clinical/family/c4a4ddec44da.jpg",
-            "alt": "허약체질 클리닉 안내 사진·도해",
-            "width": 600,
-            "height": 600
+            "type": "emoji",
+            "value": "🌱"
           },
           {
             "type": "text",
