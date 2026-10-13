@@ -1,0 +1,712 @@
+[
+  {
+    "old_url": "/about",
+    "target_candidate": "01_1.about.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/86",
+    "target_candidate": "01_1.about.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/165",
+    "target_candidate": "01_2.team.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/87",
+    "target_candidate": "history.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/time",
+    "target_candidate": "time.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/92",
+    "target_candidate": "01_4.tour.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/93",
+    "target_candidate": "01_3.location.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/142",
+    "target_candidate": "contribution.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/kids",
+    "target_candidate": "kids10.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/kids10",
+    "target_candidate": "child-overview.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": true
+  },
+  {
+    "old_url": "/120",
+    "target_candidate": "child-integrated.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/144",
+    "target_candidate": "child-treatments.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/kids3",
+    "target_candidate": "child-treatments.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/146",
+    "target_candidate": "child-herbal-prescription.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/kids5",
+    "target_candidate": "child-herbal-guide.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/152",
+    "target_candidate": "child-constitution.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": true
+  },
+  {
+    "old_url": "/147",
+    "target_candidate": "child-constitution.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/kids4",
+    "target_candidate": "child-antler.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/155",
+    "target_candidate": "child-respiratory.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/154",
+    "target_candidate": "child-respiratory.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/156",
+    "target_candidate": "child-cold-prevention.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/rhini4",
+    "target_candidate": "child-cold-care.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/157",
+    "target_candidate": "child-infections.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/169",
+    "target_candidate": "child-pfapa.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/170",
+    "target_candidate": "child-pfapa-care.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/kids7",
+    "target_candidate": "child-growth.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/148",
+    "target_candidate": "child-growth.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/149",
+    "target_candidate": "child-growth-causes.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/151",
+    "target_candidate": "child-growth-diagnosis.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/150",
+    "target_candidate": "child-growth-care.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/woman",
+    "target_candidate": "woman1.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/woman1",
+    "target_candidate": "women-overview.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": true
+  },
+  {
+    "old_url": "/61",
+    "target_candidate": "women-life-stages.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/64",
+    "target_candidate": "women-pregnancy-planning.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/100",
+    "target_candidate": "women-pregnancy-planning.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/101",
+    "target_candidate": "women-infertility.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/104",
+    "target_candidate": "women-infertility-care.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/102",
+    "target_candidate": "women-female-infertility.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/139",
+    "target_candidate": "women-male-infertility.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/138",
+    "target_candidate": "women-assisted-reproduction.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/106",
+    "target_candidate": "women-pregnancy.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/65",
+    "target_candidate": "women-postpartum.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/107",
+    "target_candidate": "women-postpartum.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/108",
+    "target_candidate": "women-body-changes.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/109",
+    "target_candidate": "women-postpartum-care.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/110",
+    "target_candidate": "women-postpartum-lifestyle.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/113",
+    "target_candidate": "women-parenting.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/66",
+    "target_candidate": "women-miscarriage.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/114",
+    "target_candidate": "women-miscarriage.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/115",
+    "target_candidate": "women-miscarriage-lifestyle.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/116",
+    "target_candidate": "women-miscarriage-surgery.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/117",
+    "target_candidate": "women-recurrent-loss.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/62",
+    "target_candidate": "women-uterus-ovaries.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/96",
+    "target_candidate": "women-uterus-ovaries.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/98",
+    "target_candidate": "women-pms-stress.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/99",
+    "target_candidate": "women-cold-sensitivity.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/rhinitis",
+    "target_candidate": "clinic-internal.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/rhini1",
+    "target_candidate": "rhini1.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": true
+  },
+  {
+    "old_url": "/rhini50",
+    "target_candidate": "internal-cotton-care.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/79",
+    "target_candidate": "internal-rhinitis.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/rhinitis1",
+    "target_candidate": "internal-rhinitis.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/126",
+    "target_candidate": "internal-nose-function.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/rhini7",
+    "target_candidate": "internal-diagnosis.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/153",
+    "target_candidate": "internal-rhinitis-treatment.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/rhini9",
+    "target_candidate": "internal-cough.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/131",
+    "target_candidate": "internal-cough.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/141",
+    "target_candidate": "internal-cough-treatment.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/rhini3",
+    "target_candidate": "internal-cold.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/rhini14",
+    "target_candidate": "internal-otitis.html",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/community",
+    "target_candidate": "",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  },
+  {
+    "old_url": "/counsel",
+    "target_candidate": "",
+    "current_status": "404 (2026-10-12 audit)",
+    "approval": "pending",
+    "enabled_in_active_config": false,
+    "traffic": "미확인",
+    "required_check": "구 원문·기존 유입·진료 대상·최종 URL 정책",
+    "ambiguous": false
+  }
+]

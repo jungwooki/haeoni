@@ -1,0 +1,112 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "python3 scripts/build_site.py --public",
+  "outputDirectory": "dist",
+  "cleanUrls": false,
+  "headers": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "(?<preview>.+\\.vercel\\.app)"
+        }
+      ],
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "query",
+          "key": "mode",
+          "value": "privacy"
+        }
+      ],
+      "destination": "/privacy.html",
+      "permanent": false
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "query",
+          "key": "mode",
+          "value": "policy"
+        }
+      ],
+      "destination": "/terms.html",
+      "permanent": false
+    },
+    {
+      "source": "/index.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "mode",
+          "value": "privacy"
+        }
+      ],
+      "destination": "/privacy.html",
+      "permanent": false
+    },
+    {
+      "source": "/index.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "mode",
+          "value": "policy"
+        }
+      ],
+      "destination": "/terms.html",
+      "permanent": false
+    },
+    {
+      "source": "/kids10/",
+      "destination": "/kids10",
+      "permanent": true
+    },
+    {
+      "source": "/rhini1/",
+      "destination": "/rhini1",
+      "permanent": true
+    },
+    {
+      "source": "/woman1/",
+      "destination": "/woman1",
+      "permanent": true
+    },
+    {
+      "source": "/pain1/",
+      "destination": "/pain1",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/kids10",
+      "destination": "/kids10.html"
+    },
+    {
+      "source": "/rhini1",
+      "destination": "/rhini1.html"
+    },
+    {
+      "source": "/woman1",
+      "destination": "/woman1.html"
+    },
+    {
+      "source": "/pain1",
+      "destination": "/pain1.html"
+    }
+  ]
+}

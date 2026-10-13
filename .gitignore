@@ -1,0 +1,5 @@
+dist/
+.vercel/
+__pycache__/
+*.pyc
+.public-output-*/

@@ -1,5 +1,32 @@
 # 해온한의원 홈페이지
 
+## 공개 전용 빌드와 SEO 검증
+
+Phase 1 소스 빌드 검증 결과는 [Production 배포 전 최종 보고서](reviews/PHASE1_PRODUCTION_PREFLIGHT_2026-10-12.md)에 있습니다. 검토 작업트리와 동일한 Vercel 설정으로 원격 Python 소스 빌드가 통과했습니다. 승인된 Phase 1 변경은 main에 반영하며, 운영 배포에서는 이 공개 빌드 설정을 사용합니다. 과거 공개 범위 제한 이전 커밋을 그대로 재배포하지 마세요.
+
+소스 Preview 입력은 `python3 scripts/prepare_source_preview.py --destination <새 임시 경로>`로 준비합니다. 사전 검증 중 만든 dist는 업로드 manifest에 포함되지 않습니다. 명시적 소스 목록만 전달하고 `vercel.json`을 변경 없이 사용합니다. 제외 이미지 8개와 의료 수정 후보·원문 백업 트리·EMR은 업로드하지 않습니다.
+
+Vercel 배포용 산출물은 `python3 scripts/build_site.py --public`로 만듭니다. 기존 생성기를 임시 폴더에서 실행하고 `config/public-files.json`의 명시적 목록과 실제 참조 그래프가 일치하는 파일만 `dist/`에 복사합니다. 본문 81개, 기존 이동용 HTML 11개, 사용 자산 148개가 현재 계약입니다. 원문·백업·공개 제외 이미지·scripts·audit·skills·검토 문서는 배포 출력에 포함하지 않습니다. 원래 파일들은 보관합니다.
+
+`vercel.json`은 공개 빌드 명령과 `outputDirectory: dist`를 사용합니다. 저장소 루트를 그대로 서비스하거나 `dist/`에 전체 assets를 복사하지 마세요. `dist/`는 재생성 가능한 산출물이며 Git에서 제외됩니다. 일반 `python3 scripts/build_site.py`는 기존처럼 루트 HTML을 재생성합니다. 배포에는 `--public`을 사용하세요.
+
+현재 안전성 변경은 `config/public-regression.json`의 바이트 기준선으로 의료 원고·정책·디자인을 동결합니다. 생성 결과가 루트 HTML과 다르거나 자산 목록·해시가 달라지면 빌드를 실패시킵니다. 향후 승인된 원고·디자인 수정은 원본을 보관하고 생성 입력, 루트 생성본, 공개 허용 목록과 기준선의 변경을 함께 검토해야 합니다. 자동으로 기준선을 갱신하지 않습니다.
+
+```sh
+python3 scripts/build_site.py --public
+python3 scripts/check_public.py
+python3 scripts/test_public.py
+python3 scripts/check_site.py
+python3 scripts/check_assets.py
+python3 scripts/serve_public.py --port 18873
+```
+
+로컬 서버는 `dist/`만 제공하고 현재의 단순 정책 라우팅을 모의합니다. Vercel edge 구현의 대체 검증은 아닙니다. `/`와 `/index.html`의 `mode=privacy` 및 `mode=policy`만 각각 정책 페이지로 307 이동하며 정책 원문은 유지합니다. 네 진료 짧은 URL 설계는 `config/vercel-p1-routing.candidate.json`에 분리돼 있고 현재 배포 설정에는 적용하지 않았습니다. 구 URL 71개도 승인 전에는 이동하지 않습니다.
+
+외부 EMR 없이 `check_site.py` 전체 검사가 가능합니다. 원래 진료 안내 JSON과의 선택적 비교는 `check_care_source.py --source-dir <승인된 안내자료 디렉터리>`로 분리했습니다. 이 검사는 공개 빌드에 포함되지 않으며 환자 자료를 복사하지 않습니다.
+
+변경·검증·preview·롤백 내용은 [공개 빌드 구현 검토 보고서](reviews/PUBLIC_BUILD_REVIEW_2026-10-12.md)에 있습니다. 의료 문구 수정 후보는 별도의 로컬 검토 자료로 보관하며 이 기술 변경 커밋과 공개 산출물에 포함하지 않습니다. 원격 배포와 운영 반영은 각각 명시적 승인 후 진행합니다.
+
 현재 다중 페이지 구성: 메인, 한의원 소개/기록/사회공헌, 의료진 전체 및 4인 상세, 7개 진료 분야 및 한방내과 세부 안내 14개 (호흡기 10개·소화기 4개), 소아과 17개, 부인과 21개, 진료시간/위치/공간, 전체 페이지.
 
 ## 미리보기

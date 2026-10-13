@@ -1,6 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """Build static HTML with a shared navigation; no build dependencies required."""
+import sys
+# Safe Vercel build entry point: the legacy generator runs only inside private staging.
+if '--public' in sys.argv:
+ from build_public import main as build_public_main
+ build_public_main()
+ raise SystemExit(0)
 from site_assets import migrate_archived_asset_paths, asset_url
 from asset_catalog import write_catalog
 from page_routes import department_file, is_clinic_page

@@ -127,12 +127,10 @@ for kind,items in guide_data.items():
   assert item['caution'] and item['limit'],item['id']
  for forbidden in ['대학병원급','재생 속도를 30%','감염 걱정 없음','위험 원천 차단']:
   assert forbidden not in html,(kind,forbidden)
- source=json.loads((ROOT.parent/'emr/guides'/f'{kind}.json').read_text())['data']
- mapped=[sid for item in items for sid in item['source_ids'] if not sid.startswith('USER_')]
- assert sorted(mapped)==sorted(x['id'] for x in source),(kind,'source coverage')
 for name in names:
  assert 'href="care.html"' in (ROOT/name).read_text(),(name,'shared care menu')
-print('PASS: care source coverage; planned/withdrawn offerings excluded; cautions and shared entry links.')
+print('PASS: public care entries; planned/withdrawn offerings excluded; cautions and shared entry links.')
+print('NOTE: private original-source coverage is a separate explicit check_care_source.py task.')
 
 # An old domain must never reappear in a published navigation/resource URL.
 for name,p in pages.items():

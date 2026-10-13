@@ -27,7 +27,8 @@ for page,cfg in CONFIG.items():
 for page in ARTICLES:
  for idx,section in enumerate(page['sections']):
   for item in section['items']:
-   if item['type']=='image':register(item,page['file'],'guide-'+str(idx))
+   # Withheld images are never rendered; do not require/read them as build inputs either.
+   if item['type']=='image' and item['path'] not in WITHHELD:register(item,page['file'],'guide-'+str(idx))
 
 def image_html(item,opening=False):
  if item['path'] in WITHHELD:return ''
